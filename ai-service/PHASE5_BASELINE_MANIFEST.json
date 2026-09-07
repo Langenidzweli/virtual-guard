@@ -1,0 +1,34 @@
+{
+  "phase": 5,
+  "created_timestamp": "2026-09-01T14:50:26.483698",
+  "artifacts": {
+    "yolov8n.pt": {
+      "path": "C:\\Users\\Admin\\OneDrive - Sol Plaatje University\\Documents\\2026\\2026 Projects\\virtual-guard-v1\\ai-service\\models\\yolov8n.pt",
+      "size_bytes": 6549796,
+      "size_mb": 6.25,
+      "modified_timestamp": "2026-08-23T15:33:11.309644",
+      "sha256": "f59b3d833e2ff32e194b5bb8e08d211dc7c5bdf144b90d2c8412c47ccfc83b36"
+    },
+    "virtual_guard_mall_detector_v1.pt": {
+      "path": "C:\\Users\\Admin\\OneDrive - Sol Plaatje University\\Documents\\2026\\2026 Projects\\virtual-guard-v1\\ai-service\\models\\virtual_guard_mall_detector_v1.pt",
+      "size_bytes": 24452583,
+      "size_mb": 23.32,
+      "modified_timestamp": "2026-08-31T02:08:53.767373",
+      "sha256": "828b02628a299c20ec3bf717c5986200cfa301fdc9b06a5042cb797115a47476"
+    },
+    "behaviour_model_v2.pkl": {
+      "path": "C:\\Users\\Admin\\OneDrive - Sol Plaatje University\\Documents\\2026\\2026 Projects\\virtual-guard-v1\\ai-service\\models\\behaviour_model_v2.pkl",
+      "size_bytes": 617433,
+      "size_mb": 0.59,
+      "modified_timestamp": "2026-08-23T23:28:33.644391",
+      "sha256": "876b185453fd9ef5571f85cdbbc98e5d6af0496e3819f36ba97e665dd68ee81b"
+    },
+    "scaler_v2.pkl": {
+      "path": "C:\\Users\\Admin\\OneDrive - Sol Plaatje University\\Documents\\2026\\2026 Projects\\virtual-guard-v1\\ai-service\\models\\scaler_v2.pkl",
+      "size_bytes": 1383,
+      "size_mb": 0.0,
+      "modified_timestamp": "2026-08-23T23:28:33.648883",
+      "sha256": "6e64daf11299063b56884a9bbc6ef6d4ef7dba12a76e2aa8fad5f28d98fc5638"
+    }
+  }
+}

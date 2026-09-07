@@ -1,0 +1,94 @@
+{
+  "timestamp": "2026-09-04T13:40:58.176922",
+  "dataset": "mall_surveillance/test",
+  "v1_model": "C:\\Users\\Admin\\OneDrive - Sol Plaatje University\\Documents\\2026\\2026 Projects\\virtual-guard-v1\\ai-service\\models\\virtual_guard_mall_detector_v1.pt",
+  "v2_model": "C:\\Users\\Admin\\OneDrive - Sol Plaatje University\\Documents\\2026\\2026 Projects\\virtual-guard-v1\\ai-service\\models\\virtual_guard_mall_detector_v2.pt",
+  "v1_metrics": {
+    "model": "v1_detector",
+    "precision": 0.7275514950168362,
+    "recall": 0.27723989106351554,
+    "map50": 0.2471981381041998,
+    "map50_95": 0.0890345074654251,
+    "fitness": 0.10485087052930259,
+    "per_class": {
+      "0": {
+        "name": "bag",
+        "ap50": 0.041954472218436324,
+        "ap50_95": 0.016680160239647378
+      },
+      "1": {
+        "name": "busket",
+        "ap50": 0.4024108419131456,
+        "ap50_95": 0.13456088081395742
+      },
+      "2": {
+        "name": "people",
+        "ap50": 0.5170620574358858,
+        "ap50_95": 0.1911534092754966
+      },
+      "3": {
+        "name": "product",
+        "ap50": 0.027365180849331455,
+        "ap50_95": 0.01374357953259892
+      }
+    }
+  },
+  "v2_metrics": {
+    "model": "v2_detector",
+    "precision": 0.6003336587200843,
+    "recall": 0.46425058962669036,
+    "map50": 0.4754935110399707,
+    "map50_95": 0.22354073552529402,
+    "fitness": 0.24873601307676171,
+    "per_class": {
+      "0": {
+        "name": "bag",
+        "ap50": 0.2286737637338287,
+        "ap50_95": 0.07952300663711911
+      },
+      "1": {
+        "name": "busket",
+        "ap50": 0.6735385758175765,
+        "ap50_95": 0.32425888937331
+      },
+      "2": {
+        "name": "people",
+        "ap50": 0.8795733666793213,
+        "ap50_95": 0.42641560746035545
+      },
+      "3": {
+        "name": "product",
+        "ap50": 0.12018833792915616,
+        "ap50_95": 0.0639654386303916
+      }
+    }
+  },
+  "improvements": {
+    "improved": [
+      [
+        "bag",
+        0.18671929151539238
+      ],
+      [
+        "busket",
+        0.2711277339044309
+      ],
+      [
+        "people",
+        0.36251130924343544
+      ],
+      [
+        "product",
+        0.0928231570798247
+      ]
+    ],
+    "regressed": [],
+    "unchanged": []
+  },
+  "success_criteria": {
+    "minimum_met": false,
+    "target_met": false,
+    "excellent_met": false
+  },
+  "decision": "REJECTED"
+}

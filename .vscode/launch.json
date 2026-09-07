@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Backend: Spring Boot",
+      "type": "java",
+      "request": "launch",
+      "mainClass": "com.virtualguard.backend.VirtualGuardApplication",
+      "projectName": "backend",
+      "cwd": "${workspaceFolder}/backend",
+      "console": "integratedTerminal",
+      "env": {
+        "JAVA_TOOL_OPTIONS": "-Xms256m -Xmx1024m -XX:MaxMetaspaceSize=512m"
+      },
+      "vmArgs": [
+        "-Xms256m",
+        "-Xmx1024m",
+        "-XX:MaxMetaspaceSize=512m"
+      ]
+    }
+  ]
+}
