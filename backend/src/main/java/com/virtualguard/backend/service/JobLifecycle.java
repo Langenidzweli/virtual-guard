@@ -80,7 +80,7 @@ public class JobLifecycle {
         job.setSuspicionScore(result.suspicion_score());
         job.setFailureReason(null);
         if (result.annotated_video_path() != null)
-            job.setAnnotatedVideoFilePath(java.nio.file.Paths.get(result.annotated_video_path()).getFileName().toString());
+            job.setAnnotatedVideoFilePath(com.virtualguard.backend.storage.MediaFilename.fromPath(result.annotated_video_path()));
         jobs.save(job);
         // The job lock serializes duplicate callbacks before the incident existence check.
         incidents.createFromAiResult(job, result);

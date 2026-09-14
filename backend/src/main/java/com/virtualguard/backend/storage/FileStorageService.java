@@ -107,6 +107,11 @@ public class FileStorageService {
         if (filename == null || filename.isBlank()) {
             throw new IllegalArgumentException("Filename is required");
         }
+        // Reject both platforms' path syntax, independent of the server OS.
+        if (filename.contains("/") || filename.contains("\\") || filename.contains(":")
+                || filename.equals(".") || filename.equals("..")) {
+            throw new IllegalArgumentException("Invalid filename");
+        }
 
         Path storageRoot = storageRoot();
         Path resolvedPath = storageRoot.resolve(filename).normalize();

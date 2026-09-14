@@ -20,7 +20,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 import java.util.UUID;
-import java.nio.file.Paths;
+
 import org.springframework.data.domain.Sort;
 
 @Service
@@ -56,7 +56,7 @@ public class JobService {
                     .retrieve()
                     .body(ConvertResponse.class);
             if (converted != null && converted.videoPath() != null) {
-                filename = Paths.get(converted.videoPath()).getFileName().toString();
+                filename = com.virtualguard.backend.storage.MediaFilename.fromPath(converted.videoPath());
             }
         } catch (RuntimeException exception) {
             log.warn("Video conversion unavailable for {}; keeping original upload", filename, exception);

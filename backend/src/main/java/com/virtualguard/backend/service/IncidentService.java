@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.UUID;
-import java.nio.file.Paths;
+
 
 @Service
 @RequiredArgsConstructor
@@ -142,7 +142,7 @@ public class IncidentService {
         }
         Object path = incident.getBoundingBoxes().get("annotatedVideoPath");
         return path instanceof String value && !value.isBlank()
-                ? Paths.get(value).getFileName().toString()
+                ? com.virtualguard.backend.storage.MediaFilename.fromPath(value)
                 : null;
     }
 
