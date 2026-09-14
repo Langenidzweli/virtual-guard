@@ -49,6 +49,7 @@ public class AuthController {
             throw new InvalidRefreshTokenException();
         }
         String email = tokenProvider.getEmailFromToken(request.refreshToken());
+        tokenProvider.getAuthentication(request.refreshToken());
         User user = userRepository.findByEmail(email)
                 .orElseThrow(InvalidRefreshTokenException::new);
         return ResponseEntity.ok(buildTokenResponse(user));

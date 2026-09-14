@@ -7,6 +7,7 @@ import java.util.Optional;
 import java.util.UUID;
 
 public interface GuardRepository extends JpaRepository<Guard, UUID> {
+    Optional<Guard> findByUserId(UUID userId);
     Optional<Guard> findByEmail(String email);
     Optional<Guard> findByBadgeNumber(String badgeNumber);
 }

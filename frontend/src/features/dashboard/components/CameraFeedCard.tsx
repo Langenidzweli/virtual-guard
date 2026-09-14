@@ -1,3 +1,4 @@
+import { AuthorizedVideo } from '@/components/AuthorizedVideo'
 import { useState, useRef, useEffect } from 'react'
 import { Video, VideoOff, Play, Upload, Loader2 } from 'lucide-react'
 import { Card, Badge, Button, ProgressBar, Modal } from '@/components/ui'
@@ -53,7 +54,6 @@ export function CameraFeedCard({ feed }: CameraFeedCardProps) {
     if (!fileName) return
 
     const url = new URL(`/api/video/${encodeURIComponent(fileName)}`, `${baseUrl}/`)
-    if (authToken) url.searchParams.set('token', authToken)
     setVideoSrc(url.toString())
   }, [feed.fileName, authToken])
 
@@ -84,6 +84,7 @@ export function CameraFeedCard({ feed }: CameraFeedCardProps) {
 
   return (
     <Card className="@container flex flex-col">
+      {feed.failureReason && <p role="alert" className="p-3 text-sm text-status-alert">{feed.failureReason}</p>}
       <div className="flex items-center justify-between px-3.5 py-2.5">
         <div className="flex items-center gap-2 min-w-0">
           <Video className="h-3.5 w-3.5 shrink-0 text-text-muted" strokeWidth={1.75} />
@@ -115,7 +116,7 @@ export function CameraFeedCard({ feed }: CameraFeedCardProps) {
             ) : hasVideo && videoSrc ? (
               // Video player
               <>
-                <video
+                <AuthorizedVideo
                   ref={videoRef}
                   src={videoSrc}
                   controls

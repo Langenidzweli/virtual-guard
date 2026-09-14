@@ -19,21 +19,23 @@ import jakarta.validation.Valid;
 @RequiredArgsConstructor
 public class InternalJobController {
 
-    private final JobService jobService;
+    private final com.virtualguard.backend.service.JobLifecycle lifecycle;
 
     @PostMapping("/{id}/progress")
     public ResponseEntity<Void> updateProgress(
             @PathVariable UUID id,
+            @org.springframework.web.bind.annotation.RequestParam UUID attemptId,
             @Valid @RequestBody AiProgressRequest request) {
-        jobService.updateProgress(id, request.stage(), request.progress());
+        lifecycle.progress(id, attemptId, request.stage(), request.progress(), request.reason());
         return ResponseEntity.ok().build();
     }
 
     @PostMapping("/{id}/callback")
     public ResponseEntity<Void> completeJob(
             @PathVariable UUID id,
+            @org.springframework.web.bind.annotation.RequestParam UUID attemptId,
             @Valid @RequestBody AiCallbackRequest request) {
-        jobService.completeJob(id, request);
+        lifecycle.complete(id, attemptId, request);
         return ResponseEntity.ok().build();
     }
 }

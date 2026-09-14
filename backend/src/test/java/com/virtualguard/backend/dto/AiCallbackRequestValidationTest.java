@@ -61,4 +61,22 @@ class AiCallbackRequestValidationTest {
                 "annotated.mp4",
                 "completed");
     }
+
+    @Test
+    void validatesReviewIntervalsAndPreservesOptionalLegacyPayload() throws Exception {
+        var mapper = new com.fasterxml.jackson.databind.ObjectMapper();
+        for (var segment : List.of(
+                new AiCallbackRequest.ReviewSegment(10.0, 5.0, .9),
+                new AiCallbackRequest.ReviewSegment(-1.0, 5.0, .9),
+                new AiCallbackRequest.ReviewSegment(0.0, Double.POSITIVE_INFINITY, .9))) {
+            var request = new AiCallbackRequest("shoplifting", .9, 90.0, List.of(), Map.of(),
+                    "video.mp4", "completed", List.of(segment));
+            assertFalse(validator.validate(request).isEmpty());
+        }
+        var request = new AiCallbackRequest("shoplifting", .9, 90.0, List.of(), Map.of(),
+                "video.mp4", "completed", List.of(new AiCallbackRequest.ReviewSegment(5.0, 15.0, .9)));
+        var restored = mapper.readValue(mapper.writeValueAsString(request), AiCallbackRequest.class);
+        assertEquals(0, validator.validate(restored).size());
+        assertEquals(5.0, restored.review_segments().get(0).start_seconds());
+    }
 }

@@ -12,6 +12,25 @@ from app.main import app
 
 
 class ProcessingFailureTests(unittest.TestCase):
+    def test_review_segments_are_delivered_and_failure_keeps_full_clip_result(self):
+        job = JobRequest(attempt_id=UUID("22222222-2222-2222-2222-222222222222"), job_id=UUID("11111111-1111-1111-1111-111111111111"), video_path="input.mp4")
+        expected = [{"start_seconds": 4.0, "end_seconds": 18.0, "confidence": .9}]
+        for fails in (False, True):
+            with (
+                self.subTest(segment_failure=fails),
+                patch("app.api.routes.process_video_pipeline", return_value={"success": True, "detections": {}}),
+                patch("app.api.routes.behaviour_analyzer.predict", return_value={"behaviour": "shoplifting", "confidence": .9, "suspicion_score": 90}),
+                patch("app.api.routes.find_review_segments", return_value=expected, side_effect=RuntimeError("segment failure") if fails else None),
+                patch("app.api.routes.send_progress", new_callable=AsyncMock),
+                patch("app.api.routes.send_callback", new_callable=AsyncMock) as callback,
+                patch("app.api.routes.logger.exception"),
+            ):
+                asyncio.run(_process_video(job))
+                payload = callback.await_args.args[1]
+                self.assertEqual(payload['review_segments'], [] if fails else expected)
+                self.assertEqual(payload['behaviour'], 'shoplifting')
+                self.assertEqual(payload['suspicion_score'], 90)
+
     def test_final_callback_retries_transient_network_failures(self):
         class RetryClient:
             attempts = 0
@@ -62,7 +81,7 @@ class ProcessingFailureTests(unittest.TestCase):
 
     def test_behaviour_model_failure_marks_job_failed_without_callback(self):
         job = JobRequest(
-            job_id=UUID("11111111-1111-1111-1111-111111111111"),
+            attempt_id=UUID("22222222-2222-2222-2222-222222222222"), job_id=UUID("11111111-1111-1111-1111-111111111111"),
             video_path="input.mp4",
         )
         vision_result = {
@@ -83,7 +102,7 @@ class ProcessingFailureTests(unittest.TestCase):
         self.assertEqual(
             progress.await_args_list[-1].args,
             (
-                f"{config.SPRING_BOOT_URL.rstrip('/')}/internal/jobs/{job.job_id}/progress",
+                f"{config.SPRING_BOOT_URL.rstrip('/')}/internal/jobs/{job.job_id}/progress?attemptId={job.attempt_id}",
                 "failed",
                 0,
             ),

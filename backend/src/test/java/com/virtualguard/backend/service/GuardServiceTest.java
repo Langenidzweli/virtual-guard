@@ -23,11 +23,13 @@ import static org.mockito.Mockito.when;
 class GuardServiceTest {
 
     @Mock GuardRepository guardRepository;
+    @Mock com.virtualguard.backend.repository.UserRepository users;
+    @Mock org.springframework.security.crypto.password.PasswordEncoder encoder;
     private GuardService guardService;
 
     @BeforeEach
     void setUp() {
-        guardService = new GuardService(guardRepository);
+        guardService = new GuardService(guardRepository, users, encoder);
     }
 
     @Test

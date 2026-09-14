@@ -15,6 +15,7 @@ interface UploadJobResponse {
 }
 
 interface JobProgressData {
+  failureReason?: string | null
   jobId: string
   status: 'QUEUED' | 'PROCESSING' | 'COMPLETED' | 'FAILED'
   currentStage: CameraFeed['currentStage']
@@ -70,7 +71,7 @@ export function DashboardPage() {
   const [cameras, setCameras] = useState<StoreCamera[]>([])
   const [feeds, setFeeds] = useState<CameraFeed[]>([])
   const [isUploading, setIsUploading] = useState(false)
-  const [, setIsAnalyzing] = useState(false)
+  const startInFlightRef = useRef(false)
   const alertAudioContextRef = useRef<AudioContext | null>(null)
 
   function prepareAlertSound() {
@@ -125,6 +126,7 @@ export function DashboardPage() {
             fileName: job.annotatedVideoFileName || job.videoFileName,
             annotatedVideoFileName: job.annotatedVideoFileName,
             currentStage: job.currentStage,
+            failureReason: job.failureReason,
             progressPercent: job.progressPercent,
             isAnalyzing: job.status === 'PROCESSING',
             behaviour: job.behaviour ?? undefined,
@@ -132,11 +134,7 @@ export function DashboardPage() {
             suspicionScore: job.suspicionScore,
           }
         }))
-        setCameras(registryCameras.map((camera) => {
-          const job = latestByCamera.get(camera.id)
-          if (!job) return { ...camera, status: camera.status === 'offline' ? 'offline' : 'idle' }
-          return camera
-        }))
+        setCameras(registryCameras)
       } catch {
         if (!cancelled) {
           setCameras(registryCameras)
@@ -153,23 +151,22 @@ export function DashboardPage() {
     let cancelled = false
 
     const refreshCameraStatuses = () => {
-      const visibleCameraIds = new Set(feeds.filter((feed) => feed.jobId).map((feed) => feed.id))
       cameraService.getCameras()
         .then((latestCameras) => {
           if (cancelled) return
-          setCameras(latestCameras.map((camera) => visibleCameraIds.has(camera.id)
-            ? camera
-            : { ...camera, status: camera.status === 'offline' ? 'offline' : 'idle' }))
+          setCameras(latestCameras)
         })
         .catch(() => { /* Keep the current map state during a transient outage. */ })
     }
 
+    const refreshTimer = window.setInterval(refreshCameraStatuses, 10_000)
     window.addEventListener(NOTIFICATIONS_CHANGED_EVENT, refreshCameraStatuses)
     return () => {
       cancelled = true
+      window.clearInterval(refreshTimer)
       window.removeEventListener(NOTIFICATIONS_CHANGED_EVENT, refreshCameraStatuses)
     }
-  }, [feeds])
+  }, [])
 
   useEffect(() => {
     const activeFeeds = feeds.filter((feed) => feed.jobId && feed.isAnalyzing)
@@ -182,19 +179,19 @@ export function DashboardPage() {
           const progressData = await api.get<JobProgressData>(`/api/jobs/${feed.jobId}`)
           if (cancelled) return
           if (progressData.status === 'COMPLETED') {
-            const score = progressData.suspicionScore ?? 0
-            const isAlert = progressData.behaviour === 'shoplifting' && score >= 70
-            if (isAlert) playAlertSound()
-            setCameras((current) => current.map((camera) => camera.id === feed.id
-              ? { ...camera, status: progressData.behaviour === 'shoplifting' ? (isAlert ? 'alert' : 'review') : 'normal' }
-              : camera))
+            const latest = await cameraService.getCameras()
+            if (cancelled) return
+            setCameras(latest)
+            if (latest.find(camera => camera.id === feed.id)?.status === 'alert') playAlertSound()
             window.dispatchEvent(new Event(NOTIFICATIONS_CHANGED_EVENT))
           }
           setFeeds((current) => current.map((item) => item.id === feed.id ? {
             ...item,
             currentStage: progressData.currentStage,
+            failureReason: progressData.failureReason,
             progressPercent: progressData.progressPercent,
-            isAnalyzing: progressData.status === 'PROCESSING',
+            isAnalyzing: progressData.status === 'PROCESSING'
+              || (progressData.status === 'QUEUED' && startInFlightRef.current),
             behaviour: progressData.behaviour ?? undefined,
             confidence: progressData.confidence,
             suspicionScore: progressData.suspicionScore,
@@ -258,6 +255,7 @@ export function DashboardPage() {
   }
 
   async function handleAnalyze() {
+    if (startInFlightRef.current) return
     prepareAlertSound()
     const feedsToAnalyze = feeds.filter((f) => f.fileName && f.jobId && !f.isAnalyzing && f.currentStage !== 'complete')
 
@@ -266,10 +264,28 @@ export function DashboardPage() {
       return
     }
 
-    setIsAnalyzing(true)
+    startInFlightRef.current = true
+
+    async function refreshJob(feed: CameraFeed) {
+      const job = await api.get<JobProgressData>(`/api/jobs/${feed.jobId}`)
+      setFeeds((current) => current.map((item) => item.jobId === feed.jobId ? {
+        ...item,
+        currentStage: job.status === 'COMPLETED' ? 'complete' : job.currentStage,
+        progressPercent: job.progressPercent,
+        isAnalyzing: job.status === 'PROCESSING',
+        behaviour: job.behaviour ?? undefined,
+        confidence: job.confidence,
+        suspicionScore: job.suspicionScore,
+        annotatedVideoFileName: job.annotatedVideoFileName,
+        fileName: job.annotatedVideoFileName || item.fileName,
+      } : item))
+      return job
+    }
 
     for (const feed of feedsToAnalyze) {
       try {
+        const job = await refreshJob(feed)
+        if (job.status !== 'QUEUED' && job.status !== 'FAILED') continue
         // Set analyzing state
         setFeeds((prev) =>
           prev.map((f) =>
@@ -283,27 +299,25 @@ export function DashboardPage() {
 
       } catch (error) {
         console.error('Analysis failed:', error)
-        setFeeds((prev) =>
-          prev.map((f) =>
-            f.id === feed.id
-              ? { ...f, isAnalyzing: false, currentStage: 'queued' }
-              : f
-          )
-        )
+        try {
+          const job = await refreshJob(feed)
+          if (job.status === 'PROCESSING' || job.status === 'COMPLETED') continue
+        } catch {
+          setFeeds((current) => current.map((item) => item.jobId === feed.jobId
+            ? { ...item, isAnalyzing: false }
+            : item))
+        }
         alert(`Failed to analyze ${feed.location}: ${error instanceof Error ? error.message : 'Unknown error'}`)
       }
     }
 
-    setIsAnalyzing(false)
+    startInFlightRef.current = false
   }
 
   function handleReset() {
     window.localStorage.setItem(DASHBOARD_RESET_AT_KEY, String(Date.now()))
     setFeeds(buildFeedSlots(registryCameras))
-    setCameras(registryCameras.map((camera) => ({
-      ...camera,
-      status: camera.status === 'offline' ? 'offline' : 'idle',
-    })))
+    void cameraService.getCameras().then(setCameras)
   }
 
   const camerasOnline = cameras.filter((camera) => camera.monitored && camera.status !== 'offline').length

@@ -41,7 +41,7 @@ class CameraStatusServiceTest {
         Camera camera = camera(CameraStatus.NORMAL);
         Incident incident = new Incident();
         incident.setBoundingBoxes(Map.of("suspicionScore", 82.5));
-        when(cameraRepository.findById(camera.getId())).thenReturn(Optional.of(camera));
+        when(cameraRepository.lockById(camera.getId())).thenReturn(Optional.of(camera));
         when(incidentRepository.findByJobCameraIdAndReviewStatus(camera.getId(), ReviewStatus.PENDING_REVIEW))
                 .thenReturn(List.of(incident));
 
@@ -54,7 +54,7 @@ class CameraStatusServiceTest {
     @Test
     void noPendingIncidentsReturnsCameraToNormal() {
         Camera camera = camera(CameraStatus.ALERT);
-        when(cameraRepository.findById(camera.getId())).thenReturn(Optional.of(camera));
+        when(cameraRepository.lockById(camera.getId())).thenReturn(Optional.of(camera));
         when(incidentRepository.findByJobCameraIdAndReviewStatus(camera.getId(), ReviewStatus.PENDING_REVIEW))
                 .thenReturn(List.of());
 
@@ -66,7 +66,7 @@ class CameraStatusServiceTest {
     @Test
     void offlineStatusIsNotOverwritten() {
         Camera camera = camera(CameraStatus.OFFLINE);
-        when(cameraRepository.findById(camera.getId())).thenReturn(Optional.of(camera));
+        when(cameraRepository.lockById(camera.getId())).thenReturn(Optional.of(camera));
 
         service.refresh(camera.getId());
 

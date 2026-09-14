@@ -334,6 +334,7 @@ Deploy only with visible policy, trained reviewers, access controls and an escal
 
 ## More documentation
 
+- [Computational backend and computer vision walkthrough](docs/COMPUTATIONAL_BACKEND_README.md) — algorithms, equations, code excerpts, file map and evaluation evidence for a technical assessment.
 - [Extended architecture reference](docs/architecture.md)
 - [Backend notes](backend/README.md)
 - [Mall detector training report](ai-service/PHASE5_README.md)

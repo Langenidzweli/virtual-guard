@@ -1,0 +1,7 @@
+{
+  "file": "yolov8n-pose.pt",
+  "source": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolov8n-pose.pt",
+  "sha256": "c6fa93dd1ee4a2c18c900a45c1d864a1c6f7aba75d84f91648a30b7fb641d212",
+  "purpose": "COCO 17-keypoint body skeleton overlay; does not feed the behaviour classifier",
+  "configuration": "POSE_ENABLED defaults to true; POSE_MODEL_PATH defaults to models/yolov8n-pose.pt relative to ai-service"
+}

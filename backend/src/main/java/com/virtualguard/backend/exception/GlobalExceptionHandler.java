@@ -45,7 +45,8 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(AuthenticationException.class)
     public ResponseEntity<?> handleAuthentication(AuthenticationException exception) {
         return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
-                .body(Map.of("error", "Invalid email or password"));
+                .body(Map.of("error", exception instanceof org.springframework.security.authentication.DisabledException
+                        ? "This account is deactivated. Contact an administrator." : "Invalid email or password, or session revoked"));
     }
 
     @ExceptionHandler(InvalidRefreshTokenException.class)

@@ -16,16 +16,16 @@ import java.util.Collections;
 public class CustomUserDetailsService implements UserDetailsService {
 
     private final UserRepository userRepository;
+    private final com.virtualguard.backend.repository.GuardRepository guardRepository;
 
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
         User user = userRepository.findByEmail(email)
                 .orElseThrow(() -> new UsernameNotFoundException("User not found: " + email));
 
-        return new org.springframework.security.core.userdetails.User(
-                user.getEmail(),
-                user.getPassword(),
-                Collections.singletonList(new SimpleGrantedAuthority("ROLE_" + user.getRole().name()))
-        );
+        var profile = guardRepository.findByUserId(user.getId())
+                .or(() -> guardRepository.findByEmail(user.getEmail()));
+        boolean enabled = profile.map(guard -> guard.getStatus() == com.virtualguard.backend.enums.GuardStatus.ACTIVE).orElse(true);
+        return new AccountPrincipal(user, enabled);
     }
 }

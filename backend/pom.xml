@@ -18,6 +18,7 @@
     <description>Spring Boot backend for Virtual Guard SOC</description>
 
     <properties>
+        <virtualguard.build.directory>${project.basedir}/target</virtualguard.build.directory>
         <java.version>17</java.version>
         <jjwt.version>0.11.5</jjwt.version>
         <lombok.version>1.18.36</lombok.version>
@@ -90,6 +91,7 @@
     </dependencies>
 
     <build>
+        <directory>${virtualguard.build.directory}</directory>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

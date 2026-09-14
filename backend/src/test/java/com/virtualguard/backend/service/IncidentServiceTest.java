@@ -54,7 +54,8 @@ class IncidentServiceTest {
                 List.of(new AiCallbackRequest.AiDetectionRequest(
                         12, "person", 0.88, 1, List.of(1.0, 2.0, 3.0, 4.0))),
                 java.util.Map.of("totalDetections", 1L),
-                "video_annotated.mp4", "completed");
+                "video_annotated.mp4", "completed",
+                List.of(new AiCallbackRequest.ReviewSegment(5.0, 15.0, .91)));
         when(incidentRepository.existsByJobId(job.getId())).thenReturn(false);
 
         incidentService.createFromAiResult(job, request);
@@ -65,6 +66,7 @@ class IncidentServiceTest {
         assertEquals(ReviewStatus.PENDING_REVIEW, incident.getReviewStatus());
         assertEquals("SHOPLIFTING", incident.getDetectionType());
         assertEquals(82.5, incident.getBoundingBoxes().get("suspicionScore"));
+        assertEquals(request.review_segments(), incident.getBoundingBoxes().get("reviewSegments"));
     }
 
     @Test
@@ -116,7 +118,7 @@ class IncidentServiceTest {
         incident.setId(incidentId);
         incident.setJob(job);
         incident.setReviewStatus(ReviewStatus.CONFIRMED);
-        when(incidentRepository.findById(incidentId)).thenReturn(Optional.of(incident));
+        when(incidentRepository.lockById(incidentId)).thenReturn(Optional.of(incident));
 
         assertThrows(IllegalStateException.class,
                 () -> incidentService.reviewIncident(incidentId, ReviewStatus.DISMISSED, "guard@example.com"));

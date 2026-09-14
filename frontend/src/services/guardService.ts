@@ -3,7 +3,7 @@
 import type { Guard, GuardStatus } from '@/types';
 import { api } from './apiClient';
 
-export type GuardInput = Omit<Guard, 'id' | 'status' | 'dateJoined'>;
+export type GuardInput = Omit<Guard, 'id' | 'status' | 'dateJoined'> & { password?: string };
 
 export const guardService = {
   async list(): Promise<Guard[]> {

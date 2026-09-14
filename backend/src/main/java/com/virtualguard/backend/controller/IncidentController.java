@@ -35,6 +35,13 @@ public class IncidentController {
         return incidentService.getIncidents(status);
     }
 
+    @PostMapping("/{id}/notes")
+    public IncidentResponse addNote(@PathVariable UUID id,
+            @jakarta.validation.Valid @RequestBody com.virtualguard.backend.dto.NoteRequest request,
+            Authentication authentication) {
+        return incidentService.addNote(id, request, authentication.getName());
+    }
+
     @PatchMapping("/{id}/review")
     public ResponseEntity<IncidentResponse> updateReviewStatus(
             @PathVariable UUID id,

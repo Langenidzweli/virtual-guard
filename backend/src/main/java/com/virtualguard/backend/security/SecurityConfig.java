@@ -65,7 +65,8 @@ public class SecurityConfig {
                                 response.sendError(403, "Access denied")))
                 .authorizeHttpRequests(authz -> authz
                         .requestMatchers("/", "/error", "/health", "/actuator/health").permitAll()
-                        .requestMatchers("/api/video/**").permitAll()
+                        .requestMatchers(HttpMethod.POST, "/api/video/**").authenticated()
+                        .requestMatchers(HttpMethod.GET, "/api/video/**").permitAll()
                         .requestMatchers("/api/auth/login", "/api/auth/refresh").permitAll()
                         .requestMatchers("/internal/**").permitAll()
                         .requestMatchers("/api/guards/**").hasRole("ADMIN")

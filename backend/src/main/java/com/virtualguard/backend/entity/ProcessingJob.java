@@ -34,6 +34,12 @@ public class ProcessingJob {
     private Double suspicionScore;
     private Double confidence;
     private String behaviour;
+    private UUID attemptId;
+    @Column(nullable = false, columnDefinition = "integer default 0")
+    private int attemptCount;
+    private LocalDateTime heartbeatAt;
+    private LocalDateTime startedAt;
+    private String failureReason;
 
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;

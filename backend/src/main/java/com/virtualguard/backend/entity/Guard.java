@@ -15,6 +15,10 @@ public class Guard {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
+    @OneToOne
+    @JoinColumn(name = "user_id", unique = true)
+    private User user;
+
     @Column(nullable = false)
     private String name;
 

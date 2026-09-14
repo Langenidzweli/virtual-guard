@@ -13,12 +13,6 @@ const statusStyle: Record<CameraStatus, { color: string; glow: string; label: st
 }
 
 function mapPosition(camera: StoreCamera): { x: number; y: number } {
-  const name = camera.label.toLowerCase()
-  if (name.includes('storage')) return { x: 50, y: 10 }
-  if (name.includes('aisle a')) return { x: 30, y: 26 }
-  if (name.includes('aisle b')) return { x: 66, y: 26 }
-  if (name.includes('checkout')) return { x: 22, y: 79 }
-  if (name.includes('entrance')) return { x: 70, y: 82 }
   return { x: camera.x, y: camera.y }
 }
 

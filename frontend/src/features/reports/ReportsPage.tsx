@@ -1,3 +1,5 @@
+import { csvCell } from '@/lib/csv'
+import { ReviewFootage } from '@/components/ReviewFootage'
 import { useEffect, useMemo, useState } from 'react'
 import { CalendarDays, ChevronLeft, ChevronRight, Download, FileText, Filter, Play, Search } from 'lucide-react'
 import { Badge, Button, Card } from '@/components/ui'
@@ -40,15 +42,10 @@ function videoUrl(incident: Incident, token: string | null): string | undefined 
   if (!name) return undefined
   const base = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8090'
   const url = new URL(`/api/video/${encodeURIComponent(name)}`, `${base}/`)
-  if (token) url.searchParams.set('token', token)
+  void token
   return url.toString()
 }
 
-function csvCell(value: unknown): string {
-  let text = String(value ?? '')
-  if (/^[=+\-@]/.test(text)) text = `'${text}`
-  return `"${text.replaceAll('"', '""')}"`
-}
 
 export function ReportsPage() {
   const authToken = useAuthToken()
@@ -58,6 +55,7 @@ export function ReportsPage() {
   const [status, setStatus] = useState<StatusFilter>('ALL')
   const [date, setDate] = useState('')
   const [page, setPage] = useState(1)
+  const [noteId, setNoteId] = useState(() => crypto.randomUUID())
   const [notes, setNotes] = useState('')
   const [decision, setDecision] = useState<Decision | null>(null)
   const [saving, setSaving] = useState(false)
@@ -81,13 +79,15 @@ export function ReportsPage() {
     return true
   }), [incidents, search, status, date])
   const pageCount = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE))
-  const visible = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE)
-  const selected = incidents.find((incident) => incident.id === selectedId) ?? visible[0] ?? null
+  const activePage = Math.min(page, pageCount)
+  const visible = filtered.slice((activePage - 1) * PAGE_SIZE, activePage * PAGE_SIZE)
+  useEffect(() => { setPage((current) => Math.min(current, pageCount)) }, [pageCount])
+  const selected = visible.find((incident) => incident.id === selectedId) ?? visible[0] ?? null
 
-  useEffect(() => { setPage(1) }, [search, status, date])
+  useEffect(() => { setPage(1); setSelectedId(null) }, [search, status, date])
   useEffect(() => {
     if (!selected) { setNotes(''); setDecision(null); return }
-    setNotes(window.localStorage.getItem(`virtual-guard:incident-note:${selected.id}`) ?? '')
+    setNotes(''); setNoteId(crypto.randomUUID())
     setDecision(selected.reviewStatus === 'PENDING_REVIEW' ? null : selected.reviewStatus)
     setSaved(false)
   }, [selected])
@@ -105,8 +105,9 @@ export function ReportsPage() {
     setSaving(true); setSaved(false); setError(null)
     try {
       let updated = selected
+      if (notes.trim()) updated = await incidentService.addNote(selected.id, notes, noteId)
+      setIncidents((items) => items.map((item) => item.id === updated.id ? updated : item))
       if (selected.reviewStatus === 'PENDING_REVIEW' && decision) updated = await incidentService.review(selected.id, decision)
-      window.localStorage.setItem(`virtual-guard:incident-note:${selected.id}`, notes)
       setIncidents((items) => items.map((item) => item.id === updated.id ? updated : item))
       setDecision(updated.reviewStatus === 'PENDING_REVIEW' ? null : updated.reviewStatus)
       setSaved(true)
@@ -145,10 +146,10 @@ export function ReportsPage() {
         {selected ? <><div className="flex items-center justify-between border-b border-line px-5 py-4"><div><h2 className="text-lg font-semibold">Report details</h2><p className="mt-1 text-xs text-text-secondary">ID: {selected.id}</p></div><Badge variant={statusVariant(selected.reviewStatus)}>{selected.reviewStatus.replaceAll('_',' ')}</Badge></div>
           <div className="space-y-4 p-5"><dl className="grid grid-cols-[110px_1fr] gap-x-4 gap-y-2 text-sm"><dt className="text-text-secondary">Detected</dt><dd>{new Date(selected.detectedAt).toLocaleString()}</dd><dt className="text-text-secondary">Camera</dt><dd>{selected.cameraLabel}</dd><dt className="text-text-secondary">Behaviour</dt><dd>{selected.detectionType.replaceAll('_',' ')}</dd><dt className="text-text-secondary">Suspicion</dt><dd>{selected.suspicionScore == null?'--':`${normalizedPercent(selected.suspicionScore).toFixed(1)}%`}</dd></dl>
             <div className="border-y border-line py-3"><div className="mb-2 flex justify-between text-xs"><span>Confidence</span><span>{confidence.toFixed(1)}%</span></div><div className="h-2 overflow-hidden rounded-full bg-surface-3"><div className="h-full rounded-full bg-status-info" style={{width:`${Math.min(100,confidence)}%`}}/></div></div>
-            <div><p className="mb-2 text-xs font-medium">Video evidence</p><div className="grid items-center gap-4 sm:grid-cols-[minmax(0,1.65fr)_minmax(140px,1fr)]">{videoUrl(selected,authToken) ? <video key={selected.id} controls preload="metadata" src={videoUrl(selected,authToken)} className="aspect-video w-full rounded-lg border border-line-strong bg-black object-contain"/> : <div className="flex aspect-video items-center justify-center rounded-lg border border-line-strong bg-surface-2 text-xs text-text-muted">No video evidence available</div>}<Button className="h-12 border-status-info bg-status-info text-white hover:bg-status-info/90" disabled={!videoUrl(selected,authToken)} icon={<Play className="h-4 w-4 fill-current"/>} onClick={()=>{const video=document.querySelector<HTMLVideoElement>(`video[src="${videoUrl(selected,authToken)}"]`);void video?.play()}}>View evidence</Button></div></div>
+            <div><p className="mb-2 text-xs font-medium">Video evidence</p><div className="grid items-center gap-4 sm:grid-cols-[minmax(0,1.65fr)_minmax(140px,1fr)]">{videoUrl(selected,authToken) ? <ReviewFootage key={selected.id} incidentId={selected.id} src={videoUrl(selected,authToken)!}/> : <div className="flex aspect-video items-center justify-center rounded-lg border border-line-strong bg-surface-2 text-xs text-text-muted">No video evidence available</div>}<Button className="h-12 border-status-info bg-status-info text-white hover:bg-status-info/90" disabled={!videoUrl(selected,authToken)} icon={<Play className="h-4 w-4 fill-current"/>} onClick={()=>{const video=document.querySelector<HTMLVideoElement>(`video[data-media-src="${videoUrl(selected,authToken)}"]`);void video?.play()}}>View evidence</Button></div></div>
             <div className="border-t border-line pt-3"><p className="mb-2 text-xs font-medium">Officer decision</p><div className="grid grid-cols-3 gap-2">{([['DISMISSED','Dismiss'],['CONFIRMED','Confirm'],['ESCALATED','Escalate']] as Array<[Decision,string]>).map(([value,label])=><button key={value} disabled={selected.reviewStatus!=='PENDING_REVIEW'} onClick={()=>setDecision(value)} className={`h-9 rounded-lg border text-xs transition-colors disabled:cursor-not-allowed disabled:opacity-60 ${decision===value?(value==='ESCALATED'?'border-status-alert bg-status-alert/10 text-status-alert':value==='CONFIRMED'?'border-status-normal bg-status-normal/10 text-status-normal':'border-status-info bg-status-info/10 text-status-info'):'border-line-strong text-text-secondary hover:bg-surface-2'}`}>{label}</button>)}</div></div>
-            <label className="block"><span className="mb-2 block text-xs text-text-secondary">Investigation notes</span><textarea value={notes} onChange={(e)=>{setNotes(e.target.value);setSaved(false)}} rows={3} placeholder="Add investigation notes…" className="w-full resize-none rounded-lg border border-line-strong bg-surface-2 px-3 py-2 text-sm outline-none placeholder:text-text-muted focus:border-status-info"/></label>
-            <Button className="w-full bg-status-info hover:bg-status-info/90" disabled={saving || (selected.reviewStatus==='PENDING_REVIEW'&&!decision)} onClick={()=>void saveReview()} icon={<Play className="h-3.5 w-3.5"/>}>{saving?'Saving…':saved?'Review saved':'Save review'}</Button>
+            <label className="block"><span className="mb-2 block text-xs text-text-secondary">Investigation notes</span>{selected.notes?.map((note) => <div key={note.id} className="mb-2 rounded border border-line p-2 text-sm"><p className="whitespace-pre-wrap">{note.text}</p><small>{note.author} · {new Date(note.createdAt).toLocaleString()}</small></div>)}<textarea value={notes} onChange={(e)=>{setNotes(e.target.value);setSaved(false)}} rows={3} placeholder="Add investigation notes…" className="w-full resize-none rounded-lg border border-line-strong bg-surface-2 px-3 py-2 text-sm outline-none placeholder:text-text-muted focus:border-status-info"/></label>
+            <Button className="w-full bg-status-info hover:bg-status-info/90" disabled={saving || (!notes.trim() && (selected.reviewStatus!=='PENDING_REVIEW'||!decision))} onClick={()=>void saveReview()} icon={<Play className="h-3.5 w-3.5"/>}>{saving?'Saving…':saved?'Review saved':'Save review'}</Button>
           </div></> : <div className="flex h-full items-center justify-center text-sm text-text-muted">Select a report to view its details.</div>}
       </Card>
     </div>

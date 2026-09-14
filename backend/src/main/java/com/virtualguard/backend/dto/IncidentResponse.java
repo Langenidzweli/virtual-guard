@@ -18,5 +18,5 @@ public record IncidentResponse(
         ReviewStatus reviewStatus,
         LocalDateTime detectedAt,
         LocalDateTime reviewedAt,
-        String reviewedBy) {
+        String reviewedBy, java.util.List<IncidentNote> notes) {
 }

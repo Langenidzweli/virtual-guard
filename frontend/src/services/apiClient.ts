@@ -27,6 +27,29 @@ export function setRefreshToken(token: string | null) {
   else localStorage.removeItem('refreshToken');
 }
 
+let pendingRefresh: Promise<boolean> | null = null;
+export function refreshSession(): Promise<boolean> {
+  if (pendingRefresh) return pendingRefresh;
+  const original = refreshToken;
+  if (!original) return Promise.resolve(false);
+  pendingRefresh = (async () => {
+    try {
+      const response = await fetch(`${API_BASE_URL}/api/auth/refresh`, {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ refreshToken: original }),
+      });
+      if (!response.ok || refreshToken !== original) return false;
+      const result = await response.json();
+      if (refreshToken !== original) return false;
+      setAuthToken(result.accessToken);
+      setRefreshToken(result.refreshToken);
+      return true;
+    } catch { return false; }
+    finally { pendingRefresh = null; }
+  })();
+  return pendingRefresh;
+}
+
 export async function apiClient<T>(
   endpoint: string,
   options: RequestInit = {},
@@ -54,19 +77,12 @@ export async function apiClient<T>(
   const response = await fetch(url, config);
 
   if (response.status === 401) {
-    if (allowRefresh && refreshToken && endpoint !== '/api/auth/refresh') {
-      const refreshResponse = await fetch(`${API_BASE_URL}/api/auth/refresh`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ refreshToken }),
-      });
-      if (refreshResponse.ok) {
-        const refreshed = await refreshResponse.json() as { accessToken: string; refreshToken: string };
-        setAuthToken(refreshed.accessToken);
-        setRefreshToken(refreshed.refreshToken);
-        return apiClient<T>(endpoint, options, false);
-      }
+    if (endpoint === '/api/auth/login') {
+      const error = await response.json().catch(() => ({}));
+      throw new Error(error.error || 'Invalid email or password');
     }
+    if (allowRefresh && endpoint !== '/api/auth/refresh' && await refreshSession())
+      return apiClient<T>(endpoint, options, false);
     setAuthToken(null);
     setRefreshToken(null);
     window.dispatchEvent(new Event(AUTH_EXPIRED_EVENT));

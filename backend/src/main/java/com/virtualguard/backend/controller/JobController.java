@@ -61,7 +61,7 @@ public class JobController {
                         job.getAnnotatedVideoFilePath(),
                         job.getCamera().getId(),
                         job.getVideoFilePath(),
-                        job.getCreatedAt()))
+                        job.getCreatedAt(), job.getFailureReason(), job.getAttemptCount()))
                 .collect(Collectors.toList());
         return ResponseEntity.ok(responses);
     }

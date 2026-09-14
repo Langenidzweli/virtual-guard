@@ -1,3 +1,5 @@
+import { incidentTrend } from '@/lib/incidentTrend'
+import { csvCell } from '@/lib/csv'
 import { useEffect, useMemo, useState } from 'react'
 import { AlertTriangle, CalendarDays, Camera, CheckCircle2, Clock3, Download, Gauge, Info, ShieldAlert, TrendingUp } from 'lucide-react'
 import { Button, Card } from '@/components/ui'
@@ -35,11 +37,7 @@ export function AnalyticsPage() {
     const now = new Date(), days = range === 'all' ? null : Number(range)
     const cutoff = days ? dayStart(new Date(now.getTime() - (days - 1) * 86400000)) : null
     const items = incidents.filter((item) => !cutoff || new Date(item.detectedAt) >= cutoff)
-    const chartDays = days ?? 30
-    const trend = Array.from({ length: chartDays }, (_, index) => {
-      const date = dayStart(new Date(now.getTime() - (chartDays - 1 - index) * 86400000)), next = new Date(date.getTime() + 86400000)
-      return { date, count: items.filter((item) => { const d = new Date(item.detectedAt); return d >= date && d < next }).length }
-    })
+    const trend = incidentTrend(items, days, now)
     const cameras = Object.entries(items.reduce<Record<string, number>>((all, item) => ({ ...all, [item.cameraLabel]: (all[item.cameraLabel] ?? 0) + 1 }), {})).sort((a, b) => b[1] - a[1])
     const reviews = outcomes.map(([status, label, color]) => ({ status, label, color, count: items.filter((item) => item.reviewStatus === status).length }))
     const heat = Array.from({ length: 7 }, (_, weekday) => Array.from({ length: 24 }, (_, hour) => items.filter((item) => { const d = new Date(item.detectedAt); return (d.getDay() + 6) % 7 === weekday && d.getHours() === hour }).length))
@@ -51,7 +49,7 @@ export function AnalyticsPage() {
 
   function exportCsv() {
     const rows = [['Detected at','Camera','Detection','Confidence','Suspicion score','Review status'], ...data.items.map((i) => [i.detectedAt, i.cameraLabel, i.detectionType, percent(i.confidence).toFixed(1), i.suspicionScore ?? '', i.reviewStatus])]
-    const csv = rows.map((row) => row.map((value) => `"${String(value).replaceAll('"', '""')}"`).join(',')).join('\n')
+    const csv = rows.map((row) => row.map(csvCell).join(',')).join('\n')
     const url = URL.createObjectURL(new Blob([csv], { type: 'text/csv' })), link = document.createElement('a')
     link.href = url; link.download = `virtual-guard-analytics-${new Date().toISOString().slice(0, 10)}.csv`; link.click(); URL.revokeObjectURL(url)
   }

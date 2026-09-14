@@ -36,13 +36,20 @@ public class VideoController {
         this.tokenProvider = tokenProvider;
     }
 
+    @org.springframework.web.bind.annotation.PostMapping("/{filename}/ticket")
+    public java.util.Map<String, String> ticket(@PathVariable String filename,
+            org.springframework.security.core.Authentication authentication) {
+        fileStorageService.resolvePath(filename);
+        return java.util.Map.of("ticket", tokenProvider.mediaTicket(authentication.getName(), filename));
+    }
+
     @GetMapping("/{filename}")
     public ResponseEntity<?> getVideo(
             @PathVariable String filename,
-            @RequestParam(required = false) String token,
+            @RequestParam(required = false) String ticket,
             @RequestHeader HttpHeaders headers) {
         try {
-            if (token == null || !tokenProvider.isAccessToken(token)) {
+            if (ticket == null || !tokenProvider.canReadMedia(ticket, filename)) {
                 return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
             }
             if (filename.contains("..") || filename.contains("/") || filename.contains("\\")) {

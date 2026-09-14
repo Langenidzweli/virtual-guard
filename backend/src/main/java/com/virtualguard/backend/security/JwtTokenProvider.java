@@ -49,6 +49,7 @@ public class JwtTokenProvider {
                 .claim("userId", userId.toString())
                 .claim("role", "ROLE_" + role)
                 .claim("tokenType", "access")
+                .claim("authVersion", versionFor(email))
                 .setIssuedAt(now)
                 .setExpiration(expiry)
                 .signWith(key, SignatureAlgorithm.HS256)
@@ -62,6 +63,7 @@ public class JwtTokenProvider {
                 .setSubject(email)
                 .claim("userId", userId.toString())
                 .claim("tokenType", "refresh")
+                .claim("authVersion", versionFor(email))
                 .setIssuedAt(now)
                 .setExpiration(expiry)
                 .signWith(key, SignatureAlgorithm.HS256)
@@ -72,7 +74,36 @@ public class JwtTokenProvider {
         Claims claims = parseClaims(token);
         String email = claims.getSubject();
         UserDetails userDetails = userDetailsService.loadUserByUsername(email);
+        if (!userDetails.isEnabled()) throw new org.springframework.security.authentication.DisabledException("Account is deactivated");
+        long version = userDetails instanceof AccountPrincipal account ? account.getAuthVersion() : 0;
+        Number tokenVersion = claims.get("authVersion", Number.class);
+        if (version != (tokenVersion == null ? 0 : tokenVersion.longValue()))
+            throw new org.springframework.security.authentication.BadCredentialsException("Session revoked. Please log in again.");
         return new UsernamePasswordAuthenticationToken(userDetails, "", userDetails.getAuthorities());
+    }
+
+    private long versionFor(String email) {
+        UserDetails details = userDetailsService.loadUserByUsername(email);
+        if (details == null) return 0; // supports non-account UserDetails providers
+        if (!details.isEnabled()) throw new org.springframework.security.authentication.DisabledException("Account is deactivated");
+        return details instanceof AccountPrincipal account ? account.getAuthVersion() : 0;
+    }
+
+    public String mediaTicket(String email, String filename) {
+        return Jwts.builder().setId(java.util.UUID.randomUUID().toString()).setSubject(email).claim("tokenType", "media")
+                .claim("file", filename).claim("authVersion", versionFor(email))
+                .setIssuedAt(new Date()).setExpiration(new Date(System.currentTimeMillis() + 120_000))
+                .signWith(key, SignatureAlgorithm.HS256).compact();
+    }
+
+    public boolean canReadMedia(String ticket, String filename) {
+        try {
+            Claims claims = parseClaims(ticket);
+            return "media".equals(claims.get("tokenType")) && filename.equals(claims.get("file"))
+                    && getAuthentication(ticket).isAuthenticated();
+        } catch (JwtException | IllegalArgumentException | org.springframework.security.core.AuthenticationException exception) {
+            return false;
+        }
     }
 
     public boolean validateToken(String token) {

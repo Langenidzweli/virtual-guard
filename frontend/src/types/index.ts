@@ -36,6 +36,7 @@ export interface AIDetection {
 }
 
 export interface CameraFeed {
+  failureReason?: string | null
   id: string
   jobId?: string
   behaviour?: string
@@ -88,7 +89,10 @@ export interface Guard {
 
 export type ReviewStatus = 'PENDING_REVIEW' | 'CONFIRMED' | 'DISMISSED' | 'ESCALATED'
 
+export interface IncidentNote { id: string; author: string; text: string; createdAt: string }
+
 export interface Incident {
+  notes?: IncidentNote[]
   id: string
   jobId: string
   cameraId: string

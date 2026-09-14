@@ -25,7 +25,7 @@ public class CameraStatusService {
 
     @Transactional
     public void refresh(String cameraId) {
-        Camera camera = cameraRepository.findById(cameraId).orElse(null);
+        Camera camera = cameraRepository.lockById(cameraId).orElse(null);
         if (camera == null || camera.getStatus() == CameraStatus.OFFLINE) {
             return;
         }

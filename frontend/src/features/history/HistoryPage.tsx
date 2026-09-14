@@ -1,3 +1,5 @@
+import { csvCell } from '@/lib/csv'
+import { ReviewFootage } from '@/components/ReviewFootage'
 import { useEffect, useMemo, useState } from 'react'
 import { ArrowRight, CalendarDays, Check, ChevronDown, ChevronUp, ClipboardCheck, Download, ExternalLink, Eye, FileText, Search, ShieldAlert, X } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
@@ -31,7 +33,7 @@ function evidenceUrl(incident: Incident, token: string | null): string | undefin
   const name = evidenceName(incident)
   if (!name) return undefined
   const base = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8090', url = new URL(`/api/video/${encodeURIComponent(name)}`, `${base}/`)
-  if (token) url.searchParams.set('token', token)
+  void token
   return url.toString()
 }
 
@@ -55,7 +57,7 @@ export function HistoryPage() {
   const filtered = useMemo(() => incidents.filter((incident) => {
     if (filter !== 'ALL' && incident.reviewStatus !== filter) return false
     const query = search.trim().toLowerCase()
-    if (query && !`${incident.cameraLabel} ${incident.detectionType} ${incident.reviewedBy ?? ''} ${window.localStorage.getItem(`virtual-guard:incident-note:${incident.id}`) ?? ''}`.toLowerCase().includes(query)) return false
+    if (query && !`${incident.cameraLabel} ${incident.detectionType} ${incident.reviewedBy ?? ''} ${incident.notes?.map(n => n.text).join(' ') ?? ''}`.toLowerCase().includes(query)) return false
     return !date || new Date(incident.detectedAt).toLocaleDateString('en-CA') === date
   }), [incidents, filter, search, date])
   const grouped = useMemo(() => Object.entries(filtered.reduce<Record<string, Incident[]>>((result, incident) => {
@@ -74,7 +76,7 @@ export function HistoryPage() {
 
   function exportHistory() {
     const rows = [['Detected','Camera','Behaviour','Confidence','Suspicion','Status','Reviewed by'], ...filtered.map((i) => [i.detectedAt,i.cameraLabel,i.detectionType,i.confidence,i.suspicionScore??'',i.reviewStatus,i.reviewedBy??''])]
-    const csv = rows.map((row) => row.map((cell) => `"${String(cell).replaceAll('"','""')}"`).join(',')).join('\n')
+    const csv = rows.map((row) => row.map(csvCell).join(',')).join('\n')
     const url = URL.createObjectURL(new Blob([csv], { type: 'text/csv' })), link = document.createElement('a'); link.href=url; link.download='virtual-guard-review-history.csv'; link.click(); URL.revokeObjectURL(url)
   }
 
@@ -88,14 +90,14 @@ export function HistoryPage() {
     {error && <div className="m-5 rounded-lg border border-status-alert/30 bg-status-alert/10 px-4 py-3 text-sm text-status-alert">{error}</div>}
     {!filtered.length ? <div className="flex min-h-[540px] flex-col items-center justify-center px-6 text-center"><ClipboardCheck className="h-28 w-28 text-[#7084a5]" strokeWidth={1}/><h2 className="mt-6 text-2xl font-semibold">You're all caught up</h2><p className="mt-3 text-sm text-text-secondary">{filter==='PENDING_REVIEW'?'New AI-generated alerts awaiting human review will appear here.':'No incidents match the selected status and filters.'}</p>{filter!=='ALL'&&<Button className="mt-8" onClick={()=>setFilter('ALL')}>View all incidents <ArrowRight className="h-4 w-4"/></Button>}</div> :
       <div className="space-y-7 p-6">{grouped.map(([day, items]) => <section key={day}><h2 className="mb-4 text-lg font-semibold">{new Date(`${day}T12:00:00`).toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'})} <span className="text-xs font-normal text-text-secondary">({items.length} event{items.length===1?'':'s'})</span></h2><div className="relative space-y-2 border-l-2 border-line-strong pl-5">{items.map((incident) => {
-        const open=expandedId===incident.id, detected=new Date(incident.detectedAt), reviewer=incident.reviewedBy??user?.name??'Awaiting review', note=window.localStorage.getItem(`virtual-guard:incident-note:${incident.id}`) || (incident.reviewStatus==='ESCALATED'?'Forwarded for security investigation.':incident.reviewStatus==='DISMISSED'?'Alert reviewed — no further action required.':incident.reviewStatus==='CONFIRMED'?'Incident confirmed after footage review.':'Awaiting an officer decision.')
+        const open=expandedId===incident.id, detected=new Date(incident.detectedAt), reviewer=incident.reviewedBy??user?.name??'Awaiting review', note=incident.notes?.map(n => `${n.author} (${new Date(n.createdAt).toLocaleString()}): ${n.text}`).join('\n') || (incident.reviewStatus==='ESCALATED'?'Forwarded for security investigation.':incident.reviewStatus==='DISMISSED'?'Alert reviewed — no further action required.':incident.reviewStatus==='CONFIRMED'?'Incident confirmed after footage review.':'Awaiting an officer decision.')
         return <div key={incident.id} className="relative"><span className={`absolute -left-[30px] top-7 h-4 w-4 rounded-full ring-4 ring-surface-0 ${statusDot(incident.reviewStatus)}`}/><div className={`overflow-hidden rounded-xl border bg-surface-1 ${open?'border-status-info':'border-line-strong'}`}><div className="grid min-h-[72px] grid-cols-[125px_1fr_1.15fr_.85fr_.85fr_1fr_1.4fr_150px_20px] items-center gap-4 px-5 py-3 text-sm"><b>{detected.toLocaleTimeString([],{hour:'numeric',minute:'2-digit',second:'2-digit'})}</b><div><b>{incident.cameraLabel}</b><small className="block text-text-secondary">Camera</small></div><div>{incident.detectionType.replaceAll('_',' ')}<small className="block text-text-secondary">Behaviour</small></div><div>{normalized(incident.confidence).toFixed(1)}%<small className="block text-text-secondary">Confidence</small></div><div>{incident.suspicionScore==null?'--':`${normalized(incident.suspicionScore).toFixed(1)}%`}<small className="block text-text-secondary">Suspicion</small></div><Badge variant={variant(incident.reviewStatus)} className="w-fit">{statusLabel(incident.reviewStatus)}</Badge><div className="flex items-center gap-3"><span className="flex h-9 w-9 items-center justify-center rounded-full bg-[#31486d] text-xs font-semibold">{reviewer.split(/\s|@/).filter(Boolean).slice(0,2).map(n=>n[0]?.toUpperCase()).join('')}</span><div className="min-w-0"><b className="block truncate">{reviewer}</b><small className="block truncate text-text-secondary">Reviewed by</small></div></div><Button size="sm" icon={<Eye className="h-4 w-4"/>} disabled={!evidenceName(incident)} onClick={()=>setFootage(incident)}>View footage</Button><button onClick={()=>setExpandedId(open?null:incident.id)} aria-label="Toggle review details">{open?<ChevronUp className="h-4 w-4"/>:<ChevronDown className="h-4 w-4"/>}</button></div>
           {open&&<div className="border-t border-line px-6 py-4"><h3 className="mb-4 text-sm font-semibold">Review details</h3><div className="grid gap-5 lg:grid-cols-3"><div className="border-r border-line pr-5"><b className="text-xs text-text-secondary">AI analysis</b><dl className="mt-3 grid grid-cols-2 gap-2 text-sm"><dt className="text-text-secondary">Behaviour</dt><dd>{incident.detectionType.replaceAll('_',' ')}</dd><dt className="text-text-secondary">Confidence</dt><dd>{normalized(incident.confidence).toFixed(1)}%</dd><dt className="text-text-secondary">Suspicion</dt><dd>{incident.suspicionScore==null?'--':`${normalized(incident.suspicionScore).toFixed(1)}%`}</dd></dl></div><div className="border-r border-line pr-5"><b className="text-xs text-text-secondary">Human decision</b>{incident.reviewStatus==='PENDING_REVIEW'?<div className="mt-4 flex flex-wrap gap-2"><Button size="sm" disabled={updating===incident.id} icon={<X className="h-3.5 w-3.5"/>} onClick={()=>void review(incident,'DISMISSED')}>Dismiss</Button><Button size="sm" disabled={updating===incident.id} icon={<Check className="h-3.5 w-3.5"/>} onClick={()=>void review(incident,'CONFIRMED')}>Confirm</Button><Button size="sm" disabled={updating===incident.id} icon={<ShieldAlert className="h-3.5 w-3.5"/>} onClick={()=>void review(incident,'ESCALATED')}>Escalate</Button></div>:<dl className="mt-3 grid grid-cols-2 gap-2 text-sm"><dt className="text-text-secondary">Decision</dt><dd><Badge variant={variant(incident.reviewStatus)}>{statusLabel(incident.reviewStatus)}</Badge></dd><dt className="text-text-secondary">Reviewed by</dt><dd>{reviewer}</dd><dt className="text-text-secondary">Timestamp</dt><dd>{incident.reviewedAt?new Date(incident.reviewedAt).toLocaleString():'--'}</dd></dl>}</div><div><b className="text-xs text-text-secondary">Audit note</b><p className="mt-3 flex gap-2 text-sm"><FileText className="h-4 w-4 shrink-0 text-status-info"/>{note}</p><div className="mt-5 flex flex-wrap gap-2"><Button size="sm" icon={<Eye className="h-4 w-4"/>} disabled={!evidenceName(incident)} onClick={()=>setFootage(incident)}>View footage</Button><Button size="sm" icon={<ExternalLink className="h-4 w-4"/>} onClick={()=>navigate(ROUTES.reports)}>Open incident</Button></div></div></div></div>}
         </div></div>
       })}</div></section>)}</div>}
 
     <Modal open={footage!==null} onClose={()=>setFootage(null)} title={`${footage?.cameraLabel??'Incident'} footage`}>
-      {footage&&evidenceUrl(footage,authToken)&&<video controls autoPlay preload="metadata" src={evidenceUrl(footage,authToken)} className="aspect-video w-full rounded-lg bg-black object-contain"/>}
+      {footage&&evidenceUrl(footage,authToken)&&<ReviewFootage key={footage.id} incidentId={footage.id} src={evidenceUrl(footage,authToken)!}/>}
     </Modal>
   </Card>
 }

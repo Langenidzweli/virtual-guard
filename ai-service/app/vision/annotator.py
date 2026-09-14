@@ -3,6 +3,7 @@ import subprocess
 from pathlib import Path
 
 from imageio_ffmpeg import get_ffmpeg_exe
+from app.vision.pose import draw_pose
 
 
 class VideoAnnotator:
@@ -12,6 +13,7 @@ class VideoAnnotator:
     def annotate_frame(self, frame, detections):
         output = frame.copy()
         for detection in detections:
+            draw_pose(output, detection.get("keypoints", []))
             bbox = detection.get("bbox")
             if not bbox:
                 continue

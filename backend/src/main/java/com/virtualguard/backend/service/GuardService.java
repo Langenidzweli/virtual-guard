@@ -20,6 +20,8 @@ import java.util.stream.Collectors;
 public class GuardService {
 
     private final GuardRepository guardRepository;
+    private final com.virtualguard.backend.repository.UserRepository userRepository;
+    private final org.springframework.security.crypto.password.PasswordEncoder passwordEncoder;
 
     @Transactional(readOnly = true)
     public List<GuardResponseDto> getAllGuards() {
@@ -51,6 +53,16 @@ public class GuardService {
         guard.setBadgeNumber(request.getBadgeNumber());
         guard.setStatus(GuardStatus.ACTIVE);
         guard.setDateJoined(LocalDate.now());
+        guard.setUser(userRepository.findByEmail(request.getEmail()).orElseGet(() -> {
+            if (request.getPassword() == null || request.getPassword().length() < 12)
+                throw new IllegalArgumentException("A password of at least 12 characters is required for a new login account");
+            var user = new com.virtualguard.backend.entity.User();
+            user.setEmail(request.getEmail());
+            user.setName(request.getName());
+            user.setPassword(passwordEncoder.encode(request.getPassword()));
+            user.setRole(com.virtualguard.backend.enums.Role.SECURITY_GUARD);
+            return userRepository.save(user);
+        }));
 
         Guard saved = guardRepository.save(guard);
         return toResponseDto(saved);
@@ -68,6 +80,15 @@ public class GuardService {
                 .filter(existing -> !existing.getId().equals(id))
                 .ifPresent(existing -> { throw new IllegalArgumentException("Badge number already exists: " + request.getBadgeNumber()); });
 
+        var user = guard.getUser() != null ? guard.getUser() : userRepository.findByEmail(guard.getEmail()).orElse(null);
+        if (user != null) {
+            userRepository.findByEmail(request.getEmail()).filter(other -> !other.getId().equals(user.getId()))
+                    .ifPresent(other -> { throw new IllegalArgumentException("Email belongs to another login account"); });
+            if (!user.getEmail().equals(request.getEmail())) user.setAuthVersion(user.getAuthVersion() + 1);
+            user.setEmail(request.getEmail());
+            user.setName(request.getName());
+            guard.setUser(userRepository.save(user));
+        }
         guard.setName(request.getName());
         guard.setEmail(request.getEmail());
         guard.setPhone(request.getPhone());
@@ -82,6 +103,11 @@ public class GuardService {
         Guard guard = guardRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Guard not found: " + id));
 
+        var user = guard.getUser() != null ? guard.getUser() : userRepository.findByEmail(guard.getEmail()).orElse(null);
+        if (user != null && guard.getStatus() != status) {
+            user.setAuthVersion(user.getAuthVersion() + 1);
+            guard.setUser(userRepository.save(user));
+        }
         guard.setStatus(status);
         Guard updated = guardRepository.save(guard);
         return toResponseDto(updated);

@@ -14,5 +14,5 @@ public record JobProgressResponse(
                 String annotatedVideoFileName,
                 String cameraId,
                 String videoFileName,
-                LocalDateTime createdAt) {
+                LocalDateTime createdAt, String failureReason, int attemptCount) {
 }

@@ -45,6 +45,8 @@ def _resolve_model_path(model_name: str, fallback_name: str):
 
 
 class Config:
+    POSE_ENABLED = os.getenv("POSE_ENABLED", "true").lower() in {"true", "1", "yes"}
+    POSE_MODEL_PATH = str((PROJECT_ROOT / "ai-service" / os.getenv("POSE_MODEL_PATH", "models/yolov8n-pose.pt")).resolve())
     SPRING_BOOT_URL = os.getenv("SPRING_BOOT_URL", "http://localhost:8090")
     VISION_MODEL = os.getenv("VISION_MODEL", "virtual_guard_mall_detector_v1")
     BASE_MODEL_PATH = os.getenv("BASE_MODEL_PATH", "./models/yolov8n.pt")

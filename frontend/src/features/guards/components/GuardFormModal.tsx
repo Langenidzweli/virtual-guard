@@ -13,7 +13,7 @@ interface GuardFormModalProps {
   onSubmit: (values: Omit<Guard, 'id' | 'status' | 'dateJoined'>) => void
 }
 
-const EMPTY_FORM = { name: '', email: '', phone: '', badgeNumber: '' }
+const EMPTY_FORM = { name: '', email: '', phone: '', badgeNumber: '', password: '' }
 
 export function GuardFormModal({ mode, guard, open, onClose, onSubmit }: GuardFormModalProps) {
   const [form, setForm] = useState(EMPTY_FORM)
@@ -25,7 +25,7 @@ export function GuardFormModal({ mode, guard, open, onClose, onSubmit }: GuardFo
         name: guard.name,
         email: guard.email,
         phone: guard.phone,
-        badgeNumber: guard.badgeNumber,
+        badgeNumber: guard.badgeNumber, password: '',
       })
     } else {
       setForm(EMPTY_FORM)
@@ -66,6 +66,7 @@ export function GuardFormModal({ mode, guard, open, onClose, onSubmit }: GuardFo
           readOnly={readOnly}
           required
         />
+        {mode === 'add' && <Input label="Initial login password (new accounts)" type="password" autoComplete="new-password" minLength={12} value={form.password} onChange={(e) => setForm({...form, password: e.target.value})} />}
         <Input
           id="guard-phone"
           label="Phone"

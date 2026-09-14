@@ -18,6 +18,10 @@ public class Incident {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
+    @JdbcTypeCode(SqlTypes.JSON)
+    @Column(columnDefinition = "jsonb")
+    private java.util.List<com.virtualguard.backend.dto.IncidentNote> notes = new java.util.ArrayList<>();
+
     @ManyToOne
     @JoinColumn(name = "job_id", nullable = false)
     private ProcessingJob job;

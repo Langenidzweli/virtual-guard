@@ -9,6 +9,7 @@ import asyncio
 from app.models.behaviour import BehaviourAnalyzer
 from app.vision.video_pipeline import process_video_pipeline
 from app.vision.evidence import compact_detections
+from app.vision.review_segments import find_review_segments
 from app.core.config import config
 
 router = APIRouter()
@@ -17,11 +18,13 @@ logger = logging.getLogger(__name__)
 # Load the behaviour model once when the service starts.
 behaviour_analyzer = BehaviourAnalyzer()
 analysis_slots = asyncio.Semaphore(config.MAX_CONCURRENT_ANALYSES)
+active_attempts = set()
 
 class JobRequest(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
     job_id: UUID
+    attempt_id: UUID
     video_path: str
 
 class ConvertRequest(BaseModel):
@@ -40,6 +43,9 @@ async def analyze_video(
     if not Path(job.video_path).is_file():
         raise HTTPException(status_code=404, detail=f"Video not found: {job.video_path}")
     
+    if job.attempt_id in active_attempts:
+        return {"status": "accepted", "job_id": job.job_id}
+    active_attempts.add(job.attempt_id)
     background_tasks.add_task(process_video, job)
     return {"status": "accepted", "job_id": job.job_id}
 
@@ -86,20 +92,34 @@ def verify_api_key(provided_api_key: str | None):
         raise HTTPException(status_code=403, detail="Invalid internal API key")
 
 async def process_video(job: JobRequest):
-    async with analysis_slots:
-        await _process_video(job)
+    async def heartbeat():
+        url = f"{config.SPRING_BOOT_URL.rstrip('/')}/internal/jobs/{job.job_id}/progress?attemptId={job.attempt_id}"
+        while True:
+            await send_progress(url, "heartbeat", 0)
+            await asyncio.sleep(15)
+    pulse = asyncio.create_task(heartbeat())
+    try:
+        async with analysis_slots:
+            await _process_video(job)
+    finally:
+        pulse.cancel()
+        try:
+            await pulse
+        except asyncio.CancelledError:
+            pass
+        active_attempts.discard(job.attempt_id)
 
 
 async def _process_video(job: JobRequest):
     backend_base_url = config.SPRING_BOOT_URL.rstrip("/")
     job_url = f"{backend_base_url}/internal/jobs/{job.job_id}"
-    progress_url = f"{job_url}/progress"
-    callback_url = f"{job_url}/callback"
+    progress_url = f"{job_url}/progress?attemptId={job.attempt_id}"
+    callback_url = f"{job_url}/callback?attemptId={job.attempt_id}"
     try:
         await send_progress(progress_url, "validating-video", 10)
 
         source_path = Path(job.video_path)
-        output_path = source_path.with_name(f"{source_path.stem}_annotated.mp4")
+        output_path = source_path.with_name(f"{source_path.stem}_{job.attempt_id}_annotated.mp4")
 
         await send_progress(progress_url, "vision-analysis", 20)
         vision_result = await asyncio.to_thread(
@@ -120,6 +140,13 @@ async def _process_video(job: JobRequest):
 
         detections, detection_summary = compact_detections(vision_result.get("detections", {}))
 
+        review_segments = []
+        if result.get('behaviour') == 'shoplifting':
+            try:
+                review_segments = await asyncio.to_thread(find_review_segments, behaviour_analyzer, job.video_path)
+            except Exception:
+                logger.exception("Review segment analysis unavailable for %s; retaining full footage", job.job_id)
+
         callback_payload = {
             "behaviour": result.get('behaviour', 'unknown'),
             "confidence": result.get('confidence', 0),
@@ -128,6 +155,7 @@ async def _process_video(job: JobRequest):
             "detection_summary": detection_summary,
             "annotated_video_path": str(output_path),
             "vision_status": "completed",
+            "review_segments": review_segments,
         }
 
         await send_callback(callback_url, callback_payload)
@@ -144,7 +172,7 @@ async def send_progress(progress_url: str, stage: str, progress: int):
             async with httpx.AsyncClient(timeout=10.0) as client:
                 response = await client.post(
                     progress_url,
-                    json={"stage": stage, "progress": progress},
+                    json={"stage": stage, "progress": progress, "reason": "AI processing failed; check the AI service logs and retry." if stage == "failed" else None},
                     headers={"X-API-Key": config.API_KEY}
                 )
                 response.raise_for_status()

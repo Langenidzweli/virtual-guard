@@ -31,7 +31,7 @@ public class JobService {
     private final ProcessingJobRepository jobRepository;
     private final CameraRepository cameraRepository;
     private final FileStorageService fileStorageService;
-    private final IncidentService incidentService;
+    private final JobLifecycle lifecycle;
     private final RestClient.Builder restClientBuilder;
 
     @Value("${app.fastapi.base-url:http://localhost:8000}")
@@ -45,6 +45,7 @@ public class JobService {
         Camera camera = cameraRepository.findById(cameraId)
                 .orElseThrow(() -> new ResourceNotFoundException("Camera not found: " + cameraId));
 
+        if (!camera.isMonitored()) throw new IllegalStateException("Monitoring is disabled for this camera");
         String filename = fileStorageService.storeFile(file);
         try {
             ConvertResponse converted = restClientBuilder.build().post()
@@ -92,88 +93,26 @@ public class JobService {
                 job.getAnnotatedVideoFilePath(),
                 job.getCamera().getId(),
                 job.getVideoFilePath(),
-                job.getCreatedAt());
+                job.getCreatedAt(), job.getFailureReason(), job.getAttemptCount());
     }
 
     public List<ProcessingJob> getAllJobs() {
         return jobRepository.findAll(Sort.by(Sort.Direction.DESC, "createdAt"));
     }
 
-    @Transactional
     public void startJob(UUID jobId) {
-        ProcessingJob job = jobRepository.findById(jobId)
-                .orElseThrow(() -> new ResourceNotFoundException("Job not found: " + jobId));
-
-        if (job.getStatus() != JobStatus.QUEUED && job.getStatus() != JobStatus.FAILED) {
-            throw new IllegalStateException("Only queued or failed jobs can be started");
-        }
-
-        job.setStatus(JobStatus.PROCESSING);
-        job.setCurrentStage("extracting-frames");
-        job.setProgressPercent(10);
-        jobRepository.save(job);
-
+        var claim = lifecycle.claim(jobId);
+        if (claim == null) return;
         try {
-            String videoPath = fileStorageService.resolvePath(job.getVideoFilePath());
-            restClientBuilder.build().post()
-                    .uri(fastApiBaseUrl + "/analyze")
-                    .contentType(MediaType.APPLICATION_JSON)
-                    .header("X-API-Key", apiKey)
-                    .body(new AiJobRequest(
-                            job.getId().toString(),
-                            videoPath))
-                    .retrieve()
-                    .toBodilessEntity();
+            restClientBuilder.build().post().uri(fastApiBaseUrl + "/analyze")
+                .contentType(MediaType.APPLICATION_JSON).header("X-API-Key", apiKey)
+                .body(new AiJobRequest(claim.jobId().toString(), claim.attemptId().toString(),
+                        fileStorageService.resolvePath(claim.filename())))
+                .retrieve().toBodilessEntity();
         } catch (RuntimeException exception) {
-            job.setStatus(JobStatus.FAILED);
-            job.setCurrentStage("failed");
-            job.setProgressPercent(0);
-            jobRepository.save(job);
-            throw new RuntimeException("Unable to start AI analysis", exception);
+            lifecycle.fail(jobId, claim.attemptId(), "Unable to reach AI analysis service. Retry analysis.");
+            throw new IllegalStateException("Unable to start AI analysis. The job is marked failed and can be retried.");
         }
     }
-
-    @Transactional
-    public void updateProgress(UUID jobId, String stage, int progress) {
-        ProcessingJob job = jobRepository.findById(jobId)
-                .orElseThrow(() -> new ResourceNotFoundException("Job not found: " + jobId));
-
-        if (job.getStatus() == JobStatus.COMPLETED) {
-            return;
-        }
-        if ("failed".equalsIgnoreCase(stage)) {
-            job.setStatus(JobStatus.FAILED);
-            progress = 0;
-        } else if (progress >= 100 || "complete".equalsIgnoreCase(stage)) {
-            job.setStatus(JobStatus.COMPLETED);
-            progress = 100;
-        } else {
-            job.setStatus(JobStatus.PROCESSING);
-        }
-        job.setCurrentStage(stage);
-        job.setProgressPercent(progress);
-        jobRepository.save(job);
-    }
-
-    @Transactional
-    public void completeJob(UUID jobId, com.virtualguard.backend.dto.AiCallbackRequest result) {
-        ProcessingJob job = jobRepository.findById(jobId)
-                .orElseThrow(() -> new ResourceNotFoundException("Job not found: " + jobId));
-        job.setStatus(JobStatus.COMPLETED);
-        job.setCurrentStage("complete");
-        job.setProgressPercent(100);
-        job.setBehaviour(result.behaviour());
-        job.setSuspicionScore(result.suspicion_score());
-        job.setConfidence(result.confidence());
-        if (result.annotated_video_path() != null) {
-            job.setAnnotatedVideoFilePath(Paths.get(result.annotated_video_path()).getFileName().toString());
-        }
-        ProcessingJob savedJob = jobRepository.save(job);
-        incidentService.createFromAiResult(savedJob, result);
-    }
-
-    private record AiJobRequest(
-            String job_id,
-            String video_path) {
-    }
+    private record AiJobRequest(String job_id, String attempt_id, String video_path) {}
 }

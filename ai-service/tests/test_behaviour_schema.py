@@ -80,6 +80,7 @@ class BehaviourSchemaTests(unittest.TestCase):
         client = TestClient(app)
         payload = {
             "job_id": "22222222-2222-2222-2222-222222222222",
+            "attempt_id": "33333333-3333-3333-3333-333333333333",
             "video_path": os.path.join("tests", "tmp_synthetic_motion.mp4"),
         }
 
@@ -97,7 +98,7 @@ class BehaviourSchemaTests(unittest.TestCase):
                 self.assertEqual(callback_mock.call_count, 1)
                 self.assertEqual(
                     callback_mock.call_args.args[0],
-                    f"{config.SPRING_BOOT_URL.rstrip('/')}/internal/jobs/22222222-2222-2222-2222-222222222222/callback",
+                    f"{config.SPRING_BOOT_URL.rstrip('/')}/internal/jobs/22222222-2222-2222-2222-222222222222/callback?attemptId=33333333-3333-3333-3333-333333333333",
                 )
         finally:
             if os.path.exists(payload["video_path"]):
@@ -118,6 +119,7 @@ class BehaviourSchemaTests(unittest.TestCase):
         client = TestClient(app)
         response = client.post("/analyze", json={
             "job_id": "33333333-3333-3333-3333-333333333333",
+            "attempt_id": "33333333-3333-3333-3333-333333333333",
             "video_path": "missing.mp4",
         })
         self.assertEqual(response.status_code, 403)

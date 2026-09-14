@@ -32,6 +32,9 @@ public class User {
     @Column(nullable = false)
     private Role role;
 
+    @Column(nullable = false, columnDefinition = "bigint default 0")
+    private long authVersion;
+
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 

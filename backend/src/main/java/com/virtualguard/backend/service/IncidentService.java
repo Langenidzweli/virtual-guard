@@ -48,6 +48,7 @@ public class IncidentService {
         evidence.put("visionStatus", request.vision_status());
         evidence.put("detections", request.detections() == null ? List.of() : request.detections());
         evidence.put("detectionSummary", request.detection_summary() == null ? Map.of() : request.detection_summary());
+        evidence.put("reviewSegments", request.review_segments() == null ? List.of() : request.review_segments());
         incident.setBoundingBoxes(evidence);
 
         incidentRepository.save(incident);
@@ -72,7 +73,7 @@ public class IncidentService {
         if (status == ReviewStatus.PENDING_REVIEW) {
             throw new IllegalArgumentException("A review must confirm, dismiss, or escalate the incident");
         }
-        Incident incident = findIncident(id);
+        Incident incident = incidentRepository.lockById(id).orElseThrow(() -> new ResourceNotFoundException("Incident not found: " + id));
         if (incident.getReviewStatus() != ReviewStatus.PENDING_REVIEW) {
             throw new IllegalStateException("Incident has already been reviewed");
         }
@@ -82,6 +83,18 @@ public class IncidentService {
         Incident saved = incidentRepository.save(incident);
         cameraStatusService.refresh(saved.getJob().getCamera().getId());
         return toResponse(saved);
+    }
+
+    @Transactional
+    public IncidentResponse addNote(UUID id, com.virtualguard.backend.dto.NoteRequest request, String author) {
+        Incident incident = incidentRepository.lockById(id).orElseThrow(() -> new ResourceNotFoundException("Incident not found: " + id));
+        var notes = new java.util.ArrayList<>(incident.getNotes() == null ? List.<com.virtualguard.backend.dto.IncidentNote>of() : incident.getNotes());
+        if (notes.stream().noneMatch(note -> note.id().equals(request.id()))) {
+            notes.add(new com.virtualguard.backend.dto.IncidentNote(request.id(), author, request.text().trim(), LocalDateTime.now()));
+            incident.setNotes(notes);
+            incidentRepository.save(incident);
+        }
+        return toResponse(incident);
     }
 
     private Incident findIncident(UUID id) {
@@ -103,7 +116,7 @@ public class IncidentService {
                 incident.getReviewStatus(),
                 incident.getDetectedAt(),
                 incident.getReviewedAt(),
-                incident.getReviewedBy());
+                incident.getReviewedBy(), incident.getNotes() == null ? List.of() : incident.getNotes());
     }
 
     private IncidentSummaryResponse toSummaryResponse(Incident incident) {
@@ -120,7 +133,7 @@ public class IncidentService {
                 incident.getReviewStatus(),
                 incident.getDetectedAt(),
                 incident.getReviewedAt(),
-                incident.getReviewedBy());
+                incident.getReviewedBy(), incident.getNotes() == null ? List.of() : incident.getNotes());
     }
 
     private String annotatedVideoFileName(Incident incident) {

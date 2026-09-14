@@ -6,6 +6,8 @@ import cv2
 from app.vision.annotator import VideoAnnotator
 from app.vision.detector import YOLODetector
 from app.vision.tracker import SimpleTracker
+from app.core.config import config
+from app.vision.pose import PoseEstimator, attach_poses
 
 
 def process_video_pipeline(video_path, output_path=None, confidence_threshold=0.5, analysis_fps=5.0):
@@ -13,6 +15,7 @@ def process_video_pipeline(video_path, output_path=None, confidence_threshold=0.
         raise FileNotFoundError(video_path)
     detector = YOLODetector(confidence_threshold=confidence_threshold)
     tracker = SimpleTracker()
+    pose_estimator = PoseEstimator(config.POSE_MODEL_PATH) if config.POSE_ENABLED else None
     annotator = VideoAnnotator()
     source = Path(video_path)
     output = Path(output_path) if output_path else source.with_name(f"{source.stem}_annotated.mp4")
@@ -34,6 +37,8 @@ def process_video_pipeline(video_path, output_path=None, confidence_threshold=0.
         if frame_index % frame_stride == 0:
             detections = detector.detect_frame(frame, conf_threshold=confidence_threshold)
             last_tracked = tracker.update(detections)
+            if pose_estimator is not None:
+                attach_poses(last_tracked, pose_estimator.detect(frame))
             for detection in last_tracked:
                 detection["label"] = detection.get("class_name", "OBJECT")
             analyzed_frame_count += 1

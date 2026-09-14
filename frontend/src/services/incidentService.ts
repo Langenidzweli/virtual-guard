@@ -2,6 +2,9 @@ import type { Incident, ReviewStatus } from '@/types'
 import { api } from './apiClient'
 
 export const incidentService = {
+  addNote(id: string, text: string, noteId: string): Promise<Incident> {
+    return api.post<Incident>(`/api/incidents/${id}/notes`, { id: noteId, text })
+  },
   list(status?: ReviewStatus): Promise<Incident[]> {
     const query = status ? `?status=${status}` : ''
     return api.get<Incident[]>(`/api/incidents${query}`)

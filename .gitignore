@@ -35,6 +35,9 @@ replay_pid*.log
 # Node.js
 frontend/node_modules/
 frontend/dist/
+/output/
+# npm is used in frontend; the root lockfile is an accidental local artifact.
+/package-lock.json
 *.tsbuildinfo
 
 # Runtime data and uploaded evidence
