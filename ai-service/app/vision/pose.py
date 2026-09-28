@@ -3,6 +3,7 @@ import math
 from pathlib import Path
 
 from app.vision.tracker import SimpleTracker
+from app.vision.model_cache import get_model
 
 # Zero-based COCO 17-keypoint connections: face, arms, torso and legs.
 SKELETON = ((0, 1), (0, 2), (1, 3), (2, 4), (5, 6), (5, 7),
@@ -12,14 +13,15 @@ SKELETON = ((0, 1), (0, 2), (1, 3), (2, 4), (5, 6), (5, 7),
 
 class PoseEstimator:
     def __init__(self, model_path):
-        from ultralytics import YOLO
         if not Path(model_path).is_file():
             raise FileNotFoundError(f'Pose weights missing: {model_path}')
-        self.model = YOLO(str(model_path), task='pose')
+        self.model, self._model_lock = get_model(model_path, task='pose')
 
     def detect(self, frame):
         poses = []
-        for result in self.model(frame, conf=0.25, verbose=False):
+        with self._model_lock:
+            results = self.model(frame, conf=0.25, verbose=False)
+        for result in results:
             if result.keypoints is None:
                 continue
             for box, points in zip(result.boxes, result.keypoints.data.cpu().tolist()):

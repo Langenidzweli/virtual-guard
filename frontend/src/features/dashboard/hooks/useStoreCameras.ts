@@ -1,4 +1,3 @@
-// frontend/src/features/dashboard/hooks/useStoreCameras.ts
 
 import { useEffect, useState } from 'react';
 import { cameraService } from '@/services/cameraService';

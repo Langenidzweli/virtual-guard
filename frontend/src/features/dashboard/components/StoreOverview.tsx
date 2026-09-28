@@ -21,13 +21,13 @@ export function StoreOverview({
     <Card>
       <CardHeader title="Store Overview" />
       <div className="grid grid-cols-2 gap-3 p-4">
-        <StatCard label="Store Status" value="Operational" dotStatus="normal" />
+        <StatCard label="Review mode" value="Recordings" dotStatus="idle" />
         <StatCard
           label="AI Status"
-          value={isMonitoring ? 'Monitoring' : 'Idle'}
+          value={isMonitoring ? 'Analyzing' : 'Idle'}
           dotStatus={isMonitoring ? 'normal' : 'idle'}
         />
-        <StatCard label="Cameras Online" value={camerasOnline} icon={Video} />
+        <StatCard label="Enabled cameras" value={camerasOnline} icon={Video} />
         <StatCard
           label="Active Alerts"
           value={activeAlerts}

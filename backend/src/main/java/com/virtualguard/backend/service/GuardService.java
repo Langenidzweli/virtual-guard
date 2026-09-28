@@ -46,6 +46,10 @@ public class GuardService {
             throw new IllegalArgumentException("Badge number already exists: " + request.getBadgeNumber());
         }
 
+        userRepository.findByEmail(request.getEmail()).ifPresent(existing -> {
+            if (existing.getRole() != com.virtualguard.backend.enums.Role.SECURITY_GUARD)
+                throw new IllegalArgumentException("Only security guard accounts can be linked");
+        });
         Guard guard = new Guard();
         guard.setName(request.getName());
         guard.setEmail(request.getEmail());
@@ -116,6 +120,7 @@ public class GuardService {
     private GuardResponseDto toResponseDto(Guard guard) {
         GuardResponseDto dto = new GuardResponseDto();
         dto.setId(guard.getId());
+        dto.setLoginAvailable(guard.getUser() != null || userRepository.findByEmail(guard.getEmail()).isPresent());
         dto.setName(guard.getName());
         dto.setEmail(guard.getEmail());
         dto.setPhone(guard.getPhone());

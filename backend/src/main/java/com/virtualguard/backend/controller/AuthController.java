@@ -29,6 +29,19 @@ public class AuthController {
     private final AuthenticationManager authenticationManager;
     private final JwtTokenProvider tokenProvider;
     private final UserRepository userRepository;
+    private final com.virtualguard.backend.service.PasswordService passwordService;
+
+    @org.springframework.web.bind.annotation.GetMapping("/me")
+    public UserDto me(Authentication authentication) {
+        return toUserDto(userRepository.findByEmail(authentication.getName())
+                .orElseThrow(() -> new BadCredentialsException("Account not found")));
+    }
+
+    @PostMapping("/change-password")
+    public LoginResponse changePassword(Authentication authentication,
+            @Valid @RequestBody com.virtualguard.backend.dto.ChangePasswordRequest request) {
+        return buildTokenResponse(passwordService.change(authentication.getName(), request));
+    }
 
     @PostMapping("/login")
     public ResponseEntity<LoginResponse> login(@Valid @RequestBody LoginRequest request) {
@@ -59,11 +72,16 @@ public class AuthController {
         String accessToken = tokenProvider.generateAccessToken(user.getId(), user.getEmail(), user.getRole().name());
         String refreshToken = tokenProvider.generateRefreshToken(user.getId(), user.getEmail());
 
+        return new LoginResponse(accessToken, refreshToken, toUserDto(user));
+    }
+
+    private UserDto toUserDto(User user) {
         UserDto userDto = new UserDto();
         userDto.setId(user.getId());
         userDto.setEmail(user.getEmail());
         userDto.setName(user.getName());
         userDto.setRole(user.getRole());
-        return new LoginResponse(accessToken, refreshToken, userDto);
+        userDto.setMustChangePassword(user.isMustChangePassword());
+        return userDto;
     }
 }

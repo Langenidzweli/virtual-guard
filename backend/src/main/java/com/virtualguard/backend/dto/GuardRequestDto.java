@@ -6,6 +6,7 @@ import lombok.Data;
 
 @Data
 public class GuardRequestDto {
+    @lombok.ToString.Exclude
     private String password;
     @NotBlank(message = "Name is required")
     private String name;

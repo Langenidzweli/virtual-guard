@@ -9,6 +9,7 @@ import java.util.UUID;
 @Data
 public class GuardResponseDto {
     private UUID id;
+    private boolean loginAvailable;
     private String name;
     private String email;
     private String phone;

@@ -23,6 +23,7 @@ public class User {
     private String email;
 
     @Column(nullable = false)
+    @lombok.ToString.Exclude
     private String password;
 
     @Column(nullable = false)
@@ -34,6 +35,9 @@ public class User {
 
     @Column(nullable = false, columnDefinition = "bigint default 0")
     private long authVersion;
+
+    @Column(nullable = false, columnDefinition = "boolean default false")
+    private boolean mustChangePassword;
 
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;

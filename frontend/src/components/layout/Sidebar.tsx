@@ -31,7 +31,6 @@ export function Sidebar({ open, onClose }: SidebarProps) {
   }, [])
   return (
     <>
-      {/* Backdrop */}
       <div
         aria-hidden="true"
         onClick={onClose}
@@ -41,7 +40,6 @@ export function Sidebar({ open, onClose }: SidebarProps) {
         )}
       />
 
-      {/* Drawer */}
       <aside
         className={cn(
           'fixed inset-y-0 left-0 z-50 flex w-72 max-w-[85vw] shrink-0 flex-col',

@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Menu, Bell, ChevronDown, ShieldUser, LogOut } from 'lucide-react'
+import { Menu, Bell, ChevronDown, ShieldUser, LogOut, KeyRound } from 'lucide-react'
 import { IconButton } from '@/components/ui'
 import { useClock } from '@/lib/useClock'
 import { useAuth } from '@/features/auth/useAuth'
@@ -102,7 +102,7 @@ export function Header({ title, subtitle, onMenuClick }: HeaderProps) {
           {dateFormatter.format(now)}&nbsp;&nbsp;{timeFormatter.format(now)}
         </time>
 
-        <IconButton label="Notifications" onClick={() => navigate(ROUTES.history)}>
+        <IconButton label="Notifications" onClick={() => navigate(ROUTES.reports)}>
           <Bell className="h-[18px] w-[18px]" strokeWidth={1.75} />
           {unreadNotifications > 0 && (
             <span className="absolute -top-0.5 -right-0.5 flex h-4 min-w-4 items-center justify-center rounded-full bg-brand-red px-1 text-[10px] font-semibold text-white">
@@ -121,7 +121,7 @@ export function Header({ title, subtitle, onMenuClick }: HeaderProps) {
                 <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-surface-3 text-text-secondary">
                   <ShieldUser className="h-4 w-4" strokeWidth={1.75} />
                 </span>
-                <span className="hidden text-left leading-tight sm:block">
+                <span className="hidden max-w-40 truncate text-left leading-tight sm:block">
                   <span className="block text-sm font-medium text-text-primary">{user.name}</span>
                   <span className="block text-xs text-text-muted">
                     {ROLE_LABEL[user.role] ?? user.role}
@@ -132,6 +132,7 @@ export function Header({ title, subtitle, onMenuClick }: HeaderProps) {
 
               {menuOpen && (
                 <div className="absolute right-0 z-50 mt-2 w-44 overflow-hidden rounded-lg border border-line bg-surface-1 shadow-xl">
+                  <button onClick={() => { setMenuOpen(false); navigate(ROUTES.changePassword) }} className="flex w-full items-center gap-2 px-3.5 py-2.5 text-sm text-text-secondary hover:bg-surface-2"><KeyRound className="h-4 w-4"/>Change password</button>
                   <button
                     onClick={handleLogout}
                     className="flex w-full items-center gap-2 px-3.5 py-2.5 text-sm text-text-secondary transition-colors hover:bg-surface-2 hover:text-text-primary"

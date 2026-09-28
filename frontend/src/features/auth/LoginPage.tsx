@@ -1,24 +1,27 @@
-// frontend/src/features/auth/LoginPage.tsx
+import { Eye, EyeOff } from 'lucide-react'
 
 import { useState, type FormEvent } from 'react';
-import { Navigate, useLocation, useNavigate } from 'react-router-dom';
+import { Navigate, useLocation } from 'react-router-dom';
 import { Card, Input, Button } from '@/components/ui';
 import { useAuth } from './useAuth';
 import { ROUTES } from '@/app/routes';
 import logo from '@/assets/logo.png';
 
 export function LoginPage() {
-  const { login, isAuthenticated } = useAuth();
-  const navigate = useNavigate();
+  const { login, isAuthenticated, user, isInitializing } = useAuth();
   const location = useLocation();
 
+  const [showPassword, setShowPassword] = useState(false);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
+  if (isInitializing) return <p role="status" className="p-8 text-center">Loading account...</p>;
   if (isAuthenticated) {
-    const redirectTo = (location.state as { from?: Location })?.from?.pathname ?? ROUTES.liveMonitoring;
+    if (user?.mustChangePassword) return <Navigate to={ROUTES.changePassword} replace />;
+    const requested = (location.state as { from?: Location })?.from?.pathname;
+    const redirectTo = requested && requested !== ROUTES.changePassword && requested !== ROUTES.login ? requested : ROUTES.liveMonitoring;
     return <Navigate to={redirectTo} replace />;
   }
 
@@ -27,8 +30,7 @@ export function LoginPage() {
     setError(null);
     setIsSubmitting(true);
     try {
-      await login(email, password);
-      navigate(ROUTES.liveMonitoring, { replace: true });
+      await login(email.trim(), password);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Unable to sign in');
     } finally {
@@ -61,7 +63,7 @@ export function LoginPage() {
           <Input
             id="password"
             label="Password"
-            type="password"
+            type={showPassword ? 'text' : 'password'}
             autoComplete="current-password"
             placeholder="••••••••"
             value={password}
@@ -69,18 +71,14 @@ export function LoginPage() {
             required
           />
 
-          {error && <p className="text-xs text-status-alert">{error}</p>}
+          <button type="button" aria-pressed={showPassword} onClick={() => setShowPassword(value => !value)} className="flex items-center gap-2 self-start text-xs text-text-secondary">{showPassword ? <EyeOff className="h-4 w-4"/> : <Eye className="h-4 w-4"/>}{showPassword ? 'Hide password' : 'Show password'}</button>
+          {error && <p role="alert" className="text-xs text-status-alert">{error}</p>}
 
           <Button type="submit" variant="primary" className="mt-1 w-full" disabled={isSubmitting}>
             {isSubmitting ? 'Signing in…' : 'Sign in'}
           </Button>
         </form>
 
-        <div className="mt-6 rounded-lg border border-line bg-surface-2 px-3 py-3 text-xs text-text-muted">
-          <p className="font-medium text-text-secondary">Local bootstrap accounts</p>
-          <p className="mt-1">admin@virtualguard.com — Admin</p>
-          <p>guard@virtualguard.com — Security Guard</p>
-        </div>
       </Card>
     </div>
   );

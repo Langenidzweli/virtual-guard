@@ -99,8 +99,10 @@ public class JwtTokenProvider {
     public boolean canReadMedia(String ticket, String filename) {
         try {
             Claims claims = parseClaims(ticket);
+            Authentication auth = getAuthentication(ticket);
             return "media".equals(claims.get("tokenType")) && filename.equals(claims.get("file"))
-                    && getAuthentication(ticket).isAuthenticated();
+                    && auth.isAuthenticated()
+                    && !(auth.getPrincipal() instanceof AccountPrincipal account && account.isMustChangePassword());
         } catch (JwtException | IllegalArgumentException | org.springframework.security.core.AuthenticationException exception) {
             return false;
         }
@@ -111,7 +113,7 @@ public class JwtTokenProvider {
             parseClaims(token);
             return true;
         } catch (JwtException | IllegalArgumentException e) {
-            log.debug("Invalid JWT: {}", e.getMessage());
+            log.debug("Invalid or expired JWT");
             return false;
         }
     }

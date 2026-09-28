@@ -101,7 +101,6 @@ export function CameraFeedCard({ feed }: CameraFeedCardProps) {
         <div>
           <div className="relative aspect-video rounded-lg bg-surface-3 overflow-hidden">
             {isUploading ? (
-              // Uploading state
               <div className="flex h-full flex-col items-center justify-center gap-3 bg-surface-2">
                 <div className="relative">
                   <div className="animate-spin rounded-full h-12 w-12 border-4 border-brand-red border-t-transparent" />
@@ -114,7 +113,6 @@ export function CameraFeedCard({ feed }: CameraFeedCardProps) {
                 </div>
               </div>
             ) : hasVideo && videoSrc ? (
-              // Video player
               <>
                 <AuthorizedVideo
                   ref={videoRef}
@@ -149,7 +147,6 @@ export function CameraFeedCard({ feed }: CameraFeedCardProps) {
                 )}
               </>
             ) : (
-              // No video uploaded
               <div className="flex h-full flex-col items-center justify-center gap-1">
                 <VideoOff className="h-6 w-6 text-text-muted/40" strokeWidth={1.5} />
                 <span className="text-[10px] text-text-muted">No video uploaded</span>

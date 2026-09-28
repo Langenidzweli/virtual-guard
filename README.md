@@ -1,345 +1,138 @@
-<div align="center">
-  <img src="frontend/src/assets/logo.png" width="92" alt="Virtual Guard logo" />
-  <h1>Virtual Guard</h1>
-  <p><strong>AI-assisted retail surveillance with human-controlled incident review</strong></p>
-  <p>React · Spring Boot · FastAPI · PostgreSQL · YOLO · OpenCV</p>
-</div>
+# Virtual Guard
 
-> [!IMPORTANT]
-> Virtual Guard is a decision-support prototype. It flags video for a trained human reviewer; it does not identify guilt or prove that an offence occurred.
+Virtual Guard is an AI-assisted retail surveillance and incident-review platform. It processes uploaded recordings, overlays detections, tracks and human poses, and presents model-flagged incidents for human review.
 
-## Problem and approach
+## Overview
 
-Retail security teams may be responsible for several camera feeds at once. Important events may only become clear after an interaction between a person, bag, basket and product develops over time. Basic motion alarms create noise, while an automatic accusation would be unsafe.
+The application connects a React operations interface to a Spring Boot API, PostgreSQL metadata storage and a FastAPI inference service. Camera records organize uploaded footage; they do not establish live CCTV connections. Model predictions support investigation and are not proof of theft.
 
-Virtual Guard turns surveillance clips into structured review cases:
+## Key features
 
-1. A guard assigns a clip to a store camera.
-2. The platform validates and samples the video.
-3. Computer vision detects people, bags, baskets and products.
-4. Tracking and temporal feature extraction summarize movement.
-5. A classifier produces a behaviour label, confidence and suspicion score.
-6. Suspicious results become incidents—not final judgements.
-7. An authorized officer confirms, dismisses or escalates the incident.
-8. The map, notifications, reports, history and analytics reflect the decision.
+- Upload recordings against a monitored camera, start analysis and follow job progress.
+- Replay browser-compatible footage with object boxes, per-video track IDs and pose overlays.
+- Review incidents, save investigation notes, confirm, dismiss or escalate a case.
+- Use one incident workspace for records, review history, trends and CSV exports.
+- Configure camera labels, monitoring status and map positions.
+- Administer guard profiles and account status, reset guard passwords and require a password change.
+- Run all four services with Docker Compose.
 
-This keeps human accountability at the centre of the system.
+## System architecture
 
-## Architecture
-
-![Virtual Guard system architecture](docs/images/system-architecture.svg)
-
-The Spring Boot backend is the source of truth. The browser never calls FastAPI or PostgreSQL directly, and FastAPI never writes directly to the database.
-
-### Engineering highlights
-
-- Clear separation between the React interface, Spring Boot domain API, FastAPI inference service and PostgreSQL persistence.
-- Asynchronous video jobs with progress reporting, bounded service calls and idempotent result handling.
-- JWT authentication, role-based authorization and a separate API key for internal callbacks.
-- Human-in-the-loop decisions with searchable reports, audit history and evidence playback.
-- Reproducible detector evaluation with preserved metrics, plots and model configuration.
-- Automated frontend and backend checks through GitHub Actions.
-
-| Component | Responsibility | Default address |
-|---|---|---|
-| React frontend | Monitoring, uploads, maps, reviews, analytics and administration | `http://localhost:5173` |
-| Spring Boot | Auth, authorization, jobs, incidents, video access and persistence | `http://localhost:8090` |
-| FastAPI | Video validation, detection, tracking, annotation and behaviour prediction | `http://localhost:8000` |
-| PostgreSQL | Users, guards, cameras, jobs, incidents and review state | `localhost:5432` |
-| Local storage | Original, browser-compatible and annotated videos | `backend/uploads/` |
-
-## Frontend
-
-![Virtual Guard frontend feature overview](docs/images/frontend-overview.svg)
-
-- **Live Monitoring:** camera uploads, pipeline progress, annotated playback, alert audio and store map.
-- **Analytics:** totals, trends, outcomes, camera activity, heatmaps and CSV export.
-- **Reports:** searchable master-detail records, evidence and officer decisions.
-- **Review History:** status tabs, audit timeline, expandable details and export.
-- **Security Guards:** profiles, access status, activation and deactivation.
-- **Settings:** camera registration, monitoring and floor-plan placement.
-
-### Product tour
-
-<details open>
-<summary><strong>Live monitoring and store map</strong></summary>
-
-Monitor camera feeds, analysis stages, processing progress and camera locations from one operations view.
-
-![Virtual Guard live monitoring and store map](docs/images/live-monitoring.png)
-
-</details>
-
-<details>
-<summary><strong>Analytics dashboard</strong></summary>
-
-Review incident trends, outcomes, camera activity, risk by time and automatically generated operational insights.
-
-![Virtual Guard analytics dashboard](docs/images/analytics-dashboard.png)
-
-</details>
-
-<details>
-<summary><strong>Incident reports</strong></summary>
-
-Search incident records, inspect AI scores and evidence, record investigation notes, and submit an officer decision.
-
-![Virtual Guard incident reports](docs/images/incident-reports.png)
-
-</details>
-
-<details>
-<summary><strong>Incident review history</strong></summary>
-
-Use the audit timeline to trace confirmed, dismissed and escalated reviews by camera, reviewer and date.
-
-![Virtual Guard incident review history](docs/images/incident-review-history.png)
-
-</details>
-
-<details>
-<summary><strong>Security guard administration</strong></summary>
-
-Administrators can search guard profiles and manage account access and badge information.
-
-![Virtual Guard security guard administration](docs/images/security-guards.png)
-
-</details>
-
-<details>
-<summary><strong>Camera settings</strong></summary>
-
-Configure monitoring state and camera placement against the same floor plan used by live operations.
-
-![Virtual Guard camera settings](docs/images/camera-settings.png)
-
-</details>
-
-## How services communicate
-
-![Video analysis sequence](docs/images/analysis-sequence.svg)
-
-Analysis is asynchronous from the user’s perspective. Uploading creates a job, starting analysis dispatches it to FastAPI, and the UI polls Spring Boot for progress. FastAPI sends API-key-protected progress updates and a final callback.
-
-```text
-queued → validating-video → vision-analysis → behaviour-analysis → complete
-                                                            ↘ failed
+```mermaid
+flowchart LR
+    Browser[React browser] -->|HTTP API and media tickets| Backend[Spring Boot]
+    Backend --> DB[(PostgreSQL)]
+    Backend -->|Convert and analyze| AI[FastAPI]
+    AI -->|Progress and results| Backend
+    Backend --> Media[(Shared recording files)]
+    AI --> Media
 ```
 
-## AI pipeline
+See [Architecture](docs/ARCHITECTURE.md) for the sequence, security boundaries and source references.
 
-```text
-Video
-  └─ validation / browser conversion
-      └─ frame sampling
-          └─ YOLO detection: bag, basket, people, product
-              └─ lightweight object tracking
-                  └─ temporal feature extraction
-                      └─ behaviour classifier
-                          ├─ behaviour and confidence
-                          ├─ suspicion score
-                          └─ annotated evidence video
-```
+## Technology stack
 
-The detector is selected with `VISION_MODEL=v2`. The current tracker is intentionally lightweight; stronger tracking through occlusion is future work.
+| Layer | Implementation |
+|---|---|
+| Frontend | React, TypeScript, Vite, Tailwind CSS; Nginx in Docker |
+| Backend | Java 17, Spring Boot, Spring Security, Spring Data JPA |
+| Persistence | PostgreSQL 16; local files for recordings |
+| AI | Python, FastAPI, Ultralytics YOLOv8, PyTorch, OpenCV |
+| Behaviour model | scikit-learn Random Forest and StandardScaler |
+| Execution | Docker Compose; CPU inference in the supplied AI image |
 
-### V2 training evidence
+## Computer vision and machine learning
 
-![V2 detector results](ai-service/runs/detect/virtual_guard_mall_detector_v2/results.png)
+The configured V2 detector recognizes `bag`, `busket`, `people` and `product`. The label `busket` retains the dataset spelling. An IoU tracker assigns IDs within each video. YOLOv8 pose estimation adds human keypoints on sampled frames containing detected people.
 
-Precision, recall, F1, confusion matrices, weights and training history are preserved in [`ai-service/runs/detect/virtual_guard_mall_detector_v2`](ai-service/runs/detect/virtual_guard_mall_detector_v2).
+A separate classifier samples whole-frame motion and predicts `normal` or `shoplifting` from 14 statistics. **It does not consume detection boxes, track IDs or pose features.** Confidence, the heuristic suspicion score and the human review outcome are separate concepts.
 
-## Repository layout
+## How video analysis works
 
-```text
-virtual-guard-v1/
-├── frontend/       React + TypeScript operations console
-├── backend/        Spring Boot API and persistence
-├── ai-service/     FastAPI inference, models, datasets, scripts and tests
-├── docs/images/    Portable diagrams used by this README
-├── uploads/        Prototype analysis artifacts
-├── docker-compose.yml
-└── .env.example
-```
+1. Upload a recording; the backend stores it, requests browser conversion and saves a queued job.
+2. Explicitly start the job. The backend claims an analysis attempt and dispatches it to FastAPI.
+3. FastAPI runs sampled detection, tracking and pose, writes annotated footage, then runs the independent behaviour classifier.
+4. FastAPI sends progress and result callbacks. Spring Boot persists the result and creates an incident for a `shoplifting` prediction.
+5. The browser polls job state and displays authorized footage and review controls.
 
-## Prerequisites
+## Roles and security
 
-- Node.js 20+
-- JDK 17 and Maven 3.9+
-- Python 3.11–3.13
-- PostgreSQL 16, or Docker Desktop
-- Optional NVIDIA CUDA GPU
+Both `ADMIN` and `SECURITY_GUARD` can use recording analysis and incident review. Administrators additionally manage cameras and guards. The backend enforces these permissions.
 
-Avoid Python 3.14 because some computer-vision packages may not yet provide compatible wheels.
+Passwords use BCrypt. Access/refresh JWTs are checked against current account state; guard password resets revoke existing sessions and force a password change. Media playback requires a short-lived filename-bound ticket. Internal AI calls use a shared API key. Secrets belong in local environment configuration, never in version control.
 
-## Local setup (Windows PowerShell)
+## Quick start
 
-### 1. Configuration
+Prerequisites: Docker Desktop with Linux containers, Docker Compose, and the supplied model artifacts in `ai-service/models/`.
+
+From the repository root, in PowerShell:
 
 ```powershell
-Copy-Item .env.example .env
+Copy-Item .env.example .env   # Only if .env does not already exist
 ```
 
-Replace every placeholder in `.env`. Never commit this file. Use separate random values for `JWT_SECRET`, `INTERNAL_API_KEY` and `DB_PASSWORD`.
+Configure private database credentials, a Base64 JWT secret, an internal API key and bootstrap credentials as described in [Setup](docs/SETUP.md). Then:
 
 ```powershell
-[Convert]::ToBase64String([Security.Cryptography.RandomNumberGenerator]::GetBytes(48))
-```
-
-### 2. PostgreSQL
-
-```powershell
-docker compose up -d postgres
+docker compose up -d --build
 docker compose ps
 ```
 
-### 3. AI service
+The default frontend is http://localhost:8080; backend and AI health endpoints use ports 8090 and 8000. Local overrides may change host ports. Existing users retain their passwords when bootstrap settings change.
 
-```powershell
-cd ai-service
-py -3.13 -m venv venv313
-.\venv313\Scripts\Activate.ps1
-python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
-python -m uvicorn app.main:app --reload --port 8000
-```
+## Testing
 
-Health check: `Invoke-RestMethod http://localhost:8000/health`
+Run in the indicated service directory:
 
-### 4. Backend
+| Directory | Commands |
+|---|---|
+| `frontend` | `npm ci`, `npm run build`, `npm run lint`, `npm test` |
+| `backend` | `mvn test` |
+| `ai-service` | `python -m pip install -r requirements-dev.txt`, `python -m pytest tests -q` |
+| Repository root | `docker compose config --quiet` |
 
-```powershell
-cd backend
-mvn spring-boot:run
-```
+Activate the configured Python environment first. Database tests require explicit opt-in configuration; browser and live integration checks are documented in [Setup](docs/SETUP.md#verification).
 
-If `JAVA_HOME` fails, point it to the JDK—not its `bin` folder:
+## Model performance
 
-```powershell
-$env:JAVA_HOME = 'C:\Program Files\Java\jdk-17'
-$env:Path = "$env:JAVA_HOME\bin;$env:Path"
-mvn -version
-```
-
-Health check: `Invoke-RestMethod http://localhost:8090/api/health`
-
-### 5. Frontend
-
-```powershell
-cd frontend
-npm install
-npm run dev
-```
-
-Open `http://localhost:5173`.
-
-## Development accounts
-
-Accounts are bootstrapped only when:
-
-```dotenv
-BOOTSTRAP_USERS_ENABLED=true
-BOOTSTRAP_PASSWORD=choose-a-strong-local-password
-```
-
-- `admin@virtualguard.com` — administrator
-- `guard@virtualguard.com` — security guard
-
-Never enable predictable bootstrap credentials in production.
-
-## Important API routes
-
-| Method | Route | Purpose |
+| Saved evidence | Result | Interpretation |
 |---|---|---|
-| `POST` | `/api/auth/login` | Issue authentication tokens |
-| `POST` | `/api/auth/refresh` | Refresh authentication |
-| `GET` | `/api/cameras` | Camera configuration and status |
-| `POST`, `PUT` | `/api/cameras`, `/api/cameras/{id}` | Create/update camera |
-| `POST` | `/api/jobs` | Upload video and create job |
-| `POST` | `/api/jobs/{id}/start` | Dispatch analysis |
-| `GET` | `/api/jobs`, `/api/jobs/{id}` | Restore/poll jobs |
-| `GET` | `/api/video/{fileName}` | Stream authenticated evidence |
-| `GET` | `/api/incidents` | Query incidents and history |
-| `PATCH` | `/api/incidents/{id}/review?status=…` | Human review decision |
-| `GET` | `/api/notifications/count` | Pending-review count |
-| `POST` | `/internal/jobs/{id}/progress` | Protected AI progress callback |
-| `POST` | `/internal/jobs/{id}/callback` | Protected AI result callback |
+| V2 detector comparison | mAP50 0.4755; mAP50-95 0.2235 | Four-class held-out test split; saved acceptance decision is **REJECTED** |
+| Behaviour evaluation | 82.14% accuracy on 28 stored-feature samples | Original training/test separation is not established |
 
-## Security boundaries
+V2 is selected by the supplied configuration despite the historical rejection. These figures are not end-to-end theft-detection accuracy. [Model evaluation](docs/MODEL_EVALUATION.md) explains the criteria, different V1 evaluations, best V2 epoch and evidence limitations.
 
-- Users authenticate with JWT bearer tokens and role-based access.
-- Internal AI callbacks use a separate `X-API-Key`.
-- Passwords are BCrypt-hashed.
-- Upload size is limited to 500 MB.
-- CORS is restricted through `CORS_ALLOWED_ORIGINS`.
-- Videos are delivered through the authenticated backend.
-- `.env`, dependencies, build outputs and caches are Git-ignored.
+## Project structure
 
-Production requires HTTPS, a secrets manager, rate limits, centralized logs, encrypted object storage, malware scanning and explicit retention policies.
-
-## Verification
-
-```powershell
-# Frontend
-cd frontend
-npm run lint
-npm run build
-
-# Backend
-cd ..\backend
-mvn test
-
-# AI service
-cd ..\ai-service
-.\venv313\Scripts\Activate.ps1
-python -m pytest
+```text
+frontend/       Browser UI and frontend tests
+backend/        API, authentication, persistence and backend tests
+ai-service/     Inference, models, datasets, training/evaluation tools and tests
+scripts/        Packaging and opt-in integration verification
+docs/           Architecture, setup and model evidence
+docker-compose.yml
+.env.example    Placeholder configuration
 ```
 
-## Models, datasets and cleanup
+Datasets, runtime uploads and local environments may exist locally without being tracked. Models must be supplied before inference; no training is required for startup.
 
-Keep model files, training datasets, experiment reports, `best.pt`, evaluation plots and evidence required by incidents. In particular, preserve:
+## Current limitations
 
-- `ai-service/models/`
-- `ai-service/runs/detect/virtual_guard_mall_detector_v2/weights/best.pt`
-- `ai-service/runs/detect/virtual_guard_mall_detector_v2/results.csv`
-- datasets required for retraining and reproducibility
+- Uploaded-video processing, not live CCTV ingestion or continuous real-time monitoring.
+- Simple per-video IoU association; no ReID, cross-camera tracking or concealment reasoning.
+- Experimental detector quality and a small behaviour evaluation; false positives and false negatives require human review.
+- CPU processing, repeated video passes and an in-memory task queue limit throughput and resilience.
+- LocalStorage tokens, local media storage, no MFA, tenant isolation or configured public TLS deployment.
+- No Kafka, Kubernetes deployment, durable job broker or automated enforcement action.
 
-Large datasets, local virtual environments, uploaded evidence, generated build output and model archives are intentionally excluded from Git. Deployable model files under `ai-service/models/` and selected evaluation evidence under `ai-service/runs/` remain part of the project. For long-term distribution, publish large versioned artifacts through GitHub Releases, Git LFS or an external model registry and record their checksums.
+## Documentation
 
-Safe generated artifacts include `__pycache__`, `.pytest_cache`, `backend/target`, `frontend/dist` and YOLO `*.cache` indexes. `frontend/node_modules` is reproducible but retained locally to avoid forcing another installation.
+- [Architecture](docs/ARCHITECTURE.md)
+- [Setup and operations](docs/SETUP.md)
+- [Model evaluation and limitations](docs/MODEL_EVALUATION.md)
 
-## Known limitations
-
-- Uploaded clips simulate CCTV; continuous RTSP ingestion is not implemented.
-- Local videos need a formal retention policy before production.
-- Investigation notes are currently browser-local and should move to an immutable backend audit log.
-- Dispatch does not yet use a durable external queue.
-- Lightweight tracking may lose identity during long occlusions.
-- Accuracy depends on representative camera angles, lighting and labeled data.
-- A high suspicion score is a review priority, not proof of wrongdoing.
-
-## Roadmap
-
-- PostgreSQL-backed investigation notes and audit events
-- Live RTSP ingestion and SSE/WebSocket progress
-- Durable queue, retries and dead-letter handling
-- Encrypted object storage and automated retention
-- Stronger multi-object tracking and model-drift monitoring
-- Face blurring and least-privilege evidence access
-- Containerized deployment, observability and CI/CD scanning
-
-## Responsible use
-
-Deploy only with visible policy, trained reviewers, access controls and an escalation process. Reviewers must consider full video context and must not treat model output as an accusation. Evaluate false positives, false negatives and uneven performance across real store environments before operational use.
-
-## More documentation
-
-- [Computational backend and computer vision walkthrough](docs/COMPUTATIONAL_BACKEND_README.md) — algorithms, equations, code excerpts, file map and evaluation evidence for a technical assessment.
-- [Extended architecture reference](docs/architecture.md)
-- [Backend notes](backend/README.md)
-- [Mall detector training report](ai-service/PHASE5_README.md)
-- [Model artifact notes](models/README.md)
+The packaging script excludes private configuration, recordings, environments and build outputs. Review redistribution rights for datasets and model artifacts before sharing a package.
 
 ## License
 
-The project source is licensed under the [MIT License](LICENSE). Third-party libraries, datasets and model artifacts retain their respective licenses.
+Project source is provided under the [MIT License](LICENSE). Third-party libraries, datasets and pretrained model artifacts retain their own licenses and attribution requirements.

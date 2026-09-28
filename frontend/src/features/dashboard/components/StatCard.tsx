@@ -30,7 +30,7 @@ export function StatCard({ label, value, icon: Icon, dotStatus, tone = 'default'
       </span>
       <span className="min-w-0">
         <span className="block text-xs leading-tight text-text-secondary">{label}</span>
-        <span className={cn('mt-1 block text-lg font-semibold leading-none', TONE_CLASSES[tone])}>
+        <span className={cn('mt-1 block break-words text-base font-semibold leading-none', TONE_CLASSES[tone])}>
           {value}
         </span>
       </span>

@@ -5,6 +5,7 @@ from pathlib import Path
 import cv2
 
 from app.core.config import config
+from app.vision.model_cache import get_model
 
 logger = logging.getLogger(__name__)
 
@@ -40,7 +41,7 @@ class YOLODetector:
         if resolved_model_path is None:
             raise FileNotFoundError(f"Configured YOLO model does not exist: {self.model_path}")
 
-        self.model = YOLO(resolved_model_path)
+        self.model, self._model_lock = get_model(resolved_model_path)
         logger.info("YOLO model loaded: %s", resolved_model_path)
         return self.model
 
@@ -48,7 +49,8 @@ class YOLODetector:
         if self.model is None:
             raise RuntimeError("YOLO model is not loaded")
         threshold = conf_threshold if conf_threshold is not None else self.confidence_threshold
-        results = self.model(frame, verbose=False, conf=threshold)
+        with self._model_lock:
+            results = self.model(frame, verbose=False, conf=threshold)
         detections = []
         for result in results:
             for box in result.boxes:

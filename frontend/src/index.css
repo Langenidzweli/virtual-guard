@@ -18,7 +18,7 @@
   /* Text */
   --color-text-primary: #f4f5f7;
   --color-text-secondary: #9298a5;
-  --color-text-muted: #5f6673;
+  --color-text-muted: #89909d;
 
   /* Brand */
   --color-brand-red: #e0293e;
@@ -117,4 +117,14 @@
   .camera-alert-ring {
     animation-duration: 2.4s;
   }
+}
+
+@layer base {
+  :focus-visible { outline: 2px solid var(--color-status-info); outline-offset: 3px; }
+  select { color-scheme: dark; }
+  button:not(:disabled), a { cursor: pointer; }
+  input, select, textarea { max-width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; }
 }

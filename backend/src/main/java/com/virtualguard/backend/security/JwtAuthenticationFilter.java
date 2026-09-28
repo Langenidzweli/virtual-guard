@@ -27,6 +27,16 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             if (token != null && tokenProvider.isAccessToken(token)) {
                 Authentication auth = tokenProvider.getAuthentication(token);
                 SecurityContextHolder.getContext().setAuthentication(auth);
+                // A reset account may authenticate only to complete its password change.
+                if (auth.getPrincipal() instanceof AccountPrincipal account
+                        && account.isMustChangePassword()
+                        && !java.util.Set.of("/api/auth/change-password", "/api/auth/me",
+                                "/api/auth/login", "/api/auth/refresh").contains(request.getServletPath())) {
+                    response.setStatus(403);
+                    response.setContentType("application/json");
+                    response.getWriter().write("{\"error\":\"Change your password before continuing\",\"code\":\"PASSWORD_CHANGE_REQUIRED\"}");
+                    return;
+                }
             }
         } catch (AuthenticationException | JwtException | IllegalArgumentException exception) {
             SecurityContextHolder.clearContext();

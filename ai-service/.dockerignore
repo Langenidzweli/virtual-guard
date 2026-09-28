@@ -1,0 +1,10 @@
+*
+!requirements.txt
+!Dockerfile
+!app/
+!app/**
+!models/
+!models/*.pt
+!models/*.pkl
+**/__pycache__
+**/*.pyc

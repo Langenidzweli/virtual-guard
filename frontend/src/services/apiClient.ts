@@ -1,6 +1,6 @@
-// frontend/src/services/apiClient.ts
 
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8090';
+export const AUTH_USER_CHANGED_EVENT = 'virtual-guard:auth-user-changed';
 export const AUTH_EXPIRED_EVENT = 'virtual-guard:auth-expired';
 export const AUTH_TOKEN_CHANGED_EVENT = 'virtual-guard:auth-token-changed';
 
@@ -43,6 +43,7 @@ export function refreshSession(): Promise<boolean> {
       if (refreshToken !== original) return false;
       setAuthToken(result.accessToken);
       setRefreshToken(result.refreshToken);
+      window.dispatchEvent(new CustomEvent(AUTH_USER_CHANGED_EVENT, { detail: result.user }));
       return true;
     } catch { return false; }
     finally { pendingRefresh = null; }
@@ -90,6 +91,8 @@ export async function apiClient<T>(
   }
 
   if (response.status === 403) {
+    const denied = await response.json().catch(() => ({}));
+    if (denied.code === 'PASSWORD_CHANGE_REQUIRED' && window.location.pathname !== '/change-password') window.location.assign('/change-password');
     throw new Error('You do not have permission to perform this action.');
   }
 

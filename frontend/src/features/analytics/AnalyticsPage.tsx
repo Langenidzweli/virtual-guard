@@ -1,10 +1,10 @@
 import { incidentTrend } from '@/lib/incidentTrend'
 import { csvCell } from '@/lib/csv'
-import { useEffect, useMemo, useState } from 'react'
+import { useMemo, useState } from 'react'
 import { AlertTriangle, CalendarDays, Camera, CheckCircle2, Clock3, Download, Gauge, Info, ShieldAlert, TrendingUp } from 'lucide-react'
 import { Button, Card } from '@/components/ui'
-import { incidentService } from '@/services/incidentService'
-import type { Incident, ReviewStatus } from '@/types'
+import { useIncidentRecords } from '@/features/reports/incident-context'
+import type { ReviewStatus } from '@/types'
 
 type DateRange = '7' | '30' | 'all'
 const outcomes: Array<[ReviewStatus, string, string]> = [
@@ -20,19 +20,8 @@ function PanelTitle({ title, subtitle }: { title: string; subtitle: string }) {
 }
 
 export function AnalyticsPage() {
-  const [incidents, setIncidents] = useState<Incident[]>([])
+  const { incidents } = useIncidentRecords()
   const [range, setRange] = useState<DateRange>('7')
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState<string | null>(null)
-
-  useEffect(() => {
-    let cancelled = false
-    incidentService.list().then((data) => { if (!cancelled) setIncidents(data) })
-      .catch((err) => { if (!cancelled) setError(err instanceof Error ? err.message : 'Unable to load analytics') })
-      .finally(() => { if (!cancelled) setLoading(false) })
-    return () => { cancelled = true }
-  }, [])
-
   const data = useMemo(() => {
     const now = new Date(), days = range === 'all' ? null : Number(range)
     const cutoff = days ? dayStart(new Date(now.getTime() - (days - 1) * 86400000)) : null
@@ -54,16 +43,14 @@ export function AnalyticsPage() {
     link.href = url; link.download = `virtual-guard-analytics-${new Date().toISOString().slice(0, 10)}.csv`; link.click(); URL.revokeObjectURL(url)
   }
 
-  if (loading) return <div className="py-16 text-center text-sm text-text-muted">Loading analytics…</div>
   const maxTrend = Math.max(1, ...data.trend.map((i) => i.count)), maxCamera = Math.max(1, ...data.cameras.map(([, n]) => n)), maxHeat = Math.max(1, ...data.heat.flat())
   const points = data.trend.map((item, index) => `${4 + index / Math.max(1, data.trend.length - 1) * 92},${88 - item.count / maxTrend * 70}`).join(' ')
   let offset = 0
 
   return <div className="mx-auto flex w-full max-w-[1800px] flex-col gap-4">
-    <div className="flex flex-wrap items-end justify-between gap-4"><div><h1 className="text-2xl font-semibold">Analytics</h1><p className="mt-1 text-sm text-text-secondary">Overview of security incidents and AI review outcomes</p></div><div className="flex gap-2">
+    <div className="flex flex-wrap items-end justify-between gap-4"><div><h2 className="text-2xl font-semibold">Incident trends</h2><p className="mt-1 text-sm text-text-secondary">Overview of security incidents and AI review outcomes</p></div><div className="flex gap-2">
       <label className="flex h-9 items-center gap-2 rounded-lg border border-line-strong bg-surface-1 px-3 text-xs"><CalendarDays className="h-4 w-4 text-text-secondary"/><select value={range} onChange={(e) => setRange(e.target.value as DateRange)} className="bg-transparent outline-none"><option className="bg-surface-1" value="7">Last 7 days</option><option className="bg-surface-1" value="30">Last 30 days</option><option className="bg-surface-1" value="all">All time</option></select></label>
       <Button icon={<Download className="h-4 w-4"/>} onClick={exportCsv} disabled={!data.items.length}>Export</Button></div></div>
-    {error && <div className="rounded-lg border border-status-alert/30 bg-status-alert/10 px-4 py-3 text-sm text-status-alert">{error}</div>}
     <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">{[
       { label: 'Total incidents', value: data.items.length, Icon: ShieldAlert, color: 'text-status-info' },
       { label: 'Pending review', value: data.pending, Icon: AlertTriangle, color: 'text-status-review' },

@@ -1,4 +1,3 @@
-// frontend/src/services/cameraService.ts
 
 import type { StoreCamera } from '@/types';
 import { api } from './apiClient';

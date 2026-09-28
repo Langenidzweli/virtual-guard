@@ -1,4 +1,3 @@
-// frontend/src/features/guards/hooks/useGuards.ts
 
 import { useState, useEffect, useCallback } from 'react';
 import { guardService, type GuardInput } from '@/services/guardService';

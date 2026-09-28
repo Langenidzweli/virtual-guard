@@ -19,6 +19,13 @@ import java.util.UUID;
 public class GuardController {
 
     private final GuardService guardService;
+    private final com.virtualguard.backend.service.PasswordService passwordService;
+
+    @PostMapping("/{id}/reset-password")
+    public ResponseEntity<Void> resetPassword(@PathVariable UUID id) {
+        passwordService.resetGuard(id);
+        return ResponseEntity.noContent().build();
+    }
 
     @GetMapping
     public List<GuardResponseDto> getAllGuards() {

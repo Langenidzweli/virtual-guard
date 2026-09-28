@@ -1,3 +1,4 @@
+import { useId } from 'react'
 import type { InputHTMLAttributes } from 'react'
 import { cn } from '@/lib/utils'
 
@@ -7,15 +8,17 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 }
 
 export function Input({ label, error, id, className, ...props }: InputProps) {
+  const generatedId = useId()
+  const inputId = id ?? generatedId
   return (
     <div className="flex flex-col gap-1.5">
       {label && (
-        <label htmlFor={id} className="text-xs font-medium text-text-secondary">
+        <label htmlFor={inputId} className="text-xs font-medium text-text-secondary">
           {label}
         </label>
       )}
       <input
-        id={id}
+        id={inputId}
         className={cn(
           'h-9 rounded-lg border border-line-strong bg-surface-2 px-3 text-sm text-text-primary',
           'placeholder:text-text-muted focus:border-brand-red focus:outline-none',

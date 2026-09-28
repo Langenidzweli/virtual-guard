@@ -6,6 +6,7 @@ export interface AuthContextValue {
   isAuthenticated: boolean
   isInitializing: boolean
   login: (email: string, password: string) => Promise<AuthUser>
+  changePassword: (currentPassword: string, newPassword: string, confirmPassword: string) => Promise<void>
   logout: () => void
 }
 

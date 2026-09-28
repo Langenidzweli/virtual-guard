@@ -37,7 +37,12 @@ def process_video_pipeline(video_path, output_path=None, confidence_threshold=0.
         if frame_index % frame_stride == 0:
             detections = detector.detect_frame(frame, conf_threshold=confidence_threshold)
             last_tracked = tracker.update(detections)
-            if pose_estimator is not None:
+            # attach_poses only uses poses for these classes. With no person,
+            # every pose result would be discarded, so avoid that inference.
+            if pose_estimator is not None and any(
+                str(detection.get('class_name', '')).lower() in {'person', 'people'}
+                for detection in last_tracked
+            ):
                 attach_poses(last_tracked, pose_estimator.detect(frame))
             for detection in last_tracked:
                 detection["label"] = detection.get("class_name", "OBJECT")

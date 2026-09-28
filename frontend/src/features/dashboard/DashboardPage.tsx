@@ -1,4 +1,3 @@
-// frontend/src/features/dashboard/DashboardPage.tsx
 
 import { useEffect, useRef, useState } from 'react'
 import { StoreOverview } from './components/StoreOverview'
@@ -67,9 +66,10 @@ function buildFeedSlots(cameras: StoreCamera[]): CameraFeed[] {
 }
 
 export function DashboardPage() {
-  const { cameras: registryCameras, isLoading } = useStoreCameras()
+  const { cameras: registryCameras, isLoading, error: cameraError } = useStoreCameras()
   const [cameras, setCameras] = useState<StoreCamera[]>([])
   const [feeds, setFeeds] = useState<CameraFeed[]>([])
+  const [actionError, setActionError] = useState<string | null>(null)
   const [isUploading, setIsUploading] = useState(false)
   const startInFlightRef = useRef(false)
   const alertAudioContextRef = useRef<AudioContext | null>(null)
@@ -219,6 +219,7 @@ export function DashboardPage() {
   async function handleFileSelected(cameraId: string, file: File) {
     if (isUploading) return
 
+    setActionError(null)
     setIsUploading(true)
 
     try {
@@ -248,7 +249,7 @@ export function DashboardPage() {
           ? { ...feed, fileName: null, isUploading: false, uploadProgress: 0 }
           : feed
       ))
-      alert('Failed to upload video: ' + (error instanceof Error ? error.message : 'Unknown error'))
+      setActionError('Failed to upload video: ' + (error instanceof Error ? error.message : 'Unknown error'))
     } finally {
       setIsUploading(false)
     }
@@ -256,11 +257,12 @@ export function DashboardPage() {
 
   async function handleAnalyze() {
     if (startInFlightRef.current) return
+    setActionError(null)
     prepareAlertSound()
     const feedsToAnalyze = feeds.filter((f) => f.fileName && f.jobId && !f.isAnalyzing && f.currentStage !== 'complete')
 
     if (feedsToAnalyze.length === 0) {
-      alert('No videos to analyze. Please upload a video first.')
+      setActionError('Upload a recording before starting analysis.')
       return
     }
 
@@ -286,7 +288,6 @@ export function DashboardPage() {
       try {
         const job = await refreshJob(feed)
         if (job.status !== 'QUEUED' && job.status !== 'FAILED') continue
-        // Set analyzing state
         setFeeds((prev) =>
           prev.map((f) =>
             f.id === feed.id
@@ -307,7 +308,7 @@ export function DashboardPage() {
             ? { ...item, isAnalyzing: false }
             : item))
         }
-        alert(`Failed to analyze ${feed.location}: ${error instanceof Error ? error.message : 'Unknown error'}`)
+        setActionError(`Failed to analyze ${feed.location}: ${error instanceof Error ? error.message : 'Unknown error'}`)
       }
     }
 
@@ -329,13 +330,14 @@ export function DashboardPage() {
   }
 
   return (
-    <div className="grid grid-cols-1 gap-6 lg:grid-cols-[minmax(280px,320px)_1fr]">
+    <div className="mx-auto grid w-full max-w-[2200px] grid-cols-1 gap-6 lg:grid-cols-[minmax(260px,300px)_minmax(0,1fr)]">
+      {(actionError || cameraError) && <p role="alert" className="rounded-lg border border-status-alert/30 bg-status-alert/10 p-3 text-sm text-status-alert lg:col-span-2">{actionError || cameraError}</p>}
       <div className="flex flex-col gap-6">
         <StoreOverview
           camerasOnline={camerasOnline}
           activeAlerts={activeAlerts}
           videosProcessing={videosProcessing}
-          avgConfidence="--"
+          avgConfidence={(() => { const values = feeds.flatMap(f => f.confidence == null ? [] : [f.confidence]); return values.length ? `${(values.reduce((a,b)=>a+b,0)/values.length*100).toFixed(1)}%` : '--' })()}
           isMonitoring={videosProcessing > 0}
         />
         <StoreMap cameras={cameras} />

@@ -1,11 +1,11 @@
-// frontend/src/services/guardService.ts
 
 import type { Guard, GuardStatus } from '@/types';
 import { api } from './apiClient';
 
-export type GuardInput = Omit<Guard, 'id' | 'status' | 'dateJoined'> & { password?: string };
+export type GuardInput = Omit<Guard, 'id' | 'status' | 'dateJoined' | 'loginAvailable'> & { password?: string };
 
 export const guardService = {
+  resetPassword: (id: string) => api.post<void>(`/api/guards/${id}/reset-password`),
   async list(): Promise<Guard[]> {
     return api.get<Guard[]>('/api/guards');
   },

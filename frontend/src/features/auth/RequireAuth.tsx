@@ -13,12 +13,14 @@ export function RequireAuth({ children, roles }: RequireAuthProps) {
   const location = useLocation()
 
   if (isInitializing) {
-    return null
+    return <p role="status" className="p-8 text-center text-text-secondary">Loading account...</p>
   }
 
   if (!isAuthenticated) {
     return <Navigate to={ROUTES.login} state={{ from: location }} replace />
   }
+
+  if (user?.mustChangePassword && location.pathname !== ROUTES.changePassword) return <Navigate to={ROUTES.changePassword} replace />
 
   if (roles && user && !roles.includes(user.role)) {
     return <Navigate to={ROUTES.liveMonitoring} replace />

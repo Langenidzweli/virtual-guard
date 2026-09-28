@@ -42,7 +42,7 @@ async def analyze_video(
     verify_api_key(x_api_key)
     if not Path(job.video_path).is_file():
         raise HTTPException(status_code=404, detail=f"Video not found: {job.video_path}")
-    
+
     if job.attempt_id in active_attempts:
         return {"status": "accepted", "job_id": job.job_id}
     active_attempts.add(job.attempt_id)

@@ -1,4 +1,3 @@
-// frontend/src/types/index.ts
 
 export type CameraStatus = 'idle' | 'normal' | 'review' | 'alert' | 'offline'
 
@@ -49,8 +48,8 @@ export interface CameraFeed {
   currentStage: PipelineStage
   progressPercent: number
   isAnalyzing: boolean
-  isUploading?: boolean      // ← Add this
-  uploadProgress?: number    // ← Add this
+  isUploading?: boolean
+  uploadProgress?: number
   latestDetection: AIDetection | null
 }
 
@@ -73,6 +72,7 @@ export interface AuthUser {
   name: string
   email: string
   role: UserRole
+  mustChangePassword?: boolean
 }
 
 export type GuardStatus = 'ACTIVE' | 'SUSPENDED' | 'DEACTIVATED'
@@ -84,6 +84,7 @@ export interface Guard {
   phone: string
   badgeNumber: string
   status: GuardStatus
+  loginAvailable?: boolean
   dateJoined: string
 }
 

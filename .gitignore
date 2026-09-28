@@ -8,7 +8,8 @@
 Thumbs.db
 Desktop.ini
 .idea/
-.vscode/settings.json
+.vscode/*
+!.vscode/launch.json
 *.code-workspace
 
 # Python
@@ -53,3 +54,12 @@ ai-service/runs/**/weights/
 
 # Unselected design captures; curated screenshots use descriptive names
 docs/images/Screenshot*.png
+
+# Generated test and coverage output
+coverage/
+playwright-report/
+test-results/
+*.zip.part
+
+# Local IDE modernization session artifacts
+/.github/modernize/

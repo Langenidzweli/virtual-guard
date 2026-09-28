@@ -69,10 +69,10 @@ export function CameraFeedsPanel({ feeds, cameras, onFileSelected, onAnalyze, on
   }
 
   return (
-    <section>
+    <section className="min-w-0">
       <div className="flex flex-wrap items-center justify-between gap-3 pb-4">
         <h2 className="text-sm font-semibold tracking-wider text-text-secondary uppercase">
-          Live Camera Feeds
+          Camera recordings
         </h2>
 
         <div className="flex flex-wrap items-center gap-2">
@@ -153,7 +153,7 @@ export function CameraFeedsPanel({ feeds, cameras, onFileSelected, onAnalyze, on
         </div>
       </Modal>
 
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 3xl:grid-cols-3">
         {feeds.map((feed) => (
           <CameraFeedCard key={feed.id} feed={feed} />
         ))}
