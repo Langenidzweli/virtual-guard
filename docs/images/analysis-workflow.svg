@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="790" viewBox="0 0 1200 790" role="img" aria-labelledby="title desc"><title id="title">Virtual Guard | Recording analysis workflow</title><desc id="desc">Upload and conversion create a queued job. Explicit start runs vision overlays and independent motion classification. The result is persisted, flagged recordings create incidents, and people review them.</desc><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10" fill="none" stroke="#64748b" stroke-width="1.5"/></marker></defs><rect width="1200" height="790" rx="20" fill="#f1f5f9"/><g font-family="Arial, sans-serif"><text x="40" y="48" font-size="25" font-weight="700" fill="#0f172a">Virtual Guard | Recording analysis workflow</text>
+<rect x="40" y="100" width="300" height="105" rx="12" fill="white" stroke="#2563eb" stroke-width="2"/><rect x="40" y="115" width="5" height="75" rx="2" fill="#2563eb"/><text x="58" y="130" font-size="19" font-weight="700" fill="#0f172a">1. Upload recording</text>
+<text x="58" y="157" font-size="15" fill="#475569">Choose a monitored camera</text>
+<text x="58" y="179" font-size="15" fill="#475569">Store and convert for playback</text>
+<rect x="450" y="100" width="300" height="105" rx="12" fill="white" stroke="#2563eb" stroke-width="2"/><rect x="450" y="115" width="5" height="75" rx="2" fill="#2563eb"/><text x="468" y="130" font-size="19" font-weight="700" fill="#0f172a">2. Queue and start</text>
+<text x="468" y="157" font-size="15" fill="#475569">Save job; user starts analysis</text>
+<text x="468" y="179" font-size="15" fill="#475569">Assign a processing attempt</text>
+<rect x="860" y="100" width="300" height="105" rx="12" fill="white" stroke="#2563eb" stroke-width="2"/><rect x="860" y="115" width="5" height="75" rx="2" fill="#2563eb"/><text x="878" y="130" font-size="19" font-weight="700" fill="#0f172a">3. Read recording</text>
+<text x="878" y="157" font-size="15" fill="#475569">FastAPI background processing</text>
+<text x="878" y="179" font-size="15" fill="#475569">Progress callbacks to backend</text>
+<path d="M340 152 H450" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M750 152 H860" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="110" y="300" width="430" height="130" rx="12" fill="white" stroke="#2563eb" stroke-width="2"/><rect x="110" y="315" width="5" height="100" rx="2" fill="#2563eb"/><text x="128" y="330" font-size="19" font-weight="700" fill="#0f172a">Vision and annotation</text>
+<text x="128" y="357" font-size="15" fill="#475569">Sample frames; detect objects and track IDs</text>
+<text x="128" y="379" font-size="15" fill="#475569">Add eligible human pose keypoints</text>
+<text x="128" y="401" font-size="15" fill="#475569">Write annotated footage</text>
+<rect x="660" y="300" width="430" height="130" rx="12" fill="white" stroke="#0f766e" stroke-width="2"/><rect x="660" y="315" width="5" height="100" rx="2" fill="#0f766e"/><text x="678" y="330" font-size="19" font-weight="700" fill="#0f172a">Independent behaviour classification</text>
+<text x="678" y="357" font-size="15" fill="#475569">Summarize whole-frame motion: 14 features</text>
+<text x="678" y="379" font-size="15" fill="#475569">Apply saved scaler and Random Forest</text>
+<text x="678" y="401" font-size="15" fill="#475569">Predict normal or shoplifting</text>
+<path d="M1010 205 V252 H325 V300" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M875 252 V300" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<text x="600" y="278" text-anchor="middle" font-size="14" fill="#334155">Two logical paths; no boxes or poses enter the classifier</text>
+<rect x="110" y="545" width="430" height="115" rx="12" fill="white" stroke="#2563eb" stroke-width="2"/><rect x="110" y="560" width="5" height="85" rx="2" fill="#2563eb"/><text x="128" y="575" font-size="19" font-weight="700" fill="#0f172a">4. Persist the result</text>
+<text x="128" y="602" font-size="15" fill="#475569">Save completion, prediction and evidence</text>
+<text x="128" y="624" font-size="15" fill="#475569">A shoplifting prediction creates an incident</text>
+<rect x="660" y="545" width="430" height="115" rx="12" fill="white" stroke="#7c3aed" stroke-width="2"/><rect x="660" y="560" width="5" height="85" rx="2" fill="#7c3aed"/><text x="678" y="575" font-size="19" font-weight="700" fill="#0f172a">5. Human review</text>
+<text x="678" y="602" font-size="15" fill="#475569">Watch footage; add investigation notes</text>
+<text x="678" y="624" font-size="15" fill="#475569">Confirm, dismiss or escalate the incident</text>
+<path d="M325 430 V545" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M875 430 V485 H475 V545" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M540 602 H660" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<text x="600" y="735" text-anchor="middle" font-size="14" fill="#334155">A model flag supports investigation. It is not proof of theft or an automated enforcement decision.</text>
+</g></svg>
