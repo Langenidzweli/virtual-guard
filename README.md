@@ -293,12 +293,20 @@ Activate the configured Python environment first. Database tests require explici
 
 ## Model performance
 
+The application retains the V2 behaviour Random Forest and scaler. V3 remains offline research and has not replaced V2. Detection, tracking and pose provide separate visual context; they are not inputs to the behaviour classifier.
+
+The [V3 results and evidence](docs/BEHAVIOUR_V3_RESULTS.md) distinguish all three experimental cohorts and the interrupted preparation attempts. The [checked-in evidence bundle](docs/evidence/behaviour-v3/README.md) includes saved predictions, fit logs, split membership and a read-only verifier; it does not require local videos or model artifacts.
+
 | Saved evidence | Result | Interpretation |
 |---|---|---|
-| V2 detector comparison | mAP50 0.4755; mAP50-95 0.2235 | Four-class held-out test split; saved acceptance decision is **REJECTED** |
-| Behaviour evaluation | 82.14% accuracy on 28 stored-feature samples | Original training/test separation is not established |
+| V2 detector comparison | mAP50 0.4755; mAP50-95 0.2235 | Historical mall test partition; source/camera independence is not established. Saved acceptance decision: **REJECTED**. |
+| Historical V2 behaviour diagnostic | 82.14% accuracy; 80.00% precision on 28 stored-feature rows | Includes 11 reconstructed original training rows; not an independent test. |
+| V2 reconstructed original test | 64.86% accuracy; 65.00% precision on 37 records | Retrospective result; duplicate/source dependence and evaluation reuse limit interpretation. |
+| Completed V3 recovery procedure | 59.94% accuracy; 13.49% precision; 23.20% recall on 704 DCSASS segments from 22 recorded parent groups | Nested development comparison, not an independent final evaluation or one exported replacement model. |
 
-V2 is selected by the supplied configuration despite the historical rejection. These figures are not end-to-end theft-detection accuracy. [Model evaluation](docs/MODEL_EVALUATION.md) explains the criteria, different V1 evaluations, best V2 epoch and evidence limitations.
+The completed V3 recovery followed earlier preparation failures. Those failures do not invalidate the later completed results. The 886 preparation inputs were 704 DCSASS development segments plus 182 auxiliary recordings, not 886 independent source videos. DCSASS is a publisher-documented derivative of UCF-Crime.
+
+V2 detection remains configured despite its historical acceptance rejection. Neither the behaviour results nor the V3 experiments establish the proposed 75% precision target on independent retail footage. These figures are not end-to-end theft-detection accuracy. [Model evaluation](docs/MODEL_EVALUATION.md) explains the cohorts, provenance, metric definitions and limitations.
 
 ## Project structure
 
@@ -339,8 +347,9 @@ These are potential improvements, not features implemented in the current versio
 - [Architecture](docs/ARCHITECTURE.md)
 - [Setup and operations](docs/SETUP.md)
 - [Model evaluation and limitations](docs/MODEL_EVALUATION.md)
+- [V3 experiments, results and evidence](docs/BEHAVIOUR_V3_RESULTS.md)
 
-The packaging script excludes private configuration, recordings, environments and build outputs. Review redistribution rights for datasets and model artifacts before sharing a package.
+The [preserved lecturer package and report](docs/SETUP.md#distribution-and-preserved-deliverables) are historical delivery snapshots; updating these documents does not rebuild them. The packaging script excludes private configuration, recordings, environments and build outputs. Review redistribution rights for datasets and model artifacts before sharing a package.
 
 ## License
 

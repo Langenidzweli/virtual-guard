@@ -1,0 +1,363 @@
+{
+  "interpretation": "Predeclared secondary MNNIT-only forest transfer diagnostic; never substitutes for primary",
+  "reference_artifact": {
+    "path": "<workspace>\\output\\capstone-v3\\random-forest-candidate\\research-candidate.joblib",
+    "sha256": "ab13b84f7490d0cb1976beb5e2e1541564fbbe5fb27ebd57b151e1ad4fa46135"
+  },
+  "threshold": 0.5,
+  "training_rows": 182,
+  "training_dataset": "MNNIT",
+  "result": {
+    "n": 192,
+    "normal": 162,
+    "shoplifting": 30,
+    "confusion_matrix": [
+      [
+        106,
+        56
+      ],
+      [
+        21,
+        9
+      ]
+    ],
+    "label_order": [
+      "normal",
+      "shoplifting"
+    ],
+    "accuracy": 0.5989583333333334,
+    "precision": 0.13846153846153847,
+    "recall": 0.3,
+    "f1": 0.18947368421052632,
+    "specificity": 0.654320987654321,
+    "flagged": 65,
+    "flagged_proportion": 0.3385416666666667,
+    "precision_wilson95": [
+      0.07459090403153719,
+      0.24268097246345166
+    ],
+    "recall_wilson95": [
+      0.16664748268243793,
+      0.47875787458714947
+    ],
+    "accuracy_wilson95": [
+      0.5283479854036718,
+      0.6656865169372833
+    ],
+    "precision_defined": true,
+    "both_targets_met": false,
+    "balanced_accuracy": 0.4771604938271605,
+    "balanced_accuracy_defined": true,
+    "recall_defined": true,
+    "positive_prevalence": 0.15625,
+    "source_cluster_bootstrap": {
+      "percentile95": {
+        "accuracy": [
+          0.4479166666666667,
+          0.734375
+        ],
+        "precision": [
+          0.04,
+          0.3333333333333333
+        ],
+        "recall": [
+          0.07692307692307693,
+          0.6666666666666666
+        ],
+        "f1": [
+          0.05405405405405406,
+          0.35443037974683544
+        ],
+        "specificity": [
+          0.44886363636363635,
+          0.8208955223880597
+        ],
+        "balanced_accuracy": [
+          0.3813646368305209,
+          0.6459059233449478
+        ]
+      },
+      "replicates": 2000,
+      "undefined_replicates": {
+        "accuracy": 0,
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "specificity": 0,
+        "balanced_accuracy": 0
+      },
+      "source_groups": 6,
+      "limitation": "Conditional on frozen held-out predictions; undefined ratios excluded and counted, no training uncertainty or unknown shared-camera dependence"
+    }
+  },
+  "per_source": [
+    {
+      "source_video": "Shoplifting001_x264",
+      "n": 32,
+      "normal": 25,
+      "shoplifting": 7,
+      "confusion_matrix": [
+        [
+          24,
+          1
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "label_order": [
+        "normal",
+        "shoplifting"
+      ],
+      "accuracy": 0.875,
+      "precision": 0.8,
+      "recall": 0.5714285714285714,
+      "f1": 0.6666666666666666,
+      "specificity": 0.96,
+      "flagged": 5,
+      "flagged_proportion": 0.15625,
+      "precision_wilson95": [
+        0.37553462976252533,
+        0.9637758913675698
+      ],
+      "recall_wilson95": [
+        0.2504583645276572,
+        0.8417801447485302
+      ],
+      "accuracy_wilson95": [
+        0.7193169451834978,
+        0.9502986561251991
+      ],
+      "precision_defined": true,
+      "both_targets_met": true,
+      "balanced_accuracy": 0.7657142857142857,
+      "balanced_accuracy_defined": true,
+      "recall_defined": true,
+      "positive_prevalence": 0.21875
+    },
+    {
+      "source_video": "Shoplifting021_x264",
+      "n": 32,
+      "normal": 30,
+      "shoplifting": 2,
+      "confusion_matrix": [
+        [
+          23,
+          7
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "label_order": [
+        "normal",
+        "shoplifting"
+      ],
+      "accuracy": 0.71875,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "specificity": 0.7666666666666667,
+      "flagged": 7,
+      "flagged_proportion": 0.21875,
+      "precision_wilson95": [
+        5.551115123125783e-17,
+        0.35433043506668743
+      ],
+      "recall_wilson95": [
+        0.0,
+        0.6576197724933469
+      ],
+      "accuracy_wilson95": [
+        0.5462549057408342,
+        0.8443541950225723
+      ],
+      "precision_defined": true,
+      "both_targets_met": false,
+      "balanced_accuracy": 0.38333333333333336,
+      "balanced_accuracy_defined": true,
+      "recall_defined": true,
+      "positive_prevalence": 0.0625
+    },
+    {
+      "source_video": "Shoplifting022_x264",
+      "n": 32,
+      "normal": 27,
+      "shoplifting": 5,
+      "confusion_matrix": [
+        [
+          17,
+          10
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "label_order": [
+        "normal",
+        "shoplifting"
+      ],
+      "accuracy": 0.5625,
+      "precision": 0.09090909090909091,
+      "recall": 0.2,
+      "f1": 0.125,
+      "specificity": 0.6296296296296297,
+      "flagged": 11,
+      "flagged_proportion": 0.34375,
+      "precision_wilson95": [
+        0.016232172885884855,
+        0.37735843645159567
+      ],
+      "recall_wilson95": [
+        0.03622410863243014,
+        0.6244653702374747
+      ],
+      "accuracy_wilson95": [
+        0.3932559113685198,
+        0.7183466888495963
+      ],
+      "precision_defined": true,
+      "both_targets_met": false,
+      "balanced_accuracy": 0.41481481481481486,
+      "balanced_accuracy_defined": true,
+      "recall_defined": true,
+      "positive_prevalence": 0.15625
+    },
+    {
+      "source_video": "Shoplifting025_x264",
+      "n": 32,
+      "normal": 19,
+      "shoplifting": 13,
+      "confusion_matrix": [
+        [
+          15,
+          4
+        ],
+        [
+          12,
+          1
+        ]
+      ],
+      "label_order": [
+        "normal",
+        "shoplifting"
+      ],
+      "accuracy": 0.5,
+      "precision": 0.2,
+      "recall": 0.07692307692307693,
+      "f1": 0.1111111111111111,
+      "specificity": 0.7894736842105263,
+      "flagged": 5,
+      "flagged_proportion": 0.15625,
+      "precision_wilson95": [
+        0.03622410863243014,
+        0.6244653702374747
+      ],
+      "recall_wilson95": [
+        0.013710421242556586,
+        0.3331395092109959
+      ],
+      "accuracy_wilson95": [
+        0.33630882869327483,
+        0.6636911713067252
+      ],
+      "precision_defined": true,
+      "both_targets_met": false,
+      "balanced_accuracy": 0.4331983805668016,
+      "balanced_accuracy_defined": true,
+      "recall_defined": true,
+      "positive_prevalence": 0.40625
+    },
+    {
+      "source_video": "Shoplifting036_x264",
+      "n": 32,
+      "normal": 29,
+      "shoplifting": 3,
+      "confusion_matrix": [
+        [
+          6,
+          23
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "label_order": [
+        "normal",
+        "shoplifting"
+      ],
+      "accuracy": 0.28125,
+      "precision": 0.11538461538461539,
+      "recall": 1.0,
+      "f1": 0.20689655172413793,
+      "specificity": 0.20689655172413793,
+      "flagged": 26,
+      "flagged_proportion": 0.8125,
+      "precision_wilson95": [
+        0.04003244623610615,
+        0.2897590321171364
+      ],
+      "recall_wilson95": [
+        0.4385029682449546,
+        1.0
+      ],
+      "accuracy_wilson95": [
+        0.15564580497742764,
+        0.45374509425916565
+      ],
+      "precision_defined": true,
+      "both_targets_met": false,
+      "balanced_accuracy": 0.603448275862069,
+      "balanced_accuracy_defined": true,
+      "recall_defined": true,
+      "positive_prevalence": 0.09375
+    },
+    {
+      "source_video": "Shoplifting037_x264",
+      "n": 32,
+      "normal": 32,
+      "shoplifting": 0,
+      "confusion_matrix": [
+        [
+          21,
+          11
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "label_order": [
+        "normal",
+        "shoplifting"
+      ],
+      "accuracy": 0.65625,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "specificity": 0.65625,
+      "flagged": 11,
+      "flagged_proportion": 0.34375,
+      "precision_wilson95": [
+        0.0,
+        0.2588329669680317
+      ],
+      "recall_wilson95": null,
+      "accuracy_wilson95": [
+        0.4831108797896222,
+        0.7958956207556682
+      ],
+      "precision_defined": true,
+      "both_targets_met": false,
+      "balanced_accuracy": null,
+      "balanced_accuracy_defined": false,
+      "recall_defined": false,
+      "positive_prevalence": 0.0
+    }
+  ],
+  "limitation": "Source-held-out public DCSASS segment classification, with earlier inspected MNNIT recordings used only as additional development data. DCSASS normal segments come from shoplifting-category source videos; this is not an independent store deployment assessment. Unknown shared cameras/people between source videos remain."
+}

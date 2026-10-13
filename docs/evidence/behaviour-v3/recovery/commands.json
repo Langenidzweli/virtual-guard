@@ -1,0 +1,17 @@
+[
+  {
+    "path": "output/v3-promotion-20261013/decision-01/DECISION.md",
+    "sha256": "931632ea426ba596f88ef5fc3ce17ed0d6a41df7001577892b08a1c1c417e979",
+    "recorded_commands": [
+      ".\\ai-service\\venv313\\Scripts\\python.exe -u -B output/v3-promotion-20261013/worktree/ai-service/training/v3_promotion_experiment.py prepare --source-root . --output output/v3-promotion-20261013/prepared-03 --resume-prepared output/v3-promotion-20261013/prepared-02 --conversion-timeout 300"
+    ]
+  },
+  {
+    "path": "output/v3-recovery-20261013/decision-01/DECISION.md",
+    "sha256": "7bc80a996971f254cbdbfc1d547bea97fd4a27bb56ffa771078f0fcf8aea50c5",
+    "recorded_commands": [
+      ".\\ai-service\\venv313\\Scripts\\python.exe -u -B output/v3-promotion-20261013/worktree/ai-service/training/v3_resume_experiment.py prepare --source-root . --previous output/v3-promotion-20261013/prepared-03 --output output/v3-recovery-20261013/prepared-01",
+      ".\\ai-service\\venv313\\Scripts\\python.exe -u -B output/v3-promotion-20261013/worktree/ai-service/training/v3_fit_recovery.py --source-root . --prepared output/v3-recovery-20261013/prepared-01 --output output/v3-recovery-20261013/comparison-02"
+    ]
+  }
+]

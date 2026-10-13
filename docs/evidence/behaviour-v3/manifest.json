@@ -1,0 +1,410 @@
+{
+  "curated_date": "2026-10-13",
+  "purpose": "Publication of existing saved evidence; no new predictions, fits or feature extraction.",
+  "files": [
+    {
+      "file": "recovery/outer-predictions.csv",
+      "sha256": "ed3db8d66ca3daaaa8e3abdff56d2e9f57151f0451b82458c61f38ec2c40608b",
+      "bytes": 1114699,
+      "sources": [
+        {
+          "path": "output/v3-recovery-20261013/comparison-02/outer-predictions.csv",
+          "sha256": "ed3db8d66ca3daaaa8e3abdff56d2e9f57151f0451b82458c61f38ec2c40608b"
+        }
+      ],
+      "transformation": "Byte-for-byte copy of saved evidence; no inference or fitting."
+    },
+    {
+      "file": "recovery/inner-predictions.csv",
+      "sha256": "90c5893a2b6611374abd3f7f114bb8960670f5f983ccf031e3a1b6453354d3eb",
+      "bytes": 317617,
+      "sources": [
+        {
+          "path": "output/v3-recovery-20261013/comparison-02/inner-predictions.csv",
+          "sha256": "90c5893a2b6611374abd3f7f114bb8960670f5f983ccf031e3a1b6453354d3eb"
+        }
+      ],
+      "transformation": "Byte-for-byte copy of saved evidence; no inference or fitting."
+    },
+    {
+      "file": "recovery/results.json",
+      "sha256": "49f19ccbe32c25ebd0f7a02f2e790d06850eb086ac197c78971c10133339ea12",
+      "bytes": 16199,
+      "sources": [
+        {
+          "path": "output/v3-recovery-20261013/comparison-02/results.json",
+          "sha256": "49f19ccbe32c25ebd0f7a02f2e790d06850eb086ac197c78971c10133339ea12"
+        }
+      ],
+      "transformation": "Byte-for-byte copy of saved evidence; no inference or fitting."
+    },
+    {
+      "file": "recovery/fit-log.jsonl",
+      "sha256": "3e59c69de23768eed8ecafaf33476d13affbc3ac088b57efd4e3fbf3c7a7942f",
+      "bytes": 5620,
+      "sources": [
+        {
+          "path": "output/v3-recovery-20261013/comparison-02/fit-log.jsonl",
+          "sha256": "3e59c69de23768eed8ecafaf33476d13affbc3ac088b57efd4e3fbf3c7a7942f"
+        }
+      ],
+      "transformation": "Byte-for-byte copy of saved evidence; no inference or fitting."
+    },
+    {
+      "file": "recovery/status.json",
+      "sha256": "bf2b6963190dccc52ce5dde1b246e6be5836c59677c7f2871ac4996f07df93ca",
+      "bytes": 352,
+      "sources": [
+        {
+          "path": "output/v3-recovery-20261013/comparison-02/status.json",
+          "sha256": "bf2b6963190dccc52ce5dde1b246e6be5836c59677c7f2871ac4996f07df93ca"
+        }
+      ],
+      "transformation": "Byte-for-byte copy of saved evidence; no inference or fitting."
+    },
+    {
+      "file": "recovery/inner-selections.json",
+      "sha256": "991cc89e5beb81ba59d331a75d5c06b9189fa75565abe41ef84282a5071ba174",
+      "bytes": 1576,
+      "sources": [
+        {
+          "path": "output/v3-recovery-20261013/comparison-02/inner-selections.json",
+          "sha256": "991cc89e5beb81ba59d331a75d5c06b9189fa75565abe41ef84282a5071ba174"
+        }
+      ],
+      "transformation": "Byte-for-byte copy of saved evidence; no inference or fitting."
+    },
+    {
+      "file": "recovery/inner-search.json",
+      "sha256": "c39c49fdd7b2f079c9a7a3f0895a11405dddeb77ef873d7245501690b58b9d38",
+      "bytes": 16523,
+      "sources": [
+        {
+          "path": "output/v3-recovery-20261013/comparison-02/inner-search.json",
+          "sha256": "c39c49fdd7b2f079c9a7a3f0895a11405dddeb77ef873d7245501690b58b9d38"
+        }
+      ],
+      "transformation": "Byte-for-byte copy of saved evidence; no inference or fitting."
+    },
+    {
+      "file": "recovery/candidate-configurations.json",
+      "sha256": "cd8eabe96da92d852991962020ab27de458e906b6d4b41b66fb959255e4258e9",
+      "bytes": 7123,
+      "sources": [
+        {
+          "path": "output/v3-recovery-20261013/comparison-02/candidate-configurations.json",
+          "sha256": "cd8eabe96da92d852991962020ab27de458e906b6d4b41b66fb959255e4258e9"
+        }
+      ],
+      "transformation": "Byte-for-byte copy of saved evidence; no inference or fitting."
+    },
+    {
+      "file": "recovery/environment.json",
+      "sha256": "4ddb887e7e07868d06e3ac9c9be91a9f1f371d464ff9f60a4f04760051ffaac4",
+      "bytes": 284,
+      "sources": [
+        {
+          "path": "output/v3-recovery-20261013/comparison-02/environment.json",
+          "sha256": "4ddb887e7e07868d06e3ac9c9be91a9f1f371d464ff9f60a4f04760051ffaac4"
+        }
+      ],
+      "transformation": "Byte-for-byte copy of saved evidence; no inference or fitting."
+    },
+    {
+      "file": "recovery/per-fold.json",
+      "sha256": "04f025394d7e9222135e96b65cd75045c344ca93bb7ca1672d7c8333b44b2b79",
+      "bytes": 11065,
+      "sources": [
+        {
+          "path": "output/v3-recovery-20261013/comparison-02/per-fold.json",
+          "sha256": "04f025394d7e9222135e96b65cd75045c344ca93bb7ca1672d7c8333b44b2b79"
+        }
+      ],
+      "transformation": "Byte-for-byte copy of saved evidence; no inference or fitting."
+    },
+    {
+      "file": "recovery/per-source.json",
+      "sha256": "0be212b617cca3ebfdd07cdc49e9a4c5caa072297a20e8df1fdcad9308a1fcd2",
+      "bytes": 99255,
+      "sources": [
+        {
+          "path": "output/v3-recovery-20261013/comparison-02/per-source.json",
+          "sha256": "0be212b617cca3ebfdd07cdc49e9a4c5caa072297a20e8df1fdcad9308a1fcd2"
+        }
+      ],
+      "transformation": "Byte-for-byte copy of saved evidence; no inference or fitting."
+    },
+    {
+      "file": "recovery/splits.json",
+      "sha256": "474608b0feedc0122b4644ee16aa13a66f8bc315e33755748d44d0c2092de62c",
+      "bytes": 294771,
+      "sources": [
+        {
+          "path": "output/v3-recovery-20261013/prepared-01/splits.json",
+          "sha256": "474608b0feedc0122b4644ee16aa13a66f8bc315e33755748d44d0c2092de62c"
+        }
+      ],
+      "transformation": "Byte-for-byte copy of saved evidence; no inference or fitting."
+    },
+    {
+      "file": "recovery/duplicate-audit.json",
+      "sha256": "b6a60c808a34b4235ff93e57c6ac4146093c19acec4c3eb7e4cc10285eeff264",
+      "bytes": 2944,
+      "sources": [
+        {
+          "path": "output/v3-recovery-20261013/prepared-01/duplicate-audit.json",
+          "sha256": "b6a60c808a34b4235ff93e57c6ac4146093c19acec4c3eb7e4cc10285eeff264"
+        }
+      ],
+      "transformation": "Byte-for-byte copy of saved evidence; no inference or fitting."
+    },
+    {
+      "file": "recovery/source-membership.csv",
+      "sha256": "2aaf2c9f433100c293ad95003d6f6c91dae0991a0d7824201ba941c57ebc1102",
+      "bytes": 225141,
+      "sources": [
+        {
+          "path": "output/v3-recovery-20261013/prepared-01/source-membership.csv",
+          "sha256": "f4e07535ebe2167894c42be18a7fc5e3059c7cf08ea91b852d7df2fe242a2eba"
+        }
+      ],
+      "transformation": "Removed workstation-specific absolute path column; all IDs, labels, hashes, roles and groups retained."
+    },
+    {
+      "file": "internal/outer-predictions.csv",
+      "sha256": "f32ba1d658788b62e821ca8cdaea7f456c0510d05b97cb827947b359fac0f342",
+      "bytes": 192578,
+      "sources": [
+        {
+          "path": "output/capstone-v3/package-verification/virtual-guard-v1/docs/evidence/behaviour-v3/internal/outer-predictions.csv",
+          "sha256": "f32ba1d658788b62e821ca8cdaea7f456c0510d05b97cb827947b359fac0f342"
+        }
+      ],
+      "transformation": "Byte-for-byte copy of saved evidence; no inference or fitting."
+    },
+    {
+      "file": "internal/comparison.json",
+      "sha256": "30f8a2e01ee9e7f77de269182e840265a3caca76e46cf3b8dbb854768002d0a5",
+      "bytes": 18294,
+      "sources": [
+        {
+          "path": "output/capstone-v3/package-verification/virtual-guard-v1/docs/evidence/behaviour-v3/internal/comparison.json",
+          "sha256": "30f8a2e01ee9e7f77de269182e840265a3caca76e46cf3b8dbb854768002d0a5"
+        }
+      ],
+      "transformation": "Byte-for-byte copy of saved evidence; no inference or fitting."
+    },
+    {
+      "file": "internal/status.json",
+      "sha256": "dae574193d33ed1790d6ab8653b8f8efff7924547debaaaedc8f33952271f9cd",
+      "bytes": 614,
+      "sources": [
+        {
+          "path": "output/capstone-v3/package-verification/virtual-guard-v1/docs/evidence/behaviour-v3/internal/status.json",
+          "sha256": "dae574193d33ed1790d6ab8653b8f8efff7924547debaaaedc8f33952271f9cd"
+        }
+      ],
+      "transformation": "Byte-for-byte copy of saved evidence; no inference or fitting."
+    },
+    {
+      "file": "internal/split-membership.csv",
+      "sha256": "594f50677fd55fbebc6c613c64a2ef59728d48b65e3e85e12a90453642769dcb",
+      "bytes": 18386,
+      "sources": [
+        {
+          "path": "output/capstone-v3/package-verification/virtual-guard-v1/docs/evidence/behaviour-v3/internal/split-membership.csv",
+          "sha256": "594f50677fd55fbebc6c613c64a2ef59728d48b65e3e85e12a90453642769dcb"
+        }
+      ],
+      "transformation": "Byte-for-byte copy of saved evidence; no inference or fitting."
+    },
+    {
+      "file": "internal/fit-times.json",
+      "sha256": "34c3be08e5b3f72f7f55991f5a322edb985839fa6c50ec26f88cd55c92415a7c",
+      "bytes": 22172,
+      "sources": [
+        {
+          "path": "output/capstone-v3/package-verification/virtual-guard-v1/docs/evidence/behaviour-v3/internal/fit-times.json",
+          "sha256": "34c3be08e5b3f72f7f55991f5a322edb985839fa6c50ec26f88cd55c92415a7c"
+        }
+      ],
+      "transformation": "Byte-for-byte copy of saved evidence; no inference or fitting."
+    },
+    {
+      "file": "external/heldout-predictions.csv",
+      "sha256": "eea1c0a04ec2e06b73aaf292c8c80479e6b9fb4dd65fd07318a988917b1d56c1",
+      "bytes": 39685,
+      "sources": [
+        {
+          "path": "output/capstone-v3/package-verification/virtual-guard-v1/docs/evidence/behaviour-v3/external/heldout-predictions.csv",
+          "sha256": "eea1c0a04ec2e06b73aaf292c8c80479e6b9fb4dd65fd07318a988917b1d56c1"
+        }
+      ],
+      "transformation": "Byte-for-byte copy of saved evidence; no inference or fitting."
+    },
+    {
+      "file": "external/heldout-results.json",
+      "sha256": "246de8546627df1b261974539c715b196d3892bca7d0256380a410113c6ac803",
+      "bytes": 6775,
+      "sources": [
+        {
+          "path": "output/capstone-v3/package-verification/virtual-guard-v1/docs/evidence/behaviour-v3/external/heldout-results.json",
+          "sha256": "246de8546627df1b261974539c715b196d3892bca7d0256380a410113c6ac803"
+        }
+      ],
+      "transformation": "Byte-for-byte copy of saved evidence; no inference or fitting."
+    },
+    {
+      "file": "external/secondary-transfer-predictions.csv",
+      "sha256": "8bb6aca0eed7599492da5453c7e7daab75f9c3ac9bed5f3ecccad874f71838da",
+      "bytes": 39467,
+      "sources": [
+        {
+          "path": "output/capstone-v3/package-verification/virtual-guard-v1/docs/evidence/behaviour-v3/external/secondary-transfer-predictions.csv",
+          "sha256": "8bb6aca0eed7599492da5453c7e7daab75f9c3ac9bed5f3ecccad874f71838da"
+        }
+      ],
+      "transformation": "Byte-for-byte copy of saved evidence; no inference or fitting."
+    },
+    {
+      "file": "external/secondary-transfer-results.json",
+      "sha256": "a9466aaaa906557b0f489f4b0f22ad442de268fee432481dab4f9841e20cbe19",
+      "bytes": 8725,
+      "sources": [
+        {
+          "path": "output/capstone-v3/package-verification/virtual-guard-v1/docs/evidence/behaviour-v3/external/secondary-transfer-results.json",
+          "sha256": "b174fdd35ddbeb188be19ea62c67fab6f4f1d02ccc12107afdcf90c23c26f6cc"
+        }
+      ],
+      "transformation": "Replaced workstation root with <workspace>; saved numerical results unchanged."
+    },
+    {
+      "file": "external/external-source-membership.csv",
+      "sha256": "7187427c73e0058fc2dfa76434dec1f78cf8470c26827ef97100044f906adbe9",
+      "bytes": 130739,
+      "sources": [
+        {
+          "path": "output/capstone-v3/package-verification/virtual-guard-v1/docs/evidence/behaviour-v3/external/external-source-membership.csv",
+          "sha256": "7187427c73e0058fc2dfa76434dec1f78cf8470c26827ef97100044f906adbe9"
+        }
+      ],
+      "transformation": "Byte-for-byte copy of saved evidence; no inference or fitting."
+    },
+    {
+      "file": "dataset/dcsass-download-manifest.json",
+      "sha256": "52bc300fac324b18f4110776364b107fe6b3802e003d406011289e49095ef282",
+      "bytes": 513207,
+      "sources": [
+        {
+          "path": "output/behaviour-v3/research/dcsass-download-manifest.json",
+          "sha256": "52bc300fac324b18f4110776364b107fe6b3802e003d406011289e49095ef282"
+        }
+      ],
+      "transformation": "Byte-for-byte copy of saved evidence; no inference or fitting."
+    },
+    {
+      "file": "dataset/dcsass-shoplifting-selection.json",
+      "sha256": "fd32118083ae2a72fa73519f0a631a17f1a883cf86e90ceb2a8b6ce48b2422ed",
+      "bytes": 120363,
+      "sources": [
+        {
+          "path": "output/behaviour-v3/research/dcsass-shoplifting-selection.json",
+          "sha256": "fd32118083ae2a72fa73519f0a631a17f1a883cf86e90ceb2a8b6ce48b2422ed"
+        }
+      ],
+      "transformation": "Byte-for-byte copy of saved evidence; no inference or fitting."
+    },
+    {
+      "file": "dataset/dcsass-label-audit.json",
+      "sha256": "c328b6e3e2627404311ef520e7c02da4ecb2ca485ddac445b5e108279bd9d57e",
+      "bytes": 2401,
+      "sources": [
+        {
+          "path": "output/behaviour-v3/research/dcsass-label-audit.json",
+          "sha256": "c328b6e3e2627404311ef520e7c02da4ecb2ca485ddac445b5e108279bd9d57e"
+        }
+      ],
+      "transformation": "Byte-for-byte copy of saved evidence; no inference or fitting."
+    },
+    {
+      "file": "dataset/dcsass-shoplifting-labels.csv",
+      "sha256": "a54c73699b3b817a1b9503d48792fd40b622cf09f51394213a4e13f05e3b88eb",
+      "bytes": 33766,
+      "sources": [
+        {
+          "path": "output/behaviour-v3/research/dcsass-shoplifting-labels.csv",
+          "sha256": "a54c73699b3b817a1b9503d48792fd40b622cf09f51394213a4e13f05e3b88eb"
+        }
+      ],
+      "transformation": "Byte-for-byte copy of saved evidence; no inference or fitting."
+    },
+    {
+      "file": "dataset/publisher-metadata.json",
+      "sha256": "2462b7c2be1ca3a1850d44ef1ff33ce0e4c4fa39a8a41300ba3c4747a8f138aa",
+      "bytes": 1283,
+      "sources": [
+        {
+          "path": "output/behaviour-v3/research/dcsass-metadata.txt",
+          "sha256": "1e2f3eb4b2b598d04a1ac67e6f36af6deb9c112bba3c64f4e8e720f4d63a191d"
+        }
+      ],
+      "transformation": "Selected public publisher metadata fields; no description changes."
+    },
+    {
+      "file": "recovery/interrupted-attempts.json",
+      "sha256": "6b0ac94ecdee1bc55b415bdad6774a794165e331475ebdc93abd06ca28f0c4b3",
+      "bytes": 1203,
+      "sources": [
+        {
+          "path": "output/v3-promotion-20261013/prepared-01/failure.json",
+          "sha256": "e3e5cd27b07a8cd0529caf283512017f986b6af102eb203b207d37d2c7289c8e"
+        },
+        {
+          "path": "output/v3-promotion-20261013/prepared-02/failure.json",
+          "sha256": "c2ce4de9d9b0a0949c77da021b6c2404310d2b26fc41516d2d3214c11811784d"
+        },
+        {
+          "path": "output/v3-promotion-20261013/prepared-03/failure.json",
+          "sha256": "d2463e4ad83a417f853008ea9d5f319d037a0cbe542e25175cf306f298f19759"
+        },
+        {
+          "path": "output/v3-recovery-20261013/comparison-01/failure-8195532f7f4b4df982dc3badb7e306a5.json",
+          "sha256": "fb2aff6a9251ccd603ae20977f119a23619cc8b91cfebf02b4a784bd6ad95ee4"
+        },
+        {
+          "path": "output/v3-promotion-20261013/decision-01/DECISION.md",
+          "sha256": "931632ea426ba596f88ef5fc3ce17ed0d6a41df7001577892b08a1c1c417e979"
+        }
+      ],
+      "transformation": "Public summary of saved failures and decision counts; conversion command workstation paths omitted."
+    },
+    {
+      "file": "recovery/commands.json",
+      "sha256": "e633f8e866ec2618a71ee25fb866aa78dc8a789814d6e906257dc17ce2fbc03c",
+      "bytes": 1206,
+      "sources": [
+        {
+          "path": "output/v3-promotion-20261013/decision-01/DECISION.md",
+          "sha256": "931632ea426ba596f88ef5fc3ce17ed0d6a41df7001577892b08a1c1c417e979"
+        },
+        {
+          "path": "output/v3-recovery-20261013/decision-01/DECISION.md",
+          "sha256": "7bc80a996971f254cbdbfc1d547bea97fd4a27bb56ffa771078f0fcf8aea50c5"
+        }
+      ],
+      "transformation": "Extracted historical prepare/fit command lines exactly; provenance, not a runnable recipe for this evidence-only bundle."
+    },
+    {
+      "file": "recovery/preparation-summary.json",
+      "sha256": "bdaff7cb7289552c1e2f22322d1e1b5e5f988cb922016d2bc093f51b18c5a5c2",
+      "bytes": 6161,
+      "sources": [
+        {
+          "path": "output/v3-recovery-20261013/prepared-01/prepared.json",
+          "sha256": "1c21917b5d9de0161319f344d4111238503bca97fe4677d95e01d458325cb311"
+        }
+      ],
+      "transformation": "Selected completed preparation metadata, source data/code hashes and feature order; machine-specific provenance omitted."
+    }
+  ]
+}

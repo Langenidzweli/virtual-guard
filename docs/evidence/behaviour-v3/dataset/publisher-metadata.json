@@ -1,0 +1,10 @@
+{
+  "ref": "mateohervas/dcsass-dataset",
+  "title": "DCSASS Dataset",
+  "creatorName": "Mateo Hervas",
+  "ownerRef": "mateohervas",
+  "lastUpdated": "2019-05-26T22:57:53.067Z",
+  "currentVersionNumber": 1,
+  "licenseName": "CC BY-NC-SA 4.0",
+  "description": "### Context\n\nThis dataset was built based on the dataset built from Sultani, W., Chen, C., & Shah, M. (2018). Real-world anomaly detection in surveillance videos . Center for Research in Computer Vision (CRCV), 1-10.\n\n\n### Content\n\nThis dataset contains videos based on the following 13 classes: Abuse, Arrest, Arson, Assault, Accident, Burglary, Explosion, Fighting, Robbery, Shooting, Stealing, Shoplifting, and Vandalism. Each video is labeled as normal (0) or abnormal (1) according to its content. All of the labels can be found in ...file\n\nLastly, the distribution of this dataset is as follows: \nThere is a total of 16853 videos, where 9676 videos are labeled as Normal and 7177 as abnormal\n\n\n### Acknowledgements\n\nWe acknowledge the research and dataset developed by Sultani, W., Chen, C., & Shah, M. (2018). Real-world anomaly detection in surveillance videos . Center for Research in Computer Vision (CRCV), 1-10. Also, we would like to thank Diego Linares for his help in the labeling process."
+}

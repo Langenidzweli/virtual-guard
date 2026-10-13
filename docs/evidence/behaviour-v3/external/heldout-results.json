@@ -1,0 +1,253 @@
+{
+  "primary_candidate": "extra_trees_balanced",
+  "threshold": 0.35,
+  "heldout_original_sources": 6,
+  "heldout_source_groups": 6,
+  "results": {
+    "selected_model": {
+      "n": 192,
+      "normal": 162,
+      "shoplifting": 30,
+      "confusion_matrix": [
+        [
+          87,
+          75
+        ],
+        [
+          7,
+          23
+        ]
+      ],
+      "label_order": [
+        "normal",
+        "shoplifting"
+      ],
+      "accuracy": 0.5729166666666666,
+      "precision": 0.23469387755102042,
+      "recall": 0.7666666666666667,
+      "f1": 0.359375,
+      "specificity": 0.5370370370370371,
+      "flagged": 98,
+      "flagged_proportion": 0.5104166666666666,
+      "precision_wilson95": [
+        0.16178478951873154,
+        0.32761765421930306
+      ],
+      "recall_wilson95": [
+        0.5907167384187784,
+        0.8820761185551049
+      ],
+      "accuracy_wilson95": [
+        0.5021932386979683,
+        0.64077955250063
+      ],
+      "precision_defined": true,
+      "both_targets_met": false,
+      "balanced_accuracy": 0.6518518518518519,
+      "balanced_accuracy_defined": true,
+      "recall_defined": true,
+      "positive_prevalence": 0.15625,
+      "source_cluster_bootstrap": {
+        "percentile95": {
+          "accuracy": [
+            0.4166666666666667,
+            0.7239583333333334
+          ],
+          "precision": [
+            0.09140752032520326,
+            0.400119047619047
+          ],
+          "recall": [
+            0.5,
+            0.9629629629629629
+          ],
+          "f1": [
+            0.15370370370370373,
+            0.5303030303030303
+          ],
+          "specificity": [
+            0.35425622472866564,
+            0.7251861485108116
+          ],
+          "balanced_accuracy": [
+            0.5317905592880411,
+            0.7678571428571428
+          ]
+        },
+        "replicates": 2000,
+        "undefined_replicates": {
+          "accuracy": 0,
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "specificity": 0,
+          "balanced_accuracy": 0
+        },
+        "source_groups": 6,
+        "limitation": "Conditional on frozen held-out predictions; undefined ratios excluded and counted, no training uncertainty or unknown shared-camera dependence"
+      }
+    },
+    "always_normal": {
+      "n": 192,
+      "normal": 162,
+      "shoplifting": 30,
+      "confusion_matrix": [
+        [
+          162,
+          0
+        ],
+        [
+          30,
+          0
+        ]
+      ],
+      "label_order": [
+        "normal",
+        "shoplifting"
+      ],
+      "accuracy": 0.84375,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "specificity": 1.0,
+      "flagged": 0,
+      "flagged_proportion": 0.0,
+      "precision_wilson95": null,
+      "recall_wilson95": [
+        0.0,
+        0.11351339317396876
+      ],
+      "accuracy_wilson95": [
+        0.7857096789622484,
+        0.8883049081168581
+      ],
+      "precision_defined": false,
+      "both_targets_met": false,
+      "balanced_accuracy": 0.5,
+      "balanced_accuracy_defined": true,
+      "recall_defined": true,
+      "positive_prevalence": 0.15625,
+      "source_cluster_bootstrap": {
+        "percentile95": {
+          "accuracy": [
+            0.7342447916666667,
+            0.9375
+          ],
+          "precision": null,
+          "recall": [
+            0.0,
+            0.0
+          ],
+          "f1": [
+            0.0,
+            0.0
+          ],
+          "specificity": [
+            1.0,
+            1.0
+          ],
+          "balanced_accuracy": [
+            0.5,
+            0.5
+          ]
+        },
+        "replicates": 2000,
+        "undefined_replicates": {
+          "accuracy": 0,
+          "precision": 2000,
+          "recall": 0,
+          "f1": 0,
+          "specificity": 0,
+          "balanced_accuracy": 0
+        },
+        "source_groups": 6,
+        "limitation": "Conditional on frozen held-out predictions; undefined ratios excluded and counted, no training uncertainty or unknown shared-camera dependence"
+      }
+    },
+    "always_positive": {
+      "n": 192,
+      "normal": 162,
+      "shoplifting": 30,
+      "confusion_matrix": [
+        [
+          0,
+          162
+        ],
+        [
+          0,
+          30
+        ]
+      ],
+      "label_order": [
+        "normal",
+        "shoplifting"
+      ],
+      "accuracy": 0.15625,
+      "precision": 0.15625,
+      "recall": 1.0,
+      "f1": 0.2702702702702703,
+      "specificity": 0.0,
+      "flagged": 192,
+      "flagged_proportion": 1.0,
+      "precision_wilson95": [
+        0.1116950918831419,
+        0.21429032103775153
+      ],
+      "recall_wilson95": [
+        0.8864866068260312,
+        0.9999999999999999
+      ],
+      "accuracy_wilson95": [
+        0.1116950918831419,
+        0.21429032103775153
+      ],
+      "precision_defined": true,
+      "both_targets_met": false,
+      "balanced_accuracy": 0.5,
+      "balanced_accuracy_defined": true,
+      "recall_defined": true,
+      "positive_prevalence": 0.15625,
+      "source_cluster_bootstrap": {
+        "percentile95": {
+          "accuracy": [
+            0.0625,
+            0.2657552083333326
+          ],
+          "precision": [
+            0.0625,
+            0.2657552083333326
+          ],
+          "recall": [
+            1.0,
+            1.0
+          ],
+          "f1": [
+            0.11764705882352941,
+            0.4199149969641764
+          ],
+          "specificity": [
+            0.0,
+            0.0
+          ],
+          "balanced_accuracy": [
+            0.5,
+            0.5
+          ]
+        },
+        "replicates": 2000,
+        "undefined_replicates": {
+          "accuracy": 0,
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "specificity": 0,
+          "balanced_accuracy": 0
+        },
+        "source_groups": 6,
+        "limitation": "Conditional on frozen held-out predictions; undefined ratios excluded and counted, no training uncertainty or unknown shared-camera dependence"
+      }
+    }
+  },
+  "uncertainty_limit": "Only these held-out source groups are resampled; few groups, no training uncertainty or unknown shared-camera dependence",
+  "limitation": "Source-held-out public DCSASS segment classification, with earlier inspected MNNIT recordings used only as additional development data. DCSASS normal segments come from shoplifting-category source videos; this is not an independent store deployment assessment. Unknown shared cameras/people between source videos remain."
+}

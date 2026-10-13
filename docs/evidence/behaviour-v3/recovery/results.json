@@ -1,0 +1,659 @@
+{
+  "mixed_rf_fixed": {
+    "n": 704,
+    "normal": 579,
+    "positive": 125,
+    "confusion": [
+      527,
+      52,
+      124,
+      1
+    ],
+    "accuracy": 0.75,
+    "precision": 0.018867924528301886,
+    "recall": 0.008,
+    "specificity": 0.9101899827288429,
+    "f1": 0.011235955056179775,
+    "alerts": 53,
+    "alert_rate": 0.07528409090909091,
+    "both_targets_met": false,
+    "sources": 22,
+    "groups": 22,
+    "bootstrap95": {
+      "percentile95": {
+        "accuracy": [
+          0.671875,
+          0.8309659090909091
+        ],
+        "precision": [
+          0.0,
+          0.046153846153846156
+        ],
+        "recall": [
+          0.0,
+          0.030308813324080468
+        ],
+        "f1": [
+          0.0,
+          0.03390921655633951
+        ],
+        "specificity": [
+          0.8436915169135815,
+          0.970457067165342
+        ],
+        "balanced_accuracy": [
+          0.42957292196797586,
+          0.4862189213609172
+        ]
+      },
+      "replicates": 2000,
+      "undefined_replicates": {
+        "accuracy": 0,
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "specificity": 0,
+        "balanced_accuracy": 0
+      },
+      "source_groups": 22,
+      "limitation": "Conditional on frozen held-out predictions; undefined ratios excluded and counted, no training uncertainty or unknown shared-camera dependence"
+    }
+  },
+  "segment_only_rf_fixed": {
+    "n": 704,
+    "normal": 579,
+    "positive": 125,
+    "confusion": [
+      547,
+      32,
+      123,
+      2
+    ],
+    "accuracy": 0.7798295454545454,
+    "precision": 0.058823529411764705,
+    "recall": 0.016,
+    "specificity": 0.9447322970639033,
+    "f1": 0.025157232704402517,
+    "alerts": 34,
+    "alert_rate": 0.048295454545454544,
+    "both_targets_met": false,
+    "sources": 22,
+    "groups": 22,
+    "bootstrap95": {
+      "percentile95": {
+        "accuracy": [
+          0.7088068181818182,
+          0.84375
+        ],
+        "precision": [
+          0.0,
+          0.25
+        ],
+        "recall": [
+          0.0,
+          0.04054054054054054
+        ],
+        "f1": [
+          0.0,
+          0.0655827778778598
+        ],
+        "specificity": [
+          0.8963803329346093,
+          0.979169365284974
+        ],
+        "balanced_accuracy": [
+          0.4527813084661012,
+          0.5024452022471035
+        ]
+      },
+      "replicates": 2000,
+      "undefined_replicates": {
+        "accuracy": 0,
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "specificity": 0,
+        "balanced_accuracy": 0
+      },
+      "source_groups": 22,
+      "limitation": "Conditional on frozen held-out predictions; undefined ratios excluded and counted, no training uncertainty or unknown shared-camera dependence"
+    }
+  },
+  "relative_segment_rf_fixed": {
+    "n": 704,
+    "normal": 579,
+    "positive": 125,
+    "confusion": [
+      555,
+      24,
+      123,
+      2
+    ],
+    "accuracy": 0.7911931818181818,
+    "precision": 0.07692307692307693,
+    "recall": 0.016,
+    "specificity": 0.9585492227979274,
+    "f1": 0.026490066225165563,
+    "alerts": 26,
+    "alert_rate": 0.036931818181818184,
+    "both_targets_met": false,
+    "sources": 22,
+    "groups": 22,
+    "bootstrap95": {
+      "percentile95": {
+        "accuracy": [
+          0.7244318181818182,
+          0.8508522727272727
+        ],
+        "precision": [
+          0.0,
+          0.2857142857142857
+        ],
+        "recall": [
+          0.0,
+          0.04054054054054054
+        ],
+        "f1": [
+          0.0,
+          0.06741810079173184
+        ],
+        "specificity": [
+          0.9326014405973725,
+          0.9812036490543765
+        ],
+        "balanced_accuracy": [
+          0.4694397283531409,
+          0.5048775349782844
+        ]
+      },
+      "replicates": 2000,
+      "undefined_replicates": {
+        "accuracy": 0,
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "specificity": 0,
+        "balanced_accuracy": 0
+      },
+      "source_groups": 22,
+      "limitation": "Conditional on frozen held-out predictions; undefined ratios excluded and counted, no training uncertainty or unknown shared-camera dependence"
+    }
+  },
+  "mixed_rf_inner_threshold": {
+    "n": 704,
+    "normal": 579,
+    "positive": 125,
+    "confusion": [
+      403,
+      176,
+      100,
+      25
+    ],
+    "accuracy": 0.6079545454545454,
+    "precision": 0.12437810945273632,
+    "recall": 0.2,
+    "specificity": 0.696027633851468,
+    "f1": 0.15337423312883436,
+    "alerts": 201,
+    "alert_rate": 0.28551136363636365,
+    "both_targets_met": false,
+    "sources": 22,
+    "groups": 22,
+    "bootstrap95": {
+      "percentile95": {
+        "accuracy": [
+          0.5184303977272727,
+          0.6946022727272727
+        ],
+        "precision": [
+          0.07643138390272149,
+          0.17989682539682536
+        ],
+        "recall": [
+          0.10810148383677796,
+          0.3434768034325554
+        ],
+        "f1": [
+          0.0962541135335253,
+          0.2105342422320862
+        ],
+        "specificity": [
+          0.5845243279060962,
+          0.7990123203770997
+        ],
+        "balanced_accuracy": [
+          0.3969231751380034,
+          0.5120290424118257
+        ]
+      },
+      "replicates": 2000,
+      "undefined_replicates": {
+        "accuracy": 0,
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "specificity": 0,
+        "balanced_accuracy": 0
+      },
+      "source_groups": 22,
+      "limitation": "Conditional on frozen held-out predictions; undefined ratios excluded and counted, no training uncertainty or unknown shared-camera dependence"
+    }
+  },
+  "segment_only_rf_inner_threshold": {
+    "n": 704,
+    "normal": 579,
+    "positive": 125,
+    "confusion": [
+      417,
+      162,
+      98,
+      27
+    ],
+    "accuracy": 0.6306818181818182,
+    "precision": 0.14285714285714285,
+    "recall": 0.216,
+    "specificity": 0.7202072538860104,
+    "f1": 0.17197452229299362,
+    "alerts": 189,
+    "alert_rate": 0.2684659090909091,
+    "both_targets_met": false,
+    "sources": 22,
+    "groups": 22,
+    "bootstrap95": {
+      "percentile95": {
+        "accuracy": [
+          0.5596590909090909,
+          0.7017045454545454
+        ],
+        "precision": [
+          0.058823529411764705,
+          0.2552067160137207
+        ],
+        "recall": [
+          0.0970873786407767,
+          0.3333333333333333
+        ],
+        "f1": [
+          0.07750447227191413,
+          0.2670468426117856
+        ],
+        "specificity": [
+          0.6219802708000581,
+          0.8127188573343386
+        ],
+        "balanced_accuracy": [
+          0.4108187386386954,
+          0.5242360481286654
+        ]
+      },
+      "replicates": 2000,
+      "undefined_replicates": {
+        "accuracy": 0,
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "specificity": 0,
+        "balanced_accuracy": 0
+      },
+      "source_groups": 22,
+      "limitation": "Conditional on frozen held-out predictions; undefined ratios excluded and counted, no training uncertainty or unknown shared-camera dependence"
+    }
+  },
+  "relative_segment_rf_inner_threshold": {
+    "n": 704,
+    "normal": 579,
+    "positive": 125,
+    "confusion": [
+      431,
+      148,
+      102,
+      23
+    ],
+    "accuracy": 0.6448863636363636,
+    "precision": 0.13450292397660818,
+    "recall": 0.184,
+    "specificity": 0.7443868739205527,
+    "f1": 0.1554054054054054,
+    "alerts": 171,
+    "alert_rate": 0.24289772727272727,
+    "both_targets_met": false,
+    "sources": 22,
+    "groups": 22,
+    "bootstrap95": {
+      "percentile95": {
+        "accuracy": [
+          0.5738636363636364,
+          0.7130681818181818
+        ],
+        "precision": [
+          0.03882561613144137,
+          0.27465669014084504
+        ],
+        "recall": [
+          0.055151799100449775,
+          0.3157894736842105
+        ],
+        "f1": [
+          0.04586632315361736,
+          0.27425106044538705
+        ],
+        "specificity": [
+          0.6528484974093264,
+          0.8293000081846454
+        ],
+        "balanced_accuracy": [
+          0.39742512389571216,
+          0.531240897414078
+        ]
+      },
+      "replicates": 2000,
+      "undefined_replicates": {
+        "accuracy": 0,
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "specificity": 0,
+        "balanced_accuracy": 0
+      },
+      "source_groups": 22,
+      "limitation": "Conditional on frozen held-out predictions; undefined ratios excluded and counted, no training uncertainty or unknown shared-camera dependence"
+    }
+  },
+  "primary_nested": {
+    "n": 704,
+    "normal": 579,
+    "positive": 125,
+    "confusion": [
+      393,
+      186,
+      96,
+      29
+    ],
+    "accuracy": 0.5994318181818182,
+    "precision": 0.13488372093023257,
+    "recall": 0.232,
+    "specificity": 0.6787564766839378,
+    "f1": 0.17058823529411765,
+    "alerts": 215,
+    "alert_rate": 0.3053977272727273,
+    "both_targets_met": false,
+    "sources": 22,
+    "groups": 22,
+    "bootstrap95": {
+      "percentile95": {
+        "accuracy": [
+          0.5213068181818182,
+          0.6761363636363636
+        ],
+        "precision": [
+          0.05729109306167401,
+          0.23881668213954146
+        ],
+        "recall": [
+          0.1180453431372549,
+          0.34444444444444444
+        ],
+        "f1": [
+          0.07721883573973606,
+          0.2639442815249266
+        ],
+        "specificity": [
+          0.5812380630087708,
+          0.7766008862132145
+        ],
+        "balanced_accuracy": [
+          0.38905591445666327,
+          0.517330488972168
+        ]
+      },
+      "replicates": 2000,
+      "undefined_replicates": {
+        "accuracy": 0,
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "specificity": 0,
+        "balanced_accuracy": 0
+      },
+      "source_groups": 22,
+      "limitation": "Conditional on frozen held-out predictions; undefined ratios excluded and counted, no training uncertainty or unknown shared-camera dependence"
+    }
+  },
+  "frozen_v2": {
+    "n": 704,
+    "normal": 579,
+    "positive": 125,
+    "confusion": [
+      361,
+      218,
+      77,
+      48
+    ],
+    "accuracy": 0.5809659090909091,
+    "precision": 0.18045112781954886,
+    "recall": 0.384,
+    "specificity": 0.6234887737478411,
+    "f1": 0.24552429667519182,
+    "alerts": 266,
+    "alert_rate": 0.3778409090909091,
+    "both_targets_met": false,
+    "sources": 22,
+    "groups": 22,
+    "bootstrap95": {
+      "percentile95": {
+        "accuracy": [
+          0.4928977272727273,
+          0.6619318181818182
+        ],
+        "precision": [
+          0.10637170934006492,
+          0.26297630763044555
+        ],
+        "recall": [
+          0.23570378151260504,
+          0.573048950439857
+        ],
+        "f1": [
+          0.15427472527472527,
+          0.336429126644828
+        ],
+        "specificity": [
+          0.5121699340917678,
+          0.7267138044051248
+        ],
+        "balanced_accuracy": [
+          0.4297819824554053,
+          0.5907643068014481
+        ]
+      },
+      "replicates": 2000,
+      "undefined_replicates": {
+        "accuracy": 0,
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "specificity": 0,
+        "balanced_accuracy": 0
+      },
+      "source_groups": 22,
+      "limitation": "Conditional on frozen held-out predictions; undefined ratios excluded and counted, no training uncertainty or unknown shared-camera dependence"
+    }
+  },
+  "frozen_v3_forest": {
+    "n": 704,
+    "normal": 579,
+    "positive": 125,
+    "confusion": [
+      392,
+      187,
+      69,
+      56
+    ],
+    "accuracy": 0.6363636363636364,
+    "precision": 0.23045267489711935,
+    "recall": 0.448,
+    "specificity": 0.6770293609671848,
+    "f1": 0.30434782608695654,
+    "alerts": 243,
+    "alert_rate": 0.34517045454545453,
+    "both_targets_met": false,
+    "sources": 22,
+    "groups": 22,
+    "bootstrap95": {
+      "percentile95": {
+        "accuracy": [
+          0.5667613636363636,
+          0.7017400568181816
+        ],
+        "precision": [
+          0.15849005052067222,
+          0.30955724986623845
+        ],
+        "recall": [
+          0.2898530138339921,
+          0.6371034207727756
+        ],
+        "f1": [
+          0.22456140350877193,
+          0.3755656108597285
+        ],
+        "specificity": [
+          0.5808707836281366,
+          0.7639357159234209
+        ],
+        "balanced_accuracy": [
+          0.5033708545866882,
+          0.6371776836601991
+        ]
+      },
+      "replicates": 2000,
+      "undefined_replicates": {
+        "accuracy": 0,
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "specificity": 0,
+        "balanced_accuracy": 0
+      },
+      "source_groups": 22,
+      "limitation": "Conditional on frozen held-out predictions; undefined ratios excluded and counted, no training uncertainty or unknown shared-camera dependence"
+    }
+  },
+  "always_normal": {
+    "n": 704,
+    "normal": 579,
+    "positive": 125,
+    "confusion": [
+      579,
+      0,
+      125,
+      0
+    ],
+    "accuracy": 0.8224431818181818,
+    "precision": null,
+    "recall": 0.0,
+    "specificity": 1.0,
+    "f1": 0.0,
+    "alerts": 0,
+    "alert_rate": 0.0,
+    "both_targets_met": false,
+    "sources": 22,
+    "groups": 22,
+    "bootstrap95": {
+      "percentile95": {
+        "accuracy": [
+          0.745703125,
+          0.8892045454545454
+        ],
+        "precision": null,
+        "recall": [
+          0.0,
+          0.0
+        ],
+        "f1": [
+          0.0,
+          0.0
+        ],
+        "specificity": [
+          1.0,
+          1.0
+        ],
+        "balanced_accuracy": [
+          0.5,
+          0.5
+        ]
+      },
+      "replicates": 2000,
+      "undefined_replicates": {
+        "accuracy": 0,
+        "precision": 2000,
+        "recall": 0,
+        "f1": 0,
+        "specificity": 0,
+        "balanced_accuracy": 0
+      },
+      "source_groups": 22,
+      "limitation": "Conditional on frozen held-out predictions; undefined ratios excluded and counted, no training uncertainty or unknown shared-camera dependence"
+    }
+  },
+  "always_positive": {
+    "n": 704,
+    "normal": 579,
+    "positive": 125,
+    "confusion": [
+      0,
+      579,
+      0,
+      125
+    ],
+    "accuracy": 0.17755681818181818,
+    "precision": 0.17755681818181818,
+    "recall": 1.0,
+    "specificity": 0.0,
+    "f1": 0.30156815440289503,
+    "alerts": 704,
+    "alert_rate": 1.0,
+    "both_targets_met": false,
+    "sources": 22,
+    "groups": 22,
+    "bootstrap95": {
+      "percentile95": {
+        "accuracy": [
+          0.11079545454545454,
+          0.2542968749999998
+        ],
+        "precision": [
+          0.11079545454545454,
+          0.2542968749999998
+        ],
+        "recall": [
+          1.0,
+          1.0
+        ],
+        "f1": [
+          0.19948849104859334,
+          0.405481108725396
+        ],
+        "specificity": [
+          0.0,
+          0.0
+        ],
+        "balanced_accuracy": [
+          0.5,
+          0.5
+        ]
+      },
+      "replicates": 2000,
+      "undefined_replicates": {
+        "accuracy": 0,
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "specificity": 0,
+        "balanced_accuracy": 0
+      },
+      "source_groups": 22,
+      "limitation": "Conditional on frozen held-out predictions; undefined ratios excluded and counted, no training uncertainty or unknown shared-camera dependence"
+    }
+  }
+}

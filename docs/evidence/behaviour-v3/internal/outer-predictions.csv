@@ -1,0 +1,1639 @@
+outer_fold,row,video_name,truth,candidate,probability,prediction,threshold,prediction_rule,selected_candidate
+1,4,normal-13.mp4,0,logistic_C0.1,0.41075305703771764,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+1,10,normal-19.mp4,0,logistic_C0.1,0.44137343483187014,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+1,15,normal-23.mp4,0,logistic_C0.1,0.09993219982141929,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+1,18,normal-26.mp4,0,logistic_C0.1,0.6852284067364428,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+1,19,normal-27.mp4,0,logistic_C0.1,0.35256679313410366,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+1,26,normal-33.mp4,0,logistic_C0.1,0.472920353510026,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+1,28,normal-35.mp4,0,logistic_C0.1,0.9347286793661724,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+1,34,normal-40.mp4,0,logistic_C0.1,0.30910672144052626,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+1,37,normal-43.mp4,0,logistic_C0.1,0.9111828662980251,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+1,41,normal-47.mp4,0,logistic_C0.1,0.362232142444143,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+1,45,normal-50.mp4,0,logistic_C0.1,0.7563145057597389,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+1,46,normal-51.mp4,0,logistic_C0.1,0.7563145057597389,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+1,55,normal-6.mp4,0,logistic_C0.1,0.4495738908700545,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+1,64,normal-68.mp4,0,logistic_C0.1,0.4167823209256826,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+1,65,normal-69.mp4,0,logistic_C0.1,0.37500365775570066,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+1,75,normal-78.mp4,0,logistic_C0.1,0.27671098247396414,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+1,84,normal-86.mp4,0,logistic_C0.1,0.045321832474559426,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+1,86,normal-88.mp4,0,logistic_C0.1,0.814669292174064,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+1,91,shoplifting-10.mp4,1,logistic_C0.1,0.9854151802611302,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+1,93,shoplifting-12.mp4,1,logistic_C0.1,0.7723345790979892,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+1,95,shoplifting-14.mp4,1,logistic_C0.1,0.7929434236433431,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+1,102,shoplifting-20.mp4,1,logistic_C0.1,0.6962425990811238,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+1,108,shoplifting-26.mp4,1,logistic_C0.1,0.7524643195110136,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+1,110,shoplifting-28.mp4,1,logistic_C0.1,0.8867041264037925,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+1,118,shoplifting-35.mp4,1,logistic_C0.1,0.28426405502769875,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+1,130,shoplifting-46.mp4,1,logistic_C0.1,0.7520091838774162,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+1,138,shoplifting-54.mp4,1,logistic_C0.1,0.8345470196872575,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+1,145,shoplifting-60.mp4,1,logistic_C0.1,0.9115189180264716,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+1,148,shoplifting-63.mp4,1,logistic_C0.1,0.625566769014448,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+1,151,shoplifting-66.mp4,1,logistic_C0.1,0.24900394536236453,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+1,153,shoplifting-68.mp4,1,logistic_C0.1,0.3781897198989274,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+1,155,shoplifting-7.mp4,1,logistic_C0.1,0.8057643510401241,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+1,156,shoplifting-70.mp4,1,logistic_C0.1,0.3561994554038342,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+1,169,shoplifting-82.mp4,1,logistic_C0.1,0.6436943258330788,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+1,171,shoplifting-84.mp4,1,logistic_C0.1,0.42457507142234074,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+1,178,shoplifting-90.mp4,1,logistic_C0.1,0.5688829955101513,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+1,181,shoplifting-93.mp4,1,logistic_C0.1,0.6608818141581606,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+1,4,normal-13.mp4,0,logistic_C1,0.42785330139335354,0,0.5,class 1 iff probability >= threshold,logistic_C1
+1,10,normal-19.mp4,0,logistic_C1,0.5858581339448868,1,0.5,class 1 iff probability >= threshold,logistic_C1
+1,15,normal-23.mp4,0,logistic_C1,0.0076668383978529715,0,0.5,class 1 iff probability >= threshold,logistic_C1
+1,18,normal-26.mp4,0,logistic_C1,0.7103043985873628,1,0.5,class 1 iff probability >= threshold,logistic_C1
+1,19,normal-27.mp4,0,logistic_C1,0.15588746233711248,0,0.5,class 1 iff probability >= threshold,logistic_C1
+1,26,normal-33.mp4,0,logistic_C1,0.37744650422822096,0,0.5,class 1 iff probability >= threshold,logistic_C1
+1,28,normal-35.mp4,0,logistic_C1,0.990698291169805,1,0.5,class 1 iff probability >= threshold,logistic_C1
+1,34,normal-40.mp4,0,logistic_C1,0.02168602897314547,0,0.5,class 1 iff probability >= threshold,logistic_C1
+1,37,normal-43.mp4,0,logistic_C1,0.9881655393737795,1,0.5,class 1 iff probability >= threshold,logistic_C1
+1,41,normal-47.mp4,0,logistic_C1,0.2729076478831477,0,0.5,class 1 iff probability >= threshold,logistic_C1
+1,45,normal-50.mp4,0,logistic_C1,0.9387635642264532,1,0.5,class 1 iff probability >= threshold,logistic_C1
+1,46,normal-51.mp4,0,logistic_C1,0.9387635642264532,1,0.5,class 1 iff probability >= threshold,logistic_C1
+1,55,normal-6.mp4,0,logistic_C1,0.16263017716019346,0,0.5,class 1 iff probability >= threshold,logistic_C1
+1,64,normal-68.mp4,0,logistic_C1,0.37320467646027605,0,0.5,class 1 iff probability >= threshold,logistic_C1
+1,65,normal-69.mp4,0,logistic_C1,0.16706402419046196,0,0.5,class 1 iff probability >= threshold,logistic_C1
+1,75,normal-78.mp4,0,logistic_C1,0.11339321105113415,0,0.5,class 1 iff probability >= threshold,logistic_C1
+1,84,normal-86.mp4,0,logistic_C1,0.005460850412634779,0,0.5,class 1 iff probability >= threshold,logistic_C1
+1,86,normal-88.mp4,0,logistic_C1,0.9938586559270425,1,0.5,class 1 iff probability >= threshold,logistic_C1
+1,91,shoplifting-10.mp4,1,logistic_C1,0.9991405139129769,1,0.5,class 1 iff probability >= threshold,logistic_C1
+1,93,shoplifting-12.mp4,1,logistic_C1,0.9760125195435471,1,0.5,class 1 iff probability >= threshold,logistic_C1
+1,95,shoplifting-14.mp4,1,logistic_C1,0.8824935744240081,1,0.5,class 1 iff probability >= threshold,logistic_C1
+1,102,shoplifting-20.mp4,1,logistic_C1,0.9087486118851822,1,0.5,class 1 iff probability >= threshold,logistic_C1
+1,108,shoplifting-26.mp4,1,logistic_C1,0.6824045444029703,1,0.5,class 1 iff probability >= threshold,logistic_C1
+1,110,shoplifting-28.mp4,1,logistic_C1,0.9350919603843522,1,0.5,class 1 iff probability >= threshold,logistic_C1
+1,118,shoplifting-35.mp4,1,logistic_C1,0.07382125361241655,0,0.5,class 1 iff probability >= threshold,logistic_C1
+1,130,shoplifting-46.mp4,1,logistic_C1,0.9375113774797754,1,0.5,class 1 iff probability >= threshold,logistic_C1
+1,138,shoplifting-54.mp4,1,logistic_C1,0.9687249378117001,1,0.5,class 1 iff probability >= threshold,logistic_C1
+1,145,shoplifting-60.mp4,1,logistic_C1,0.9752117586027594,1,0.5,class 1 iff probability >= threshold,logistic_C1
+1,148,shoplifting-63.mp4,1,logistic_C1,0.8313341453830215,1,0.5,class 1 iff probability >= threshold,logistic_C1
+1,151,shoplifting-66.mp4,1,logistic_C1,0.13969114603774282,0,0.5,class 1 iff probability >= threshold,logistic_C1
+1,153,shoplifting-68.mp4,1,logistic_C1,0.5114016110131326,1,0.5,class 1 iff probability >= threshold,logistic_C1
+1,155,shoplifting-7.mp4,1,logistic_C1,0.8934038594204621,1,0.5,class 1 iff probability >= threshold,logistic_C1
+1,156,shoplifting-70.mp4,1,logistic_C1,0.4615853783215014,0,0.5,class 1 iff probability >= threshold,logistic_C1
+1,169,shoplifting-82.mp4,1,logistic_C1,0.7372571035681821,1,0.5,class 1 iff probability >= threshold,logistic_C1
+1,171,shoplifting-84.mp4,1,logistic_C1,0.3652350266203047,0,0.5,class 1 iff probability >= threshold,logistic_C1
+1,178,shoplifting-90.mp4,1,logistic_C1,0.8604865833667841,1,0.5,class 1 iff probability >= threshold,logistic_C1
+1,181,shoplifting-93.mp4,1,logistic_C1,0.8186560038212634,1,0.5,class 1 iff probability >= threshold,logistic_C1
+1,4,normal-13.mp4,0,logistic_C10,0.540958420563627,1,0.5,class 1 iff probability >= threshold,logistic_C10
+1,10,normal-19.mp4,0,logistic_C10,0.7405427215527965,1,0.5,class 1 iff probability >= threshold,logistic_C10
+1,15,normal-23.mp4,0,logistic_C10,8.945741102684102e-05,0,0.5,class 1 iff probability >= threshold,logistic_C10
+1,18,normal-26.mp4,0,logistic_C10,0.22620923873147905,0,0.5,class 1 iff probability >= threshold,logistic_C10
+1,19,normal-27.mp4,0,logistic_C10,0.0004065663380921277,0,0.5,class 1 iff probability >= threshold,logistic_C10
+1,26,normal-33.mp4,0,logistic_C10,0.4236467781134697,0,0.5,class 1 iff probability >= threshold,logistic_C10
+1,28,normal-35.mp4,0,logistic_C10,0.9999437549279647,1,0.5,class 1 iff probability >= threshold,logistic_C10
+1,34,normal-40.mp4,0,logistic_C10,1.5089008215403337e-06,0,0.5,class 1 iff probability >= threshold,logistic_C10
+1,37,normal-43.mp4,0,logistic_C10,0.9993702395065674,1,0.5,class 1 iff probability >= threshold,logistic_C10
+1,41,normal-47.mp4,0,logistic_C10,0.1566935238563214,0,0.5,class 1 iff probability >= threshold,logistic_C10
+1,45,normal-50.mp4,0,logistic_C10,0.9960968167813692,1,0.5,class 1 iff probability >= threshold,logistic_C10
+1,46,normal-51.mp4,0,logistic_C10,0.9960968167813692,1,0.5,class 1 iff probability >= threshold,logistic_C10
+1,55,normal-6.mp4,0,logistic_C10,0.005311115929605717,0,0.5,class 1 iff probability >= threshold,logistic_C10
+1,64,normal-68.mp4,0,logistic_C10,0.19704640694546605,0,0.5,class 1 iff probability >= threshold,logistic_C10
+1,65,normal-69.mp4,0,logistic_C10,0.39327086665915717,0,0.5,class 1 iff probability >= threshold,logistic_C10
+1,75,normal-78.mp4,0,logistic_C10,0.034738143668664824,0,0.5,class 1 iff probability >= threshold,logistic_C10
+1,84,normal-86.mp4,0,logistic_C10,0.0003795362910360127,0,0.5,class 1 iff probability >= threshold,logistic_C10
+1,86,normal-88.mp4,0,logistic_C10,0.9999862360123297,1,0.5,class 1 iff probability >= threshold,logistic_C10
+1,91,shoplifting-10.mp4,1,logistic_C10,0.9999999938619331,1,0.5,class 1 iff probability >= threshold,logistic_C10
+1,93,shoplifting-12.mp4,1,logistic_C10,0.9998056190278953,1,0.5,class 1 iff probability >= threshold,logistic_C10
+1,95,shoplifting-14.mp4,1,logistic_C10,0.9786183014237693,1,0.5,class 1 iff probability >= threshold,logistic_C10
+1,102,shoplifting-20.mp4,1,logistic_C10,0.9962084902802993,1,0.5,class 1 iff probability >= threshold,logistic_C10
+1,108,shoplifting-26.mp4,1,logistic_C10,0.2210714881375722,0,0.5,class 1 iff probability >= threshold,logistic_C10
+1,110,shoplifting-28.mp4,1,logistic_C10,0.9758700067777532,1,0.5,class 1 iff probability >= threshold,logistic_C10
+1,118,shoplifting-35.mp4,1,logistic_C10,0.002077838053700481,0,0.5,class 1 iff probability >= threshold,logistic_C10
+1,130,shoplifting-46.mp4,1,logistic_C10,0.9977857965368163,1,0.5,class 1 iff probability >= threshold,logistic_C10
+1,138,shoplifting-54.mp4,1,logistic_C10,0.9962718933722474,1,0.5,class 1 iff probability >= threshold,logistic_C10
+1,145,shoplifting-60.mp4,1,logistic_C10,0.9999976625507383,1,0.5,class 1 iff probability >= threshold,logistic_C10
+1,148,shoplifting-63.mp4,1,logistic_C10,0.9810326196174917,1,0.5,class 1 iff probability >= threshold,logistic_C10
+1,151,shoplifting-66.mp4,1,logistic_C10,0.08679105642137705,0,0.5,class 1 iff probability >= threshold,logistic_C10
+1,153,shoplifting-68.mp4,1,logistic_C10,0.485479130588726,0,0.5,class 1 iff probability >= threshold,logistic_C10
+1,155,shoplifting-7.mp4,1,logistic_C10,0.9021259178342979,1,0.5,class 1 iff probability >= threshold,logistic_C10
+1,156,shoplifting-70.mp4,1,logistic_C10,0.7889423393021155,1,0.5,class 1 iff probability >= threshold,logistic_C10
+1,169,shoplifting-82.mp4,1,logistic_C10,0.8851537711560861,1,0.5,class 1 iff probability >= threshold,logistic_C10
+1,171,shoplifting-84.mp4,1,logistic_C10,0.1260343966810058,0,0.5,class 1 iff probability >= threshold,logistic_C10
+1,178,shoplifting-90.mp4,1,logistic_C10,0.9980954011211624,1,0.5,class 1 iff probability >= threshold,logistic_C10
+1,181,shoplifting-93.mp4,1,logistic_C10,0.9346336253086946,1,0.5,class 1 iff probability >= threshold,logistic_C10
+1,4,normal-13.mp4,0,rf_balanced,0.11039249639249642,0,0.5,class 1 iff probability >= threshold,rf_balanced
+1,10,normal-19.mp4,0,rf_balanced,0.49424074074074087,0,0.5,class 1 iff probability >= threshold,rf_balanced
+1,15,normal-23.mp4,0,rf_balanced,0.36753174603174604,0,0.5,class 1 iff probability >= threshold,rf_balanced
+1,18,normal-26.mp4,0,rf_balanced,0.21806878306878302,0,0.5,class 1 iff probability >= threshold,rf_balanced
+1,19,normal-27.mp4,0,rf_balanced,0.12838624338624338,0,0.5,class 1 iff probability >= threshold,rf_balanced
+1,26,normal-33.mp4,0,rf_balanced,0.47932848632848646,0,0.5,class 1 iff probability >= threshold,rf_balanced
+1,28,normal-35.mp4,0,rf_balanced,0.7254222814222814,1,0.5,class 1 iff probability >= threshold,rf_balanced
+1,34,normal-40.mp4,0,rf_balanced,0.5065360750360749,1,0.5,class 1 iff probability >= threshold,rf_balanced
+1,37,normal-43.mp4,0,rf_balanced,0.8096666666666668,1,0.5,class 1 iff probability >= threshold,rf_balanced
+1,41,normal-47.mp4,0,rf_balanced,0.20387301587301582,0,0.5,class 1 iff probability >= threshold,rf_balanced
+1,45,normal-50.mp4,0,rf_balanced,0.4649999999999999,0,0.5,class 1 iff probability >= threshold,rf_balanced
+1,46,normal-51.mp4,0,rf_balanced,0.4649999999999999,0,0.5,class 1 iff probability >= threshold,rf_balanced
+1,55,normal-6.mp4,0,rf_balanced,0.47280423280423295,0,0.5,class 1 iff probability >= threshold,rf_balanced
+1,64,normal-68.mp4,0,rf_balanced,0.4465820105820107,0,0.5,class 1 iff probability >= threshold,rf_balanced
+1,65,normal-69.mp4,0,rf_balanced,0.46623809523809523,0,0.5,class 1 iff probability >= threshold,rf_balanced
+1,75,normal-78.mp4,0,rf_balanced,0.37315488215488213,0,0.5,class 1 iff probability >= threshold,rf_balanced
+1,84,normal-86.mp4,0,rf_balanced,0.5094235209235208,1,0.5,class 1 iff probability >= threshold,rf_balanced
+1,86,normal-88.mp4,0,rf_balanced,0.3201613756613757,0,0.5,class 1 iff probability >= threshold,rf_balanced
+1,91,shoplifting-10.mp4,1,rf_balanced,0.5322619047619046,1,0.5,class 1 iff probability >= threshold,rf_balanced
+1,93,shoplifting-12.mp4,1,rf_balanced,0.680918192918193,1,0.5,class 1 iff probability >= threshold,rf_balanced
+1,95,shoplifting-14.mp4,1,rf_balanced,0.8745952380952381,1,0.5,class 1 iff probability >= threshold,rf_balanced
+1,102,shoplifting-20.mp4,1,rf_balanced,0.9198518518518519,1,0.5,class 1 iff probability >= threshold,rf_balanced
+1,108,shoplifting-26.mp4,1,rf_balanced,0.6345714285714286,1,0.5,class 1 iff probability >= threshold,rf_balanced
+1,110,shoplifting-28.mp4,1,rf_balanced,0.6817857142857142,1,0.5,class 1 iff probability >= threshold,rf_balanced
+1,118,shoplifting-35.mp4,1,rf_balanced,0.48416975616975616,0,0.5,class 1 iff probability >= threshold,rf_balanced
+1,130,shoplifting-46.mp4,1,rf_balanced,0.6362724867724867,1,0.5,class 1 iff probability >= threshold,rf_balanced
+1,138,shoplifting-54.mp4,1,rf_balanced,0.7814552299552301,1,0.5,class 1 iff probability >= threshold,rf_balanced
+1,145,shoplifting-60.mp4,1,rf_balanced,0.535563492063492,1,0.5,class 1 iff probability >= threshold,rf_balanced
+1,148,shoplifting-63.mp4,1,rf_balanced,0.7412171347171346,1,0.5,class 1 iff probability >= threshold,rf_balanced
+1,151,shoplifting-66.mp4,1,rf_balanced,0.3295185185185185,0,0.5,class 1 iff probability >= threshold,rf_balanced
+1,153,shoplifting-68.mp4,1,rf_balanced,0.4692539682539682,0,0.5,class 1 iff probability >= threshold,rf_balanced
+1,155,shoplifting-7.mp4,1,rf_balanced,0.6478412698412698,1,0.5,class 1 iff probability >= threshold,rf_balanced
+1,156,shoplifting-70.mp4,1,rf_balanced,0.703851851851852,1,0.5,class 1 iff probability >= threshold,rf_balanced
+1,169,shoplifting-82.mp4,1,rf_balanced,0.6130873015873017,1,0.5,class 1 iff probability >= threshold,rf_balanced
+1,171,shoplifting-84.mp4,1,rf_balanced,0.654235653235653,1,0.5,class 1 iff probability >= threshold,rf_balanced
+1,178,shoplifting-90.mp4,1,rf_balanced,0.7953809523809526,1,0.5,class 1 iff probability >= threshold,rf_balanced
+1,181,shoplifting-93.mp4,1,rf_balanced,0.7926111111111112,1,0.5,class 1 iff probability >= threshold,rf_balanced
+1,4,normal-13.mp4,0,extra_trees_balanced,0.08309785946481535,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+1,10,normal-19.mp4,0,extra_trees_balanced,0.4408245058779668,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+1,15,normal-23.mp4,0,extra_trees_balanced,0.4088993106432891,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+1,18,normal-26.mp4,0,extra_trees_balanced,0.29851378282245455,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+1,19,normal-27.mp4,0,extra_trees_balanced,0.1989453035997849,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+1,26,normal-33.mp4,0,extra_trees_balanced,0.5601013835528856,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+1,28,normal-35.mp4,0,extra_trees_balanced,0.7503923535167717,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+1,34,normal-40.mp4,0,extra_trees_balanced,0.5052008425899238,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+1,37,normal-43.mp4,0,extra_trees_balanced,0.7303517567379127,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+1,41,normal-47.mp4,0,extra_trees_balanced,0.2706805434404744,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+1,45,normal-50.mp4,0,extra_trees_balanced,0.5488052474157157,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+1,46,normal-51.mp4,0,extra_trees_balanced,0.5488052474157157,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+1,55,normal-6.mp4,0,extra_trees_balanced,0.48507211262584926,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+1,64,normal-68.mp4,0,extra_trees_balanced,0.4798847122501737,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+1,65,normal-69.mp4,0,extra_trees_balanced,0.4930500584440071,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+1,75,normal-78.mp4,0,extra_trees_balanced,0.3608630771404224,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+1,84,normal-86.mp4,0,extra_trees_balanced,0.4309161344648773,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+1,86,normal-88.mp4,0,extra_trees_balanced,0.31976648253988,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+1,91,shoplifting-10.mp4,1,extra_trees_balanced,0.6422961185104433,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+1,93,shoplifting-12.mp4,1,extra_trees_balanced,0.6896066290850973,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+1,95,shoplifting-14.mp4,1,extra_trees_balanced,0.8285169824574324,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+1,102,shoplifting-20.mp4,1,extra_trees_balanced,0.8029820421434188,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+1,108,shoplifting-26.mp4,1,extra_trees_balanced,0.6399098302544615,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+1,110,shoplifting-28.mp4,1,extra_trees_balanced,0.7466210818252714,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+1,118,shoplifting-35.mp4,1,extra_trees_balanced,0.44875390779934216,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+1,130,shoplifting-46.mp4,1,extra_trees_balanced,0.6502471555193297,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+1,138,shoplifting-54.mp4,1,extra_trees_balanced,0.7560639668133937,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+1,145,shoplifting-60.mp4,1,extra_trees_balanced,0.6093135632426132,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+1,148,shoplifting-63.mp4,1,extra_trees_balanced,0.7007112325509429,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+1,151,shoplifting-66.mp4,1,extra_trees_balanced,0.45760007375301465,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+1,153,shoplifting-68.mp4,1,extra_trees_balanced,0.47549598683847233,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+1,155,shoplifting-7.mp4,1,extra_trees_balanced,0.6350319664088859,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+1,156,shoplifting-70.mp4,1,extra_trees_balanced,0.5912266172833571,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+1,169,shoplifting-82.mp4,1,extra_trees_balanced,0.5990306502943161,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+1,171,shoplifting-84.mp4,1,extra_trees_balanced,0.5968413646988291,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+1,178,shoplifting-90.mp4,1,extra_trees_balanced,0.777037748879389,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+1,181,shoplifting-93.mp4,1,extra_trees_balanced,0.7643196033116841,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+1,4,normal-13.mp4,0,rf_original14,0.045899470899470905,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+1,10,normal-19.mp4,0,rf_original14,0.7275396825396825,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+1,15,normal-23.mp4,0,rf_original14,0.23803703703703705,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+1,18,normal-26.mp4,0,rf_original14,0.4683650793650794,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+1,19,normal-27.mp4,0,rf_original14,0.28821428571428565,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+1,26,normal-33.mp4,0,rf_original14,0.5082876382876382,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+1,28,normal-35.mp4,0,rf_original14,0.6055276575276576,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+1,34,normal-40.mp4,0,rf_original14,0.5958968253968254,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+1,37,normal-43.mp4,0,rf_original14,0.48603968253968255,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+1,41,normal-47.mp4,0,rf_original14,0.6309999999999999,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+1,45,normal-50.mp4,0,rf_original14,0.7895185185185185,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+1,46,normal-51.mp4,0,rf_original14,0.7895185185185185,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+1,55,normal-6.mp4,0,rf_original14,0.5439550264550264,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+1,64,normal-68.mp4,0,rf_original14,0.36981216931216937,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+1,65,normal-69.mp4,0,rf_original14,0.6338999518999519,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+1,75,normal-78.mp4,0,rf_original14,0.49362962962962975,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+1,84,normal-86.mp4,0,rf_original14,0.5767936507936507,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+1,86,normal-88.mp4,0,rf_original14,0.7632777777777777,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+1,91,shoplifting-10.mp4,1,rf_original14,0.3525370370370371,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+1,93,shoplifting-12.mp4,1,rf_original14,0.7433722943722941,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+1,95,shoplifting-14.mp4,1,rf_original14,0.9371587301587302,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+1,102,shoplifting-20.mp4,1,rf_original14,0.9518518518518518,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+1,108,shoplifting-26.mp4,1,rf_original14,0.6636647426647425,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+1,110,shoplifting-28.mp4,1,rf_original14,0.6600052910052909,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+1,118,shoplifting-35.mp4,1,rf_original14,0.4821322751322752,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+1,130,shoplifting-46.mp4,1,rf_original14,0.437973544973545,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+1,138,shoplifting-54.mp4,1,rf_original14,0.7193896103896101,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+1,145,shoplifting-60.mp4,1,rf_original14,0.3907441077441078,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+1,148,shoplifting-63.mp4,1,rf_original14,0.6946414141414142,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+1,151,shoplifting-66.mp4,1,rf_original14,0.46804761904761916,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+1,153,shoplifting-68.mp4,1,rf_original14,0.5829523809523809,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+1,155,shoplifting-7.mp4,1,rf_original14,0.5991726791726791,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+1,156,shoplifting-70.mp4,1,rf_original14,0.7678280423280424,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+1,169,shoplifting-82.mp4,1,rf_original14,0.5241705146705146,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+1,171,shoplifting-84.mp4,1,rf_original14,0.7054550264550262,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+1,178,shoplifting-90.mp4,1,rf_original14,0.905415343915344,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+1,181,shoplifting-93.mp4,1,rf_original14,0.7944444444444444,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+1,4,normal-13.mp4,0,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+1,10,normal-19.mp4,0,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+1,15,normal-23.mp4,0,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+1,18,normal-26.mp4,0,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+1,19,normal-27.mp4,0,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+1,26,normal-33.mp4,0,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+1,28,normal-35.mp4,0,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+1,34,normal-40.mp4,0,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+1,37,normal-43.mp4,0,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+1,41,normal-47.mp4,0,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+1,45,normal-50.mp4,0,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+1,46,normal-51.mp4,0,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+1,55,normal-6.mp4,0,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+1,64,normal-68.mp4,0,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+1,65,normal-69.mp4,0,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+1,75,normal-78.mp4,0,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+1,84,normal-86.mp4,0,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+1,86,normal-88.mp4,0,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+1,91,shoplifting-10.mp4,1,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+1,93,shoplifting-12.mp4,1,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+1,95,shoplifting-14.mp4,1,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+1,102,shoplifting-20.mp4,1,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+1,108,shoplifting-26.mp4,1,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+1,110,shoplifting-28.mp4,1,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+1,118,shoplifting-35.mp4,1,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+1,130,shoplifting-46.mp4,1,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+1,138,shoplifting-54.mp4,1,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+1,145,shoplifting-60.mp4,1,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+1,148,shoplifting-63.mp4,1,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+1,151,shoplifting-66.mp4,1,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+1,153,shoplifting-68.mp4,1,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+1,155,shoplifting-7.mp4,1,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+1,156,shoplifting-70.mp4,1,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+1,169,shoplifting-82.mp4,1,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+1,171,shoplifting-84.mp4,1,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+1,178,shoplifting-90.mp4,1,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+1,181,shoplifting-93.mp4,1,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+1,4,normal-13.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+1,10,normal-19.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+1,15,normal-23.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+1,18,normal-26.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+1,19,normal-27.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+1,26,normal-33.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+1,28,normal-35.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+1,34,normal-40.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+1,37,normal-43.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+1,41,normal-47.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+1,45,normal-50.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+1,46,normal-51.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+1,55,normal-6.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+1,64,normal-68.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+1,65,normal-69.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+1,75,normal-78.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+1,84,normal-86.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+1,86,normal-88.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+1,91,shoplifting-10.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+1,93,shoplifting-12.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+1,95,shoplifting-14.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+1,102,shoplifting-20.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+1,108,shoplifting-26.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+1,110,shoplifting-28.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+1,118,shoplifting-35.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+1,130,shoplifting-46.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+1,138,shoplifting-54.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+1,145,shoplifting-60.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+1,148,shoplifting-63.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+1,151,shoplifting-66.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+1,153,shoplifting-68.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+1,155,shoplifting-7.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+1,156,shoplifting-70.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+1,169,shoplifting-82.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+1,171,shoplifting-84.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+1,178,shoplifting-90.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+1,181,shoplifting-93.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+1,4,normal-13.mp4,0,nested_selection,0.41075305703771764,1,0.35,class 1 iff probability >= threshold,logistic_C0.1
+1,10,normal-19.mp4,0,nested_selection,0.44137343483187014,1,0.35,class 1 iff probability >= threshold,logistic_C0.1
+1,15,normal-23.mp4,0,nested_selection,0.09993219982141929,0,0.35,class 1 iff probability >= threshold,logistic_C0.1
+1,18,normal-26.mp4,0,nested_selection,0.6852284067364428,1,0.35,class 1 iff probability >= threshold,logistic_C0.1
+1,19,normal-27.mp4,0,nested_selection,0.35256679313410366,1,0.35,class 1 iff probability >= threshold,logistic_C0.1
+1,26,normal-33.mp4,0,nested_selection,0.472920353510026,1,0.35,class 1 iff probability >= threshold,logistic_C0.1
+1,28,normal-35.mp4,0,nested_selection,0.9347286793661724,1,0.35,class 1 iff probability >= threshold,logistic_C0.1
+1,34,normal-40.mp4,0,nested_selection,0.30910672144052626,0,0.35,class 1 iff probability >= threshold,logistic_C0.1
+1,37,normal-43.mp4,0,nested_selection,0.9111828662980251,1,0.35,class 1 iff probability >= threshold,logistic_C0.1
+1,41,normal-47.mp4,0,nested_selection,0.362232142444143,1,0.35,class 1 iff probability >= threshold,logistic_C0.1
+1,45,normal-50.mp4,0,nested_selection,0.7563145057597389,1,0.35,class 1 iff probability >= threshold,logistic_C0.1
+1,46,normal-51.mp4,0,nested_selection,0.7563145057597389,1,0.35,class 1 iff probability >= threshold,logistic_C0.1
+1,55,normal-6.mp4,0,nested_selection,0.4495738908700545,1,0.35,class 1 iff probability >= threshold,logistic_C0.1
+1,64,normal-68.mp4,0,nested_selection,0.4167823209256826,1,0.35,class 1 iff probability >= threshold,logistic_C0.1
+1,65,normal-69.mp4,0,nested_selection,0.37500365775570066,1,0.35,class 1 iff probability >= threshold,logistic_C0.1
+1,75,normal-78.mp4,0,nested_selection,0.27671098247396414,0,0.35,class 1 iff probability >= threshold,logistic_C0.1
+1,84,normal-86.mp4,0,nested_selection,0.045321832474559426,0,0.35,class 1 iff probability >= threshold,logistic_C0.1
+1,86,normal-88.mp4,0,nested_selection,0.814669292174064,1,0.35,class 1 iff probability >= threshold,logistic_C0.1
+1,91,shoplifting-10.mp4,1,nested_selection,0.9854151802611302,1,0.35,class 1 iff probability >= threshold,logistic_C0.1
+1,93,shoplifting-12.mp4,1,nested_selection,0.7723345790979892,1,0.35,class 1 iff probability >= threshold,logistic_C0.1
+1,95,shoplifting-14.mp4,1,nested_selection,0.7929434236433431,1,0.35,class 1 iff probability >= threshold,logistic_C0.1
+1,102,shoplifting-20.mp4,1,nested_selection,0.6962425990811238,1,0.35,class 1 iff probability >= threshold,logistic_C0.1
+1,108,shoplifting-26.mp4,1,nested_selection,0.7524643195110136,1,0.35,class 1 iff probability >= threshold,logistic_C0.1
+1,110,shoplifting-28.mp4,1,nested_selection,0.8867041264037925,1,0.35,class 1 iff probability >= threshold,logistic_C0.1
+1,118,shoplifting-35.mp4,1,nested_selection,0.28426405502769875,0,0.35,class 1 iff probability >= threshold,logistic_C0.1
+1,130,shoplifting-46.mp4,1,nested_selection,0.7520091838774162,1,0.35,class 1 iff probability >= threshold,logistic_C0.1
+1,138,shoplifting-54.mp4,1,nested_selection,0.8345470196872575,1,0.35,class 1 iff probability >= threshold,logistic_C0.1
+1,145,shoplifting-60.mp4,1,nested_selection,0.9115189180264716,1,0.35,class 1 iff probability >= threshold,logistic_C0.1
+1,148,shoplifting-63.mp4,1,nested_selection,0.625566769014448,1,0.35,class 1 iff probability >= threshold,logistic_C0.1
+1,151,shoplifting-66.mp4,1,nested_selection,0.24900394536236453,0,0.35,class 1 iff probability >= threshold,logistic_C0.1
+1,153,shoplifting-68.mp4,1,nested_selection,0.3781897198989274,1,0.35,class 1 iff probability >= threshold,logistic_C0.1
+1,155,shoplifting-7.mp4,1,nested_selection,0.8057643510401241,1,0.35,class 1 iff probability >= threshold,logistic_C0.1
+1,156,shoplifting-70.mp4,1,nested_selection,0.3561994554038342,1,0.35,class 1 iff probability >= threshold,logistic_C0.1
+1,169,shoplifting-82.mp4,1,nested_selection,0.6436943258330788,1,0.35,class 1 iff probability >= threshold,logistic_C0.1
+1,171,shoplifting-84.mp4,1,nested_selection,0.42457507142234074,1,0.35,class 1 iff probability >= threshold,logistic_C0.1
+1,178,shoplifting-90.mp4,1,nested_selection,0.5688829955101513,1,0.35,class 1 iff probability >= threshold,logistic_C0.1
+1,181,shoplifting-93.mp4,1,nested_selection,0.6608818141581606,1,0.35,class 1 iff probability >= threshold,logistic_C0.1
+2,7,normal-16.mp4,0,logistic_C0.1,0.7116666083158033,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+2,20,normal-28.mp4,0,logistic_C0.1,0.00013738462267485287,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+2,21,normal-29.mp4,0,logistic_C0.1,0.056432066059864616,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+2,30,normal-37.mp4,0,logistic_C0.1,0.767478679669074,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+2,31,normal-38.mp4,0,logistic_C0.1,0.861762543863412,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+2,32,normal-39.mp4,0,logistic_C0.1,9.408500611631709e-11,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+2,35,normal-41.mp4,0,logistic_C0.1,0.7194136510127486,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+2,36,normal-42.mp4,0,logistic_C0.1,0.6836129456758853,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+2,38,normal-44.mp4,0,logistic_C0.1,0.0013674434738686445,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+2,40,normal-46.mp4,0,logistic_C0.1,0.20877704493026122,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+2,42,normal-48.mp4,0,logistic_C0.1,0.081410419079501,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+2,47,normal-52.mp4,0,logistic_C0.1,0.0013674434738686445,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+2,49,normal-54.mp4,0,logistic_C0.1,0.08998850895484864,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+2,56,normal-60.mp4,0,logistic_C0.1,0.9131878452342651,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+2,66,normal-7.mp4,0,logistic_C0.1,0.3228721382874723,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+2,73,normal-76.mp4,0,logistic_C0.1,0.4315929283312385,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+2,82,normal-84.mp4,0,logistic_C0.1,0.5326237688808517,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+2,88,normal-9.mp4,0,logistic_C0.1,0.21978686070688927,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+2,105,shoplifting-23.mp4,1,logistic_C0.1,0.6558283590248898,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+2,111,shoplifting-29.mp4,1,logistic_C0.1,0.5066132960346952,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+2,115,shoplifting-32.mp4,1,logistic_C0.1,0.4587054937357644,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+2,119,shoplifting-36.mp4,1,logistic_C0.1,0.7578361819190645,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+2,125,shoplifting-41.mp4,1,logistic_C0.1,0.19425129660672444,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+2,128,shoplifting-44.mp4,1,logistic_C0.1,0.778723822731509,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+2,132,shoplifting-48.mp4,1,logistic_C0.1,0.8309553002131252,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+2,134,shoplifting-50.mp4,1,logistic_C0.1,0.7373827057121859,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+2,135,shoplifting-51.mp4,1,logistic_C0.1,0.8446611821758481,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+2,137,shoplifting-53.mp4,1,logistic_C0.1,0.710733007943075,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+2,142,shoplifting-58.mp4,1,logistic_C0.1,0.2953056555506951,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+2,144,shoplifting-6.mp4,1,logistic_C0.1,0.21447196612485106,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+2,146,shoplifting-61.mp4,1,logistic_C0.1,0.6857620465725826,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+2,149,shoplifting-64.mp4,1,logistic_C0.1,0.6649934747273316,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+2,152,shoplifting-67.mp4,1,logistic_C0.1,0.4072628061701001,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+2,162,shoplifting-76.mp4,1,logistic_C0.1,0.8690726933698336,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+2,168,shoplifting-81.mp4,1,logistic_C0.1,0.8908312358687263,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+2,173,shoplifting-86.mp4,1,logistic_C0.1,0.4486704689004744,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+2,180,shoplifting-92.mp4,1,logistic_C0.1,0.9138931374694742,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+2,7,normal-16.mp4,0,logistic_C1,0.6264446626696887,1,0.5,class 1 iff probability >= threshold,logistic_C1
+2,20,normal-28.mp4,0,logistic_C1,3.84429569315698e-05,0,0.5,class 1 iff probability >= threshold,logistic_C1
+2,21,normal-29.mp4,0,logistic_C1,0.002053963155243596,0,0.5,class 1 iff probability >= threshold,logistic_C1
+2,30,normal-37.mp4,0,logistic_C1,0.9429634283695193,1,0.5,class 1 iff probability >= threshold,logistic_C1
+2,31,normal-38.mp4,0,logistic_C1,0.994311257296486,1,0.5,class 1 iff probability >= threshold,logistic_C1
+2,32,normal-39.mp4,0,logistic_C1,8.528313660577233e-33,0,0.5,class 1 iff probability >= threshold,logistic_C1
+2,35,normal-41.mp4,0,logistic_C1,0.7635940809014027,1,0.5,class 1 iff probability >= threshold,logistic_C1
+2,36,normal-42.mp4,0,logistic_C1,0.9973429391821697,1,0.5,class 1 iff probability >= threshold,logistic_C1
+2,38,normal-44.mp4,0,logistic_C1,6.123007822980775e-08,0,0.5,class 1 iff probability >= threshold,logistic_C1
+2,40,normal-46.mp4,0,logistic_C1,0.4273360529835323,0,0.5,class 1 iff probability >= threshold,logistic_C1
+2,42,normal-48.mp4,0,logistic_C1,0.013046974819023904,0,0.5,class 1 iff probability >= threshold,logistic_C1
+2,47,normal-52.mp4,0,logistic_C1,6.123007822980775e-08,0,0.5,class 1 iff probability >= threshold,logistic_C1
+2,49,normal-54.mp4,0,logistic_C1,0.010985864883273137,0,0.5,class 1 iff probability >= threshold,logistic_C1
+2,56,normal-60.mp4,0,logistic_C1,0.9689576424357198,1,0.5,class 1 iff probability >= threshold,logistic_C1
+2,66,normal-7.mp4,0,logistic_C1,0.21303432379066825,0,0.5,class 1 iff probability >= threshold,logistic_C1
+2,73,normal-76.mp4,0,logistic_C1,0.27893961815881846,0,0.5,class 1 iff probability >= threshold,logistic_C1
+2,82,normal-84.mp4,0,logistic_C1,0.6028905098142664,1,0.5,class 1 iff probability >= threshold,logistic_C1
+2,88,normal-9.mp4,0,logistic_C1,0.06651454008694084,0,0.5,class 1 iff probability >= threshold,logistic_C1
+2,105,shoplifting-23.mp4,1,logistic_C1,0.7929212933324487,1,0.5,class 1 iff probability >= threshold,logistic_C1
+2,111,shoplifting-29.mp4,1,logistic_C1,0.2459182152981786,0,0.5,class 1 iff probability >= threshold,logistic_C1
+2,115,shoplifting-32.mp4,1,logistic_C1,0.8812181540673588,1,0.5,class 1 iff probability >= threshold,logistic_C1
+2,119,shoplifting-36.mp4,1,logistic_C1,0.983109765095528,1,0.5,class 1 iff probability >= threshold,logistic_C1
+2,125,shoplifting-41.mp4,1,logistic_C1,0.15011329325229664,0,0.5,class 1 iff probability >= threshold,logistic_C1
+2,128,shoplifting-44.mp4,1,logistic_C1,0.9118189297061666,1,0.5,class 1 iff probability >= threshold,logistic_C1
+2,132,shoplifting-48.mp4,1,logistic_C1,0.6410140218557081,1,0.5,class 1 iff probability >= threshold,logistic_C1
+2,134,shoplifting-50.mp4,1,logistic_C1,0.9883053243434506,1,0.5,class 1 iff probability >= threshold,logistic_C1
+2,135,shoplifting-51.mp4,1,logistic_C1,0.9416814526151778,1,0.5,class 1 iff probability >= threshold,logistic_C1
+2,137,shoplifting-53.mp4,1,logistic_C1,0.8335102070591347,1,0.5,class 1 iff probability >= threshold,logistic_C1
+2,142,shoplifting-58.mp4,1,logistic_C1,0.2188943578943092,0,0.5,class 1 iff probability >= threshold,logistic_C1
+2,144,shoplifting-6.mp4,1,logistic_C1,0.014973532909871452,0,0.5,class 1 iff probability >= threshold,logistic_C1
+2,146,shoplifting-61.mp4,1,logistic_C1,0.9677247806097578,1,0.5,class 1 iff probability >= threshold,logistic_C1
+2,149,shoplifting-64.mp4,1,logistic_C1,0.8636405115644101,1,0.5,class 1 iff probability >= threshold,logistic_C1
+2,152,shoplifting-67.mp4,1,logistic_C1,0.42267636233259376,0,0.5,class 1 iff probability >= threshold,logistic_C1
+2,162,shoplifting-76.mp4,1,logistic_C1,0.9856135756554638,1,0.5,class 1 iff probability >= threshold,logistic_C1
+2,168,shoplifting-81.mp4,1,logistic_C1,0.9666596889329713,1,0.5,class 1 iff probability >= threshold,logistic_C1
+2,173,shoplifting-86.mp4,1,logistic_C1,0.47567395546339253,0,0.5,class 1 iff probability >= threshold,logistic_C1
+2,180,shoplifting-92.mp4,1,logistic_C1,0.995371638600936,1,0.5,class 1 iff probability >= threshold,logistic_C1
+2,7,normal-16.mp4,0,logistic_C10,0.2527391122085002,0,0.5,class 1 iff probability >= threshold,logistic_C10
+2,20,normal-28.mp4,0,logistic_C10,0.000309370181558125,0,0.5,class 1 iff probability >= threshold,logistic_C10
+2,21,normal-29.mp4,0,logistic_C10,4.2130064601307546e-11,0,0.5,class 1 iff probability >= threshold,logistic_C10
+2,30,normal-37.mp4,0,logistic_C10,0.9998389577807683,1,0.5,class 1 iff probability >= threshold,logistic_C10
+2,31,normal-38.mp4,0,logistic_C10,0.9999854032263289,1,0.5,class 1 iff probability >= threshold,logistic_C10
+2,32,normal-39.mp4,0,logistic_C10,2.2354635397594733e-76,0,0.5,class 1 iff probability >= threshold,logistic_C10
+2,35,normal-41.mp4,0,logistic_C10,0.6280789620514252,1,0.5,class 1 iff probability >= threshold,logistic_C10
+2,36,normal-42.mp4,0,logistic_C10,0.9999994049172496,1,0.5,class 1 iff probability >= threshold,logistic_C10
+2,38,normal-44.mp4,0,logistic_C10,1.2825911052743362e-17,0,0.5,class 1 iff probability >= threshold,logistic_C10
+2,40,normal-46.mp4,0,logistic_C10,0.4993975935772028,0,0.5,class 1 iff probability >= threshold,logistic_C10
+2,42,normal-48.mp4,0,logistic_C10,0.0024464931560669615,0,0.5,class 1 iff probability >= threshold,logistic_C10
+2,47,normal-52.mp4,0,logistic_C10,1.2825911052743362e-17,0,0.5,class 1 iff probability >= threshold,logistic_C10
+2,49,normal-54.mp4,0,logistic_C10,0.002410585400861425,0,0.5,class 1 iff probability >= threshold,logistic_C10
+2,56,normal-60.mp4,0,logistic_C10,0.9974285477230737,1,0.5,class 1 iff probability >= threshold,logistic_C10
+2,66,normal-7.mp4,0,logistic_C10,0.14325890667090754,0,0.5,class 1 iff probability >= threshold,logistic_C10
+2,73,normal-76.mp4,0,logistic_C10,0.07274708087497034,0,0.5,class 1 iff probability >= threshold,logistic_C10
+2,82,normal-84.mp4,0,logistic_C10,0.8972663925309863,1,0.5,class 1 iff probability >= threshold,logistic_C10
+2,88,normal-9.mp4,0,logistic_C10,0.005724153048335984,0,0.5,class 1 iff probability >= threshold,logistic_C10
+2,105,shoplifting-23.mp4,1,logistic_C10,0.9893164500338208,1,0.5,class 1 iff probability >= threshold,logistic_C10
+2,111,shoplifting-29.mp4,1,logistic_C10,0.09615943596911124,0,0.5,class 1 iff probability >= threshold,logistic_C10
+2,115,shoplifting-32.mp4,1,logistic_C10,0.9997878440213611,1,0.5,class 1 iff probability >= threshold,logistic_C10
+2,119,shoplifting-36.mp4,1,logistic_C10,0.9999872142743874,1,0.5,class 1 iff probability >= threshold,logistic_C10
+2,125,shoplifting-41.mp4,1,logistic_C10,0.3928616365672854,0,0.5,class 1 iff probability >= threshold,logistic_C10
+2,128,shoplifting-44.mp4,1,logistic_C10,0.9805466286018097,1,0.5,class 1 iff probability >= threshold,logistic_C10
+2,132,shoplifting-48.mp4,1,logistic_C10,0.005393660884410128,0,0.5,class 1 iff probability >= threshold,logistic_C10
+2,134,shoplifting-50.mp4,1,logistic_C10,0.9990016094390667,1,0.5,class 1 iff probability >= threshold,logistic_C10
+2,135,shoplifting-51.mp4,1,logistic_C10,0.9964892558008296,1,0.5,class 1 iff probability >= threshold,logistic_C10
+2,137,shoplifting-53.mp4,1,logistic_C10,0.8921778933971347,1,0.5,class 1 iff probability >= threshold,logistic_C10
+2,142,shoplifting-58.mp4,1,logistic_C10,0.20098834880473723,0,0.5,class 1 iff probability >= threshold,logistic_C10
+2,144,shoplifting-6.mp4,1,logistic_C10,2.3913402301319156e-05,0,0.5,class 1 iff probability >= threshold,logistic_C10
+2,146,shoplifting-61.mp4,1,logistic_C10,0.9995896041470024,1,0.5,class 1 iff probability >= threshold,logistic_C10
+2,149,shoplifting-64.mp4,1,logistic_C10,0.9929421970271108,1,0.5,class 1 iff probability >= threshold,logistic_C10
+2,152,shoplifting-67.mp4,1,logistic_C10,0.361937361606162,0,0.5,class 1 iff probability >= threshold,logistic_C10
+2,162,shoplifting-76.mp4,1,logistic_C10,0.9998370593017682,1,0.5,class 1 iff probability >= threshold,logistic_C10
+2,168,shoplifting-81.mp4,1,logistic_C10,0.9960995531829198,1,0.5,class 1 iff probability >= threshold,logistic_C10
+2,173,shoplifting-86.mp4,1,logistic_C10,0.690999287628935,1,0.5,class 1 iff probability >= threshold,logistic_C10
+2,180,shoplifting-92.mp4,1,logistic_C10,0.999902707005284,1,0.5,class 1 iff probability >= threshold,logistic_C10
+2,7,normal-16.mp4,0,rf_balanced,0.6528015873015872,1,0.5,class 1 iff probability >= threshold,rf_balanced
+2,20,normal-28.mp4,0,rf_balanced,0.0837354497354497,0,0.5,class 1 iff probability >= threshold,rf_balanced
+2,21,normal-29.mp4,0,rf_balanced,0.13266666666666665,0,0.5,class 1 iff probability >= threshold,rf_balanced
+2,30,normal-37.mp4,0,rf_balanced,0.5885740740740741,1,0.5,class 1 iff probability >= threshold,rf_balanced
+2,31,normal-38.mp4,0,rf_balanced,0.5021637806637806,1,0.5,class 1 iff probability >= threshold,rf_balanced
+2,32,normal-39.mp4,0,rf_balanced,0.12035978835978833,0,0.5,class 1 iff probability >= threshold,rf_balanced
+2,35,normal-41.mp4,0,rf_balanced,0.664611111111111,1,0.5,class 1 iff probability >= threshold,rf_balanced
+2,36,normal-42.mp4,0,rf_balanced,0.3296940836940837,0,0.5,class 1 iff probability >= threshold,rf_balanced
+2,38,normal-44.mp4,0,rf_balanced,0.3829126984126984,0,0.5,class 1 iff probability >= threshold,rf_balanced
+2,40,normal-46.mp4,0,rf_balanced,0.52360582010582,1,0.5,class 1 iff probability >= threshold,rf_balanced
+2,42,normal-48.mp4,0,rf_balanced,0.11424867724867724,0,0.5,class 1 iff probability >= threshold,rf_balanced
+2,47,normal-52.mp4,0,rf_balanced,0.3829126984126984,0,0.5,class 1 iff probability >= threshold,rf_balanced
+2,49,normal-54.mp4,0,rf_balanced,0.40377873977873985,0,0.5,class 1 iff probability >= threshold,rf_balanced
+2,56,normal-60.mp4,0,rf_balanced,0.42231481481481487,0,0.5,class 1 iff probability >= threshold,rf_balanced
+2,66,normal-7.mp4,0,rf_balanced,0.37505651755651775,0,0.5,class 1 iff probability >= threshold,rf_balanced
+2,73,normal-76.mp4,0,rf_balanced,0.4147407407407408,0,0.5,class 1 iff probability >= threshold,rf_balanced
+2,82,normal-84.mp4,0,rf_balanced,0.5016481481481481,1,0.5,class 1 iff probability >= threshold,rf_balanced
+2,88,normal-9.mp4,0,rf_balanced,0.3121596921596921,0,0.5,class 1 iff probability >= threshold,rf_balanced
+2,105,shoplifting-23.mp4,1,rf_balanced,0.6154177489177488,1,0.5,class 1 iff probability >= threshold,rf_balanced
+2,111,shoplifting-29.mp4,1,rf_balanced,0.7383544973544974,1,0.5,class 1 iff probability >= threshold,rf_balanced
+2,115,shoplifting-32.mp4,1,rf_balanced,0.6403306878306879,1,0.5,class 1 iff probability >= threshold,rf_balanced
+2,119,shoplifting-36.mp4,1,rf_balanced,0.2661168091168092,0,0.5,class 1 iff probability >= threshold,rf_balanced
+2,125,shoplifting-41.mp4,1,rf_balanced,0.3616666666666667,0,0.5,class 1 iff probability >= threshold,rf_balanced
+2,128,shoplifting-44.mp4,1,rf_balanced,0.7701164021164022,1,0.5,class 1 iff probability >= threshold,rf_balanced
+2,132,shoplifting-48.mp4,1,rf_balanced,0.5738783068783068,1,0.5,class 1 iff probability >= threshold,rf_balanced
+2,134,shoplifting-50.mp4,1,rf_balanced,0.42165079365079355,0,0.5,class 1 iff probability >= threshold,rf_balanced
+2,135,shoplifting-51.mp4,1,rf_balanced,0.7399603174603174,1,0.5,class 1 iff probability >= threshold,rf_balanced
+2,137,shoplifting-53.mp4,1,rf_balanced,0.6542460317460317,1,0.5,class 1 iff probability >= threshold,rf_balanced
+2,142,shoplifting-58.mp4,1,rf_balanced,0.2950343915343916,0,0.5,class 1 iff probability >= threshold,rf_balanced
+2,144,shoplifting-6.mp4,1,rf_balanced,0.5344074074074073,1,0.5,class 1 iff probability >= threshold,rf_balanced
+2,146,shoplifting-61.mp4,1,rf_balanced,0.4730317460317461,0,0.5,class 1 iff probability >= threshold,rf_balanced
+2,149,shoplifting-64.mp4,1,rf_balanced,0.7499391534391533,1,0.5,class 1 iff probability >= threshold,rf_balanced
+2,152,shoplifting-67.mp4,1,rf_balanced,0.5733148148148148,1,0.5,class 1 iff probability >= threshold,rf_balanced
+2,162,shoplifting-76.mp4,1,rf_balanced,0.8730925925925926,1,0.5,class 1 iff probability >= threshold,rf_balanced
+2,168,shoplifting-81.mp4,1,rf_balanced,0.9009444444444445,1,0.5,class 1 iff probability >= threshold,rf_balanced
+2,173,shoplifting-86.mp4,1,rf_balanced,0.7182433862433861,1,0.5,class 1 iff probability >= threshold,rf_balanced
+2,180,shoplifting-92.mp4,1,rf_balanced,0.7015627705627704,1,0.5,class 1 iff probability >= threshold,rf_balanced
+2,7,normal-16.mp4,0,extra_trees_balanced,0.6501637434859939,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,20,normal-28.mp4,0,extra_trees_balanced,0.05925713613144829,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,21,normal-29.mp4,0,extra_trees_balanced,0.07832197100816671,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,30,normal-37.mp4,0,extra_trees_balanced,0.5339287327430415,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,31,normal-38.mp4,0,extra_trees_balanced,0.5249854228969401,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,32,normal-39.mp4,0,extra_trees_balanced,0.04109761593425203,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,35,normal-41.mp4,0,extra_trees_balanced,0.5619927697845044,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,36,normal-42.mp4,0,extra_trees_balanced,0.3499562024025133,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,38,normal-44.mp4,0,extra_trees_balanced,0.3781524306145879,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,40,normal-46.mp4,0,extra_trees_balanced,0.5433798777286327,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,42,normal-48.mp4,0,extra_trees_balanced,0.20370969479063286,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,47,normal-52.mp4,0,extra_trees_balanced,0.3781524306145879,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,49,normal-54.mp4,0,extra_trees_balanced,0.45463798542628114,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,56,normal-60.mp4,0,extra_trees_balanced,0.44255414244618585,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,66,normal-7.mp4,0,extra_trees_balanced,0.40899811082742127,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,73,normal-76.mp4,0,extra_trees_balanced,0.4425656956634189,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,82,normal-84.mp4,0,extra_trees_balanced,0.47339074836411754,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,88,normal-9.mp4,0,extra_trees_balanced,0.38911768446926503,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,105,shoplifting-23.mp4,1,extra_trees_balanced,0.5484083788600035,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,111,shoplifting-29.mp4,1,extra_trees_balanced,0.6137266582567493,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,115,shoplifting-32.mp4,1,extra_trees_balanced,0.5066311242770786,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,119,shoplifting-36.mp4,1,extra_trees_balanced,0.3821995705404325,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,125,shoplifting-41.mp4,1,extra_trees_balanced,0.3436066357377468,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,128,shoplifting-44.mp4,1,extra_trees_balanced,0.7243472531281164,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,132,shoplifting-48.mp4,1,extra_trees_balanced,0.5609149991899326,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,134,shoplifting-50.mp4,1,extra_trees_balanced,0.42147646513199083,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,135,shoplifting-51.mp4,1,extra_trees_balanced,0.745741436563684,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,137,shoplifting-53.mp4,1,extra_trees_balanced,0.6523979649968656,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,142,shoplifting-58.mp4,1,extra_trees_balanced,0.3341587024011262,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,144,shoplifting-6.mp4,1,extra_trees_balanced,0.5266600200680587,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,146,shoplifting-61.mp4,1,extra_trees_balanced,0.5156578342986956,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,149,shoplifting-64.mp4,1,extra_trees_balanced,0.6661152699232578,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,152,shoplifting-67.mp4,1,extra_trees_balanced,0.5121206557640398,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,162,shoplifting-76.mp4,1,extra_trees_balanced,0.7854839559434329,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,168,shoplifting-81.mp4,1,extra_trees_balanced,0.8399131242164876,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,173,shoplifting-86.mp4,1,extra_trees_balanced,0.733475003995163,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,180,shoplifting-92.mp4,1,extra_trees_balanced,0.7093715540819352,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,7,normal-16.mp4,0,rf_original14,0.6833148148148149,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+2,20,normal-28.mp4,0,rf_original14,0.05817460317460318,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+2,21,normal-29.mp4,0,rf_original14,0.22057049486461253,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+2,30,normal-37.mp4,0,rf_original14,0.5982261904761905,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+2,31,normal-38.mp4,0,rf_original14,0.5068611111111112,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+2,32,normal-39.mp4,0,rf_original14,0.04611111111111111,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+2,35,normal-41.mp4,0,rf_original14,0.803062558356676,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+2,36,normal-42.mp4,0,rf_original14,0.33188359788359784,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+2,38,normal-44.mp4,0,rf_original14,0.41319047619047616,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+2,40,normal-46.mp4,0,rf_original14,0.5804514472455649,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+2,42,normal-48.mp4,0,rf_original14,0.2612328042328041,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+2,47,normal-52.mp4,0,rf_original14,0.41319047619047616,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+2,49,normal-54.mp4,0,rf_original14,0.5804682539682539,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+2,56,normal-60.mp4,0,rf_original14,0.43149999999999994,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+2,66,normal-7.mp4,0,rf_original14,0.41743650793650794,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+2,73,normal-76.mp4,0,rf_original14,0.21342592592592585,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+2,82,normal-84.mp4,0,rf_original14,0.7105317460317458,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+2,88,normal-9.mp4,0,rf_original14,0.38220370370370377,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+2,105,shoplifting-23.mp4,1,rf_original14,0.7628085901027079,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+2,111,shoplifting-29.mp4,1,rf_original14,0.7468333333333333,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+2,115,shoplifting-32.mp4,1,rf_original14,0.4017698412698412,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+2,119,shoplifting-36.mp4,1,rf_original14,0.7098148148148148,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+2,125,shoplifting-41.mp4,1,rf_original14,0.35819973544973543,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+2,128,shoplifting-44.mp4,1,rf_original14,0.49603968253968245,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+2,132,shoplifting-48.mp4,1,rf_original14,0.5093809523809523,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+2,134,shoplifting-50.mp4,1,rf_original14,0.6013677248677249,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+2,135,shoplifting-51.mp4,1,rf_original14,0.49570572263993323,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+2,137,shoplifting-53.mp4,1,rf_original14,0.6541666666666665,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+2,142,shoplifting-58.mp4,1,rf_original14,0.5641111111111111,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+2,144,shoplifting-6.mp4,1,rf_original14,0.3090410052910052,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+2,146,shoplifting-61.mp4,1,rf_original14,0.734961013645224,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+2,149,shoplifting-64.mp4,1,rf_original14,0.664148148148148,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+2,152,shoplifting-67.mp4,1,rf_original14,0.41851322751322745,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+2,162,shoplifting-76.mp4,1,rf_original14,0.883968253968254,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+2,168,shoplifting-81.mp4,1,rf_original14,0.815515873015873,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+2,173,shoplifting-86.mp4,1,rf_original14,0.8863958916900094,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+2,180,shoplifting-92.mp4,1,rf_original14,0.8719514472455648,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+2,7,normal-16.mp4,0,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+2,20,normal-28.mp4,0,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+2,21,normal-29.mp4,0,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+2,30,normal-37.mp4,0,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+2,31,normal-38.mp4,0,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+2,32,normal-39.mp4,0,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+2,35,normal-41.mp4,0,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+2,36,normal-42.mp4,0,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+2,38,normal-44.mp4,0,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+2,40,normal-46.mp4,0,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+2,42,normal-48.mp4,0,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+2,47,normal-52.mp4,0,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+2,49,normal-54.mp4,0,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+2,56,normal-60.mp4,0,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+2,66,normal-7.mp4,0,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+2,73,normal-76.mp4,0,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+2,82,normal-84.mp4,0,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+2,88,normal-9.mp4,0,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+2,105,shoplifting-23.mp4,1,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+2,111,shoplifting-29.mp4,1,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+2,115,shoplifting-32.mp4,1,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+2,119,shoplifting-36.mp4,1,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+2,125,shoplifting-41.mp4,1,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+2,128,shoplifting-44.mp4,1,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+2,132,shoplifting-48.mp4,1,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+2,134,shoplifting-50.mp4,1,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+2,135,shoplifting-51.mp4,1,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+2,137,shoplifting-53.mp4,1,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+2,142,shoplifting-58.mp4,1,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+2,144,shoplifting-6.mp4,1,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+2,146,shoplifting-61.mp4,1,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+2,149,shoplifting-64.mp4,1,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+2,152,shoplifting-67.mp4,1,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+2,162,shoplifting-76.mp4,1,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+2,168,shoplifting-81.mp4,1,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+2,173,shoplifting-86.mp4,1,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+2,180,shoplifting-92.mp4,1,dummy_prior,0.503448275862069,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+2,7,normal-16.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+2,20,normal-28.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+2,21,normal-29.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+2,30,normal-37.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+2,31,normal-38.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+2,32,normal-39.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+2,35,normal-41.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+2,36,normal-42.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+2,38,normal-44.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+2,40,normal-46.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+2,42,normal-48.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+2,47,normal-52.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+2,49,normal-54.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+2,56,normal-60.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+2,66,normal-7.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+2,73,normal-76.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+2,82,normal-84.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+2,88,normal-9.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+2,105,shoplifting-23.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+2,111,shoplifting-29.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+2,115,shoplifting-32.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+2,119,shoplifting-36.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+2,125,shoplifting-41.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+2,128,shoplifting-44.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+2,132,shoplifting-48.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+2,134,shoplifting-50.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+2,135,shoplifting-51.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+2,137,shoplifting-53.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+2,142,shoplifting-58.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+2,144,shoplifting-6.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+2,146,shoplifting-61.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+2,149,shoplifting-64.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+2,152,shoplifting-67.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+2,162,shoplifting-76.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+2,168,shoplifting-81.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+2,173,shoplifting-86.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+2,180,shoplifting-92.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+2,7,normal-16.mp4,0,nested_selection,0.6501637434859939,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,20,normal-28.mp4,0,nested_selection,0.05925713613144829,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,21,normal-29.mp4,0,nested_selection,0.07832197100816671,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,30,normal-37.mp4,0,nested_selection,0.5339287327430415,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,31,normal-38.mp4,0,nested_selection,0.5249854228969401,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,32,normal-39.mp4,0,nested_selection,0.04109761593425203,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,35,normal-41.mp4,0,nested_selection,0.5619927697845044,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,36,normal-42.mp4,0,nested_selection,0.3499562024025133,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,38,normal-44.mp4,0,nested_selection,0.3781524306145879,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,40,normal-46.mp4,0,nested_selection,0.5433798777286327,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,42,normal-48.mp4,0,nested_selection,0.20370969479063286,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,47,normal-52.mp4,0,nested_selection,0.3781524306145879,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,49,normal-54.mp4,0,nested_selection,0.45463798542628114,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,56,normal-60.mp4,0,nested_selection,0.44255414244618585,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,66,normal-7.mp4,0,nested_selection,0.40899811082742127,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,73,normal-76.mp4,0,nested_selection,0.4425656956634189,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,82,normal-84.mp4,0,nested_selection,0.47339074836411754,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,88,normal-9.mp4,0,nested_selection,0.38911768446926503,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,105,shoplifting-23.mp4,1,nested_selection,0.5484083788600035,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,111,shoplifting-29.mp4,1,nested_selection,0.6137266582567493,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,115,shoplifting-32.mp4,1,nested_selection,0.5066311242770786,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,119,shoplifting-36.mp4,1,nested_selection,0.3821995705404325,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,125,shoplifting-41.mp4,1,nested_selection,0.3436066357377468,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,128,shoplifting-44.mp4,1,nested_selection,0.7243472531281164,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,132,shoplifting-48.mp4,1,nested_selection,0.5609149991899326,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,134,shoplifting-50.mp4,1,nested_selection,0.42147646513199083,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,135,shoplifting-51.mp4,1,nested_selection,0.745741436563684,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,137,shoplifting-53.mp4,1,nested_selection,0.6523979649968656,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,142,shoplifting-58.mp4,1,nested_selection,0.3341587024011262,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,144,shoplifting-6.mp4,1,nested_selection,0.5266600200680587,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,146,shoplifting-61.mp4,1,nested_selection,0.5156578342986956,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,149,shoplifting-64.mp4,1,nested_selection,0.6661152699232578,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,152,shoplifting-67.mp4,1,nested_selection,0.5121206557640398,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,162,shoplifting-76.mp4,1,nested_selection,0.7854839559434329,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,168,shoplifting-81.mp4,1,nested_selection,0.8399131242164876,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,173,shoplifting-86.mp4,1,nested_selection,0.733475003995163,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+2,180,shoplifting-92.mp4,1,nested_selection,0.7093715540819352,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+3,5,normal-14.mp4,0,logistic_C0.1,0.9601082025755467,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+3,11,normal-2.mp4,0,logistic_C0.1,0.27720301812091824,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+3,13,normal-21.mp4,0,logistic_C0.1,0.0006164271375183206,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+3,23,normal-30.mp4,0,logistic_C0.1,0.005585543691232281,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+3,24,normal-31.mp4,0,logistic_C0.1,0.5527137739987368,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+3,39,normal-45.mp4,0,logistic_C0.1,0.7364989357728671,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+3,50,normal-55.mp4,0,logistic_C0.1,0.06254358869553324,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+3,51,normal-56.mp4,0,logistic_C0.1,0.06254358869553324,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+3,53,normal-58.mp4,0,logistic_C0.1,0.22488753386195529,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+3,54,normal-59.mp4,0,logistic_C0.1,0.5877883030792722,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+3,58,normal-62.mp4,0,logistic_C0.1,0.41193689347890544,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+3,60,normal-64.mp4,0,logistic_C0.1,0.5124900103386498,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+3,67,normal-70.mp4,0,logistic_C0.1,0.3367003039606302,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+3,71,normal-74.mp4,0,logistic_C0.1,0.282712667346777,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+3,72,normal-75.mp4,0,logistic_C0.1,0.5234180297293594,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+3,74,normal-77.mp4,0,logistic_C0.1,0.359233820042628,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+3,76,normal-79.mp4,0,logistic_C0.1,0.4469747963992657,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+3,83,normal-85.mp4,0,logistic_C0.1,0.12121690805142121,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+3,90,shoplifting-1.mp4,1,logistic_C0.1,0.6678667652660624,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+3,96,shoplifting-15.mp4,1,logistic_C0.1,0.5595189079917106,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+3,97,shoplifting-16.mp4,1,logistic_C0.1,0.5178273082323406,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+3,99,shoplifting-18.mp4,1,logistic_C0.1,0.6574419090140896,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+3,100,shoplifting-19.mp4,1,logistic_C0.1,0.6033165549996039,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+3,101,shoplifting-2.mp4,1,logistic_C0.1,0.28443708448319877,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+3,113,shoplifting-30.mp4,1,logistic_C0.1,0.2823673369155168,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+3,114,shoplifting-31.mp4,1,logistic_C0.1,0.09049439609102752,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+3,120,shoplifting-37.mp4,1,logistic_C0.1,0.6479598671995342,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+3,122,shoplifting-39.mp4,1,logistic_C0.1,0.5217926999955625,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+3,131,shoplifting-47.mp4,1,logistic_C0.1,0.3677216497334366,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+3,133,shoplifting-5.mp4,1,logistic_C0.1,0.7296070921777893,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+3,141,shoplifting-57.mp4,1,logistic_C0.1,0.7715879269110313,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+3,150,shoplifting-65.mp4,1,logistic_C0.1,8.385937336077359e-10,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+3,160,shoplifting-74.mp4,1,logistic_C0.1,0.8090354057584194,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+3,163,shoplifting-77.mp4,1,logistic_C0.1,0.7549213484460797,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+3,165,shoplifting-79.mp4,1,logistic_C0.1,0.6533803802594996,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+3,166,shoplifting-8.mp4,1,logistic_C0.1,0.8908341932434634,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+3,5,normal-14.mp4,0,logistic_C1,0.9939492296761558,1,0.5,class 1 iff probability >= threshold,logistic_C1
+3,11,normal-2.mp4,0,logistic_C1,0.2875942165449033,0,0.5,class 1 iff probability >= threshold,logistic_C1
+3,13,normal-21.mp4,0,logistic_C1,1.652181348241588e-08,0,0.5,class 1 iff probability >= threshold,logistic_C1
+3,23,normal-30.mp4,0,logistic_C1,2.3090810097871747e-05,0,0.5,class 1 iff probability >= threshold,logistic_C1
+3,24,normal-31.mp4,0,logistic_C1,0.6520574347815213,1,0.5,class 1 iff probability >= threshold,logistic_C1
+3,39,normal-45.mp4,0,logistic_C1,0.8471378248949696,1,0.5,class 1 iff probability >= threshold,logistic_C1
+3,50,normal-55.mp4,0,logistic_C1,0.013625572867481957,0,0.5,class 1 iff probability >= threshold,logistic_C1
+3,51,normal-56.mp4,0,logistic_C1,0.013625572867481957,0,0.5,class 1 iff probability >= threshold,logistic_C1
+3,53,normal-58.mp4,0,logistic_C1,0.22059274790609643,0,0.5,class 1 iff probability >= threshold,logistic_C1
+3,54,normal-59.mp4,0,logistic_C1,0.5725916141590498,1,0.5,class 1 iff probability >= threshold,logistic_C1
+3,58,normal-62.mp4,0,logistic_C1,0.5284515579051994,1,0.5,class 1 iff probability >= threshold,logistic_C1
+3,60,normal-64.mp4,0,logistic_C1,0.24057582871920521,0,0.5,class 1 iff probability >= threshold,logistic_C1
+3,67,normal-70.mp4,0,logistic_C1,0.3664499492114015,0,0.5,class 1 iff probability >= threshold,logistic_C1
+3,71,normal-74.mp4,0,logistic_C1,0.037653671138818505,0,0.5,class 1 iff probability >= threshold,logistic_C1
+3,72,normal-75.mp4,0,logistic_C1,0.2037274110659306,0,0.5,class 1 iff probability >= threshold,logistic_C1
+3,74,normal-77.mp4,0,logistic_C1,0.07267326682571293,0,0.5,class 1 iff probability >= threshold,logistic_C1
+3,76,normal-79.mp4,0,logistic_C1,0.329960990710616,0,0.5,class 1 iff probability >= threshold,logistic_C1
+3,83,normal-85.mp4,0,logistic_C1,0.004871905440213936,0,0.5,class 1 iff probability >= threshold,logistic_C1
+3,90,shoplifting-1.mp4,1,logistic_C1,0.9014458854555972,1,0.5,class 1 iff probability >= threshold,logistic_C1
+3,96,shoplifting-15.mp4,1,logistic_C1,0.6271497475460478,1,0.5,class 1 iff probability >= threshold,logistic_C1
+3,97,shoplifting-16.mp4,1,logistic_C1,0.17482653210558846,0,0.5,class 1 iff probability >= threshold,logistic_C1
+3,99,shoplifting-18.mp4,1,logistic_C1,0.8381783683160705,1,0.5,class 1 iff probability >= threshold,logistic_C1
+3,100,shoplifting-19.mp4,1,logistic_C1,0.6232410428415218,1,0.5,class 1 iff probability >= threshold,logistic_C1
+3,101,shoplifting-2.mp4,1,logistic_C1,0.003668314919500288,0,0.5,class 1 iff probability >= threshold,logistic_C1
+3,113,shoplifting-30.mp4,1,logistic_C1,0.03066570758640574,0,0.5,class 1 iff probability >= threshold,logistic_C1
+3,114,shoplifting-31.mp4,1,logistic_C1,0.01106408854783413,0,0.5,class 1 iff probability >= threshold,logistic_C1
+3,120,shoplifting-37.mp4,1,logistic_C1,0.5042949695924468,1,0.5,class 1 iff probability >= threshold,logistic_C1
+3,122,shoplifting-39.mp4,1,logistic_C1,0.6124350932938775,1,0.5,class 1 iff probability >= threshold,logistic_C1
+3,131,shoplifting-47.mp4,1,logistic_C1,0.08370412726812622,0,0.5,class 1 iff probability >= threshold,logistic_C1
+3,133,shoplifting-5.mp4,1,logistic_C1,0.6961802484738764,1,0.5,class 1 iff probability >= threshold,logistic_C1
+3,141,shoplifting-57.mp4,1,logistic_C1,0.9544088437667017,1,0.5,class 1 iff probability >= threshold,logistic_C1
+3,150,shoplifting-65.mp4,1,logistic_C1,3.038429478671662e-21,0,0.5,class 1 iff probability >= threshold,logistic_C1
+3,160,shoplifting-74.mp4,1,logistic_C1,0.933817978245703,1,0.5,class 1 iff probability >= threshold,logistic_C1
+3,163,shoplifting-77.mp4,1,logistic_C1,0.9553967096635028,1,0.5,class 1 iff probability >= threshold,logistic_C1
+3,165,shoplifting-79.mp4,1,logistic_C1,0.5217747397473099,1,0.5,class 1 iff probability >= threshold,logistic_C1
+3,166,shoplifting-8.mp4,1,logistic_C1,0.9878527894039657,1,0.5,class 1 iff probability >= threshold,logistic_C1
+3,5,normal-14.mp4,0,logistic_C10,0.999956889867759,1,0.5,class 1 iff probability >= threshold,logistic_C10
+3,11,normal-2.mp4,0,logistic_C10,0.21412954102776408,0,0.5,class 1 iff probability >= threshold,logistic_C10
+3,13,normal-21.mp4,0,logistic_C10,2.0879985012564403e-15,0,0.5,class 1 iff probability >= threshold,logistic_C10
+3,23,normal-30.mp4,0,logistic_C10,2.4635183182780777e-12,0,0.5,class 1 iff probability >= threshold,logistic_C10
+3,24,normal-31.mp4,0,logistic_C10,0.5606265015869178,1,0.5,class 1 iff probability >= threshold,logistic_C10
+3,39,normal-45.mp4,0,logistic_C10,0.9640278440290035,1,0.5,class 1 iff probability >= threshold,logistic_C10
+3,50,normal-55.mp4,0,logistic_C10,0.0016323218504609026,0,0.5,class 1 iff probability >= threshold,logistic_C10
+3,51,normal-56.mp4,0,logistic_C10,0.0016323218504609026,0,0.5,class 1 iff probability >= threshold,logistic_C10
+3,53,normal-58.mp4,0,logistic_C10,0.2745132334034507,0,0.5,class 1 iff probability >= threshold,logistic_C10
+3,54,normal-59.mp4,0,logistic_C10,0.4821905860346461,0,0.5,class 1 iff probability >= threshold,logistic_C10
+3,58,normal-62.mp4,0,logistic_C10,0.9219207784188718,1,0.5,class 1 iff probability >= threshold,logistic_C10
+3,60,normal-64.mp4,0,logistic_C10,0.0433969761021242,0,0.5,class 1 iff probability >= threshold,logistic_C10
+3,67,normal-70.mp4,0,logistic_C10,0.7715549335721528,1,0.5,class 1 iff probability >= threshold,logistic_C10
+3,71,normal-74.mp4,0,logistic_C10,0.00040863549946256556,0,0.5,class 1 iff probability >= threshold,logistic_C10
+3,72,normal-75.mp4,0,logistic_C10,0.01881010729380383,0,0.5,class 1 iff probability >= threshold,logistic_C10
+3,74,normal-77.mp4,0,logistic_C10,0.0017216756901216657,0,0.5,class 1 iff probability >= threshold,logistic_C10
+3,76,normal-79.mp4,0,logistic_C10,0.4078220614647202,0,0.5,class 1 iff probability >= threshold,logistic_C10
+3,83,normal-85.mp4,0,logistic_C10,1.1955734264261147e-05,0,0.5,class 1 iff probability >= threshold,logistic_C10
+3,90,shoplifting-1.mp4,1,logistic_C10,0.9971921078562772,1,0.5,class 1 iff probability >= threshold,logistic_C10
+3,96,shoplifting-15.mp4,1,logistic_C10,0.7560110684973042,1,0.5,class 1 iff probability >= threshold,logistic_C10
+3,97,shoplifting-16.mp4,1,logistic_C10,0.0029236265391514252,0,0.5,class 1 iff probability >= threshold,logistic_C10
+3,99,shoplifting-18.mp4,1,logistic_C10,0.9558121735137043,1,0.5,class 1 iff probability >= threshold,logistic_C10
+3,100,shoplifting-19.mp4,1,logistic_C10,0.6518950761216087,1,0.5,class 1 iff probability >= threshold,logistic_C10
+3,101,shoplifting-2.mp4,1,logistic_C10,3.9978259858596036e-06,0,0.5,class 1 iff probability >= threshold,logistic_C10
+3,113,shoplifting-30.mp4,1,logistic_C10,0.0016868441712474804,0,0.5,class 1 iff probability >= threshold,logistic_C10
+3,114,shoplifting-31.mp4,1,logistic_C10,0.0026658227529302455,0,0.5,class 1 iff probability >= threshold,logistic_C10
+3,120,shoplifting-37.mp4,1,logistic_C10,0.7603463037492906,1,0.5,class 1 iff probability >= threshold,logistic_C10
+3,122,shoplifting-39.mp4,1,logistic_C10,0.5034424228254128,1,0.5,class 1 iff probability >= threshold,logistic_C10
+3,131,shoplifting-47.mp4,1,logistic_C10,0.0010399513915753196,0,0.5,class 1 iff probability >= threshold,logistic_C10
+3,133,shoplifting-5.mp4,1,logistic_C10,0.5662297358808992,1,0.5,class 1 iff probability >= threshold,logistic_C10
+3,141,shoplifting-57.mp4,1,logistic_C10,0.9970804709360953,1,0.5,class 1 iff probability >= threshold,logistic_C10
+3,150,shoplifting-65.mp4,1,logistic_C10,3.7047960764345547e-44,0,0.5,class 1 iff probability >= threshold,logistic_C10
+3,160,shoplifting-74.mp4,1,logistic_C10,0.9965626326131893,1,0.5,class 1 iff probability >= threshold,logistic_C10
+3,163,shoplifting-77.mp4,1,logistic_C10,0.9993385390234794,1,0.5,class 1 iff probability >= threshold,logistic_C10
+3,165,shoplifting-79.mp4,1,logistic_C10,0.41713852527019274,0,0.5,class 1 iff probability >= threshold,logistic_C10
+3,166,shoplifting-8.mp4,1,logistic_C10,0.9999135287865855,1,0.5,class 1 iff probability >= threshold,logistic_C10
+3,5,normal-14.mp4,0,rf_balanced,0.6212779333955802,1,0.5,class 1 iff probability >= threshold,rf_balanced
+3,11,normal-2.mp4,0,rf_balanced,0.19756349206349205,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,13,normal-21.mp4,0,rf_balanced,0.440366978700312,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,23,normal-30.mp4,0,rf_balanced,0.24293915343915345,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,24,normal-31.mp4,0,rf_balanced,0.46702217719239003,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,39,normal-45.mp4,0,rf_balanced,0.4557876136209469,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,50,normal-55.mp4,0,rf_balanced,0.28278306878306886,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,51,normal-56.mp4,0,rf_balanced,0.28278306878306886,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,53,normal-58.mp4,0,rf_balanced,0.37473809523809526,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,54,normal-59.mp4,0,rf_balanced,0.43279942279942285,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,58,normal-62.mp4,0,rf_balanced,0.4195375180375181,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,60,normal-64.mp4,0,rf_balanced,0.5554516304551766,1,0.5,class 1 iff probability >= threshold,rf_balanced
+3,67,normal-70.mp4,0,rf_balanced,0.37444056705821416,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,71,normal-74.mp4,0,rf_balanced,0.4995901027077498,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,72,normal-75.mp4,0,rf_balanced,0.4689983919493723,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,74,normal-77.mp4,0,rf_balanced,0.34453719265483973,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,76,normal-79.mp4,0,rf_balanced,0.4065594790104594,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,83,normal-85.mp4,0,rf_balanced,0.4821406926406927,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,90,shoplifting-1.mp4,1,rf_balanced,0.5428264099966228,1,0.5,class 1 iff probability >= threshold,rf_balanced
+3,96,shoplifting-15.mp4,1,rf_balanced,0.4834242935945063,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,97,shoplifting-16.mp4,1,rf_balanced,0.49360357072121774,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,99,shoplifting-18.mp4,1,rf_balanced,0.7879365079365078,1,0.5,class 1 iff probability >= threshold,rf_balanced
+3,100,shoplifting-19.mp4,1,rf_balanced,0.532878306878307,1,0.5,class 1 iff probability >= threshold,rf_balanced
+3,101,shoplifting-2.mp4,1,rf_balanced,0.5011558151593615,1,0.5,class 1 iff probability >= threshold,rf_balanced
+3,113,shoplifting-30.mp4,1,rf_balanced,0.5483073593073595,1,0.5,class 1 iff probability >= threshold,rf_balanced
+3,114,shoplifting-31.mp4,1,rf_balanced,0.4279523809523809,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,120,shoplifting-37.mp4,1,rf_balanced,0.615015873015873,1,0.5,class 1 iff probability >= threshold,rf_balanced
+3,122,shoplifting-39.mp4,1,rf_balanced,0.5253189588189588,1,0.5,class 1 iff probability >= threshold,rf_balanced
+3,131,shoplifting-47.mp4,1,rf_balanced,0.44796031746031756,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,133,shoplifting-5.mp4,1,rf_balanced,0.7322632675966008,1,0.5,class 1 iff probability >= threshold,rf_balanced
+3,141,shoplifting-57.mp4,1,rf_balanced,0.6137047168749297,1,0.5,class 1 iff probability >= threshold,rf_balanced
+3,150,shoplifting-65.mp4,1,rf_balanced,0.2645803825803826,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,160,shoplifting-74.mp4,1,rf_balanced,0.8700309955345417,1,0.5,class 1 iff probability >= threshold,rf_balanced
+3,163,shoplifting-77.mp4,1,rf_balanced,0.590320987654321,1,0.5,class 1 iff probability >= threshold,rf_balanced
+3,165,shoplifting-79.mp4,1,rf_balanced,0.6030662931839402,1,0.5,class 1 iff probability >= threshold,rf_balanced
+3,166,shoplifting-8.mp4,1,rf_balanced,0.7266729708431838,1,0.5,class 1 iff probability >= threshold,rf_balanced
+3,5,normal-14.mp4,0,extra_trees_balanced,0.6064596828989863,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+3,11,normal-2.mp4,0,extra_trees_balanced,0.2373933101402814,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+3,13,normal-21.mp4,0,extra_trees_balanced,0.3550523094983391,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+3,23,normal-30.mp4,0,extra_trees_balanced,0.27202887093988193,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+3,24,normal-31.mp4,0,extra_trees_balanced,0.5011807814361156,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+3,39,normal-45.mp4,0,extra_trees_balanced,0.48705301726683503,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+3,50,normal-55.mp4,0,extra_trees_balanced,0.31101260447031703,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+3,51,normal-56.mp4,0,extra_trees_balanced,0.31101260447031703,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+3,53,normal-58.mp4,0,extra_trees_balanced,0.45474960619052934,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+3,54,normal-59.mp4,0,extra_trees_balanced,0.4455918838923125,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+3,58,normal-62.mp4,0,extra_trees_balanced,0.4781852454729373,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+3,60,normal-64.mp4,0,extra_trees_balanced,0.55966792679714,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+3,67,normal-70.mp4,0,extra_trees_balanced,0.43966546569963505,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+3,71,normal-74.mp4,0,extra_trees_balanced,0.48140401558800233,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+3,72,normal-75.mp4,0,extra_trees_balanced,0.4963942677948922,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+3,74,normal-77.mp4,0,extra_trees_balanced,0.431722825675321,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+3,76,normal-79.mp4,0,extra_trees_balanced,0.4545638914243446,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+3,83,normal-85.mp4,0,extra_trees_balanced,0.4071813618530312,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+3,90,shoplifting-1.mp4,1,extra_trees_balanced,0.5863523792750889,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+3,96,shoplifting-15.mp4,1,extra_trees_balanced,0.53368479916142,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+3,97,shoplifting-16.mp4,1,extra_trees_balanced,0.4156061005822902,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+3,99,shoplifting-18.mp4,1,extra_trees_balanced,0.7368070018326128,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+3,100,shoplifting-19.mp4,1,extra_trees_balanced,0.4937177028428899,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+3,101,shoplifting-2.mp4,1,extra_trees_balanced,0.4978641097139404,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+3,113,shoplifting-30.mp4,1,extra_trees_balanced,0.5168780289999045,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+3,114,shoplifting-31.mp4,1,extra_trees_balanced,0.4033667863738758,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+3,120,shoplifting-37.mp4,1,extra_trees_balanced,0.6117432750152919,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+3,122,shoplifting-39.mp4,1,extra_trees_balanced,0.5124385555199926,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+3,131,shoplifting-47.mp4,1,extra_trees_balanced,0.454817946216544,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+3,133,shoplifting-5.mp4,1,extra_trees_balanced,0.64472514981139,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+3,141,shoplifting-57.mp4,1,extra_trees_balanced,0.6718770617330961,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+3,150,shoplifting-65.mp4,1,extra_trees_balanced,0.2751403621773216,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+3,160,shoplifting-74.mp4,1,extra_trees_balanced,0.7785975742202176,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+3,163,shoplifting-77.mp4,1,extra_trees_balanced,0.5649908425718461,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+3,165,shoplifting-79.mp4,1,extra_trees_balanced,0.5632810266030299,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+3,166,shoplifting-8.mp4,1,extra_trees_balanced,0.7887524525449443,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+3,5,normal-14.mp4,0,rf_original14,0.6258597883597883,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+3,11,normal-2.mp4,0,rf_original14,0.40863756613756613,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+3,13,normal-21.mp4,0,rf_original14,0.6323597883597883,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+3,23,normal-30.mp4,0,rf_original14,0.565864357864358,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+3,24,normal-31.mp4,0,rf_original14,0.5203571428571427,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+3,39,normal-45.mp4,0,rf_original14,0.3426296296296296,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+3,50,normal-55.mp4,0,rf_original14,0.3853227513227513,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+3,51,normal-56.mp4,0,rf_original14,0.3853227513227513,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+3,53,normal-58.mp4,0,rf_original14,0.41500529100529093,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+3,54,normal-59.mp4,0,rf_original14,0.5647744107744108,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+3,58,normal-62.mp4,0,rf_original14,0.3043544973544973,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+3,60,normal-64.mp4,0,rf_original14,0.6482597587597588,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+3,67,normal-70.mp4,0,rf_original14,0.3725409035409035,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+3,71,normal-74.mp4,0,rf_original14,0.7463311873311874,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+3,72,normal-75.mp4,0,rf_original14,0.4672328042328042,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+3,74,normal-77.mp4,0,rf_original14,0.5418677248677248,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+3,76,normal-79.mp4,0,rf_original14,0.5934444444444444,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+3,83,normal-85.mp4,0,rf_original14,0.4882063492063491,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+3,90,shoplifting-1.mp4,1,rf_original14,0.5838174603174604,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+3,96,shoplifting-15.mp4,1,rf_original14,0.16910582010582006,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+3,97,shoplifting-16.mp4,1,rf_original14,0.6582380952380952,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+3,99,shoplifting-18.mp4,1,rf_original14,0.8866984126984127,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+3,100,shoplifting-19.mp4,1,rf_original14,0.5688730158730158,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+3,101,shoplifting-2.mp4,1,rf_original14,0.6444569504569504,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+3,113,shoplifting-30.mp4,1,rf_original14,0.4471168831168831,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+3,114,shoplifting-31.mp4,1,rf_original14,0.6377962962962963,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+3,120,shoplifting-37.mp4,1,rf_original14,0.5836050986050988,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+3,122,shoplifting-39.mp4,1,rf_original14,0.4403465608465608,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+3,131,shoplifting-47.mp4,1,rf_original14,0.4737063492063493,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+3,133,shoplifting-5.mp4,1,rf_original14,0.25640476190476186,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+3,141,shoplifting-57.mp4,1,rf_original14,0.3993862433862434,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+3,150,shoplifting-65.mp4,1,rf_original14,0.46882275132275114,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+3,160,shoplifting-74.mp4,1,rf_original14,0.8310000000000002,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+3,163,shoplifting-77.mp4,1,rf_original14,0.3687804232804232,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+3,165,shoplifting-79.mp4,1,rf_original14,0.5859153439153438,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+3,166,shoplifting-8.mp4,1,rf_original14,0.6483492063492065,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+3,5,normal-14.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+3,11,normal-2.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+3,13,normal-21.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+3,23,normal-30.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+3,24,normal-31.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+3,39,normal-45.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+3,50,normal-55.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+3,51,normal-56.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+3,53,normal-58.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+3,54,normal-59.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+3,58,normal-62.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+3,60,normal-64.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+3,67,normal-70.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+3,71,normal-74.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+3,72,normal-75.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+3,74,normal-77.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+3,76,normal-79.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+3,83,normal-85.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+3,90,shoplifting-1.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+3,96,shoplifting-15.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+3,97,shoplifting-16.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+3,99,shoplifting-18.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+3,100,shoplifting-19.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+3,101,shoplifting-2.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+3,113,shoplifting-30.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+3,114,shoplifting-31.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+3,120,shoplifting-37.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+3,122,shoplifting-39.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+3,131,shoplifting-47.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+3,133,shoplifting-5.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+3,141,shoplifting-57.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+3,150,shoplifting-65.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+3,160,shoplifting-74.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+3,163,shoplifting-77.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+3,165,shoplifting-79.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+3,166,shoplifting-8.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+3,5,normal-14.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+3,11,normal-2.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+3,13,normal-21.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+3,23,normal-30.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+3,24,normal-31.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+3,39,normal-45.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+3,50,normal-55.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+3,51,normal-56.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+3,53,normal-58.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+3,54,normal-59.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+3,58,normal-62.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+3,60,normal-64.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+3,67,normal-70.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+3,71,normal-74.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+3,72,normal-75.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+3,74,normal-77.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+3,76,normal-79.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+3,83,normal-85.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+3,90,shoplifting-1.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+3,96,shoplifting-15.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+3,97,shoplifting-16.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+3,99,shoplifting-18.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+3,100,shoplifting-19.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+3,101,shoplifting-2.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+3,113,shoplifting-30.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+3,114,shoplifting-31.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+3,120,shoplifting-37.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+3,122,shoplifting-39.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+3,131,shoplifting-47.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+3,133,shoplifting-5.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+3,141,shoplifting-57.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+3,150,shoplifting-65.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+3,160,shoplifting-74.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+3,163,shoplifting-77.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+3,165,shoplifting-79.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+3,166,shoplifting-8.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+3,5,normal-14.mp4,0,nested_selection,0.6212779333955802,1,0.5,class 1 iff probability >= threshold,rf_balanced
+3,11,normal-2.mp4,0,nested_selection,0.19756349206349205,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,13,normal-21.mp4,0,nested_selection,0.440366978700312,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,23,normal-30.mp4,0,nested_selection,0.24293915343915345,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,24,normal-31.mp4,0,nested_selection,0.46702217719239003,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,39,normal-45.mp4,0,nested_selection,0.4557876136209469,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,50,normal-55.mp4,0,nested_selection,0.28278306878306886,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,51,normal-56.mp4,0,nested_selection,0.28278306878306886,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,53,normal-58.mp4,0,nested_selection,0.37473809523809526,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,54,normal-59.mp4,0,nested_selection,0.43279942279942285,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,58,normal-62.mp4,0,nested_selection,0.4195375180375181,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,60,normal-64.mp4,0,nested_selection,0.5554516304551766,1,0.5,class 1 iff probability >= threshold,rf_balanced
+3,67,normal-70.mp4,0,nested_selection,0.37444056705821416,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,71,normal-74.mp4,0,nested_selection,0.4995901027077498,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,72,normal-75.mp4,0,nested_selection,0.4689983919493723,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,74,normal-77.mp4,0,nested_selection,0.34453719265483973,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,76,normal-79.mp4,0,nested_selection,0.4065594790104594,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,83,normal-85.mp4,0,nested_selection,0.4821406926406927,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,90,shoplifting-1.mp4,1,nested_selection,0.5428264099966228,1,0.5,class 1 iff probability >= threshold,rf_balanced
+3,96,shoplifting-15.mp4,1,nested_selection,0.4834242935945063,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,97,shoplifting-16.mp4,1,nested_selection,0.49360357072121774,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,99,shoplifting-18.mp4,1,nested_selection,0.7879365079365078,1,0.5,class 1 iff probability >= threshold,rf_balanced
+3,100,shoplifting-19.mp4,1,nested_selection,0.532878306878307,1,0.5,class 1 iff probability >= threshold,rf_balanced
+3,101,shoplifting-2.mp4,1,nested_selection,0.5011558151593615,1,0.5,class 1 iff probability >= threshold,rf_balanced
+3,113,shoplifting-30.mp4,1,nested_selection,0.5483073593073595,1,0.5,class 1 iff probability >= threshold,rf_balanced
+3,114,shoplifting-31.mp4,1,nested_selection,0.4279523809523809,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,120,shoplifting-37.mp4,1,nested_selection,0.615015873015873,1,0.5,class 1 iff probability >= threshold,rf_balanced
+3,122,shoplifting-39.mp4,1,nested_selection,0.5253189588189588,1,0.5,class 1 iff probability >= threshold,rf_balanced
+3,131,shoplifting-47.mp4,1,nested_selection,0.44796031746031756,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,133,shoplifting-5.mp4,1,nested_selection,0.7322632675966008,1,0.5,class 1 iff probability >= threshold,rf_balanced
+3,141,shoplifting-57.mp4,1,nested_selection,0.6137047168749297,1,0.5,class 1 iff probability >= threshold,rf_balanced
+3,150,shoplifting-65.mp4,1,nested_selection,0.2645803825803826,0,0.5,class 1 iff probability >= threshold,rf_balanced
+3,160,shoplifting-74.mp4,1,nested_selection,0.8700309955345417,1,0.5,class 1 iff probability >= threshold,rf_balanced
+3,163,shoplifting-77.mp4,1,nested_selection,0.590320987654321,1,0.5,class 1 iff probability >= threshold,rf_balanced
+3,165,shoplifting-79.mp4,1,nested_selection,0.6030662931839402,1,0.5,class 1 iff probability >= threshold,rf_balanced
+3,166,shoplifting-8.mp4,1,nested_selection,0.7266729708431838,1,0.5,class 1 iff probability >= threshold,rf_balanced
+4,6,normal-15.mp4,0,logistic_C0.1,0.6912761820667647,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+4,12,normal-20.mp4,0,logistic_C0.1,0.26205960645402004,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+4,22,normal-3.mp4,0,logistic_C0.1,0.4208922360310265,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+4,33,normal-4.mp4,0,logistic_C0.1,0.6443860292031715,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+4,44,normal-5.mp4,0,logistic_C0.1,0.3683206240104273,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+4,48,normal-53.mp4,0,logistic_C0.1,0.27954637681219274,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+4,52,normal-57.mp4,0,logistic_C0.1,0.053935969261780334,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+4,57,normal-61.mp4,0,logistic_C0.1,0.5501239604372526,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+4,59,normal-63.mp4,0,logistic_C0.1,0.7645834287816221,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+4,61,normal-65.mp4,0,logistic_C0.1,0.1965464290785318,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+4,62,normal-66.mp4,0,logistic_C0.1,0.5213711281769602,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+4,68,normal-71.mp4,0,logistic_C0.1,0.36223860074452613,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+4,69,normal-72.mp4,0,logistic_C0.1,0.43184909077871364,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+4,70,normal-73.mp4,0,logistic_C0.1,0.6259292959306422,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+4,77,normal-8.mp4,0,logistic_C0.1,0.4853329679757402,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+4,78,normal-80.mp4,0,logistic_C0.1,0.39016889924791676,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+4,81,normal-83.mp4,0,logistic_C0.1,0.3207595686063338,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+4,89,normal-90.mp4,0,logistic_C0.1,0.7525980603706387,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+4,92,shoplifting-11.mp4,1,logistic_C0.1,0.6461469051974736,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+4,98,shoplifting-17.mp4,1,logistic_C0.1,0.5023099902208559,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+4,103,shoplifting-21.mp4,1,logistic_C0.1,0.32577938419061536,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+4,107,shoplifting-25.mp4,1,logistic_C0.1,0.520466890381629,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+4,109,shoplifting-27.mp4,1,logistic_C0.1,0.8119998640035538,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+4,112,shoplifting-3.mp4,1,logistic_C0.1,0.5496725714791009,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+4,116,shoplifting-33.mp4,1,logistic_C0.1,0.5638998959200132,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+4,127,shoplifting-43.mp4,1,logistic_C0.1,0.9252330816013299,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+4,136,shoplifting-52.mp4,1,logistic_C0.1,0.3739138861417323,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+4,139,shoplifting-55.mp4,1,logistic_C0.1,0.5586843415418359,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+4,140,shoplifting-56.mp4,1,logistic_C0.1,0.5172205107698279,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+4,143,shoplifting-59.mp4,1,logistic_C0.1,0.12365597267058304,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+4,154,shoplifting-69.mp4,1,logistic_C0.1,0.45651139193083745,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+4,158,shoplifting-72.mp4,1,logistic_C0.1,0.7179242298935411,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+4,164,shoplifting-78.mp4,1,logistic_C0.1,0.8255443240563347,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+4,167,shoplifting-80.mp4,1,logistic_C0.1,0.7047757184358856,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+4,172,shoplifting-85.mp4,1,logistic_C0.1,0.5845495126850204,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+4,174,shoplifting-87.mp4,1,logistic_C0.1,0.5014944168618887,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+4,6,normal-15.mp4,0,logistic_C1,0.6959049823004891,1,0.5,class 1 iff probability >= threshold,logistic_C1
+4,12,normal-20.mp4,0,logistic_C1,0.1366619556852899,0,0.5,class 1 iff probability >= threshold,logistic_C1
+4,22,normal-3.mp4,0,logistic_C1,0.48207161757138334,0,0.5,class 1 iff probability >= threshold,logistic_C1
+4,33,normal-4.mp4,0,logistic_C1,0.6755196604086932,1,0.5,class 1 iff probability >= threshold,logistic_C1
+4,44,normal-5.mp4,0,logistic_C1,0.12486323380282849,0,0.5,class 1 iff probability >= threshold,logistic_C1
+4,48,normal-53.mp4,0,logistic_C1,0.17216308968574354,0,0.5,class 1 iff probability >= threshold,logistic_C1
+4,52,normal-57.mp4,0,logistic_C1,1.0267300262197064e-05,0,0.5,class 1 iff probability >= threshold,logistic_C1
+4,57,normal-61.mp4,0,logistic_C1,0.3035175101463654,0,0.5,class 1 iff probability >= threshold,logistic_C1
+4,59,normal-63.mp4,0,logistic_C1,0.8431463122801525,1,0.5,class 1 iff probability >= threshold,logistic_C1
+4,61,normal-65.mp4,0,logistic_C1,0.027085130028636273,0,0.5,class 1 iff probability >= threshold,logistic_C1
+4,62,normal-66.mp4,0,logistic_C1,0.5802564772425239,1,0.5,class 1 iff probability >= threshold,logistic_C1
+4,68,normal-71.mp4,0,logistic_C1,0.2813870123066581,0,0.5,class 1 iff probability >= threshold,logistic_C1
+4,69,normal-72.mp4,0,logistic_C1,0.369709551025113,0,0.5,class 1 iff probability >= threshold,logistic_C1
+4,70,normal-73.mp4,0,logistic_C1,0.3443225832476832,0,0.5,class 1 iff probability >= threshold,logistic_C1
+4,77,normal-8.mp4,0,logistic_C1,0.4374562493929107,0,0.5,class 1 iff probability >= threshold,logistic_C1
+4,78,normal-80.mp4,0,logistic_C1,0.16612899490419444,0,0.5,class 1 iff probability >= threshold,logistic_C1
+4,81,normal-83.mp4,0,logistic_C1,0.043034497622665646,0,0.5,class 1 iff probability >= threshold,logistic_C1
+4,89,normal-90.mp4,0,logistic_C1,0.8255043734077632,1,0.5,class 1 iff probability >= threshold,logistic_C1
+4,92,shoplifting-11.mp4,1,logistic_C1,0.9231807679346734,1,0.5,class 1 iff probability >= threshold,logistic_C1
+4,98,shoplifting-17.mp4,1,logistic_C1,0.5027065026672212,1,0.5,class 1 iff probability >= threshold,logistic_C1
+4,103,shoplifting-21.mp4,1,logistic_C1,0.3749480759835634,0,0.5,class 1 iff probability >= threshold,logistic_C1
+4,107,shoplifting-25.mp4,1,logistic_C1,0.5763396397593753,1,0.5,class 1 iff probability >= threshold,logistic_C1
+4,109,shoplifting-27.mp4,1,logistic_C1,0.9416668797558033,1,0.5,class 1 iff probability >= threshold,logistic_C1
+4,112,shoplifting-3.mp4,1,logistic_C1,0.6963527174538068,1,0.5,class 1 iff probability >= threshold,logistic_C1
+4,116,shoplifting-33.mp4,1,logistic_C1,0.15880344171499852,0,0.5,class 1 iff probability >= threshold,logistic_C1
+4,127,shoplifting-43.mp4,1,logistic_C1,0.9811698099877173,1,0.5,class 1 iff probability >= threshold,logistic_C1
+4,136,shoplifting-52.mp4,1,logistic_C1,0.20329502574936126,0,0.5,class 1 iff probability >= threshold,logistic_C1
+4,139,shoplifting-55.mp4,1,logistic_C1,0.7998516151628287,1,0.5,class 1 iff probability >= threshold,logistic_C1
+4,140,shoplifting-56.mp4,1,logistic_C1,0.49889832205758144,0,0.5,class 1 iff probability >= threshold,logistic_C1
+4,143,shoplifting-59.mp4,1,logistic_C1,0.020880366402088565,0,0.5,class 1 iff probability >= threshold,logistic_C1
+4,154,shoplifting-69.mp4,1,logistic_C1,0.5257966049448789,1,0.5,class 1 iff probability >= threshold,logistic_C1
+4,158,shoplifting-72.mp4,1,logistic_C1,0.8151638809686377,1,0.5,class 1 iff probability >= threshold,logistic_C1
+4,164,shoplifting-78.mp4,1,logistic_C1,0.9325353127021904,1,0.5,class 1 iff probability >= threshold,logistic_C1
+4,167,shoplifting-80.mp4,1,logistic_C1,0.8173813537192289,1,0.5,class 1 iff probability >= threshold,logistic_C1
+4,172,shoplifting-85.mp4,1,logistic_C1,0.7738115349208992,1,0.5,class 1 iff probability >= threshold,logistic_C1
+4,174,shoplifting-87.mp4,1,logistic_C1,0.5623075580076322,1,0.5,class 1 iff probability >= threshold,logistic_C1
+4,6,normal-15.mp4,0,logistic_C10,0.5554090656081867,1,0.5,class 1 iff probability >= threshold,logistic_C10
+4,12,normal-20.mp4,0,logistic_C10,0.017337585774140785,0,0.5,class 1 iff probability >= threshold,logistic_C10
+4,22,normal-3.mp4,0,logistic_C10,0.6843317327984392,1,0.5,class 1 iff probability >= threshold,logistic_C10
+4,33,normal-4.mp4,0,logistic_C10,0.5526916433497819,1,0.5,class 1 iff probability >= threshold,logistic_C10
+4,44,normal-5.mp4,0,logistic_C10,0.013955172119482565,0,0.5,class 1 iff probability >= threshold,logistic_C10
+4,48,normal-53.mp4,0,logistic_C10,0.05420301924786092,0,0.5,class 1 iff probability >= threshold,logistic_C10
+4,52,normal-57.mp4,0,logistic_C10,4.962437282534829e-15,0,0.5,class 1 iff probability >= threshold,logistic_C10
+4,57,normal-61.mp4,0,logistic_C10,0.01969208627029403,0,0.5,class 1 iff probability >= threshold,logistic_C10
+4,59,normal-63.mp4,0,logistic_C10,0.8929412863613351,1,0.5,class 1 iff probability >= threshold,logistic_C10
+4,61,normal-65.mp4,0,logistic_C10,0.0008964382866785977,0,0.5,class 1 iff probability >= threshold,logistic_C10
+4,62,normal-66.mp4,0,logistic_C10,0.583137250975999,1,0.5,class 1 iff probability >= threshold,logistic_C10
+4,68,normal-71.mp4,0,logistic_C10,0.3554646401218634,0,0.5,class 1 iff probability >= threshold,logistic_C10
+4,69,normal-72.mp4,0,logistic_C10,0.2860132894672652,0,0.5,class 1 iff probability >= threshold,logistic_C10
+4,70,normal-73.mp4,0,logistic_C10,0.02572175993885477,0,0.5,class 1 iff probability >= threshold,logistic_C10
+4,77,normal-8.mp4,0,logistic_C10,0.3903968034273251,0,0.5,class 1 iff probability >= threshold,logistic_C10
+4,78,normal-80.mp4,0,logistic_C10,0.020690434448470102,0,0.5,class 1 iff probability >= threshold,logistic_C10
+4,81,normal-83.mp4,0,logistic_C10,0.0007205538874263112,0,0.5,class 1 iff probability >= threshold,logistic_C10
+4,89,normal-90.mp4,0,logistic_C10,0.8675977977611274,1,0.5,class 1 iff probability >= threshold,logistic_C10
+4,92,shoplifting-11.mp4,1,logistic_C10,0.9937177886448976,1,0.5,class 1 iff probability >= threshold,logistic_C10
+4,98,shoplifting-17.mp4,1,logistic_C10,0.33677754745514044,0,0.5,class 1 iff probability >= threshold,logistic_C10
+4,103,shoplifting-21.mp4,1,logistic_C10,0.3643270175376086,0,0.5,class 1 iff probability >= threshold,logistic_C10
+4,107,shoplifting-25.mp4,1,logistic_C10,0.8475266061665601,1,0.5,class 1 iff probability >= threshold,logistic_C10
+4,109,shoplifting-27.mp4,1,logistic_C10,0.9862712242528764,1,0.5,class 1 iff probability >= threshold,logistic_C10
+4,112,shoplifting-3.mp4,1,logistic_C10,0.9876996865113636,1,0.5,class 1 iff probability >= threshold,logistic_C10
+4,116,shoplifting-33.mp4,1,logistic_C10,0.015482481358282863,0,0.5,class 1 iff probability >= threshold,logistic_C10
+4,127,shoplifting-43.mp4,1,logistic_C10,0.9983531625390623,1,0.5,class 1 iff probability >= threshold,logistic_C10
+4,136,shoplifting-52.mp4,1,logistic_C10,0.04747878732216759,0,0.5,class 1 iff probability >= threshold,logistic_C10
+4,139,shoplifting-55.mp4,1,logistic_C10,0.9447098306960371,1,0.5,class 1 iff probability >= threshold,logistic_C10
+4,140,shoplifting-56.mp4,1,logistic_C10,0.2471260656020608,0,0.5,class 1 iff probability >= threshold,logistic_C10
+4,143,shoplifting-59.mp4,1,logistic_C10,0.0007283516739528879,0,0.5,class 1 iff probability >= threshold,logistic_C10
+4,154,shoplifting-69.mp4,1,logistic_C10,0.7720191283840772,1,0.5,class 1 iff probability >= threshold,logistic_C10
+4,158,shoplifting-72.mp4,1,logistic_C10,0.7761348176315401,1,0.5,class 1 iff probability >= threshold,logistic_C10
+4,164,shoplifting-78.mp4,1,logistic_C10,0.9685104068852713,1,0.5,class 1 iff probability >= threshold,logistic_C10
+4,167,shoplifting-80.mp4,1,logistic_C10,0.9870168322363873,1,0.5,class 1 iff probability >= threshold,logistic_C10
+4,172,shoplifting-85.mp4,1,logistic_C10,0.9495264399837336,1,0.5,class 1 iff probability >= threshold,logistic_C10
+4,174,shoplifting-87.mp4,1,logistic_C10,0.6692875010909977,1,0.5,class 1 iff probability >= threshold,logistic_C10
+4,6,normal-15.mp4,0,rf_balanced,0.4649497354497356,0,0.5,class 1 iff probability >= threshold,rf_balanced
+4,12,normal-20.mp4,0,rf_balanced,0.05503968253968254,0,0.5,class 1 iff probability >= threshold,rf_balanced
+4,22,normal-3.mp4,0,rf_balanced,0.4118783068783069,0,0.5,class 1 iff probability >= threshold,rf_balanced
+4,33,normal-4.mp4,0,rf_balanced,0.6652089947089945,1,0.5,class 1 iff probability >= threshold,rf_balanced
+4,44,normal-5.mp4,0,rf_balanced,0.6417992154716293,1,0.5,class 1 iff probability >= threshold,rf_balanced
+4,48,normal-53.mp4,0,rf_balanced,0.2524708994708995,0,0.5,class 1 iff probability >= threshold,rf_balanced
+4,52,normal-57.mp4,0,rf_balanced,0.3485238095238096,0,0.5,class 1 iff probability >= threshold,rf_balanced
+4,57,normal-61.mp4,0,rf_balanced,0.5348174603174602,1,0.5,class 1 iff probability >= threshold,rf_balanced
+4,59,normal-63.mp4,0,rf_balanced,0.42451879219120603,0,0.5,class 1 iff probability >= threshold,rf_balanced
+4,61,normal-65.mp4,0,rf_balanced,0.41087301587301583,0,0.5,class 1 iff probability >= threshold,rf_balanced
+4,62,normal-66.mp4,0,rf_balanced,0.24917460317460316,0,0.5,class 1 iff probability >= threshold,rf_balanced
+4,68,normal-71.mp4,0,rf_balanced,0.34408465608465605,0,0.5,class 1 iff probability >= threshold,rf_balanced
+4,69,normal-72.mp4,0,rf_balanced,0.42317195767195764,0,0.5,class 1 iff probability >= threshold,rf_balanced
+4,70,normal-73.mp4,0,rf_balanced,0.4780531837255975,0,0.5,class 1 iff probability >= threshold,rf_balanced
+4,77,normal-8.mp4,0,rf_balanced,0.42182567049808434,0,0.5,class 1 iff probability >= threshold,rf_balanced
+4,78,normal-80.mp4,0,rf_balanced,0.3265791245791245,0,0.5,class 1 iff probability >= threshold,rf_balanced
+4,81,normal-83.mp4,0,rf_balanced,0.573950009122423,1,0.5,class 1 iff probability >= threshold,rf_balanced
+4,89,normal-90.mp4,0,rf_balanced,0.5263306878306878,1,0.5,class 1 iff probability >= threshold,rf_balanced
+4,92,shoplifting-11.mp4,1,rf_balanced,0.6692566137566138,1,0.5,class 1 iff probability >= threshold,rf_balanced
+4,98,shoplifting-17.mp4,1,rf_balanced,0.5485505382229521,1,0.5,class 1 iff probability >= threshold,rf_balanced
+4,103,shoplifting-21.mp4,1,rf_balanced,0.5173095238095238,1,0.5,class 1 iff probability >= threshold,rf_balanced
+4,107,shoplifting-25.mp4,1,rf_balanced,0.7222698412698413,1,0.5,class 1 iff probability >= threshold,rf_balanced
+4,109,shoplifting-27.mp4,1,rf_balanced,0.554346560846561,1,0.5,class 1 iff probability >= threshold,rf_balanced
+4,112,shoplifting-3.mp4,1,rf_balanced,0.6242301587301587,1,0.5,class 1 iff probability >= threshold,rf_balanced
+4,116,shoplifting-33.mp4,1,rf_balanced,0.4941986863711002,0,0.5,class 1 iff probability >= threshold,rf_balanced
+4,127,shoplifting-43.mp4,1,rf_balanced,0.6777595329319468,1,0.5,class 1 iff probability >= threshold,rf_balanced
+4,136,shoplifting-52.mp4,1,rf_balanced,0.612037037037037,1,0.5,class 1 iff probability >= threshold,rf_balanced
+4,139,shoplifting-55.mp4,1,rf_balanced,0.5389285714285715,1,0.5,class 1 iff probability >= threshold,rf_balanced
+4,140,shoplifting-56.mp4,1,rf_balanced,0.6299708994708993,1,0.5,class 1 iff probability >= threshold,rf_balanced
+4,143,shoplifting-59.mp4,1,rf_balanced,0.07067460317460317,0,0.5,class 1 iff probability >= threshold,rf_balanced
+4,154,shoplifting-69.mp4,1,rf_balanced,0.36051851851851846,0,0.5,class 1 iff probability >= threshold,rf_balanced
+4,158,shoplifting-72.mp4,1,rf_balanced,0.6642328042328043,1,0.5,class 1 iff probability >= threshold,rf_balanced
+4,164,shoplifting-78.mp4,1,rf_balanced,0.868928845101259,1,0.5,class 1 iff probability >= threshold,rf_balanced
+4,167,shoplifting-80.mp4,1,rf_balanced,0.9342145593869731,1,0.5,class 1 iff probability >= threshold,rf_balanced
+4,172,shoplifting-85.mp4,1,rf_balanced,0.7826243386243387,1,0.5,class 1 iff probability >= threshold,rf_balanced
+4,174,shoplifting-87.mp4,1,rf_balanced,0.5859523809523808,1,0.5,class 1 iff probability >= threshold,rf_balanced
+4,6,normal-15.mp4,0,extra_trees_balanced,0.6334596779435996,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,12,normal-20.mp4,0,extra_trees_balanced,0.10985012841227555,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,22,normal-3.mp4,0,extra_trees_balanced,0.48871210210964866,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,33,normal-4.mp4,0,extra_trees_balanced,0.5911518314130114,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,44,normal-5.mp4,0,extra_trees_balanced,0.47196575970477883,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,48,normal-53.mp4,0,extra_trees_balanced,0.2442714689218111,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,52,normal-57.mp4,0,extra_trees_balanced,0.2710435538897407,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,57,normal-61.mp4,0,extra_trees_balanced,0.4676456878082366,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,59,normal-63.mp4,0,extra_trees_balanced,0.4710412486208284,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,61,normal-65.mp4,0,extra_trees_balanced,0.44928567934764096,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,62,normal-66.mp4,0,extra_trees_balanced,0.32093385575347744,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,68,normal-71.mp4,0,extra_trees_balanced,0.4369520191368042,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,69,normal-72.mp4,0,extra_trees_balanced,0.5598986867964736,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,70,normal-73.mp4,0,extra_trees_balanced,0.4381342692807559,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,77,normal-8.mp4,0,extra_trees_balanced,0.5051328937517915,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,78,normal-80.mp4,0,extra_trees_balanced,0.45862086080999453,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,81,normal-83.mp4,0,extra_trees_balanced,0.5089089786438157,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,89,normal-90.mp4,0,extra_trees_balanced,0.5976064254039247,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,92,shoplifting-11.mp4,1,extra_trees_balanced,0.6494757203575461,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,98,shoplifting-17.mp4,1,extra_trees_balanced,0.5269895074086279,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,103,shoplifting-21.mp4,1,extra_trees_balanced,0.49241692685384464,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,107,shoplifting-25.mp4,1,extra_trees_balanced,0.7478064034752007,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,109,shoplifting-27.mp4,1,extra_trees_balanced,0.5550789472098859,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,112,shoplifting-3.mp4,1,extra_trees_balanced,0.6331953183087927,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,116,shoplifting-33.mp4,1,extra_trees_balanced,0.5109647814735528,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,127,shoplifting-43.mp4,1,extra_trees_balanced,0.6850307989332631,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,136,shoplifting-52.mp4,1,extra_trees_balanced,0.6406470942224538,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,139,shoplifting-55.mp4,1,extra_trees_balanced,0.5566841016600006,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,140,shoplifting-56.mp4,1,extra_trees_balanced,0.6707483343358817,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,143,shoplifting-59.mp4,1,extra_trees_balanced,0.08632530087678307,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,154,shoplifting-69.mp4,1,extra_trees_balanced,0.48565774244606996,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,158,shoplifting-72.mp4,1,extra_trees_balanced,0.6064543157834255,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,164,shoplifting-78.mp4,1,extra_trees_balanced,0.8305115711454172,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,167,shoplifting-80.mp4,1,extra_trees_balanced,0.8015993022749892,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,172,shoplifting-85.mp4,1,extra_trees_balanced,0.7615383284230386,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,174,shoplifting-87.mp4,1,extra_trees_balanced,0.5341224124611851,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,6,normal-15.mp4,0,rf_original14,0.5420687830687829,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+4,12,normal-20.mp4,0,rf_original14,0.24046825396825397,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+4,22,normal-3.mp4,0,rf_original14,0.6775476190476191,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+4,33,normal-4.mp4,0,rf_original14,0.580325396825397,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+4,44,normal-5.mp4,0,rf_original14,0.2980327812284334,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+4,48,normal-53.mp4,0,rf_original14,0.4305291005291006,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+4,52,normal-57.mp4,0,rf_original14,0.45174603174603184,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+4,57,normal-61.mp4,0,rf_original14,0.5136438923395445,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+4,59,normal-63.mp4,0,rf_original14,0.6292999769956293,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+4,61,normal-65.mp4,0,rf_original14,0.5996031746031746,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+4,62,normal-66.mp4,0,rf_original14,0.13519841269841273,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+4,68,normal-71.mp4,0,rf_original14,0.4564365079365081,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+4,69,normal-72.mp4,0,rf_original14,0.6953730158730158,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+4,70,normal-73.mp4,0,rf_original14,0.7107301587301588,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+4,77,normal-8.mp4,0,rf_original14,0.3998333333333334,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+4,78,normal-80.mp4,0,rf_original14,0.6811111111111111,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+4,81,normal-83.mp4,0,rf_original14,0.6635039211995735,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+4,89,normal-90.mp4,0,rf_original14,0.04250793650793651,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+4,92,shoplifting-11.mp4,1,rf_original14,0.35964389233954447,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+4,98,shoplifting-17.mp4,1,rf_original14,0.35289417989417987,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+4,103,shoplifting-21.mp4,1,rf_original14,0.3570238095238095,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+4,107,shoplifting-25.mp4,1,rf_original14,0.5676349206349206,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+4,109,shoplifting-27.mp4,1,rf_original14,0.5237364849321371,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+4,112,shoplifting-3.mp4,1,rf_original14,0.723063492063492,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+4,116,shoplifting-33.mp4,1,rf_original14,0.43523648493213707,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+4,127,shoplifting-43.mp4,1,rf_original14,0.5407841039797561,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+4,136,shoplifting-52.mp4,1,rf_original14,0.14653278122843338,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+4,139,shoplifting-55.mp4,1,rf_original14,0.47770634920634913,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+4,140,shoplifting-56.mp4,1,rf_original14,0.7127328042328042,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+4,143,shoplifting-59.mp4,1,rf_original14,0.1593650793650794,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+4,154,shoplifting-69.mp4,1,rf_original14,0.49465873015873013,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+4,158,shoplifting-72.mp4,1,rf_original14,0.663903151598804,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+4,164,shoplifting-78.mp4,1,rf_original14,0.4351957671957673,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+4,167,shoplifting-80.mp4,1,rf_original14,0.7510502645502646,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+4,172,shoplifting-85.mp4,1,rf_original14,0.7136666666666668,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+4,174,shoplifting-87.mp4,1,rf_original14,0.5115962732919254,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+4,6,normal-15.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+4,12,normal-20.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+4,22,normal-3.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+4,33,normal-4.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+4,44,normal-5.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+4,48,normal-53.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+4,52,normal-57.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+4,57,normal-61.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+4,59,normal-63.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+4,61,normal-65.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+4,62,normal-66.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+4,68,normal-71.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+4,69,normal-72.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+4,70,normal-73.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+4,77,normal-8.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+4,78,normal-80.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+4,81,normal-83.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+4,89,normal-90.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+4,92,shoplifting-11.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+4,98,shoplifting-17.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+4,103,shoplifting-21.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+4,107,shoplifting-25.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+4,109,shoplifting-27.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+4,112,shoplifting-3.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+4,116,shoplifting-33.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+4,127,shoplifting-43.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+4,136,shoplifting-52.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+4,139,shoplifting-55.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+4,140,shoplifting-56.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+4,143,shoplifting-59.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+4,154,shoplifting-69.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+4,158,shoplifting-72.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+4,164,shoplifting-78.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+4,167,shoplifting-80.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+4,172,shoplifting-85.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+4,174,shoplifting-87.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+4,6,normal-15.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+4,12,normal-20.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+4,22,normal-3.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+4,33,normal-4.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+4,44,normal-5.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+4,48,normal-53.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+4,52,normal-57.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+4,57,normal-61.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+4,59,normal-63.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+4,61,normal-65.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+4,62,normal-66.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+4,68,normal-71.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+4,69,normal-72.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+4,70,normal-73.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+4,77,normal-8.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+4,78,normal-80.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+4,81,normal-83.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+4,89,normal-90.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+4,92,shoplifting-11.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+4,98,shoplifting-17.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+4,103,shoplifting-21.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+4,107,shoplifting-25.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+4,109,shoplifting-27.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+4,112,shoplifting-3.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+4,116,shoplifting-33.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+4,127,shoplifting-43.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+4,136,shoplifting-52.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+4,139,shoplifting-55.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+4,140,shoplifting-56.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+4,143,shoplifting-59.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+4,154,shoplifting-69.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+4,158,shoplifting-72.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+4,164,shoplifting-78.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+4,167,shoplifting-80.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+4,172,shoplifting-85.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+4,174,shoplifting-87.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+4,6,normal-15.mp4,0,nested_selection,0.6334596779435996,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,12,normal-20.mp4,0,nested_selection,0.10985012841227555,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,22,normal-3.mp4,0,nested_selection,0.48871210210964866,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,33,normal-4.mp4,0,nested_selection,0.5911518314130114,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,44,normal-5.mp4,0,nested_selection,0.47196575970477883,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,48,normal-53.mp4,0,nested_selection,0.2442714689218111,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,52,normal-57.mp4,0,nested_selection,0.2710435538897407,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,57,normal-61.mp4,0,nested_selection,0.4676456878082366,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,59,normal-63.mp4,0,nested_selection,0.4710412486208284,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,61,normal-65.mp4,0,nested_selection,0.44928567934764096,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,62,normal-66.mp4,0,nested_selection,0.32093385575347744,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,68,normal-71.mp4,0,nested_selection,0.4369520191368042,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,69,normal-72.mp4,0,nested_selection,0.5598986867964736,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,70,normal-73.mp4,0,nested_selection,0.4381342692807559,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,77,normal-8.mp4,0,nested_selection,0.5051328937517915,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,78,normal-80.mp4,0,nested_selection,0.45862086080999453,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,81,normal-83.mp4,0,nested_selection,0.5089089786438157,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,89,normal-90.mp4,0,nested_selection,0.5976064254039247,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,92,shoplifting-11.mp4,1,nested_selection,0.6494757203575461,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,98,shoplifting-17.mp4,1,nested_selection,0.5269895074086279,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,103,shoplifting-21.mp4,1,nested_selection,0.49241692685384464,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,107,shoplifting-25.mp4,1,nested_selection,0.7478064034752007,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,109,shoplifting-27.mp4,1,nested_selection,0.5550789472098859,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,112,shoplifting-3.mp4,1,nested_selection,0.6331953183087927,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,116,shoplifting-33.mp4,1,nested_selection,0.5109647814735528,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,127,shoplifting-43.mp4,1,nested_selection,0.6850307989332631,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,136,shoplifting-52.mp4,1,nested_selection,0.6406470942224538,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,139,shoplifting-55.mp4,1,nested_selection,0.5566841016600006,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,140,shoplifting-56.mp4,1,nested_selection,0.6707483343358817,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,143,shoplifting-59.mp4,1,nested_selection,0.08632530087678307,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,154,shoplifting-69.mp4,1,nested_selection,0.48565774244606996,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,158,shoplifting-72.mp4,1,nested_selection,0.6064543157834255,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,164,shoplifting-78.mp4,1,nested_selection,0.8305115711454172,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,167,shoplifting-80.mp4,1,nested_selection,0.8015993022749892,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,172,shoplifting-85.mp4,1,nested_selection,0.7615383284230386,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+4,174,shoplifting-87.mp4,1,nested_selection,0.5341224124611851,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+5,0,normal-1.mp4,0,logistic_C0.1,0.08007353947255337,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+5,1,normal-10.mp4,0,logistic_C0.1,0.5811693044994785,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+5,2,normal-11.mp4,0,logistic_C0.1,0.2917011379013501,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+5,3,normal-12.mp4,0,logistic_C0.1,0.04154460137394348,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+5,8,normal-17.mp4,0,logistic_C0.1,0.07988872885381158,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+5,9,normal-18.mp4,0,logistic_C0.1,0.4847201574616151,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+5,14,normal-22.mp4,0,logistic_C0.1,0.376677824172257,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+5,16,normal-24.mp4,0,logistic_C0.1,0.4799248525523337,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+5,17,normal-25.mp4,0,logistic_C0.1,0.03679575681933833,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+5,25,normal-32.mp4,0,logistic_C0.1,0.8191925758968746,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+5,27,normal-34.mp4,0,logistic_C0.1,0.3026269646706422,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+5,29,normal-36.mp4,0,logistic_C0.1,0.09701993433969874,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+5,43,normal-49.mp4,0,logistic_C0.1,0.5800937331998179,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+5,63,normal-67.mp4,0,logistic_C0.1,0.3829488696787674,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+5,79,normal-81.mp4,0,logistic_C0.1,0.5191780874673435,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+5,80,normal-82.mp4,0,logistic_C0.1,0.3706019900844698,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+5,85,normal-87.mp4,0,logistic_C0.1,0.6051931574615621,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+5,87,normal-89.mp4,0,logistic_C0.1,0.3792962838589262,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+5,94,shoplifting-13.mp4,1,logistic_C0.1,0.328692704117594,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+5,104,shoplifting-22.mp4,1,logistic_C0.1,0.8875821533914764,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+5,106,shoplifting-24.mp4,1,logistic_C0.1,0.7231174659832553,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+5,117,shoplifting-34.mp4,1,logistic_C0.1,0.8967864749953731,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+5,121,shoplifting-38.mp4,1,logistic_C0.1,0.36593526856098213,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+5,123,shoplifting-4.mp4,1,logistic_C0.1,0.7824732082493425,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+5,124,shoplifting-40.mp4,1,logistic_C0.1,0.47354616626599044,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+5,126,shoplifting-42.mp4,1,logistic_C0.1,0.689758313754655,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+5,129,shoplifting-45.mp4,1,logistic_C0.1,0.9425523546812681,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+5,147,shoplifting-62.mp4,1,logistic_C0.1,0.8103688890419585,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+5,157,shoplifting-71.mp4,1,logistic_C0.1,0.6634005850145895,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+5,159,shoplifting-73.mp4,1,logistic_C0.1,0.8079051099615002,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+5,161,shoplifting-75.mp4,1,logistic_C0.1,0.6669086705584897,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+5,170,shoplifting-83.mp4,1,logistic_C0.1,0.6893954835830689,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+5,175,shoplifting-88.mp4,1,logistic_C0.1,0.2760889504453128,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+5,176,shoplifting-89.mp4,1,logistic_C0.1,0.2794655794328653,0,0.5,class 1 iff probability >= threshold,logistic_C0.1
+5,177,shoplifting-9.mp4,1,logistic_C0.1,0.6896073264526343,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+5,179,shoplifting-91.mp4,1,logistic_C0.1,0.6322829123065682,1,0.5,class 1 iff probability >= threshold,logistic_C0.1
+5,0,normal-1.mp4,0,logistic_C1,0.0017126096593965755,0,0.5,class 1 iff probability >= threshold,logistic_C1
+5,1,normal-10.mp4,0,logistic_C1,0.6418358277673156,1,0.5,class 1 iff probability >= threshold,logistic_C1
+5,2,normal-11.mp4,0,logistic_C1,0.24048076160922136,0,0.5,class 1 iff probability >= threshold,logistic_C1
+5,3,normal-12.mp4,0,logistic_C1,3.7278728767488255e-05,0,0.5,class 1 iff probability >= threshold,logistic_C1
+5,8,normal-17.mp4,0,logistic_C1,0.048553848049292386,0,0.5,class 1 iff probability >= threshold,logistic_C1
+5,9,normal-18.mp4,0,logistic_C1,0.5338962473350983,1,0.5,class 1 iff probability >= threshold,logistic_C1
+5,14,normal-22.mp4,0,logistic_C1,0.2169202043156464,0,0.5,class 1 iff probability >= threshold,logistic_C1
+5,16,normal-24.mp4,0,logistic_C1,3.0139198003204003e-05,0,0.5,class 1 iff probability >= threshold,logistic_C1
+5,17,normal-25.mp4,0,logistic_C1,0.005386732900212956,0,0.5,class 1 iff probability >= threshold,logistic_C1
+5,25,normal-32.mp4,0,logistic_C1,0.8747455903693732,1,0.5,class 1 iff probability >= threshold,logistic_C1
+5,27,normal-34.mp4,0,logistic_C1,0.5952757585443159,1,0.5,class 1 iff probability >= threshold,logistic_C1
+5,29,normal-36.mp4,0,logistic_C1,0.005635412170763134,0,0.5,class 1 iff probability >= threshold,logistic_C1
+5,43,normal-49.mp4,0,logistic_C1,0.7346402752361256,1,0.5,class 1 iff probability >= threshold,logistic_C1
+5,63,normal-67.mp4,0,logistic_C1,0.31265307153573657,0,0.5,class 1 iff probability >= threshold,logistic_C1
+5,79,normal-81.mp4,0,logistic_C1,0.4542199656621756,0,0.5,class 1 iff probability >= threshold,logistic_C1
+5,80,normal-82.mp4,0,logistic_C1,0.20983902808336194,0,0.5,class 1 iff probability >= threshold,logistic_C1
+5,85,normal-87.mp4,0,logistic_C1,0.6196567238375891,1,0.5,class 1 iff probability >= threshold,logistic_C1
+5,87,normal-89.mp4,0,logistic_C1,0.31755001951191286,0,0.5,class 1 iff probability >= threshold,logistic_C1
+5,94,shoplifting-13.mp4,1,logistic_C1,0.5965954521711138,1,0.5,class 1 iff probability >= threshold,logistic_C1
+5,104,shoplifting-22.mp4,1,logistic_C1,0.9797596557281175,1,0.5,class 1 iff probability >= threshold,logistic_C1
+5,106,shoplifting-24.mp4,1,logistic_C1,0.6564697329293687,1,0.5,class 1 iff probability >= threshold,logistic_C1
+5,117,shoplifting-34.mp4,1,logistic_C1,0.9754475652392022,1,0.5,class 1 iff probability >= threshold,logistic_C1
+5,121,shoplifting-38.mp4,1,logistic_C1,0.399777548919053,0,0.5,class 1 iff probability >= threshold,logistic_C1
+5,123,shoplifting-4.mp4,1,logistic_C1,0.957747698197502,1,0.5,class 1 iff probability >= threshold,logistic_C1
+5,124,shoplifting-40.mp4,1,logistic_C1,0.2380800237380432,0,0.5,class 1 iff probability >= threshold,logistic_C1
+5,126,shoplifting-42.mp4,1,logistic_C1,0.7576420631016585,1,0.5,class 1 iff probability >= threshold,logistic_C1
+5,129,shoplifting-45.mp4,1,logistic_C1,0.9963056369313411,1,0.5,class 1 iff probability >= threshold,logistic_C1
+5,147,shoplifting-62.mp4,1,logistic_C1,0.9882263960886406,1,0.5,class 1 iff probability >= threshold,logistic_C1
+5,157,shoplifting-71.mp4,1,logistic_C1,0.970487667538076,1,0.5,class 1 iff probability >= threshold,logistic_C1
+5,159,shoplifting-73.mp4,1,logistic_C1,0.8871567500084709,1,0.5,class 1 iff probability >= threshold,logistic_C1
+5,161,shoplifting-75.mp4,1,logistic_C1,0.6064228360675347,1,0.5,class 1 iff probability >= threshold,logistic_C1
+5,170,shoplifting-83.mp4,1,logistic_C1,0.885633613580824,1,0.5,class 1 iff probability >= threshold,logistic_C1
+5,175,shoplifting-88.mp4,1,logistic_C1,0.1432824850203357,0,0.5,class 1 iff probability >= threshold,logistic_C1
+5,176,shoplifting-89.mp4,1,logistic_C1,0.029331295570274425,0,0.5,class 1 iff probability >= threshold,logistic_C1
+5,177,shoplifting-9.mp4,1,logistic_C1,0.7586063243612129,1,0.5,class 1 iff probability >= threshold,logistic_C1
+5,179,shoplifting-91.mp4,1,logistic_C1,0.7044563919042907,1,0.5,class 1 iff probability >= threshold,logistic_C1
+5,0,normal-1.mp4,0,logistic_C10,1.2281346306630972e-06,0,0.5,class 1 iff probability >= threshold,logistic_C10
+5,1,normal-10.mp4,0,logistic_C10,0.7322465111173689,1,0.5,class 1 iff probability >= threshold,logistic_C10
+5,2,normal-11.mp4,0,logistic_C10,0.1857221634429403,0,0.5,class 1 iff probability >= threshold,logistic_C10
+5,3,normal-12.mp4,0,logistic_C10,7.742856056733616e-09,0,0.5,class 1 iff probability >= threshold,logistic_C10
+5,8,normal-17.mp4,0,logistic_C10,0.6932109053865828,1,0.5,class 1 iff probability >= threshold,logistic_C10
+5,9,normal-18.mp4,0,logistic_C10,0.2218179723538915,0,0.5,class 1 iff probability >= threshold,logistic_C10
+5,14,normal-22.mp4,0,logistic_C10,0.16021151815415505,0,0.5,class 1 iff probability >= threshold,logistic_C10
+5,16,normal-24.mp4,0,logistic_C10,4.0740239754580653e-16,0,0.5,class 1 iff probability >= threshold,logistic_C10
+5,17,normal-25.mp4,0,logistic_C10,0.00838365257466032,0,0.5,class 1 iff probability >= threshold,logistic_C10
+5,25,normal-32.mp4,0,logistic_C10,0.8856055475997229,1,0.5,class 1 iff probability >= threshold,logistic_C10
+5,27,normal-34.mp4,0,logistic_C10,0.9895143606963984,1,0.5,class 1 iff probability >= threshold,logistic_C10
+5,29,normal-36.mp4,0,logistic_C10,8.732977342640235e-05,0,0.5,class 1 iff probability >= threshold,logistic_C10
+5,43,normal-49.mp4,0,logistic_C10,0.8551467015387801,1,0.5,class 1 iff probability >= threshold,logistic_C10
+5,63,normal-67.mp4,0,logistic_C10,0.08912519937334681,0,0.5,class 1 iff probability >= threshold,logistic_C10
+5,79,normal-81.mp4,0,logistic_C10,0.3154550867911159,0,0.5,class 1 iff probability >= threshold,logistic_C10
+5,80,normal-82.mp4,0,logistic_C10,0.022728693027447767,0,0.5,class 1 iff probability >= threshold,logistic_C10
+5,85,normal-87.mp4,0,logistic_C10,0.686836705031098,1,0.5,class 1 iff probability >= threshold,logistic_C10
+5,87,normal-89.mp4,0,logistic_C10,0.4889965042262226,0,0.5,class 1 iff probability >= threshold,logistic_C10
+5,94,shoplifting-13.mp4,1,logistic_C10,0.9119591408644792,1,0.5,class 1 iff probability >= threshold,logistic_C10
+5,104,shoplifting-22.mp4,1,logistic_C10,0.9978603852212153,1,0.5,class 1 iff probability >= threshold,logistic_C10
+5,106,shoplifting-24.mp4,1,logistic_C10,0.28910765135771044,0,0.5,class 1 iff probability >= threshold,logistic_C10
+5,117,shoplifting-34.mp4,1,logistic_C10,0.9999329476716365,1,0.5,class 1 iff probability >= threshold,logistic_C10
+5,121,shoplifting-38.mp4,1,logistic_C10,0.7305611674147875,1,0.5,class 1 iff probability >= threshold,logistic_C10
+5,123,shoplifting-4.mp4,1,logistic_C10,0.9997227411023303,1,0.5,class 1 iff probability >= threshold,logistic_C10
+5,124,shoplifting-40.mp4,1,logistic_C10,0.040712569388316036,0,0.5,class 1 iff probability >= threshold,logistic_C10
+5,126,shoplifting-42.mp4,1,logistic_C10,0.4619034851252969,0,0.5,class 1 iff probability >= threshold,logistic_C10
+5,129,shoplifting-45.mp4,1,logistic_C10,0.9997811322815273,1,0.5,class 1 iff probability >= threshold,logistic_C10
+5,147,shoplifting-62.mp4,1,logistic_C10,0.9999761323356675,1,0.5,class 1 iff probability >= threshold,logistic_C10
+5,157,shoplifting-71.mp4,1,logistic_C10,0.9999773308451665,1,0.5,class 1 iff probability >= threshold,logistic_C10
+5,159,shoplifting-73.mp4,1,logistic_C10,0.9625598838559359,1,0.5,class 1 iff probability >= threshold,logistic_C10
+5,161,shoplifting-75.mp4,1,logistic_C10,0.5414292071675179,1,0.5,class 1 iff probability >= threshold,logistic_C10
+5,170,shoplifting-83.mp4,1,logistic_C10,0.9930065314295349,1,0.5,class 1 iff probability >= threshold,logistic_C10
+5,175,shoplifting-88.mp4,1,logistic_C10,0.2685673159616986,0,0.5,class 1 iff probability >= threshold,logistic_C10
+5,176,shoplifting-89.mp4,1,logistic_C10,0.0012026645305297503,0,0.5,class 1 iff probability >= threshold,logistic_C10
+5,177,shoplifting-9.mp4,1,logistic_C10,0.8186249466123289,1,0.5,class 1 iff probability >= threshold,logistic_C10
+5,179,shoplifting-91.mp4,1,logistic_C10,0.9738368045377621,1,0.5,class 1 iff probability >= threshold,logistic_C10
+5,0,normal-1.mp4,0,rf_balanced,0.16862698412698413,0,0.5,class 1 iff probability >= threshold,rf_balanced
+5,1,normal-10.mp4,0,rf_balanced,0.7626495726495724,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,2,normal-11.mp4,0,rf_balanced,0.6632328042328044,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,3,normal-12.mp4,0,rf_balanced,0.09524074074074075,0,0.5,class 1 iff probability >= threshold,rf_balanced
+5,8,normal-17.mp4,0,rf_balanced,0.32482579417362023,0,0.5,class 1 iff probability >= threshold,rf_balanced
+5,9,normal-18.mp4,0,rf_balanced,0.3075449735449736,0,0.5,class 1 iff probability >= threshold,rf_balanced
+5,14,normal-22.mp4,0,rf_balanced,0.3176443119131906,0,0.5,class 1 iff probability >= threshold,rf_balanced
+5,16,normal-24.mp4,0,rf_balanced,0.5948465608465608,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,17,normal-25.mp4,0,rf_balanced,0.17440740740740737,0,0.5,class 1 iff probability >= threshold,rf_balanced
+5,25,normal-32.mp4,0,rf_balanced,0.5398968556657343,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,27,normal-34.mp4,0,rf_balanced,0.5035165383159771,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,29,normal-36.mp4,0,rf_balanced,0.4217728411938939,0,0.5,class 1 iff probability >= threshold,rf_balanced
+5,43,normal-49.mp4,0,rf_balanced,0.172484126984127,0,0.5,class 1 iff probability >= threshold,rf_balanced
+5,63,normal-67.mp4,0,rf_balanced,0.5247883597883597,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,79,normal-81.mp4,0,rf_balanced,0.47799877899877913,0,0.5,class 1 iff probability >= threshold,rf_balanced
+5,80,normal-82.mp4,0,rf_balanced,0.3827257031467558,0,0.5,class 1 iff probability >= threshold,rf_balanced
+5,85,normal-87.mp4,0,rf_balanced,0.5719074074074075,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,87,normal-89.mp4,0,rf_balanced,0.2855185185185185,0,0.5,class 1 iff probability >= threshold,rf_balanced
+5,94,shoplifting-13.mp4,1,rf_balanced,0.3723571428571429,0,0.5,class 1 iff probability >= threshold,rf_balanced
+5,104,shoplifting-22.mp4,1,rf_balanced,0.8221428571428572,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,106,shoplifting-24.mp4,1,rf_balanced,0.5509055973266498,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,117,shoplifting-34.mp4,1,rf_balanced,0.624952380952381,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,121,shoplifting-38.mp4,1,rf_balanced,0.2862751322751323,0,0.5,class 1 iff probability >= threshold,rf_balanced
+5,123,shoplifting-4.mp4,1,rf_balanced,0.5753174603174602,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,124,shoplifting-40.mp4,1,rf_balanced,0.5878007821486082,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,126,shoplifting-42.mp4,1,rf_balanced,0.6686125356125356,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,129,shoplifting-45.mp4,1,rf_balanced,0.7248583453583454,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,147,shoplifting-62.mp4,1,rf_balanced,0.7090246449456976,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,157,shoplifting-71.mp4,1,rf_balanced,0.5620472120472121,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,159,shoplifting-73.mp4,1,rf_balanced,0.6189674488152748,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,161,shoplifting-75.mp4,1,rf_balanced,0.6590044984255511,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,170,shoplifting-83.mp4,1,rf_balanced,0.8610590364800891,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,175,shoplifting-88.mp4,1,rf_balanced,0.6566031746031745,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,176,shoplifting-89.mp4,1,rf_balanced,0.7057566137566137,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,177,shoplifting-9.mp4,1,rf_balanced,0.46852236652236634,0,0.5,class 1 iff probability >= threshold,rf_balanced
+5,179,shoplifting-91.mp4,1,rf_balanced,0.7838597883597884,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,0,normal-1.mp4,0,extra_trees_balanced,0.06776011383325226,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+5,1,normal-10.mp4,0,extra_trees_balanced,0.6051216170635222,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+5,2,normal-11.mp4,0,extra_trees_balanced,0.6287182681483139,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+5,3,normal-12.mp4,0,extra_trees_balanced,0.08062808358649844,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+5,8,normal-17.mp4,0,extra_trees_balanced,0.3507192422554279,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+5,9,normal-18.mp4,0,extra_trees_balanced,0.4569689675750279,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+5,14,normal-22.mp4,0,extra_trees_balanced,0.3856901154993216,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+5,16,normal-24.mp4,0,extra_trees_balanced,0.6051175342242692,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+5,17,normal-25.mp4,0,extra_trees_balanced,0.08559910910222807,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+5,25,normal-32.mp4,0,extra_trees_balanced,0.5681533759032266,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+5,27,normal-34.mp4,0,extra_trees_balanced,0.4952352960115946,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+5,29,normal-36.mp4,0,extra_trees_balanced,0.39902733242459565,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+5,43,normal-49.mp4,0,extra_trees_balanced,0.22947718271028872,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+5,63,normal-67.mp4,0,extra_trees_balanced,0.4915917753384027,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+5,79,normal-81.mp4,0,extra_trees_balanced,0.4739833991677806,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+5,80,normal-82.mp4,0,extra_trees_balanced,0.43507706332426904,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+5,85,normal-87.mp4,0,extra_trees_balanced,0.6114725943407394,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+5,87,normal-89.mp4,0,extra_trees_balanced,0.3079980070447008,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+5,94,shoplifting-13.mp4,1,extra_trees_balanced,0.35578056240592165,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+5,104,shoplifting-22.mp4,1,extra_trees_balanced,0.6806020201097374,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+5,106,shoplifting-24.mp4,1,extra_trees_balanced,0.547463684915821,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+5,117,shoplifting-34.mp4,1,extra_trees_balanced,0.6705843596786206,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+5,121,shoplifting-38.mp4,1,extra_trees_balanced,0.3430941035270546,0,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+5,123,shoplifting-4.mp4,1,extra_trees_balanced,0.5955399293617701,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+5,124,shoplifting-40.mp4,1,extra_trees_balanced,0.6042649281988026,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+5,126,shoplifting-42.mp4,1,extra_trees_balanced,0.5998456619017705,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+5,129,shoplifting-45.mp4,1,extra_trees_balanced,0.8252402776373368,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+5,147,shoplifting-62.mp4,1,extra_trees_balanced,0.7198764992162733,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+5,157,shoplifting-71.mp4,1,extra_trees_balanced,0.635715263821211,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+5,159,shoplifting-73.mp4,1,extra_trees_balanced,0.5168417982729078,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+5,161,shoplifting-75.mp4,1,extra_trees_balanced,0.6117197101172125,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+5,170,shoplifting-83.mp4,1,extra_trees_balanced,0.7495706392298972,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+5,175,shoplifting-88.mp4,1,extra_trees_balanced,0.6263839035753471,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+5,176,shoplifting-89.mp4,1,extra_trees_balanced,0.6634868414791363,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+5,177,shoplifting-9.mp4,1,extra_trees_balanced,0.5154690697717512,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+5,179,shoplifting-91.mp4,1,extra_trees_balanced,0.7127925156887706,1,0.5,class 1 iff probability >= threshold,extra_trees_balanced
+5,0,normal-1.mp4,0,rf_original14,0.10468253968253967,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+5,1,normal-10.mp4,0,rf_original14,0.3226825396825396,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+5,2,normal-11.mp4,0,rf_original14,0.5289920634920635,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+5,3,normal-12.mp4,0,rf_original14,0.05533333333333334,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+5,8,normal-17.mp4,0,rf_original14,0.28122222222222215,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+5,9,normal-18.mp4,0,rf_original14,0.27365079365079364,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+5,14,normal-22.mp4,0,rf_original14,0.6528821374703728,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+5,16,normal-24.mp4,0,rf_original14,0.5054074074074074,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+5,17,normal-25.mp4,0,rf_original14,0.2711587301587301,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+5,25,normal-32.mp4,0,rf_original14,0.4111904761904763,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+5,27,normal-34.mp4,0,rf_original14,0.7636776556776556,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+5,29,normal-36.mp4,0,rf_original14,0.24633862433862438,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+5,43,normal-49.mp4,0,rf_original14,0.4192619047619047,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+5,63,normal-67.mp4,0,rf_original14,0.5565873015873017,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+5,79,normal-81.mp4,0,rf_original14,0.3603015873015872,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+5,80,normal-82.mp4,0,rf_original14,0.24625925925925932,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+5,85,normal-87.mp4,0,rf_original14,0.7657970743853096,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+5,87,normal-89.mp4,0,rf_original14,0.5895132275132275,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+5,94,shoplifting-13.mp4,1,rf_original14,0.4971190476190477,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+5,104,shoplifting-22.mp4,1,rf_original14,0.9114444444444445,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+5,106,shoplifting-24.mp4,1,rf_original14,0.4060793650793651,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+5,117,shoplifting-34.mp4,1,rf_original14,0.7250060690943043,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+5,121,shoplifting-38.mp4,1,rf_original14,0.18857142857142856,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+5,123,shoplifting-4.mp4,1,rf_original14,0.7482680097680099,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+5,124,shoplifting-40.mp4,1,rf_original14,0.3924682539682539,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+5,126,shoplifting-42.mp4,1,rf_original14,0.33287830687830694,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+5,129,shoplifting-45.mp4,1,rf_original14,0.7657970743853098,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+5,147,shoplifting-62.mp4,1,rf_original14,0.631003349591585,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+5,157,shoplifting-71.mp4,1,rf_original14,0.5546890157772512,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+5,159,shoplifting-73.mp4,1,rf_original14,0.6114576719576722,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+5,161,shoplifting-75.mp4,1,rf_original14,0.4900238095238096,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+5,170,shoplifting-83.mp4,1,rf_original14,0.6637777777777779,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+5,175,shoplifting-88.mp4,1,rf_original14,0.7402724867724869,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+5,176,shoplifting-89.mp4,1,rf_original14,0.37987830687830687,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+5,177,shoplifting-9.mp4,1,rf_original14,0.7820399796282149,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+5,179,shoplifting-91.mp4,1,rf_original14,0.3967063492063492,0,0.5,estimator.predict; class 0 wins an equal class-probability tie,rf_original14
+5,0,normal-1.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+5,1,normal-10.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+5,2,normal-11.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+5,3,normal-12.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+5,8,normal-17.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+5,9,normal-18.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+5,14,normal-22.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+5,16,normal-24.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+5,17,normal-25.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+5,25,normal-32.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+5,27,normal-34.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+5,29,normal-36.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+5,43,normal-49.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+5,63,normal-67.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+5,79,normal-81.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+5,80,normal-82.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+5,85,normal-87.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+5,87,normal-89.mp4,0,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+5,94,shoplifting-13.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+5,104,shoplifting-22.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+5,106,shoplifting-24.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+5,117,shoplifting-34.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+5,121,shoplifting-38.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+5,123,shoplifting-4.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+5,124,shoplifting-40.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+5,126,shoplifting-42.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+5,129,shoplifting-45.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+5,147,shoplifting-62.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+5,157,shoplifting-71.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+5,159,shoplifting-73.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+5,161,shoplifting-75.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+5,170,shoplifting-83.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+5,175,shoplifting-88.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+5,176,shoplifting-89.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+5,177,shoplifting-9.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+5,179,shoplifting-91.mp4,1,dummy_prior,0.5068493150684932,1,0.5,estimator.predict; class 0 wins an equal class-probability tie,dummy_prior
+5,0,normal-1.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+5,1,normal-10.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+5,2,normal-11.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+5,3,normal-12.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+5,8,normal-17.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+5,9,normal-18.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+5,14,normal-22.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+5,16,normal-24.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+5,17,normal-25.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+5,25,normal-32.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+5,27,normal-34.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+5,29,normal-36.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+5,43,normal-49.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+5,63,normal-67.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+5,79,normal-81.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+5,80,normal-82.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+5,85,normal-87.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+5,87,normal-89.mp4,0,always_normal,0.0,0,0.5,constant class 0,always_normal
+5,94,shoplifting-13.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+5,104,shoplifting-22.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+5,106,shoplifting-24.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+5,117,shoplifting-34.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+5,121,shoplifting-38.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+5,123,shoplifting-4.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+5,124,shoplifting-40.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+5,126,shoplifting-42.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+5,129,shoplifting-45.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+5,147,shoplifting-62.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+5,157,shoplifting-71.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+5,159,shoplifting-73.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+5,161,shoplifting-75.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+5,170,shoplifting-83.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+5,175,shoplifting-88.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+5,176,shoplifting-89.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+5,177,shoplifting-9.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+5,179,shoplifting-91.mp4,1,always_normal,0.0,0,0.5,constant class 0,always_normal
+5,0,normal-1.mp4,0,nested_selection,0.16862698412698413,0,0.5,class 1 iff probability >= threshold,rf_balanced
+5,1,normal-10.mp4,0,nested_selection,0.7626495726495724,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,2,normal-11.mp4,0,nested_selection,0.6632328042328044,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,3,normal-12.mp4,0,nested_selection,0.09524074074074075,0,0.5,class 1 iff probability >= threshold,rf_balanced
+5,8,normal-17.mp4,0,nested_selection,0.32482579417362023,0,0.5,class 1 iff probability >= threshold,rf_balanced
+5,9,normal-18.mp4,0,nested_selection,0.3075449735449736,0,0.5,class 1 iff probability >= threshold,rf_balanced
+5,14,normal-22.mp4,0,nested_selection,0.3176443119131906,0,0.5,class 1 iff probability >= threshold,rf_balanced
+5,16,normal-24.mp4,0,nested_selection,0.5948465608465608,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,17,normal-25.mp4,0,nested_selection,0.17440740740740737,0,0.5,class 1 iff probability >= threshold,rf_balanced
+5,25,normal-32.mp4,0,nested_selection,0.5398968556657343,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,27,normal-34.mp4,0,nested_selection,0.5035165383159771,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,29,normal-36.mp4,0,nested_selection,0.4217728411938939,0,0.5,class 1 iff probability >= threshold,rf_balanced
+5,43,normal-49.mp4,0,nested_selection,0.172484126984127,0,0.5,class 1 iff probability >= threshold,rf_balanced
+5,63,normal-67.mp4,0,nested_selection,0.5247883597883597,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,79,normal-81.mp4,0,nested_selection,0.47799877899877913,0,0.5,class 1 iff probability >= threshold,rf_balanced
+5,80,normal-82.mp4,0,nested_selection,0.3827257031467558,0,0.5,class 1 iff probability >= threshold,rf_balanced
+5,85,normal-87.mp4,0,nested_selection,0.5719074074074075,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,87,normal-89.mp4,0,nested_selection,0.2855185185185185,0,0.5,class 1 iff probability >= threshold,rf_balanced
+5,94,shoplifting-13.mp4,1,nested_selection,0.3723571428571429,0,0.5,class 1 iff probability >= threshold,rf_balanced
+5,104,shoplifting-22.mp4,1,nested_selection,0.8221428571428572,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,106,shoplifting-24.mp4,1,nested_selection,0.5509055973266498,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,117,shoplifting-34.mp4,1,nested_selection,0.624952380952381,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,121,shoplifting-38.mp4,1,nested_selection,0.2862751322751323,0,0.5,class 1 iff probability >= threshold,rf_balanced
+5,123,shoplifting-4.mp4,1,nested_selection,0.5753174603174602,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,124,shoplifting-40.mp4,1,nested_selection,0.5878007821486082,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,126,shoplifting-42.mp4,1,nested_selection,0.6686125356125356,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,129,shoplifting-45.mp4,1,nested_selection,0.7248583453583454,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,147,shoplifting-62.mp4,1,nested_selection,0.7090246449456976,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,157,shoplifting-71.mp4,1,nested_selection,0.5620472120472121,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,159,shoplifting-73.mp4,1,nested_selection,0.6189674488152748,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,161,shoplifting-75.mp4,1,nested_selection,0.6590044984255511,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,170,shoplifting-83.mp4,1,nested_selection,0.8610590364800891,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,175,shoplifting-88.mp4,1,nested_selection,0.6566031746031745,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,176,shoplifting-89.mp4,1,nested_selection,0.7057566137566137,1,0.5,class 1 iff probability >= threshold,rf_balanced
+5,177,shoplifting-9.mp4,1,nested_selection,0.46852236652236634,0,0.5,class 1 iff probability >= threshold,rf_balanced
+5,179,shoplifting-91.mp4,1,nested_selection,0.7838597883597884,1,0.5,class 1 iff probability >= threshold,rf_balanced

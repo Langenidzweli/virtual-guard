@@ -1,0 +1,126 @@
+{
+  "labels_sha256": "a54c73699b3b817a1b9503d48792fd40b622cf09f51394213a4e13f05e3b88eb",
+  "labels_rows": 896,
+  "unique_labels": 896,
+  "category_values": [
+    "Shoplifting"
+  ],
+  "label_counts": {
+    "0": 741,
+    "1": 155
+  },
+  "exact_label_media_membership_match": true,
+  "source_group_count": 28,
+  "source_groups": {
+    "Shoplifting001_x264": {
+      "0": 25,
+      "1": 7
+    },
+    "Shoplifting005_x264": {
+      "0": 29,
+      "1": 3
+    },
+    "Shoplifting006_x264": {
+      "0": 27,
+      "1": 5
+    },
+    "Shoplifting007_x264": {
+      "0": 28,
+      "1": 4
+    },
+    "Shoplifting009_x264": {
+      "0": 29,
+      "1": 3
+    },
+    "Shoplifting010_x264": {
+      "0": 25,
+      "1": 7
+    },
+    "Shoplifting013_x264": {
+      "0": 9,
+      "1": 23
+    },
+    "Shoplifting015_x264": {
+      "0": 32
+    },
+    "Shoplifting016_x264": {
+      "0": 23,
+      "1": 9
+    },
+    "Shoplifting018_x264": {
+      "0": 16,
+      "1": 16
+    },
+    "Shoplifting021_x264": {
+      "0": 30,
+      "1": 2
+    },
+    "Shoplifting022_x264": {
+      "0": 27,
+      "1": 5
+    },
+    "Shoplifting024_x264": {
+      "0": 27,
+      "1": 5
+    },
+    "Shoplifting025_x264": {
+      "0": 19,
+      "1": 13
+    },
+    "Shoplifting026_x264": {
+      "0": 19,
+      "1": 13
+    },
+    "Shoplifting032_x264": {
+      "0": 32
+    },
+    "Shoplifting036_x264": {
+      "0": 29,
+      "1": 3
+    },
+    "Shoplifting037_x264": {
+      "0": 32
+    },
+    "Shoplifting038_x264": {
+      "0": 29,
+      "1": 3
+    },
+    "Shoplifting039_x264": {
+      "0": 32
+    },
+    "Shoplifting042_x264": {
+      "0": 27,
+      "1": 5
+    },
+    "Shoplifting045_x264": {
+      "0": 28,
+      "1": 4
+    },
+    "Shoplifting047_x264": {
+      "0": 25,
+      "1": 7
+    },
+    "Shoplifting048_x264": {
+      "0": 27,
+      "1": 5
+    },
+    "Shoplifting049_x264": {
+      "0": 26,
+      "1": 6
+    },
+    "Shoplifting050_x264": {
+      "0": 29,
+      "1": 3
+    },
+    "Shoplifting053_x264": {
+      "0": 30,
+      "1": 2
+    },
+    "Shoplifting054_x264": {
+      "0": 30,
+      "1": 2
+    }
+  },
+  "all_groups_contain_both_labels": false,
+  "available_temporal_information": "Numeric suffix clip order only. CSV has no timestamps, frame bounds, FPS, source original length or recording/session IDs."
+}

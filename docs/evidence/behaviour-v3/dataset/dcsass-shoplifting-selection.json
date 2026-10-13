@@ -1,0 +1,3623 @@
+{
+  "dataset": "mateohervas/dcsass-dataset",
+  "version": 1,
+  "selection": "All MP4 files under exact canonical DCSASS Dataset/Shoplifting/ prefix. Lowercase duplicate top-level tree excluded. Listing reached following canonical Stealing/Vandalism categories and lowercase duplicate root. Binary labels not used for selection. No model predictions used.",
+  "file_count": 896,
+  "bytes": 54661074,
+  "source_groups": [
+    "Shoplifting001_x264.mp4",
+    "Shoplifting005_x264.mp4",
+    "Shoplifting006_x264.mp4",
+    "Shoplifting007_x264.mp4",
+    "Shoplifting009_x264.mp4",
+    "Shoplifting010_x264.mp4",
+    "Shoplifting013_x264.mp4",
+    "Shoplifting015_x264.mp4",
+    "Shoplifting016_x264.mp4",
+    "Shoplifting018_x264.mp4",
+    "Shoplifting021_x264.mp4",
+    "Shoplifting022_x264.mp4",
+    "Shoplifting024_x264.mp4",
+    "Shoplifting025_x264.mp4",
+    "Shoplifting026_x264.mp4",
+    "Shoplifting032_x264.mp4",
+    "Shoplifting036_x264.mp4",
+    "Shoplifting037_x264.mp4",
+    "Shoplifting038_x264.mp4",
+    "Shoplifting039_x264.mp4",
+    "Shoplifting042_x264.mp4",
+    "Shoplifting045_x264.mp4",
+    "Shoplifting047_x264.mp4",
+    "Shoplifting048_x264.mp4",
+    "Shoplifting049_x264.mp4",
+    "Shoplifting050_x264.mp4",
+    "Shoplifting053_x264.mp4",
+    "Shoplifting054_x264.mp4"
+  ],
+  "files": [
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting001_x264.mp4/Shoplifting001_x264_0.mp4",
+      "bytes": 68118
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting001_x264.mp4/Shoplifting001_x264_1.mp4",
+      "bytes": 65257
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting001_x264.mp4/Shoplifting001_x264_10.mp4",
+      "bytes": 94350
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting001_x264.mp4/Shoplifting001_x264_11.mp4",
+      "bytes": 100643
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting001_x264.mp4/Shoplifting001_x264_12.mp4",
+      "bytes": 98583
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting001_x264.mp4/Shoplifting001_x264_13.mp4",
+      "bytes": 96196
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting001_x264.mp4/Shoplifting001_x264_14.mp4",
+      "bytes": 102355
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting001_x264.mp4/Shoplifting001_x264_15.mp4",
+      "bytes": 111437
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting001_x264.mp4/Shoplifting001_x264_16.mp4",
+      "bytes": 90648
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting001_x264.mp4/Shoplifting001_x264_17.mp4",
+      "bytes": 90418
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting001_x264.mp4/Shoplifting001_x264_18.mp4",
+      "bytes": 73772
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting001_x264.mp4/Shoplifting001_x264_19.mp4",
+      "bytes": 61386
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting001_x264.mp4/Shoplifting001_x264_2.mp4",
+      "bytes": 85579
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting001_x264.mp4/Shoplifting001_x264_20.mp4",
+      "bytes": 67398
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting001_x264.mp4/Shoplifting001_x264_21.mp4",
+      "bytes": 64305
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting001_x264.mp4/Shoplifting001_x264_22.mp4",
+      "bytes": 65063
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting001_x264.mp4/Shoplifting001_x264_23.mp4",
+      "bytes": 68168
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting001_x264.mp4/Shoplifting001_x264_24.mp4",
+      "bytes": 63864
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting001_x264.mp4/Shoplifting001_x264_25.mp4",
+      "bytes": 67624
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting001_x264.mp4/Shoplifting001_x264_26.mp4",
+      "bytes": 70056
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting001_x264.mp4/Shoplifting001_x264_27.mp4",
+      "bytes": 81310
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting001_x264.mp4/Shoplifting001_x264_28.mp4",
+      "bytes": 72893
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting001_x264.mp4/Shoplifting001_x264_29.mp4",
+      "bytes": 67832
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting001_x264.mp4/Shoplifting001_x264_3.mp4",
+      "bytes": 88076
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting001_x264.mp4/Shoplifting001_x264_30.mp4",
+      "bytes": 79534
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting001_x264.mp4/Shoplifting001_x264_31.mp4",
+      "bytes": 81320
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting001_x264.mp4/Shoplifting001_x264_4.mp4",
+      "bytes": 94853
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting001_x264.mp4/Shoplifting001_x264_5.mp4",
+      "bytes": 82079
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting001_x264.mp4/Shoplifting001_x264_6.mp4",
+      "bytes": 76373
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting001_x264.mp4/Shoplifting001_x264_7.mp4",
+      "bytes": 100450
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting001_x264.mp4/Shoplifting001_x264_8.mp4",
+      "bytes": 101751
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting001_x264.mp4/Shoplifting001_x264_9.mp4",
+      "bytes": 78637
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting005_x264.mp4/Shoplifting005_x264_0.mp4",
+      "bytes": 37297
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting005_x264.mp4/Shoplifting005_x264_1.mp4",
+      "bytes": 19019
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting005_x264.mp4/Shoplifting005_x264_10.mp4",
+      "bytes": 29037
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting005_x264.mp4/Shoplifting005_x264_11.mp4",
+      "bytes": 42409
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting005_x264.mp4/Shoplifting005_x264_12.mp4",
+      "bytes": 49071
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting005_x264.mp4/Shoplifting005_x264_13.mp4",
+      "bytes": 38820
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting005_x264.mp4/Shoplifting005_x264_14.mp4",
+      "bytes": 49778
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting005_x264.mp4/Shoplifting005_x264_15.mp4",
+      "bytes": 42642
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting005_x264.mp4/Shoplifting005_x264_16.mp4",
+      "bytes": 46381
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting005_x264.mp4/Shoplifting005_x264_17.mp4",
+      "bytes": 35005
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting005_x264.mp4/Shoplifting005_x264_18.mp4",
+      "bytes": 37815
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting005_x264.mp4/Shoplifting005_x264_19.mp4",
+      "bytes": 38153
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting005_x264.mp4/Shoplifting005_x264_2.mp4",
+      "bytes": 26551
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting005_x264.mp4/Shoplifting005_x264_20.mp4",
+      "bytes": 40963
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting005_x264.mp4/Shoplifting005_x264_21.mp4",
+      "bytes": 41598
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting005_x264.mp4/Shoplifting005_x264_22.mp4",
+      "bytes": 36494
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting005_x264.mp4/Shoplifting005_x264_23.mp4",
+      "bytes": 38363
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting005_x264.mp4/Shoplifting005_x264_24.mp4",
+      "bytes": 36013
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting005_x264.mp4/Shoplifting005_x264_25.mp4",
+      "bytes": 28392
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting005_x264.mp4/Shoplifting005_x264_26.mp4",
+      "bytes": 28827
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting005_x264.mp4/Shoplifting005_x264_27.mp4",
+      "bytes": 38106
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting005_x264.mp4/Shoplifting005_x264_28.mp4",
+      "bytes": 45706
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting005_x264.mp4/Shoplifting005_x264_29.mp4",
+      "bytes": 41469
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting005_x264.mp4/Shoplifting005_x264_3.mp4",
+      "bytes": 28168
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting005_x264.mp4/Shoplifting005_x264_30.mp4",
+      "bytes": 34309
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting005_x264.mp4/Shoplifting005_x264_31.mp4",
+      "bytes": 29669
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting005_x264.mp4/Shoplifting005_x264_4.mp4",
+      "bytes": 26900
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting005_x264.mp4/Shoplifting005_x264_5.mp4",
+      "bytes": 46924
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting005_x264.mp4/Shoplifting005_x264_6.mp4",
+      "bytes": 51218
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting005_x264.mp4/Shoplifting005_x264_7.mp4",
+      "bytes": 47245
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting005_x264.mp4/Shoplifting005_x264_8.mp4",
+      "bytes": 33151
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting005_x264.mp4/Shoplifting005_x264_9.mp4",
+      "bytes": 31949
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting006_x264.mp4/Shoplifting006_x264_0.mp4",
+      "bytes": 64273
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting006_x264.mp4/Shoplifting006_x264_1.mp4",
+      "bytes": 63456
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting006_x264.mp4/Shoplifting006_x264_10.mp4",
+      "bytes": 51766
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting006_x264.mp4/Shoplifting006_x264_11.mp4",
+      "bytes": 49025
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting006_x264.mp4/Shoplifting006_x264_12.mp4",
+      "bytes": 43780
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting006_x264.mp4/Shoplifting006_x264_13.mp4",
+      "bytes": 53375
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting006_x264.mp4/Shoplifting006_x264_14.mp4",
+      "bytes": 90933
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting006_x264.mp4/Shoplifting006_x264_15.mp4",
+      "bytes": 118984
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting006_x264.mp4/Shoplifting006_x264_16.mp4",
+      "bytes": 147418
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting006_x264.mp4/Shoplifting006_x264_17.mp4",
+      "bytes": 138736
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting006_x264.mp4/Shoplifting006_x264_18.mp4",
+      "bytes": 109571
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting006_x264.mp4/Shoplifting006_x264_19.mp4",
+      "bytes": 117218
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting006_x264.mp4/Shoplifting006_x264_2.mp4",
+      "bytes": 83556
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting006_x264.mp4/Shoplifting006_x264_20.mp4",
+      "bytes": 90911
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting006_x264.mp4/Shoplifting006_x264_21.mp4",
+      "bytes": 133913
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting006_x264.mp4/Shoplifting006_x264_22.mp4",
+      "bytes": 147043
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting006_x264.mp4/Shoplifting006_x264_23.mp4",
+      "bytes": 141694
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting006_x264.mp4/Shoplifting006_x264_24.mp4",
+      "bytes": 90820
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting006_x264.mp4/Shoplifting006_x264_25.mp4",
+      "bytes": 89947
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting006_x264.mp4/Shoplifting006_x264_26.mp4",
+      "bytes": 88912
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting006_x264.mp4/Shoplifting006_x264_27.mp4",
+      "bytes": 91986
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting006_x264.mp4/Shoplifting006_x264_28.mp4",
+      "bytes": 83840
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting006_x264.mp4/Shoplifting006_x264_29.mp4",
+      "bytes": 62214
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting006_x264.mp4/Shoplifting006_x264_3.mp4",
+      "bytes": 93343
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting006_x264.mp4/Shoplifting006_x264_30.mp4",
+      "bytes": 69500
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting006_x264.mp4/Shoplifting006_x264_31.mp4",
+      "bytes": 63679
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting006_x264.mp4/Shoplifting006_x264_4.mp4",
+      "bytes": 75927
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting006_x264.mp4/Shoplifting006_x264_5.mp4",
+      "bytes": 63085
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting006_x264.mp4/Shoplifting006_x264_6.mp4",
+      "bytes": 63446
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting006_x264.mp4/Shoplifting006_x264_7.mp4",
+      "bytes": 63221
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting006_x264.mp4/Shoplifting006_x264_8.mp4",
+      "bytes": 51919
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting006_x264.mp4/Shoplifting006_x264_9.mp4",
+      "bytes": 47033
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting007_x264.mp4/Shoplifting007_x264_0.mp4",
+      "bytes": 118213
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting007_x264.mp4/Shoplifting007_x264_1.mp4",
+      "bytes": 107291
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting007_x264.mp4/Shoplifting007_x264_10.mp4",
+      "bytes": 58154
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting007_x264.mp4/Shoplifting007_x264_11.mp4",
+      "bytes": 56087
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting007_x264.mp4/Shoplifting007_x264_12.mp4",
+      "bytes": 54034
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting007_x264.mp4/Shoplifting007_x264_13.mp4",
+      "bytes": 55212
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting007_x264.mp4/Shoplifting007_x264_14.mp4",
+      "bytes": 49650
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting007_x264.mp4/Shoplifting007_x264_15.mp4",
+      "bytes": 85582
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting007_x264.mp4/Shoplifting007_x264_16.mp4",
+      "bytes": 125805
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting007_x264.mp4/Shoplifting007_x264_17.mp4",
+      "bytes": 108215
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting007_x264.mp4/Shoplifting007_x264_18.mp4",
+      "bytes": 134162
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting007_x264.mp4/Shoplifting007_x264_19.mp4",
+      "bytes": 149351
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting007_x264.mp4/Shoplifting007_x264_2.mp4",
+      "bytes": 103007
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting007_x264.mp4/Shoplifting007_x264_20.mp4",
+      "bytes": 140614
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting007_x264.mp4/Shoplifting007_x264_21.mp4",
+      "bytes": 154895
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting007_x264.mp4/Shoplifting007_x264_22.mp4",
+      "bytes": 149295
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting007_x264.mp4/Shoplifting007_x264_23.mp4",
+      "bytes": 135955
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting007_x264.mp4/Shoplifting007_x264_24.mp4",
+      "bytes": 160093
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting007_x264.mp4/Shoplifting007_x264_25.mp4",
+      "bytes": 124060
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting007_x264.mp4/Shoplifting007_x264_26.mp4",
+      "bytes": 146780
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting007_x264.mp4/Shoplifting007_x264_27.mp4",
+      "bytes": 132413
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting007_x264.mp4/Shoplifting007_x264_28.mp4",
+      "bytes": 126800
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting007_x264.mp4/Shoplifting007_x264_29.mp4",
+      "bytes": 142378
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting007_x264.mp4/Shoplifting007_x264_3.mp4",
+      "bytes": 114513
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting007_x264.mp4/Shoplifting007_x264_30.mp4",
+      "bytes": 138702
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting007_x264.mp4/Shoplifting007_x264_31.mp4",
+      "bytes": 117775
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting007_x264.mp4/Shoplifting007_x264_4.mp4",
+      "bytes": 121280
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting007_x264.mp4/Shoplifting007_x264_5.mp4",
+      "bytes": 98296
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting007_x264.mp4/Shoplifting007_x264_6.mp4",
+      "bytes": 86495
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting007_x264.mp4/Shoplifting007_x264_7.mp4",
+      "bytes": 74226
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting007_x264.mp4/Shoplifting007_x264_8.mp4",
+      "bytes": 59768
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting007_x264.mp4/Shoplifting007_x264_9.mp4",
+      "bytes": 75777
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting009_x264.mp4/Shoplifting009_x264_0.mp4",
+      "bytes": 260545
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting009_x264.mp4/Shoplifting009_x264_1.mp4",
+      "bytes": 310812
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting009_x264.mp4/Shoplifting009_x264_10.mp4",
+      "bytes": 239308
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting009_x264.mp4/Shoplifting009_x264_11.mp4",
+      "bytes": 236986
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting009_x264.mp4/Shoplifting009_x264_12.mp4",
+      "bytes": 234720
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting009_x264.mp4/Shoplifting009_x264_13.mp4",
+      "bytes": 260753
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting009_x264.mp4/Shoplifting009_x264_14.mp4",
+      "bytes": 220914
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting009_x264.mp4/Shoplifting009_x264_15.mp4",
+      "bytes": 281547
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting009_x264.mp4/Shoplifting009_x264_16.mp4",
+      "bytes": 230628
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting009_x264.mp4/Shoplifting009_x264_17.mp4",
+      "bytes": 228074
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting009_x264.mp4/Shoplifting009_x264_18.mp4",
+      "bytes": 244997
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting009_x264.mp4/Shoplifting009_x264_19.mp4",
+      "bytes": 236686
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting009_x264.mp4/Shoplifting009_x264_2.mp4",
+      "bytes": 284789
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting009_x264.mp4/Shoplifting009_x264_20.mp4",
+      "bytes": 193476
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting009_x264.mp4/Shoplifting009_x264_21.mp4",
+      "bytes": 214445
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting009_x264.mp4/Shoplifting009_x264_22.mp4",
+      "bytes": 223115
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting009_x264.mp4/Shoplifting009_x264_23.mp4",
+      "bytes": 220334
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting009_x264.mp4/Shoplifting009_x264_24.mp4",
+      "bytes": 204868
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting009_x264.mp4/Shoplifting009_x264_25.mp4",
+      "bytes": 222613
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting009_x264.mp4/Shoplifting009_x264_26.mp4",
+      "bytes": 223261
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting009_x264.mp4/Shoplifting009_x264_27.mp4",
+      "bytes": 229676
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting009_x264.mp4/Shoplifting009_x264_28.mp4",
+      "bytes": 225096
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting009_x264.mp4/Shoplifting009_x264_29.mp4",
+      "bytes": 257527
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting009_x264.mp4/Shoplifting009_x264_3.mp4",
+      "bytes": 253608
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting009_x264.mp4/Shoplifting009_x264_30.mp4",
+      "bytes": 252149
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting009_x264.mp4/Shoplifting009_x264_31.mp4",
+      "bytes": 245325
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting009_x264.mp4/Shoplifting009_x264_4.mp4",
+      "bytes": 249464
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting009_x264.mp4/Shoplifting009_x264_5.mp4",
+      "bytes": 256791
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting009_x264.mp4/Shoplifting009_x264_6.mp4",
+      "bytes": 256185
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting009_x264.mp4/Shoplifting009_x264_7.mp4",
+      "bytes": 268669
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting009_x264.mp4/Shoplifting009_x264_8.mp4",
+      "bytes": 257690
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting009_x264.mp4/Shoplifting009_x264_9.mp4",
+      "bytes": 254673
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting010_x264.mp4/Shoplifting010_x264_0.mp4",
+      "bytes": 47334
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting010_x264.mp4/Shoplifting010_x264_1.mp4",
+      "bytes": 60679
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting010_x264.mp4/Shoplifting010_x264_10.mp4",
+      "bytes": 71724
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting010_x264.mp4/Shoplifting010_x264_11.mp4",
+      "bytes": 66844
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting010_x264.mp4/Shoplifting010_x264_12.mp4",
+      "bytes": 71961
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting010_x264.mp4/Shoplifting010_x264_13.mp4",
+      "bytes": 68628
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting010_x264.mp4/Shoplifting010_x264_14.mp4",
+      "bytes": 55880
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting010_x264.mp4/Shoplifting010_x264_15.mp4",
+      "bytes": 55410
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting010_x264.mp4/Shoplifting010_x264_16.mp4",
+      "bytes": 56936
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting010_x264.mp4/Shoplifting010_x264_17.mp4",
+      "bytes": 53429
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting010_x264.mp4/Shoplifting010_x264_18.mp4",
+      "bytes": 54155
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting010_x264.mp4/Shoplifting010_x264_19.mp4",
+      "bytes": 48216
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting010_x264.mp4/Shoplifting010_x264_2.mp4",
+      "bytes": 67567
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting010_x264.mp4/Shoplifting010_x264_20.mp4",
+      "bytes": 54883
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting010_x264.mp4/Shoplifting010_x264_21.mp4",
+      "bytes": 63545
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting010_x264.mp4/Shoplifting010_x264_22.mp4",
+      "bytes": 54461
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting010_x264.mp4/Shoplifting010_x264_23.mp4",
+      "bytes": 67520
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting010_x264.mp4/Shoplifting010_x264_24.mp4",
+      "bytes": 56776
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting010_x264.mp4/Shoplifting010_x264_25.mp4",
+      "bytes": 60904
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting010_x264.mp4/Shoplifting010_x264_26.mp4",
+      "bytes": 62637
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting010_x264.mp4/Shoplifting010_x264_27.mp4",
+      "bytes": 51835
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting010_x264.mp4/Shoplifting010_x264_28.mp4",
+      "bytes": 58308
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting010_x264.mp4/Shoplifting010_x264_29.mp4",
+      "bytes": 51832
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting010_x264.mp4/Shoplifting010_x264_3.mp4",
+      "bytes": 61327
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting010_x264.mp4/Shoplifting010_x264_30.mp4",
+      "bytes": 49362
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting010_x264.mp4/Shoplifting010_x264_31.mp4",
+      "bytes": 52209
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting010_x264.mp4/Shoplifting010_x264_4.mp4",
+      "bytes": 54903
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting010_x264.mp4/Shoplifting010_x264_5.mp4",
+      "bytes": 57385
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting010_x264.mp4/Shoplifting010_x264_6.mp4",
+      "bytes": 60423
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting010_x264.mp4/Shoplifting010_x264_7.mp4",
+      "bytes": 63580
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting010_x264.mp4/Shoplifting010_x264_8.mp4",
+      "bytes": 52526
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting010_x264.mp4/Shoplifting010_x264_9.mp4",
+      "bytes": 48969
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting013_x264.mp4/Shoplifting013_x264_0.mp4",
+      "bytes": 35385
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting013_x264.mp4/Shoplifting013_x264_1.mp4",
+      "bytes": 33224
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting013_x264.mp4/Shoplifting013_x264_10.mp4",
+      "bytes": 30996
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting013_x264.mp4/Shoplifting013_x264_11.mp4",
+      "bytes": 35270
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting013_x264.mp4/Shoplifting013_x264_12.mp4",
+      "bytes": 33369
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting013_x264.mp4/Shoplifting013_x264_13.mp4",
+      "bytes": 35378
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting013_x264.mp4/Shoplifting013_x264_14.mp4",
+      "bytes": 40376
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting013_x264.mp4/Shoplifting013_x264_15.mp4",
+      "bytes": 36876
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting013_x264.mp4/Shoplifting013_x264_16.mp4",
+      "bytes": 35125
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting013_x264.mp4/Shoplifting013_x264_17.mp4",
+      "bytes": 35480
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting013_x264.mp4/Shoplifting013_x264_18.mp4",
+      "bytes": 33509
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting013_x264.mp4/Shoplifting013_x264_19.mp4",
+      "bytes": 38056
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting013_x264.mp4/Shoplifting013_x264_2.mp4",
+      "bytes": 30460
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting013_x264.mp4/Shoplifting013_x264_20.mp4",
+      "bytes": 36132
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting013_x264.mp4/Shoplifting013_x264_21.mp4",
+      "bytes": 34503
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting013_x264.mp4/Shoplifting013_x264_22.mp4",
+      "bytes": 37558
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting013_x264.mp4/Shoplifting013_x264_23.mp4",
+      "bytes": 39852
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting013_x264.mp4/Shoplifting013_x264_24.mp4",
+      "bytes": 36265
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting013_x264.mp4/Shoplifting013_x264_25.mp4",
+      "bytes": 39007
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting013_x264.mp4/Shoplifting013_x264_26.mp4",
+      "bytes": 38899
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting013_x264.mp4/Shoplifting013_x264_27.mp4",
+      "bytes": 33120
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting013_x264.mp4/Shoplifting013_x264_28.mp4",
+      "bytes": 30041
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting013_x264.mp4/Shoplifting013_x264_29.mp4",
+      "bytes": 31615
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting013_x264.mp4/Shoplifting013_x264_3.mp4",
+      "bytes": 33594
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting013_x264.mp4/Shoplifting013_x264_30.mp4",
+      "bytes": 32289
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting013_x264.mp4/Shoplifting013_x264_31.mp4",
+      "bytes": 31089
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting013_x264.mp4/Shoplifting013_x264_4.mp4",
+      "bytes": 30682
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting013_x264.mp4/Shoplifting013_x264_5.mp4",
+      "bytes": 31708
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting013_x264.mp4/Shoplifting013_x264_6.mp4",
+      "bytes": 29294
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting013_x264.mp4/Shoplifting013_x264_7.mp4",
+      "bytes": 28113
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting013_x264.mp4/Shoplifting013_x264_8.mp4",
+      "bytes": 30835
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting013_x264.mp4/Shoplifting013_x264_9.mp4",
+      "bytes": 32242
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting015_x264.mp4/Shoplifting015_x264_0.mp4",
+      "bytes": 63874
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting015_x264.mp4/Shoplifting015_x264_1.mp4",
+      "bytes": 64453
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting015_x264.mp4/Shoplifting015_x264_10.mp4",
+      "bytes": 62119
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting015_x264.mp4/Shoplifting015_x264_11.mp4",
+      "bytes": 59648
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting015_x264.mp4/Shoplifting015_x264_12.mp4",
+      "bytes": 58350
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting015_x264.mp4/Shoplifting015_x264_13.mp4",
+      "bytes": 58958
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting015_x264.mp4/Shoplifting015_x264_14.mp4",
+      "bytes": 63990
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting015_x264.mp4/Shoplifting015_x264_15.mp4",
+      "bytes": 59099
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting015_x264.mp4/Shoplifting015_x264_16.mp4",
+      "bytes": 59194
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting015_x264.mp4/Shoplifting015_x264_17.mp4",
+      "bytes": 65718
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting015_x264.mp4/Shoplifting015_x264_18.mp4",
+      "bytes": 55574
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting015_x264.mp4/Shoplifting015_x264_19.mp4",
+      "bytes": 55257
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting015_x264.mp4/Shoplifting015_x264_2.mp4",
+      "bytes": 71485
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting015_x264.mp4/Shoplifting015_x264_20.mp4",
+      "bytes": 54919
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting015_x264.mp4/Shoplifting015_x264_21.mp4",
+      "bytes": 62378
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting015_x264.mp4/Shoplifting015_x264_22.mp4",
+      "bytes": 58808
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting015_x264.mp4/Shoplifting015_x264_23.mp4",
+      "bytes": 63366
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting015_x264.mp4/Shoplifting015_x264_24.mp4",
+      "bytes": 62433
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting015_x264.mp4/Shoplifting015_x264_25.mp4",
+      "bytes": 62178
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting015_x264.mp4/Shoplifting015_x264_26.mp4",
+      "bytes": 55043
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting015_x264.mp4/Shoplifting015_x264_27.mp4",
+      "bytes": 64099
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting015_x264.mp4/Shoplifting015_x264_28.mp4",
+      "bytes": 57988
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting015_x264.mp4/Shoplifting015_x264_29.mp4",
+      "bytes": 62573
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting015_x264.mp4/Shoplifting015_x264_3.mp4",
+      "bytes": 62370
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting015_x264.mp4/Shoplifting015_x264_30.mp4",
+      "bytes": 73471
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting015_x264.mp4/Shoplifting015_x264_31.mp4",
+      "bytes": 58007
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting015_x264.mp4/Shoplifting015_x264_4.mp4",
+      "bytes": 61186
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting015_x264.mp4/Shoplifting015_x264_5.mp4",
+      "bytes": 60819
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting015_x264.mp4/Shoplifting015_x264_6.mp4",
+      "bytes": 61681
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting015_x264.mp4/Shoplifting015_x264_7.mp4",
+      "bytes": 75913
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting015_x264.mp4/Shoplifting015_x264_8.mp4",
+      "bytes": 73524
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting015_x264.mp4/Shoplifting015_x264_9.mp4",
+      "bytes": 65098
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting016_x264.mp4/Shoplifting016_x264_0.mp4",
+      "bytes": 23230
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting016_x264.mp4/Shoplifting016_x264_1.mp4",
+      "bytes": 22578
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting016_x264.mp4/Shoplifting016_x264_10.mp4",
+      "bytes": 29016
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting016_x264.mp4/Shoplifting016_x264_11.mp4",
+      "bytes": 25043
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting016_x264.mp4/Shoplifting016_x264_12.mp4",
+      "bytes": 26303
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting016_x264.mp4/Shoplifting016_x264_13.mp4",
+      "bytes": 25700
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting016_x264.mp4/Shoplifting016_x264_14.mp4",
+      "bytes": 24908
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting016_x264.mp4/Shoplifting016_x264_15.mp4",
+      "bytes": 26240
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting016_x264.mp4/Shoplifting016_x264_16.mp4",
+      "bytes": 26063
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting016_x264.mp4/Shoplifting016_x264_17.mp4",
+      "bytes": 24599
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting016_x264.mp4/Shoplifting016_x264_18.mp4",
+      "bytes": 25593
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting016_x264.mp4/Shoplifting016_x264_19.mp4",
+      "bytes": 26871
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting016_x264.mp4/Shoplifting016_x264_2.mp4",
+      "bytes": 22299
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting016_x264.mp4/Shoplifting016_x264_20.mp4",
+      "bytes": 27494
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting016_x264.mp4/Shoplifting016_x264_21.mp4",
+      "bytes": 32742
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting016_x264.mp4/Shoplifting016_x264_22.mp4",
+      "bytes": 28206
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting016_x264.mp4/Shoplifting016_x264_23.mp4",
+      "bytes": 29925
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting016_x264.mp4/Shoplifting016_x264_24.mp4",
+      "bytes": 29562
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting016_x264.mp4/Shoplifting016_x264_25.mp4",
+      "bytes": 30619
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting016_x264.mp4/Shoplifting016_x264_26.mp4",
+      "bytes": 28747
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting016_x264.mp4/Shoplifting016_x264_27.mp4",
+      "bytes": 28375
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting016_x264.mp4/Shoplifting016_x264_28.mp4",
+      "bytes": 29055
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting016_x264.mp4/Shoplifting016_x264_29.mp4",
+      "bytes": 28703
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting016_x264.mp4/Shoplifting016_x264_3.mp4",
+      "bytes": 22565
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting016_x264.mp4/Shoplifting016_x264_30.mp4",
+      "bytes": 24594
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting016_x264.mp4/Shoplifting016_x264_31.mp4",
+      "bytes": 26445
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting016_x264.mp4/Shoplifting016_x264_4.mp4",
+      "bytes": 24710
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting016_x264.mp4/Shoplifting016_x264_5.mp4",
+      "bytes": 23981
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting016_x264.mp4/Shoplifting016_x264_6.mp4",
+      "bytes": 22714
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting016_x264.mp4/Shoplifting016_x264_7.mp4",
+      "bytes": 22463
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting016_x264.mp4/Shoplifting016_x264_8.mp4",
+      "bytes": 22974
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting016_x264.mp4/Shoplifting016_x264_9.mp4",
+      "bytes": 23340
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting018_x264.mp4/Shoplifting018_x264_0.mp4",
+      "bytes": 44832
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting018_x264.mp4/Shoplifting018_x264_1.mp4",
+      "bytes": 48834
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting018_x264.mp4/Shoplifting018_x264_10.mp4",
+      "bytes": 56683
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting018_x264.mp4/Shoplifting018_x264_11.mp4",
+      "bytes": 54552
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting018_x264.mp4/Shoplifting018_x264_12.mp4",
+      "bytes": 44663
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting018_x264.mp4/Shoplifting018_x264_13.mp4",
+      "bytes": 53387
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting018_x264.mp4/Shoplifting018_x264_14.mp4",
+      "bytes": 63218
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting018_x264.mp4/Shoplifting018_x264_15.mp4",
+      "bytes": 59423
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting018_x264.mp4/Shoplifting018_x264_16.mp4",
+      "bytes": 60675
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting018_x264.mp4/Shoplifting018_x264_17.mp4",
+      "bytes": 66615
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting018_x264.mp4/Shoplifting018_x264_18.mp4",
+      "bytes": 55720
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting018_x264.mp4/Shoplifting018_x264_19.mp4",
+      "bytes": 58810
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting018_x264.mp4/Shoplifting018_x264_2.mp4",
+      "bytes": 63254
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting018_x264.mp4/Shoplifting018_x264_20.mp4",
+      "bytes": 56751
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting018_x264.mp4/Shoplifting018_x264_21.mp4",
+      "bytes": 57240
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting018_x264.mp4/Shoplifting018_x264_22.mp4",
+      "bytes": 56837
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting018_x264.mp4/Shoplifting018_x264_23.mp4",
+      "bytes": 61222
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting018_x264.mp4/Shoplifting018_x264_24.mp4",
+      "bytes": 57741
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting018_x264.mp4/Shoplifting018_x264_25.mp4",
+      "bytes": 61527
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting018_x264.mp4/Shoplifting018_x264_26.mp4",
+      "bytes": 64394
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting018_x264.mp4/Shoplifting018_x264_27.mp4",
+      "bytes": 52594
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting018_x264.mp4/Shoplifting018_x264_28.mp4",
+      "bytes": 56122
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting018_x264.mp4/Shoplifting018_x264_29.mp4",
+      "bytes": 60618
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting018_x264.mp4/Shoplifting018_x264_3.mp4",
+      "bytes": 58649
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting018_x264.mp4/Shoplifting018_x264_30.mp4",
+      "bytes": 49552
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting018_x264.mp4/Shoplifting018_x264_31.mp4",
+      "bytes": 57836
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting018_x264.mp4/Shoplifting018_x264_4.mp4",
+      "bytes": 61489
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting018_x264.mp4/Shoplifting018_x264_5.mp4",
+      "bytes": 62182
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting018_x264.mp4/Shoplifting018_x264_6.mp4",
+      "bytes": 51381
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting018_x264.mp4/Shoplifting018_x264_7.mp4",
+      "bytes": 52759
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting018_x264.mp4/Shoplifting018_x264_8.mp4",
+      "bytes": 56911
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting018_x264.mp4/Shoplifting018_x264_9.mp4",
+      "bytes": 55653
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting021_x264.mp4/Shoplifting021_x264_0.mp4",
+      "bytes": 53791
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting021_x264.mp4/Shoplifting021_x264_1.mp4",
+      "bytes": 63488
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting021_x264.mp4/Shoplifting021_x264_10.mp4",
+      "bytes": 62988
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting021_x264.mp4/Shoplifting021_x264_11.mp4",
+      "bytes": 68996
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting021_x264.mp4/Shoplifting021_x264_12.mp4",
+      "bytes": 62850
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting021_x264.mp4/Shoplifting021_x264_13.mp4",
+      "bytes": 70446
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting021_x264.mp4/Shoplifting021_x264_14.mp4",
+      "bytes": 50309
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting021_x264.mp4/Shoplifting021_x264_15.mp4",
+      "bytes": 44522
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting021_x264.mp4/Shoplifting021_x264_16.mp4",
+      "bytes": 48487
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting021_x264.mp4/Shoplifting021_x264_17.mp4",
+      "bytes": 52462
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting021_x264.mp4/Shoplifting021_x264_18.mp4",
+      "bytes": 54353
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting021_x264.mp4/Shoplifting021_x264_19.mp4",
+      "bytes": 64308
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting021_x264.mp4/Shoplifting021_x264_2.mp4",
+      "bytes": 39733
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting021_x264.mp4/Shoplifting021_x264_20.mp4",
+      "bytes": 67993
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting021_x264.mp4/Shoplifting021_x264_21.mp4",
+      "bytes": 70851
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting021_x264.mp4/Shoplifting021_x264_22.mp4",
+      "bytes": 72243
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting021_x264.mp4/Shoplifting021_x264_23.mp4",
+      "bytes": 61680
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting021_x264.mp4/Shoplifting021_x264_24.mp4",
+      "bytes": 55906
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting021_x264.mp4/Shoplifting021_x264_25.mp4",
+      "bytes": 56932
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting021_x264.mp4/Shoplifting021_x264_26.mp4",
+      "bytes": 52919
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting021_x264.mp4/Shoplifting021_x264_27.mp4",
+      "bytes": 65505
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting021_x264.mp4/Shoplifting021_x264_28.mp4",
+      "bytes": 61369
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting021_x264.mp4/Shoplifting021_x264_29.mp4",
+      "bytes": 48921
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting021_x264.mp4/Shoplifting021_x264_3.mp4",
+      "bytes": 40488
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting021_x264.mp4/Shoplifting021_x264_30.mp4",
+      "bytes": 54800
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting021_x264.mp4/Shoplifting021_x264_31.mp4",
+      "bytes": 65118
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting021_x264.mp4/Shoplifting021_x264_4.mp4",
+      "bytes": 37883
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting021_x264.mp4/Shoplifting021_x264_5.mp4",
+      "bytes": 69627
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting021_x264.mp4/Shoplifting021_x264_6.mp4",
+      "bytes": 54348
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting021_x264.mp4/Shoplifting021_x264_7.mp4",
+      "bytes": 59097
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting021_x264.mp4/Shoplifting021_x264_8.mp4",
+      "bytes": 57668
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting021_x264.mp4/Shoplifting021_x264_9.mp4",
+      "bytes": 56328
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting022_x264.mp4/Shoplifting022_x264_0.mp4",
+      "bytes": 36755
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting022_x264.mp4/Shoplifting022_x264_1.mp4",
+      "bytes": 39134
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting022_x264.mp4/Shoplifting022_x264_10.mp4",
+      "bytes": 49536
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting022_x264.mp4/Shoplifting022_x264_11.mp4",
+      "bytes": 46433
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting022_x264.mp4/Shoplifting022_x264_12.mp4",
+      "bytes": 44693
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting022_x264.mp4/Shoplifting022_x264_13.mp4",
+      "bytes": 49650
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting022_x264.mp4/Shoplifting022_x264_14.mp4",
+      "bytes": 46592
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting022_x264.mp4/Shoplifting022_x264_15.mp4",
+      "bytes": 45691
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting022_x264.mp4/Shoplifting022_x264_16.mp4",
+      "bytes": 46342
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting022_x264.mp4/Shoplifting022_x264_17.mp4",
+      "bytes": 49570
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting022_x264.mp4/Shoplifting022_x264_18.mp4",
+      "bytes": 52450
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting022_x264.mp4/Shoplifting022_x264_19.mp4",
+      "bytes": 45762
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting022_x264.mp4/Shoplifting022_x264_2.mp4",
+      "bytes": 49091
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting022_x264.mp4/Shoplifting022_x264_20.mp4",
+      "bytes": 44840
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting022_x264.mp4/Shoplifting022_x264_21.mp4",
+      "bytes": 42628
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting022_x264.mp4/Shoplifting022_x264_22.mp4",
+      "bytes": 43661
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting022_x264.mp4/Shoplifting022_x264_23.mp4",
+      "bytes": 46402
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting022_x264.mp4/Shoplifting022_x264_24.mp4",
+      "bytes": 49573
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting022_x264.mp4/Shoplifting022_x264_25.mp4",
+      "bytes": 44814
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting022_x264.mp4/Shoplifting022_x264_26.mp4",
+      "bytes": 44585
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting022_x264.mp4/Shoplifting022_x264_27.mp4",
+      "bytes": 48550
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting022_x264.mp4/Shoplifting022_x264_28.mp4",
+      "bytes": 45494
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting022_x264.mp4/Shoplifting022_x264_29.mp4",
+      "bytes": 45363
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting022_x264.mp4/Shoplifting022_x264_3.mp4",
+      "bytes": 49640
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting022_x264.mp4/Shoplifting022_x264_30.mp4",
+      "bytes": 46777
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting022_x264.mp4/Shoplifting022_x264_31.mp4",
+      "bytes": 45062
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting022_x264.mp4/Shoplifting022_x264_4.mp4",
+      "bytes": 54711
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting022_x264.mp4/Shoplifting022_x264_5.mp4",
+      "bytes": 47493
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting022_x264.mp4/Shoplifting022_x264_6.mp4",
+      "bytes": 43427
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting022_x264.mp4/Shoplifting022_x264_7.mp4",
+      "bytes": 47607
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting022_x264.mp4/Shoplifting022_x264_8.mp4",
+      "bytes": 43998
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting022_x264.mp4/Shoplifting022_x264_9.mp4",
+      "bytes": 46113
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting024_x264.mp4/Shoplifting024_x264_0.mp4",
+      "bytes": 21519
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting024_x264.mp4/Shoplifting024_x264_1.mp4",
+      "bytes": 21831
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting024_x264.mp4/Shoplifting024_x264_10.mp4",
+      "bytes": 23979
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting024_x264.mp4/Shoplifting024_x264_11.mp4",
+      "bytes": 23824
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting024_x264.mp4/Shoplifting024_x264_12.mp4",
+      "bytes": 22709
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting024_x264.mp4/Shoplifting024_x264_13.mp4",
+      "bytes": 23388
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting024_x264.mp4/Shoplifting024_x264_14.mp4",
+      "bytes": 23856
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting024_x264.mp4/Shoplifting024_x264_15.mp4",
+      "bytes": 24202
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting024_x264.mp4/Shoplifting024_x264_16.mp4",
+      "bytes": 24901
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting024_x264.mp4/Shoplifting024_x264_17.mp4",
+      "bytes": 25749
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting024_x264.mp4/Shoplifting024_x264_18.mp4",
+      "bytes": 26578
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting024_x264.mp4/Shoplifting024_x264_19.mp4",
+      "bytes": 24143
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting024_x264.mp4/Shoplifting024_x264_2.mp4",
+      "bytes": 22264
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting024_x264.mp4/Shoplifting024_x264_20.mp4",
+      "bytes": 23588
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting024_x264.mp4/Shoplifting024_x264_21.mp4",
+      "bytes": 23369
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting024_x264.mp4/Shoplifting024_x264_22.mp4",
+      "bytes": 23903
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting024_x264.mp4/Shoplifting024_x264_23.mp4",
+      "bytes": 27122
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting024_x264.mp4/Shoplifting024_x264_24.mp4",
+      "bytes": 28526
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting024_x264.mp4/Shoplifting024_x264_25.mp4",
+      "bytes": 28780
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting024_x264.mp4/Shoplifting024_x264_26.mp4",
+      "bytes": 25446
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting024_x264.mp4/Shoplifting024_x264_27.mp4",
+      "bytes": 25314
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting024_x264.mp4/Shoplifting024_x264_28.mp4",
+      "bytes": 23427
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting024_x264.mp4/Shoplifting024_x264_29.mp4",
+      "bytes": 22545
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting024_x264.mp4/Shoplifting024_x264_3.mp4",
+      "bytes": 23132
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting024_x264.mp4/Shoplifting024_x264_30.mp4",
+      "bytes": 21888
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting024_x264.mp4/Shoplifting024_x264_31.mp4",
+      "bytes": 23702
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting024_x264.mp4/Shoplifting024_x264_4.mp4",
+      "bytes": 22563
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting024_x264.mp4/Shoplifting024_x264_5.mp4",
+      "bytes": 21576
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting024_x264.mp4/Shoplifting024_x264_6.mp4",
+      "bytes": 21534
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting024_x264.mp4/Shoplifting024_x264_7.mp4",
+      "bytes": 24107
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting024_x264.mp4/Shoplifting024_x264_8.mp4",
+      "bytes": 24883
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting024_x264.mp4/Shoplifting024_x264_9.mp4",
+      "bytes": 25172
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting025_x264.mp4/Shoplifting025_x264_0.mp4",
+      "bytes": 37085
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting025_x264.mp4/Shoplifting025_x264_1.mp4",
+      "bytes": 34711
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting025_x264.mp4/Shoplifting025_x264_10.mp4",
+      "bytes": 32478
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting025_x264.mp4/Shoplifting025_x264_11.mp4",
+      "bytes": 33530
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting025_x264.mp4/Shoplifting025_x264_12.mp4",
+      "bytes": 35627
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting025_x264.mp4/Shoplifting025_x264_13.mp4",
+      "bytes": 39089
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting025_x264.mp4/Shoplifting025_x264_14.mp4",
+      "bytes": 34260
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting025_x264.mp4/Shoplifting025_x264_15.mp4",
+      "bytes": 35819
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting025_x264.mp4/Shoplifting025_x264_16.mp4",
+      "bytes": 34984
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting025_x264.mp4/Shoplifting025_x264_17.mp4",
+      "bytes": 33685
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting025_x264.mp4/Shoplifting025_x264_18.mp4",
+      "bytes": 34866
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting025_x264.mp4/Shoplifting025_x264_19.mp4",
+      "bytes": 32256
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting025_x264.mp4/Shoplifting025_x264_2.mp4",
+      "bytes": 31999
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting025_x264.mp4/Shoplifting025_x264_20.mp4",
+      "bytes": 32820
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting025_x264.mp4/Shoplifting025_x264_21.mp4",
+      "bytes": 33002
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting025_x264.mp4/Shoplifting025_x264_22.mp4",
+      "bytes": 32920
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting025_x264.mp4/Shoplifting025_x264_23.mp4",
+      "bytes": 36892
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting025_x264.mp4/Shoplifting025_x264_24.mp4",
+      "bytes": 37193
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting025_x264.mp4/Shoplifting025_x264_25.mp4",
+      "bytes": 38200
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting025_x264.mp4/Shoplifting025_x264_26.mp4",
+      "bytes": 40171
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting025_x264.mp4/Shoplifting025_x264_27.mp4",
+      "bytes": 36855
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting025_x264.mp4/Shoplifting025_x264_28.mp4",
+      "bytes": 37182
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting025_x264.mp4/Shoplifting025_x264_29.mp4",
+      "bytes": 33550
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting025_x264.mp4/Shoplifting025_x264_3.mp4",
+      "bytes": 34477
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting025_x264.mp4/Shoplifting025_x264_30.mp4",
+      "bytes": 34328
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting025_x264.mp4/Shoplifting025_x264_31.mp4",
+      "bytes": 32853
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting025_x264.mp4/Shoplifting025_x264_4.mp4",
+      "bytes": 35919
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting025_x264.mp4/Shoplifting025_x264_5.mp4",
+      "bytes": 38540
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting025_x264.mp4/Shoplifting025_x264_6.mp4",
+      "bytes": 35102
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting025_x264.mp4/Shoplifting025_x264_7.mp4",
+      "bytes": 37823
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting025_x264.mp4/Shoplifting025_x264_8.mp4",
+      "bytes": 34567
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting025_x264.mp4/Shoplifting025_x264_9.mp4",
+      "bytes": 34196
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting026_x264.mp4/Shoplifting026_x264_0.mp4",
+      "bytes": 24399
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting026_x264.mp4/Shoplifting026_x264_1.mp4",
+      "bytes": 26915
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting026_x264.mp4/Shoplifting026_x264_10.mp4",
+      "bytes": 25725
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting026_x264.mp4/Shoplifting026_x264_11.mp4",
+      "bytes": 27268
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting026_x264.mp4/Shoplifting026_x264_12.mp4",
+      "bytes": 27090
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting026_x264.mp4/Shoplifting026_x264_13.mp4",
+      "bytes": 25740
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting026_x264.mp4/Shoplifting026_x264_14.mp4",
+      "bytes": 27325
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting026_x264.mp4/Shoplifting026_x264_15.mp4",
+      "bytes": 29797
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting026_x264.mp4/Shoplifting026_x264_16.mp4",
+      "bytes": 25136
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting026_x264.mp4/Shoplifting026_x264_17.mp4",
+      "bytes": 24456
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting026_x264.mp4/Shoplifting026_x264_18.mp4",
+      "bytes": 25164
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting026_x264.mp4/Shoplifting026_x264_19.mp4",
+      "bytes": 25341
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting026_x264.mp4/Shoplifting026_x264_2.mp4",
+      "bytes": 29741
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting026_x264.mp4/Shoplifting026_x264_20.mp4",
+      "bytes": 23582
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting026_x264.mp4/Shoplifting026_x264_21.mp4",
+      "bytes": 29887
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting026_x264.mp4/Shoplifting026_x264_22.mp4",
+      "bytes": 28022
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting026_x264.mp4/Shoplifting026_x264_23.mp4",
+      "bytes": 27679
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting026_x264.mp4/Shoplifting026_x264_24.mp4",
+      "bytes": 25576
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting026_x264.mp4/Shoplifting026_x264_25.mp4",
+      "bytes": 24587
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting026_x264.mp4/Shoplifting026_x264_26.mp4",
+      "bytes": 26823
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting026_x264.mp4/Shoplifting026_x264_27.mp4",
+      "bytes": 26126
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting026_x264.mp4/Shoplifting026_x264_28.mp4",
+      "bytes": 27297
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting026_x264.mp4/Shoplifting026_x264_29.mp4",
+      "bytes": 26740
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting026_x264.mp4/Shoplifting026_x264_3.mp4",
+      "bytes": 31296
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting026_x264.mp4/Shoplifting026_x264_30.mp4",
+      "bytes": 25642
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting026_x264.mp4/Shoplifting026_x264_31.mp4",
+      "bytes": 29515
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting026_x264.mp4/Shoplifting026_x264_4.mp4",
+      "bytes": 32690
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting026_x264.mp4/Shoplifting026_x264_5.mp4",
+      "bytes": 32671
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting026_x264.mp4/Shoplifting026_x264_6.mp4",
+      "bytes": 34099
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting026_x264.mp4/Shoplifting026_x264_7.mp4",
+      "bytes": 34264
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting026_x264.mp4/Shoplifting026_x264_8.mp4",
+      "bytes": 29417
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting026_x264.mp4/Shoplifting026_x264_9.mp4",
+      "bytes": 30110
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting032_x264.mp4/Shoplifting032_x264_0.mp4",
+      "bytes": 25738
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting032_x264.mp4/Shoplifting032_x264_1.mp4",
+      "bytes": 26197
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting032_x264.mp4/Shoplifting032_x264_10.mp4",
+      "bytes": 28721
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting032_x264.mp4/Shoplifting032_x264_11.mp4",
+      "bytes": 26909
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting032_x264.mp4/Shoplifting032_x264_12.mp4",
+      "bytes": 27653
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting032_x264.mp4/Shoplifting032_x264_13.mp4",
+      "bytes": 29166
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting032_x264.mp4/Shoplifting032_x264_14.mp4",
+      "bytes": 31574
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting032_x264.mp4/Shoplifting032_x264_15.mp4",
+      "bytes": 35755
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting032_x264.mp4/Shoplifting032_x264_16.mp4",
+      "bytes": 32387
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting032_x264.mp4/Shoplifting032_x264_17.mp4",
+      "bytes": 31298
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting032_x264.mp4/Shoplifting032_x264_18.mp4",
+      "bytes": 28211
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting032_x264.mp4/Shoplifting032_x264_19.mp4",
+      "bytes": 26754
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting032_x264.mp4/Shoplifting032_x264_2.mp4",
+      "bytes": 27728
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting032_x264.mp4/Shoplifting032_x264_20.mp4",
+      "bytes": 28455
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting032_x264.mp4/Shoplifting032_x264_21.mp4",
+      "bytes": 25816
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting032_x264.mp4/Shoplifting032_x264_22.mp4",
+      "bytes": 31126
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting032_x264.mp4/Shoplifting032_x264_23.mp4",
+      "bytes": 30276
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting032_x264.mp4/Shoplifting032_x264_24.mp4",
+      "bytes": 28959
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting032_x264.mp4/Shoplifting032_x264_25.mp4",
+      "bytes": 30110
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting032_x264.mp4/Shoplifting032_x264_26.mp4",
+      "bytes": 26679
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting032_x264.mp4/Shoplifting032_x264_27.mp4",
+      "bytes": 25168
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting032_x264.mp4/Shoplifting032_x264_28.mp4",
+      "bytes": 29333
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting032_x264.mp4/Shoplifting032_x264_29.mp4",
+      "bytes": 25503
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting032_x264.mp4/Shoplifting032_x264_3.mp4",
+      "bytes": 28107
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting032_x264.mp4/Shoplifting032_x264_30.mp4",
+      "bytes": 26721
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting032_x264.mp4/Shoplifting032_x264_31.mp4",
+      "bytes": 26760
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting032_x264.mp4/Shoplifting032_x264_4.mp4",
+      "bytes": 29630
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting032_x264.mp4/Shoplifting032_x264_5.mp4",
+      "bytes": 34126
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting032_x264.mp4/Shoplifting032_x264_6.mp4",
+      "bytes": 32121
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting032_x264.mp4/Shoplifting032_x264_7.mp4",
+      "bytes": 30373
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting032_x264.mp4/Shoplifting032_x264_8.mp4",
+      "bytes": 30333
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting032_x264.mp4/Shoplifting032_x264_9.mp4",
+      "bytes": 30998
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting036_x264.mp4/Shoplifting036_x264_0.mp4",
+      "bytes": 88893
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting036_x264.mp4/Shoplifting036_x264_1.mp4",
+      "bytes": 93726
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting036_x264.mp4/Shoplifting036_x264_10.mp4",
+      "bytes": 146299
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting036_x264.mp4/Shoplifting036_x264_11.mp4",
+      "bytes": 135572
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting036_x264.mp4/Shoplifting036_x264_12.mp4",
+      "bytes": 137805
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting036_x264.mp4/Shoplifting036_x264_13.mp4",
+      "bytes": 147605
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting036_x264.mp4/Shoplifting036_x264_14.mp4",
+      "bytes": 150589
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting036_x264.mp4/Shoplifting036_x264_15.mp4",
+      "bytes": 133634
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting036_x264.mp4/Shoplifting036_x264_16.mp4",
+      "bytes": 152494
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting036_x264.mp4/Shoplifting036_x264_17.mp4",
+      "bytes": 158094
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting036_x264.mp4/Shoplifting036_x264_18.mp4",
+      "bytes": 154283
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting036_x264.mp4/Shoplifting036_x264_19.mp4",
+      "bytes": 157612
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting036_x264.mp4/Shoplifting036_x264_2.mp4",
+      "bytes": 94168
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting036_x264.mp4/Shoplifting036_x264_20.mp4",
+      "bytes": 154279
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting036_x264.mp4/Shoplifting036_x264_21.mp4",
+      "bytes": 153728
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting036_x264.mp4/Shoplifting036_x264_22.mp4",
+      "bytes": 142196
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting036_x264.mp4/Shoplifting036_x264_23.mp4",
+      "bytes": 149676
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting036_x264.mp4/Shoplifting036_x264_24.mp4",
+      "bytes": 142317
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting036_x264.mp4/Shoplifting036_x264_25.mp4",
+      "bytes": 137091
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting036_x264.mp4/Shoplifting036_x264_26.mp4",
+      "bytes": 160931
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting036_x264.mp4/Shoplifting036_x264_27.mp4",
+      "bytes": 165678
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting036_x264.mp4/Shoplifting036_x264_28.mp4",
+      "bytes": 155074
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting036_x264.mp4/Shoplifting036_x264_29.mp4",
+      "bytes": 160048
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting036_x264.mp4/Shoplifting036_x264_3.mp4",
+      "bytes": 87826
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting036_x264.mp4/Shoplifting036_x264_30.mp4",
+      "bytes": 168428
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting036_x264.mp4/Shoplifting036_x264_31.mp4",
+      "bytes": 169338
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting036_x264.mp4/Shoplifting036_x264_4.mp4",
+      "bytes": 89141
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting036_x264.mp4/Shoplifting036_x264_5.mp4",
+      "bytes": 100347
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting036_x264.mp4/Shoplifting036_x264_6.mp4",
+      "bytes": 99203
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting036_x264.mp4/Shoplifting036_x264_7.mp4",
+      "bytes": 125796
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting036_x264.mp4/Shoplifting036_x264_8.mp4",
+      "bytes": 128180
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting036_x264.mp4/Shoplifting036_x264_9.mp4",
+      "bytes": 137644
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting037_x264.mp4/Shoplifting037_x264_0.mp4",
+      "bytes": 35648
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting037_x264.mp4/Shoplifting037_x264_1.mp4",
+      "bytes": 36089
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting037_x264.mp4/Shoplifting037_x264_10.mp4",
+      "bytes": 43636
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting037_x264.mp4/Shoplifting037_x264_11.mp4",
+      "bytes": 37544
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting037_x264.mp4/Shoplifting037_x264_12.mp4",
+      "bytes": 40929
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting037_x264.mp4/Shoplifting037_x264_13.mp4",
+      "bytes": 37149
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting037_x264.mp4/Shoplifting037_x264_14.mp4",
+      "bytes": 39762
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting037_x264.mp4/Shoplifting037_x264_15.mp4",
+      "bytes": 39731
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting037_x264.mp4/Shoplifting037_x264_16.mp4",
+      "bytes": 39507
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting037_x264.mp4/Shoplifting037_x264_17.mp4",
+      "bytes": 38938
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting037_x264.mp4/Shoplifting037_x264_18.mp4",
+      "bytes": 35049
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting037_x264.mp4/Shoplifting037_x264_19.mp4",
+      "bytes": 34071
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting037_x264.mp4/Shoplifting037_x264_2.mp4",
+      "bytes": 42274
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting037_x264.mp4/Shoplifting037_x264_20.mp4",
+      "bytes": 39298
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting037_x264.mp4/Shoplifting037_x264_21.mp4",
+      "bytes": 37892
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting037_x264.mp4/Shoplifting037_x264_22.mp4",
+      "bytes": 41537
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting037_x264.mp4/Shoplifting037_x264_23.mp4",
+      "bytes": 40016
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting037_x264.mp4/Shoplifting037_x264_24.mp4",
+      "bytes": 37427
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting037_x264.mp4/Shoplifting037_x264_25.mp4",
+      "bytes": 40237
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting037_x264.mp4/Shoplifting037_x264_26.mp4",
+      "bytes": 49738
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting037_x264.mp4/Shoplifting037_x264_27.mp4",
+      "bytes": 45774
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting037_x264.mp4/Shoplifting037_x264_28.mp4",
+      "bytes": 48327
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting037_x264.mp4/Shoplifting037_x264_29.mp4",
+      "bytes": 43731
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting037_x264.mp4/Shoplifting037_x264_3.mp4",
+      "bytes": 36415
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting037_x264.mp4/Shoplifting037_x264_30.mp4",
+      "bytes": 41969
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting037_x264.mp4/Shoplifting037_x264_31.mp4",
+      "bytes": 48252
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting037_x264.mp4/Shoplifting037_x264_4.mp4",
+      "bytes": 40084
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting037_x264.mp4/Shoplifting037_x264_5.mp4",
+      "bytes": 43185
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting037_x264.mp4/Shoplifting037_x264_6.mp4",
+      "bytes": 43295
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting037_x264.mp4/Shoplifting037_x264_7.mp4",
+      "bytes": 42656
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting037_x264.mp4/Shoplifting037_x264_8.mp4",
+      "bytes": 46109
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting037_x264.mp4/Shoplifting037_x264_9.mp4",
+      "bytes": 45904
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting038_x264.mp4/Shoplifting038_x264_0.mp4",
+      "bytes": 41144
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting038_x264.mp4/Shoplifting038_x264_1.mp4",
+      "bytes": 32574
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting038_x264.mp4/Shoplifting038_x264_10.mp4",
+      "bytes": 46178
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting038_x264.mp4/Shoplifting038_x264_11.mp4",
+      "bytes": 50407
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting038_x264.mp4/Shoplifting038_x264_12.mp4",
+      "bytes": 49995
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting038_x264.mp4/Shoplifting038_x264_13.mp4",
+      "bytes": 33410
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting038_x264.mp4/Shoplifting038_x264_14.mp4",
+      "bytes": 41507
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting038_x264.mp4/Shoplifting038_x264_15.mp4",
+      "bytes": 47017
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting038_x264.mp4/Shoplifting038_x264_16.mp4",
+      "bytes": 48158
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting038_x264.mp4/Shoplifting038_x264_17.mp4",
+      "bytes": 37748
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting038_x264.mp4/Shoplifting038_x264_18.mp4",
+      "bytes": 38283
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting038_x264.mp4/Shoplifting038_x264_19.mp4",
+      "bytes": 39013
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting038_x264.mp4/Shoplifting038_x264_2.mp4",
+      "bytes": 35437
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting038_x264.mp4/Shoplifting038_x264_20.mp4",
+      "bytes": 42583
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting038_x264.mp4/Shoplifting038_x264_21.mp4",
+      "bytes": 40893
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting038_x264.mp4/Shoplifting038_x264_22.mp4",
+      "bytes": 43974
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting038_x264.mp4/Shoplifting038_x264_23.mp4",
+      "bytes": 43081
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting038_x264.mp4/Shoplifting038_x264_24.mp4",
+      "bytes": 44788
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting038_x264.mp4/Shoplifting038_x264_25.mp4",
+      "bytes": 42875
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting038_x264.mp4/Shoplifting038_x264_26.mp4",
+      "bytes": 40633
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting038_x264.mp4/Shoplifting038_x264_27.mp4",
+      "bytes": 62458
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting038_x264.mp4/Shoplifting038_x264_28.mp4",
+      "bytes": 51178
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting038_x264.mp4/Shoplifting038_x264_29.mp4",
+      "bytes": 42763
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting038_x264.mp4/Shoplifting038_x264_3.mp4",
+      "bytes": 46329
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting038_x264.mp4/Shoplifting038_x264_30.mp4",
+      "bytes": 49903
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting038_x264.mp4/Shoplifting038_x264_31.mp4",
+      "bytes": 36036
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting038_x264.mp4/Shoplifting038_x264_4.mp4",
+      "bytes": 39566
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting038_x264.mp4/Shoplifting038_x264_5.mp4",
+      "bytes": 30759
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting038_x264.mp4/Shoplifting038_x264_6.mp4",
+      "bytes": 33896
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting038_x264.mp4/Shoplifting038_x264_7.mp4",
+      "bytes": 37416
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting038_x264.mp4/Shoplifting038_x264_8.mp4",
+      "bytes": 40677
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting038_x264.mp4/Shoplifting038_x264_9.mp4",
+      "bytes": 37528
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting039_x264.mp4/Shoplifting039_x264_0.mp4",
+      "bytes": 35735
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting039_x264.mp4/Shoplifting039_x264_1.mp4",
+      "bytes": 43724
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting039_x264.mp4/Shoplifting039_x264_10.mp4",
+      "bytes": 38759
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting039_x264.mp4/Shoplifting039_x264_11.mp4",
+      "bytes": 45681
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting039_x264.mp4/Shoplifting039_x264_12.mp4",
+      "bytes": 37679
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting039_x264.mp4/Shoplifting039_x264_13.mp4",
+      "bytes": 22723
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting039_x264.mp4/Shoplifting039_x264_14.mp4",
+      "bytes": 20753
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting039_x264.mp4/Shoplifting039_x264_15.mp4",
+      "bytes": 38338
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting039_x264.mp4/Shoplifting039_x264_16.mp4",
+      "bytes": 55709
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting039_x264.mp4/Shoplifting039_x264_17.mp4",
+      "bytes": 55912
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting039_x264.mp4/Shoplifting039_x264_18.mp4",
+      "bytes": 43826
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting039_x264.mp4/Shoplifting039_x264_19.mp4",
+      "bytes": 23933
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting039_x264.mp4/Shoplifting039_x264_2.mp4",
+      "bytes": 48928
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting039_x264.mp4/Shoplifting039_x264_20.mp4",
+      "bytes": 23178
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting039_x264.mp4/Shoplifting039_x264_21.mp4",
+      "bytes": 22411
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting039_x264.mp4/Shoplifting039_x264_22.mp4",
+      "bytes": 21414
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting039_x264.mp4/Shoplifting039_x264_23.mp4",
+      "bytes": 24344
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting039_x264.mp4/Shoplifting039_x264_24.mp4",
+      "bytes": 25540
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting039_x264.mp4/Shoplifting039_x264_25.mp4",
+      "bytes": 20489
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting039_x264.mp4/Shoplifting039_x264_26.mp4",
+      "bytes": 23926
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting039_x264.mp4/Shoplifting039_x264_27.mp4",
+      "bytes": 22213
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting039_x264.mp4/Shoplifting039_x264_28.mp4",
+      "bytes": 22809
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting039_x264.mp4/Shoplifting039_x264_29.mp4",
+      "bytes": 23818
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting039_x264.mp4/Shoplifting039_x264_3.mp4",
+      "bytes": 47939
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting039_x264.mp4/Shoplifting039_x264_30.mp4",
+      "bytes": 21838
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting039_x264.mp4/Shoplifting039_x264_31.mp4",
+      "bytes": 24665
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting039_x264.mp4/Shoplifting039_x264_4.mp4",
+      "bytes": 46371
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting039_x264.mp4/Shoplifting039_x264_5.mp4",
+      "bytes": 34993
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting039_x264.mp4/Shoplifting039_x264_6.mp4",
+      "bytes": 21697
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting039_x264.mp4/Shoplifting039_x264_7.mp4",
+      "bytes": 26435
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting039_x264.mp4/Shoplifting039_x264_8.mp4",
+      "bytes": 34765
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting039_x264.mp4/Shoplifting039_x264_9.mp4",
+      "bytes": 38880
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting042_x264.mp4/Shoplifting042_x264_0.mp4",
+      "bytes": 74829
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting042_x264.mp4/Shoplifting042_x264_1.mp4",
+      "bytes": 99320
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting042_x264.mp4/Shoplifting042_x264_10.mp4",
+      "bytes": 134835
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting042_x264.mp4/Shoplifting042_x264_11.mp4",
+      "bytes": 156080
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting042_x264.mp4/Shoplifting042_x264_12.mp4",
+      "bytes": 132792
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting042_x264.mp4/Shoplifting042_x264_13.mp4",
+      "bytes": 127557
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting042_x264.mp4/Shoplifting042_x264_14.mp4",
+      "bytes": 126605
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting042_x264.mp4/Shoplifting042_x264_15.mp4",
+      "bytes": 131945
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting042_x264.mp4/Shoplifting042_x264_16.mp4",
+      "bytes": 130245
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting042_x264.mp4/Shoplifting042_x264_17.mp4",
+      "bytes": 146249
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting042_x264.mp4/Shoplifting042_x264_18.mp4",
+      "bytes": 140241
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting042_x264.mp4/Shoplifting042_x264_19.mp4",
+      "bytes": 142782
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting042_x264.mp4/Shoplifting042_x264_2.mp4",
+      "bytes": 113238
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting042_x264.mp4/Shoplifting042_x264_20.mp4",
+      "bytes": 130412
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting042_x264.mp4/Shoplifting042_x264_21.mp4",
+      "bytes": 136136
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting042_x264.mp4/Shoplifting042_x264_22.mp4",
+      "bytes": 128561
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting042_x264.mp4/Shoplifting042_x264_23.mp4",
+      "bytes": 115336
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting042_x264.mp4/Shoplifting042_x264_24.mp4",
+      "bytes": 115395
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting042_x264.mp4/Shoplifting042_x264_25.mp4",
+      "bytes": 129886
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting042_x264.mp4/Shoplifting042_x264_26.mp4",
+      "bytes": 141630
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting042_x264.mp4/Shoplifting042_x264_27.mp4",
+      "bytes": 122163
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting042_x264.mp4/Shoplifting042_x264_28.mp4",
+      "bytes": 129749
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting042_x264.mp4/Shoplifting042_x264_29.mp4",
+      "bytes": 108344
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting042_x264.mp4/Shoplifting042_x264_3.mp4",
+      "bytes": 100381
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting042_x264.mp4/Shoplifting042_x264_30.mp4",
+      "bytes": 88629
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting042_x264.mp4/Shoplifting042_x264_31.mp4",
+      "bytes": 115256
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting042_x264.mp4/Shoplifting042_x264_4.mp4",
+      "bytes": 129123
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting042_x264.mp4/Shoplifting042_x264_5.mp4",
+      "bytes": 112396
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting042_x264.mp4/Shoplifting042_x264_6.mp4",
+      "bytes": 103050
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting042_x264.mp4/Shoplifting042_x264_7.mp4",
+      "bytes": 108113
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting042_x264.mp4/Shoplifting042_x264_8.mp4",
+      "bytes": 125135
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting042_x264.mp4/Shoplifting042_x264_9.mp4",
+      "bytes": 121875
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting045_x264.mp4/Shoplifting045_x264_0.mp4",
+      "bytes": 18122
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting045_x264.mp4/Shoplifting045_x264_1.mp4",
+      "bytes": 22185
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting045_x264.mp4/Shoplifting045_x264_10.mp4",
+      "bytes": 21973
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting045_x264.mp4/Shoplifting045_x264_11.mp4",
+      "bytes": 26164
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting045_x264.mp4/Shoplifting045_x264_12.mp4",
+      "bytes": 22227
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting045_x264.mp4/Shoplifting045_x264_13.mp4",
+      "bytes": 21164
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting045_x264.mp4/Shoplifting045_x264_14.mp4",
+      "bytes": 19843
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting045_x264.mp4/Shoplifting045_x264_15.mp4",
+      "bytes": 24342
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting045_x264.mp4/Shoplifting045_x264_16.mp4",
+      "bytes": 23157
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting045_x264.mp4/Shoplifting045_x264_17.mp4",
+      "bytes": 23883
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting045_x264.mp4/Shoplifting045_x264_18.mp4",
+      "bytes": 22541
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting045_x264.mp4/Shoplifting045_x264_19.mp4",
+      "bytes": 27184
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting045_x264.mp4/Shoplifting045_x264_2.mp4",
+      "bytes": 20274
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting045_x264.mp4/Shoplifting045_x264_20.mp4",
+      "bytes": 23859
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting045_x264.mp4/Shoplifting045_x264_21.mp4",
+      "bytes": 23124
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting045_x264.mp4/Shoplifting045_x264_22.mp4",
+      "bytes": 20819
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting045_x264.mp4/Shoplifting045_x264_23.mp4",
+      "bytes": 23727
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting045_x264.mp4/Shoplifting045_x264_24.mp4",
+      "bytes": 22315
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting045_x264.mp4/Shoplifting045_x264_25.mp4",
+      "bytes": 20890
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting045_x264.mp4/Shoplifting045_x264_26.mp4",
+      "bytes": 19141
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting045_x264.mp4/Shoplifting045_x264_27.mp4",
+      "bytes": 22745
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting045_x264.mp4/Shoplifting045_x264_28.mp4",
+      "bytes": 19637
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting045_x264.mp4/Shoplifting045_x264_29.mp4",
+      "bytes": 23614
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting045_x264.mp4/Shoplifting045_x264_3.mp4",
+      "bytes": 24752
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting045_x264.mp4/Shoplifting045_x264_30.mp4",
+      "bytes": 21526
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting045_x264.mp4/Shoplifting045_x264_31.mp4",
+      "bytes": 18992
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting045_x264.mp4/Shoplifting045_x264_4.mp4",
+      "bytes": 20131
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting045_x264.mp4/Shoplifting045_x264_5.mp4",
+      "bytes": 23465
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting045_x264.mp4/Shoplifting045_x264_6.mp4",
+      "bytes": 21966
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting045_x264.mp4/Shoplifting045_x264_7.mp4",
+      "bytes": 21919
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting045_x264.mp4/Shoplifting045_x264_8.mp4",
+      "bytes": 21334
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting045_x264.mp4/Shoplifting045_x264_9.mp4",
+      "bytes": 23630
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting047_x264.mp4/Shoplifting047_x264_0.mp4",
+      "bytes": 42995
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting047_x264.mp4/Shoplifting047_x264_1.mp4",
+      "bytes": 49545
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting047_x264.mp4/Shoplifting047_x264_10.mp4",
+      "bytes": 68077
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting047_x264.mp4/Shoplifting047_x264_11.mp4",
+      "bytes": 70411
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting047_x264.mp4/Shoplifting047_x264_12.mp4",
+      "bytes": 56527
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting047_x264.mp4/Shoplifting047_x264_13.mp4",
+      "bytes": 48779
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting047_x264.mp4/Shoplifting047_x264_14.mp4",
+      "bytes": 45797
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting047_x264.mp4/Shoplifting047_x264_15.mp4",
+      "bytes": 55124
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting047_x264.mp4/Shoplifting047_x264_16.mp4",
+      "bytes": 68777
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting047_x264.mp4/Shoplifting047_x264_17.mp4",
+      "bytes": 76025
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting047_x264.mp4/Shoplifting047_x264_18.mp4",
+      "bytes": 71095
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting047_x264.mp4/Shoplifting047_x264_19.mp4",
+      "bytes": 65499
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting047_x264.mp4/Shoplifting047_x264_2.mp4",
+      "bytes": 54678
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting047_x264.mp4/Shoplifting047_x264_20.mp4",
+      "bytes": 76895
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting047_x264.mp4/Shoplifting047_x264_21.mp4",
+      "bytes": 65286
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting047_x264.mp4/Shoplifting047_x264_22.mp4",
+      "bytes": 63291
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting047_x264.mp4/Shoplifting047_x264_23.mp4",
+      "bytes": 66737
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting047_x264.mp4/Shoplifting047_x264_24.mp4",
+      "bytes": 62941
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting047_x264.mp4/Shoplifting047_x264_25.mp4",
+      "bytes": 59433
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting047_x264.mp4/Shoplifting047_x264_26.mp4",
+      "bytes": 44774
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting047_x264.mp4/Shoplifting047_x264_27.mp4",
+      "bytes": 45812
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting047_x264.mp4/Shoplifting047_x264_28.mp4",
+      "bytes": 44638
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting047_x264.mp4/Shoplifting047_x264_29.mp4",
+      "bytes": 50198
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting047_x264.mp4/Shoplifting047_x264_3.mp4",
+      "bytes": 61069
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting047_x264.mp4/Shoplifting047_x264_30.mp4",
+      "bytes": 56540
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting047_x264.mp4/Shoplifting047_x264_31.mp4",
+      "bytes": 57767
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting047_x264.mp4/Shoplifting047_x264_4.mp4",
+      "bytes": 68658
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting047_x264.mp4/Shoplifting047_x264_5.mp4",
+      "bytes": 66247
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting047_x264.mp4/Shoplifting047_x264_6.mp4",
+      "bytes": 63835
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting047_x264.mp4/Shoplifting047_x264_7.mp4",
+      "bytes": 55087
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting047_x264.mp4/Shoplifting047_x264_8.mp4",
+      "bytes": 60508
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting047_x264.mp4/Shoplifting047_x264_9.mp4",
+      "bytes": 62945
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting048_x264.mp4/Shoplifting048_x264_0.mp4",
+      "bytes": 77119
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting048_x264.mp4/Shoplifting048_x264_1.mp4",
+      "bytes": 82796
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting048_x264.mp4/Shoplifting048_x264_10.mp4",
+      "bytes": 71021
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting048_x264.mp4/Shoplifting048_x264_11.mp4",
+      "bytes": 57999
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting048_x264.mp4/Shoplifting048_x264_12.mp4",
+      "bytes": 60844
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting048_x264.mp4/Shoplifting048_x264_13.mp4",
+      "bytes": 77686
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting048_x264.mp4/Shoplifting048_x264_14.mp4",
+      "bytes": 84703
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting048_x264.mp4/Shoplifting048_x264_15.mp4",
+      "bytes": 102075
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting048_x264.mp4/Shoplifting048_x264_16.mp4",
+      "bytes": 122496
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting048_x264.mp4/Shoplifting048_x264_17.mp4",
+      "bytes": 124393
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting048_x264.mp4/Shoplifting048_x264_18.mp4",
+      "bytes": 115052
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting048_x264.mp4/Shoplifting048_x264_19.mp4",
+      "bytes": 106521
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting048_x264.mp4/Shoplifting048_x264_2.mp4",
+      "bytes": 74385
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting048_x264.mp4/Shoplifting048_x264_20.mp4",
+      "bytes": 86865
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting048_x264.mp4/Shoplifting048_x264_21.mp4",
+      "bytes": 90168
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting048_x264.mp4/Shoplifting048_x264_22.mp4",
+      "bytes": 90948
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting048_x264.mp4/Shoplifting048_x264_23.mp4",
+      "bytes": 84495
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting048_x264.mp4/Shoplifting048_x264_24.mp4",
+      "bytes": 80328
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting048_x264.mp4/Shoplifting048_x264_25.mp4",
+      "bytes": 77663
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting048_x264.mp4/Shoplifting048_x264_26.mp4",
+      "bytes": 85064
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting048_x264.mp4/Shoplifting048_x264_27.mp4",
+      "bytes": 98742
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting048_x264.mp4/Shoplifting048_x264_28.mp4",
+      "bytes": 97763
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting048_x264.mp4/Shoplifting048_x264_29.mp4",
+      "bytes": 79417
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting048_x264.mp4/Shoplifting048_x264_3.mp4",
+      "bytes": 74483
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting048_x264.mp4/Shoplifting048_x264_30.mp4",
+      "bytes": 90621
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting048_x264.mp4/Shoplifting048_x264_31.mp4",
+      "bytes": 104887
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting048_x264.mp4/Shoplifting048_x264_4.mp4",
+      "bytes": 101892
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting048_x264.mp4/Shoplifting048_x264_5.mp4",
+      "bytes": 82932
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting048_x264.mp4/Shoplifting048_x264_6.mp4",
+      "bytes": 63752
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting048_x264.mp4/Shoplifting048_x264_7.mp4",
+      "bytes": 73301
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting048_x264.mp4/Shoplifting048_x264_8.mp4",
+      "bytes": 71187
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting048_x264.mp4/Shoplifting048_x264_9.mp4",
+      "bytes": 57073
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting049_x264.mp4/Shoplifting049_x264_0.mp4",
+      "bytes": 36864
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting049_x264.mp4/Shoplifting049_x264_1.mp4",
+      "bytes": 43164
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting049_x264.mp4/Shoplifting049_x264_10.mp4",
+      "bytes": 60343
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting049_x264.mp4/Shoplifting049_x264_11.mp4",
+      "bytes": 79017
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting049_x264.mp4/Shoplifting049_x264_12.mp4",
+      "bytes": 60335
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting049_x264.mp4/Shoplifting049_x264_13.mp4",
+      "bytes": 34730
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting049_x264.mp4/Shoplifting049_x264_14.mp4",
+      "bytes": 54084
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting049_x264.mp4/Shoplifting049_x264_15.mp4",
+      "bytes": 50155
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting049_x264.mp4/Shoplifting049_x264_16.mp4",
+      "bytes": 55798
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting049_x264.mp4/Shoplifting049_x264_17.mp4",
+      "bytes": 47037
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting049_x264.mp4/Shoplifting049_x264_18.mp4",
+      "bytes": 65864
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting049_x264.mp4/Shoplifting049_x264_19.mp4",
+      "bytes": 56753
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting049_x264.mp4/Shoplifting049_x264_2.mp4",
+      "bytes": 47794
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting049_x264.mp4/Shoplifting049_x264_20.mp4",
+      "bytes": 59392
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting049_x264.mp4/Shoplifting049_x264_21.mp4",
+      "bytes": 55911
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting049_x264.mp4/Shoplifting049_x264_22.mp4",
+      "bytes": 49909
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting049_x264.mp4/Shoplifting049_x264_23.mp4",
+      "bytes": 49251
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting049_x264.mp4/Shoplifting049_x264_24.mp4",
+      "bytes": 48454
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting049_x264.mp4/Shoplifting049_x264_25.mp4",
+      "bytes": 61918
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting049_x264.mp4/Shoplifting049_x264_26.mp4",
+      "bytes": 50757
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting049_x264.mp4/Shoplifting049_x264_27.mp4",
+      "bytes": 40288
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting049_x264.mp4/Shoplifting049_x264_28.mp4",
+      "bytes": 49118
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting049_x264.mp4/Shoplifting049_x264_29.mp4",
+      "bytes": 43877
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting049_x264.mp4/Shoplifting049_x264_3.mp4",
+      "bytes": 76639
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting049_x264.mp4/Shoplifting049_x264_30.mp4",
+      "bytes": 35527
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting049_x264.mp4/Shoplifting049_x264_31.mp4",
+      "bytes": 36753
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting049_x264.mp4/Shoplifting049_x264_4.mp4",
+      "bytes": 87497
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting049_x264.mp4/Shoplifting049_x264_5.mp4",
+      "bytes": 63659
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting049_x264.mp4/Shoplifting049_x264_6.mp4",
+      "bytes": 42315
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting049_x264.mp4/Shoplifting049_x264_7.mp4",
+      "bytes": 56419
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting049_x264.mp4/Shoplifting049_x264_8.mp4",
+      "bytes": 49242
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting049_x264.mp4/Shoplifting049_x264_9.mp4",
+      "bytes": 37749
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting050_x264.mp4/Shoplifting050_x264_0.mp4",
+      "bytes": 49742
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting050_x264.mp4/Shoplifting050_x264_1.mp4",
+      "bytes": 56415
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting050_x264.mp4/Shoplifting050_x264_10.mp4",
+      "bytes": 39037
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting050_x264.mp4/Shoplifting050_x264_11.mp4",
+      "bytes": 46864
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting050_x264.mp4/Shoplifting050_x264_12.mp4",
+      "bytes": 44138
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting050_x264.mp4/Shoplifting050_x264_13.mp4",
+      "bytes": 42594
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting050_x264.mp4/Shoplifting050_x264_14.mp4",
+      "bytes": 48007
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting050_x264.mp4/Shoplifting050_x264_15.mp4",
+      "bytes": 46087
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting050_x264.mp4/Shoplifting050_x264_16.mp4",
+      "bytes": 43046
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting050_x264.mp4/Shoplifting050_x264_17.mp4",
+      "bytes": 43543
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting050_x264.mp4/Shoplifting050_x264_18.mp4",
+      "bytes": 40219
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting050_x264.mp4/Shoplifting050_x264_19.mp4",
+      "bytes": 48735
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting050_x264.mp4/Shoplifting050_x264_2.mp4",
+      "bytes": 59733
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting050_x264.mp4/Shoplifting050_x264_20.mp4",
+      "bytes": 51627
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting050_x264.mp4/Shoplifting050_x264_21.mp4",
+      "bytes": 43579
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting050_x264.mp4/Shoplifting050_x264_22.mp4",
+      "bytes": 39587
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting050_x264.mp4/Shoplifting050_x264_23.mp4",
+      "bytes": 46584
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting050_x264.mp4/Shoplifting050_x264_24.mp4",
+      "bytes": 45887
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting050_x264.mp4/Shoplifting050_x264_25.mp4",
+      "bytes": 49916
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting050_x264.mp4/Shoplifting050_x264_26.mp4",
+      "bytes": 48721
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting050_x264.mp4/Shoplifting050_x264_27.mp4",
+      "bytes": 43040
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting050_x264.mp4/Shoplifting050_x264_28.mp4",
+      "bytes": 43182
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting050_x264.mp4/Shoplifting050_x264_29.mp4",
+      "bytes": 39860
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting050_x264.mp4/Shoplifting050_x264_3.mp4",
+      "bytes": 59110
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting050_x264.mp4/Shoplifting050_x264_30.mp4",
+      "bytes": 40669
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting050_x264.mp4/Shoplifting050_x264_31.mp4",
+      "bytes": 44519
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting050_x264.mp4/Shoplifting050_x264_4.mp4",
+      "bytes": 47893
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting050_x264.mp4/Shoplifting050_x264_5.mp4",
+      "bytes": 54485
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting050_x264.mp4/Shoplifting050_x264_6.mp4",
+      "bytes": 62654
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting050_x264.mp4/Shoplifting050_x264_7.mp4",
+      "bytes": 67317
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting050_x264.mp4/Shoplifting050_x264_8.mp4",
+      "bytes": 61554
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting050_x264.mp4/Shoplifting050_x264_9.mp4",
+      "bytes": 45421
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting053_x264.mp4/Shoplifting053_x264_0.mp4",
+      "bytes": 25124
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting053_x264.mp4/Shoplifting053_x264_1.mp4",
+      "bytes": 24554
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting053_x264.mp4/Shoplifting053_x264_10.mp4",
+      "bytes": 25166
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting053_x264.mp4/Shoplifting053_x264_11.mp4",
+      "bytes": 25456
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting053_x264.mp4/Shoplifting053_x264_12.mp4",
+      "bytes": 26005
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting053_x264.mp4/Shoplifting053_x264_13.mp4",
+      "bytes": 25140
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting053_x264.mp4/Shoplifting053_x264_14.mp4",
+      "bytes": 27710
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting053_x264.mp4/Shoplifting053_x264_15.mp4",
+      "bytes": 26690
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting053_x264.mp4/Shoplifting053_x264_16.mp4",
+      "bytes": 22906
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting053_x264.mp4/Shoplifting053_x264_17.mp4",
+      "bytes": 24576
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting053_x264.mp4/Shoplifting053_x264_18.mp4",
+      "bytes": 26515
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting053_x264.mp4/Shoplifting053_x264_19.mp4",
+      "bytes": 25687
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting053_x264.mp4/Shoplifting053_x264_2.mp4",
+      "bytes": 26310
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting053_x264.mp4/Shoplifting053_x264_20.mp4",
+      "bytes": 25904
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting053_x264.mp4/Shoplifting053_x264_21.mp4",
+      "bytes": 26421
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting053_x264.mp4/Shoplifting053_x264_22.mp4",
+      "bytes": 23817
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting053_x264.mp4/Shoplifting053_x264_23.mp4",
+      "bytes": 21760
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting053_x264.mp4/Shoplifting053_x264_24.mp4",
+      "bytes": 21036
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting053_x264.mp4/Shoplifting053_x264_25.mp4",
+      "bytes": 21326
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting053_x264.mp4/Shoplifting053_x264_26.mp4",
+      "bytes": 22476
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting053_x264.mp4/Shoplifting053_x264_27.mp4",
+      "bytes": 27145
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting053_x264.mp4/Shoplifting053_x264_28.mp4",
+      "bytes": 27161
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting053_x264.mp4/Shoplifting053_x264_29.mp4",
+      "bytes": 22520
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting053_x264.mp4/Shoplifting053_x264_3.mp4",
+      "bytes": 26465
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting053_x264.mp4/Shoplifting053_x264_30.mp4",
+      "bytes": 19692
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting053_x264.mp4/Shoplifting053_x264_31.mp4",
+      "bytes": 19855
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting053_x264.mp4/Shoplifting053_x264_4.mp4",
+      "bytes": 25849
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting053_x264.mp4/Shoplifting053_x264_5.mp4",
+      "bytes": 24062
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting053_x264.mp4/Shoplifting053_x264_6.mp4",
+      "bytes": 22903
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting053_x264.mp4/Shoplifting053_x264_7.mp4",
+      "bytes": 23961
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting053_x264.mp4/Shoplifting053_x264_8.mp4",
+      "bytes": 26543
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting053_x264.mp4/Shoplifting053_x264_9.mp4",
+      "bytes": 24804
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting054_x264.mp4/Shoplifting054_x264_0.mp4",
+      "bytes": 21429
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting054_x264.mp4/Shoplifting054_x264_1.mp4",
+      "bytes": 20019
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting054_x264.mp4/Shoplifting054_x264_10.mp4",
+      "bytes": 21030
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting054_x264.mp4/Shoplifting054_x264_11.mp4",
+      "bytes": 19846
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting054_x264.mp4/Shoplifting054_x264_12.mp4",
+      "bytes": 19873
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting054_x264.mp4/Shoplifting054_x264_13.mp4",
+      "bytes": 19704
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting054_x264.mp4/Shoplifting054_x264_14.mp4",
+      "bytes": 44458
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting054_x264.mp4/Shoplifting054_x264_15.mp4",
+      "bytes": 21130
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting054_x264.mp4/Shoplifting054_x264_16.mp4",
+      "bytes": 28647
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting054_x264.mp4/Shoplifting054_x264_17.mp4",
+      "bytes": 32080
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting054_x264.mp4/Shoplifting054_x264_18.mp4",
+      "bytes": 25043
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting054_x264.mp4/Shoplifting054_x264_19.mp4",
+      "bytes": 27024
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting054_x264.mp4/Shoplifting054_x264_2.mp4",
+      "bytes": 22736
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting054_x264.mp4/Shoplifting054_x264_20.mp4",
+      "bytes": 24367
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting054_x264.mp4/Shoplifting054_x264_21.mp4",
+      "bytes": 22654
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting054_x264.mp4/Shoplifting054_x264_22.mp4",
+      "bytes": 23563
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting054_x264.mp4/Shoplifting054_x264_23.mp4",
+      "bytes": 32475
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting054_x264.mp4/Shoplifting054_x264_24.mp4",
+      "bytes": 32298
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting054_x264.mp4/Shoplifting054_x264_25.mp4",
+      "bytes": 33040
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting054_x264.mp4/Shoplifting054_x264_26.mp4",
+      "bytes": 28302
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting054_x264.mp4/Shoplifting054_x264_27.mp4",
+      "bytes": 24474
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting054_x264.mp4/Shoplifting054_x264_28.mp4",
+      "bytes": 23027
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting054_x264.mp4/Shoplifting054_x264_29.mp4",
+      "bytes": 24649
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting054_x264.mp4/Shoplifting054_x264_3.mp4",
+      "bytes": 22676
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting054_x264.mp4/Shoplifting054_x264_30.mp4",
+      "bytes": 26651
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting054_x264.mp4/Shoplifting054_x264_31.mp4",
+      "bytes": 31061
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting054_x264.mp4/Shoplifting054_x264_4.mp4",
+      "bytes": 23163
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting054_x264.mp4/Shoplifting054_x264_5.mp4",
+      "bytes": 22397
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting054_x264.mp4/Shoplifting054_x264_6.mp4",
+      "bytes": 20788
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting054_x264.mp4/Shoplifting054_x264_7.mp4",
+      "bytes": 20992
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting054_x264.mp4/Shoplifting054_x264_8.mp4",
+      "bytes": 19883
+    },
+    {
+      "name": "DCSASS Dataset/Shoplifting/Shoplifting054_x264.mp4/Shoplifting054_x264_9.mp4",
+      "bytes": 19694
+    }
+  ]
+}

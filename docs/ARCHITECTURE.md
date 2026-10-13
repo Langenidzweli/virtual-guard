@@ -1,5 +1,7 @@
 # Architecture
 
+[Project overview](../README.md) | [Setup](SETUP.md) | [Model evaluation](MODEL_EVALUATION.md)
+
 ## Scope and service boundaries
 
 Virtual Guard analyzes uploaded recordings and supports human incident review. React handles presentation; Spring Boot owns authentication, authorization, job state and persistence; FastAPI performs conversion and inference; PostgreSQL stores metadata. Video bytes remain on disk.
@@ -83,7 +85,7 @@ The [video pipeline](../ai-service/app/vision/video_pipeline.py) samples approxi
 
 The annotator decodes the recording again, draws boxes, IDs and pose overlays, encodes the result and preserves optional source audio. Evidence compaction bounds callback payloads. Counts can include repeated detections across frames and must not be interpreted as unique people or products. Per-frame detection storage and additional video passes increase memory and processing cost with video length.
 
-[BehaviourAnalyzer](../ai-service/app/models/behaviour.py) independently samples every tenth frame, computes grayscale absolute differences and summarizes the mean motion signal into 14 features. A scaler and Random Forest classify the entire recording. The suspicion score is a separate heuristic. Experimental overlapping-window review suggestions are attempted for flagged clips; failure leaves full footage available. See [Model evaluation](MODEL_EVALUATION.md) for formulas, metrics and provenance.
+[BehaviourAnalyzer](../ai-service/app/models/behaviour.py) independently samples every tenth frame, computes grayscale absolute differences and summarizes the mean motion signal into 14 features. The active V2 scaler and Random Forest classify the entire recording. V3 remains offline research and is not part of this application path. The suspicion score is a separate heuristic. Experimental overlapping-window review suggestions are attempted for flagged clips; failure leaves full footage available. See [Model evaluation](MODEL_EVALUATION.md) for formulas, metrics and provenance.
 
 ## Persistence and operational features
 
@@ -139,4 +141,28 @@ Implemented: uploaded-video jobs, object/pose overlays, per-video tracking, inde
 
 Experimental: model quality, heuristic suspicion score and temporal review suggestions. None establishes criminal intent.
 
+V3 candidates remain outside the application inference path. Their [experiment results and evidence](BEHAVIOUR_V3_RESULTS.md) document development comparisons and an earlier consumed assessment cohort; publishing that evidence does not replace the runtime V2 model.
+
 Absent: continuous CCTV/RTSP ingestion, ReID, concealment detection, Kafka, Kubernetes manifests, durable job broker, automatic enforcement, MFA, tenant isolation, configured public TLS, object storage and automatic retention. Deployment hardening and independent model validation remain necessary for broader use.
+
+## Referenced diagrams and interface examples
+
+These diagrams summarize the detailed service and sequence descriptions above.
+
+![Service architecture](images/system-architecture.svg)
+
+![Upload, analysis and human-review workflow](images/analysis-workflow.svg)
+
+The interface captures below use synthetic browser-test records, not a live surveillance installation or model-performance evidence. The [README](../README.md) includes the recording dashboard.
+
+| Incident review | Incident trends |
+|---|---|
+| ![Incident workspace](images/incident-workspace.png) | ![Incident trends](images/incident-trends.png) |
+
+| Camera administration | Guard administration |
+|---|---|
+| ![Camera settings](images/camera-settings.png) | ![Security guards](images/security-guards.png) |
+
+### Saved workflow evidence
+
+Earlier local workflow checks recorded annotated playback, a four-camera dashboard, persisted review decisions and failure handling. These are workflow observations, not model-accuracy measurements. Preserved captures and their original evidence record are available in the local submission snapshot at `output/capstone-v3/package-verification/virtual-guard-v1/docs/evidence/workflow/`; they are not included in this checkout's `docs/images/` gallery or guaranteed in a GitHub clone.

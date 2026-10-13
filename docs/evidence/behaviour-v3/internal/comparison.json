@@ -1,0 +1,761 @@
+{
+  "logistic_C0.1": {
+    "n": 182,
+    "normal": 90,
+    "shoplifting": 92,
+    "confusion_matrix": [
+      [
+        59,
+        31
+      ],
+      [
+        25,
+        67
+      ]
+    ],
+    "label_order": [
+      "normal",
+      "shoplifting"
+    ],
+    "accuracy": 0.6923076923076923,
+    "precision": 0.6836734693877551,
+    "recall": 0.7282608695652174,
+    "f1": 0.7052631578947368,
+    "specificity": 0.6555555555555556,
+    "flagged": 98,
+    "flagged_proportion": 0.5384615384615384,
+    "precision_wilson95": [
+      0.5861612171628963,
+      0.7673293987107721
+    ],
+    "recall_wilson95": [
+      0.6295814700794521,
+      0.8086422435075468
+    ],
+    "accuracy_wilson95": [
+      0.6218569279084822,
+      0.7548082169101358
+    ],
+    "precision_defined": true,
+    "both_targets_met": false,
+    "fold_statistics": {
+      "accuracy": {
+        "mean": 0.6924924924924925,
+        "minimum": 0.6486486486486487,
+        "maximum": 0.7222222222222222
+      },
+      "precision": {
+        "mean": 0.6846198830409357,
+        "minimum": 0.65,
+        "maximum": 0.7222222222222222
+      },
+      "recall": {
+        "mean": 0.7286549707602339,
+        "minimum": 0.6842105263157895,
+        "maximum": 0.7777777777777778
+      },
+      "f1": {
+        "mean": 0.7054978054978055,
+        "minimum": 0.6666666666666666,
+        "maximum": 0.7222222222222222
+      }
+    },
+    "cluster_bootstrap": {
+      "percentile95": {
+        "accuracy": [
+          0.6263736263736264,
+          0.7595628415300546
+        ],
+        "precision": [
+          0.5858397807865893,
+          0.7767259978425025
+        ],
+        "recall": [
+          0.638076923076923,
+          0.8202247191011236
+        ],
+        "f1": [
+          0.627010692010692,
+          0.7748851373009936
+        ]
+      },
+      "replicates": 2000,
+      "precision_undefined_replicates": 0,
+      "limitation": "Conditional on these OOF predictions; unknown source/scene dependence and training uncertainty excluded."
+    }
+  },
+  "logistic_C1": {
+    "n": 182,
+    "normal": 90,
+    "shoplifting": 92,
+    "confusion_matrix": [
+      [
+        60,
+        30
+      ],
+      [
+        25,
+        67
+      ]
+    ],
+    "label_order": [
+      "normal",
+      "shoplifting"
+    ],
+    "accuracy": 0.6978021978021978,
+    "precision": 0.6907216494845361,
+    "recall": 0.7282608695652174,
+    "f1": 0.708994708994709,
+    "specificity": 0.6666666666666666,
+    "flagged": 97,
+    "flagged_proportion": 0.532967032967033,
+    "precision_wilson95": [
+      0.5929541644404,
+      0.7739584172765066
+    ],
+    "recall_wilson95": [
+      0.6295814700794521,
+      0.8086422435075468
+    ],
+    "accuracy_wilson95": [
+      0.6275650300175596,
+      0.7598619760815905
+    ],
+    "precision_defined": true,
+    "both_targets_met": false,
+    "fold_statistics": {
+      "accuracy": {
+        "mean": 0.698048048048048,
+        "minimum": 0.6486486486486487,
+        "maximum": 0.7222222222222222
+      },
+      "precision": {
+        "mean": 0.6919845513963161,
+        "minimum": 0.65,
+        "maximum": 0.7222222222222222
+      },
+      "recall": {
+        "mean": 0.7280701754385965,
+        "minimum": 0.6666666666666666,
+        "maximum": 0.7894736842105263
+      },
+      "f1": {
+        "mean": 0.7086305193879008,
+        "minimum": 0.6666666666666666,
+        "maximum": 0.7368421052631579
+      }
+    },
+    "cluster_bootstrap": {
+      "percentile95": {
+        "accuracy": [
+          0.6277777777777778,
+          0.7621621621621621
+        ],
+        "precision": [
+          0.5963258645024699,
+          0.7802455357142856
+        ],
+        "recall": [
+          0.6354136029411764,
+          0.8191489361702128
+        ],
+        "f1": [
+          0.6309394409937888,
+          0.7755254340542186
+        ]
+      },
+      "replicates": 2000,
+      "precision_undefined_replicates": 0,
+      "limitation": "Conditional on these OOF predictions; unknown source/scene dependence and training uncertainty excluded."
+    }
+  },
+  "logistic_C10": {
+    "n": 182,
+    "normal": 90,
+    "shoplifting": 92,
+    "confusion_matrix": [
+      [
+        60,
+        30
+      ],
+      [
+        29,
+        63
+      ]
+    ],
+    "label_order": [
+      "normal",
+      "shoplifting"
+    ],
+    "accuracy": 0.6758241758241759,
+    "precision": 0.6774193548387096,
+    "recall": 0.6847826086956522,
+    "f1": 0.6810810810810811,
+    "specificity": 0.6666666666666666,
+    "flagged": 93,
+    "flagged_proportion": 0.510989010989011,
+    "precision_wilson95": [
+      0.5770125881416741,
+      0.7637505560928715
+    ],
+    "recall_wilson95": [
+      0.5840668992376271,
+      0.770685630808991
+    ],
+    "accuracy_wilson95": [
+      0.6047965305828887,
+      0.7395830303941336
+    ],
+    "precision_defined": true,
+    "both_targets_met": false,
+    "fold_statistics": {
+      "accuracy": {
+        "mean": 0.6758258258258257,
+        "minimum": 0.6666666666666666,
+        "maximum": 0.6944444444444444
+      },
+      "precision": {
+        "mean": 0.6778508771929824,
+        "minimum": 0.6666666666666666,
+        "maximum": 0.6875
+      },
+      "recall": {
+        "mean": 0.6842105263157895,
+        "minimum": 0.6111111111111112,
+        "maximum": 0.7368421052631579
+      },
+      "f1": {
+        "mean": 0.6801277438429141,
+        "minimum": 0.6470588235294118,
+        "maximum": 0.7027027027027027
+      }
+    },
+    "cluster_bootstrap": {
+      "percentile95": {
+        "accuracy": [
+          0.6055518018018018,
+          0.7458563535911602
+        ],
+        "precision": [
+          0.5795305023923445,
+          0.7727272727272727
+        ],
+        "recall": [
+          0.5913856304985338,
+          0.7816341829085456
+        ],
+        "f1": [
+          0.5988683649649853,
+          0.7575837320574162
+        ]
+      },
+      "replicates": 2000,
+      "precision_undefined_replicates": 0,
+      "limitation": "Conditional on these OOF predictions; unknown source/scene dependence and training uncertainty excluded."
+    }
+  },
+  "rf_balanced": {
+    "n": 182,
+    "normal": 90,
+    "shoplifting": 92,
+    "confusion_matrix": [
+      [
+        66,
+        24
+      ],
+      [
+        19,
+        73
+      ]
+    ],
+    "label_order": [
+      "normal",
+      "shoplifting"
+    ],
+    "accuracy": 0.7637362637362637,
+    "precision": 0.7525773195876289,
+    "recall": 0.7934782608695652,
+    "f1": 0.7724867724867724,
+    "specificity": 0.7333333333333333,
+    "flagged": 97,
+    "flagged_proportion": 0.532967032967033,
+    "precision_wilson95": [
+      0.6581861373970127,
+      0.827725119471323
+    ],
+    "recall_wilson95": [
+      0.6998218608639664,
+      0.8636086280336035
+    ],
+    "accuracy_wilson95": [
+      0.6969691509680206,
+      0.8196001904975126
+    ],
+    "precision_defined": true,
+    "both_targets_met": true,
+    "fold_statistics": {
+      "accuracy": {
+        "mean": 0.7638138138138139,
+        "minimum": 0.7027027027027027,
+        "maximum": 0.8108108108108109
+      },
+      "precision": {
+        "mean": 0.7596969696969696,
+        "minimum": 0.6818181818181818,
+        "maximum": 0.8666666666666667
+      },
+      "recall": {
+        "mean": 0.7935672514619884,
+        "minimum": 0.7222222222222222,
+        "maximum": 0.8421052631578947
+      },
+      "f1": {
+        "mean": 0.7731628021101706,
+        "minimum": 0.717948717948718,
+        "maximum": 0.8205128205128205
+      }
+    },
+    "cluster_bootstrap": {
+      "percentile95": {
+        "accuracy": [
+          0.7010869565217391,
+          0.8288968384556619
+        ],
+        "precision": [
+          0.6666666666666666,
+          0.8415841584158416
+        ],
+        "recall": [
+          0.7064869007803791,
+          0.8735662431941924
+        ],
+        "f1": [
+          0.7027027027027027,
+          0.8393843484211555
+        ]
+      },
+      "replicates": 2000,
+      "precision_undefined_replicates": 0,
+      "limitation": "Conditional on these OOF predictions; unknown source/scene dependence and training uncertainty excluded."
+    }
+  },
+  "extra_trees_balanced": {
+    "n": 182,
+    "normal": 90,
+    "shoplifting": 92,
+    "confusion_matrix": [
+      [
+        65,
+        25
+      ],
+      [
+        18,
+        74
+      ]
+    ],
+    "label_order": [
+      "normal",
+      "shoplifting"
+    ],
+    "accuracy": 0.7637362637362637,
+    "precision": 0.7474747474747475,
+    "recall": 0.8043478260869565,
+    "f1": 0.774869109947644,
+    "specificity": 0.7222222222222222,
+    "flagged": 99,
+    "flagged_proportion": 0.5439560439560439,
+    "precision_wilson95": [
+      0.6537553108987586,
+      0.822706230603024
+    ],
+    "recall_wilson95": [
+      0.7117967165323347,
+      0.8725015682503303
+    ],
+    "accuracy_wilson95": [
+      0.6969691509680206,
+      0.8196001904975126
+    ],
+    "precision_defined": true,
+    "both_targets_met": false,
+    "fold_statistics": {
+      "accuracy": {
+        "mean": 0.7638138138138139,
+        "minimum": 0.75,
+        "maximum": 0.8055555555555556
+      },
+      "precision": {
+        "mean": 0.7506926406926407,
+        "minimum": 0.7142857142857143,
+        "maximum": 0.8
+      },
+      "recall": {
+        "mean": 0.8040935672514621,
+        "minimum": 0.6666666666666666,
+        "maximum": 0.8888888888888888
+      },
+      "f1": {
+        "mean": 0.773346978225027,
+        "minimum": 0.7272727272727273,
+        "maximum": 0.8205128205128205
+      }
+    },
+    "cluster_bootstrap": {
+      "percentile95": {
+        "accuracy": [
+          0.6999863387978141,
+          0.8277777777777777
+        ],
+        "precision": [
+          0.6568553178847296,
+          0.8367346938775511
+        ],
+        "recall": [
+          0.7176351752822341,
+          0.8823685857321651
+        ],
+        "f1": [
+          0.7038886067377688,
+          0.837696335078534
+        ]
+      },
+      "replicates": 2000,
+      "precision_undefined_replicates": 0,
+      "limitation": "Conditional on these OOF predictions; unknown source/scene dependence and training uncertainty excluded."
+    }
+  },
+  "rf_original14": {
+    "n": 182,
+    "normal": 90,
+    "shoplifting": 92,
+    "confusion_matrix": [
+      [
+        46,
+        44
+      ],
+      [
+        36,
+        56
+      ]
+    ],
+    "label_order": [
+      "normal",
+      "shoplifting"
+    ],
+    "accuracy": 0.5604395604395604,
+    "precision": 0.56,
+    "recall": 0.6086956521739131,
+    "f1": 0.5833333333333334,
+    "specificity": 0.5111111111111111,
+    "flagged": 100,
+    "flagged_proportion": 0.5494505494505495,
+    "precision_wilson95": [
+      0.4622810465167699,
+      0.6532797336983921
+    ],
+    "recall_wilson95": [
+      0.5065341915409213,
+      0.7021437673100305
+    ],
+    "accuracy_wilson95": [
+      0.48782001832455435,
+      0.630560455761297
+    ],
+    "precision_defined": true,
+    "both_targets_met": false,
+    "fold_statistics": {
+      "accuracy": {
+        "mean": 0.55990990990991,
+        "minimum": 0.4722222222222222,
+        "maximum": 0.6486486486486487
+      },
+      "precision": {
+        "mean": 0.5596470588235294,
+        "minimum": 0.47368421052631576,
+        "maximum": 0.65
+      },
+      "recall": {
+        "mean": 0.6064327485380117,
+        "minimum": 0.5,
+        "maximum": 0.7368421052631579
+      },
+      "f1": {
+        "mean": 0.5802971802971802,
+        "minimum": 0.4864864864864865,
+        "maximum": 0.6666666666666666
+      }
+    },
+    "cluster_bootstrap": {
+      "percentile95": {
+        "accuracy": [
+          0.48633879781420764,
+          0.6318681318681318
+        ],
+        "precision": [
+          0.46153846153846156,
+          0.6631605800214823
+        ],
+        "recall": [
+          0.5053763440860215,
+          0.7029702970297029
+        ],
+        "f1": [
+          0.4971751412429379,
+          0.6633663366336634
+        ]
+      },
+      "replicates": 2000,
+      "precision_undefined_replicates": 0,
+      "limitation": "Conditional on these OOF predictions; unknown source/scene dependence and training uncertainty excluded."
+    }
+  },
+  "dummy_prior": {
+    "n": 182,
+    "normal": 90,
+    "shoplifting": 92,
+    "confusion_matrix": [
+      [
+        0,
+        90
+      ],
+      [
+        0,
+        92
+      ]
+    ],
+    "label_order": [
+      "normal",
+      "shoplifting"
+    ],
+    "accuracy": 0.5054945054945055,
+    "precision": 0.5054945054945055,
+    "recall": 1.0,
+    "f1": 0.6715328467153284,
+    "specificity": 0.0,
+    "flagged": 182,
+    "flagged_proportion": 1.0,
+    "precision_wilson95": [
+      0.4334987720090373,
+      0.5772630892714945
+    ],
+    "recall_wilson95": [
+      0.9599186107143782,
+      1.0
+    ],
+    "accuracy_wilson95": [
+      0.4334987720090373,
+      0.5772630892714945
+    ],
+    "precision_defined": true,
+    "both_targets_met": false,
+    "fold_statistics": {
+      "accuracy": {
+        "mean": 0.5054054054054055,
+        "minimum": 0.5,
+        "maximum": 0.5135135135135135
+      },
+      "precision": {
+        "mean": 0.5054054054054055,
+        "minimum": 0.5,
+        "maximum": 0.5135135135135135
+      },
+      "recall": {
+        "mean": 1.0,
+        "minimum": 1.0,
+        "maximum": 1.0
+      },
+      "f1": {
+        "mean": 0.6714285714285714,
+        "minimum": 0.6666666666666666,
+        "maximum": 0.6785714285714286
+      }
+    },
+    "cluster_bootstrap": {
+      "percentile95": {
+        "accuracy": [
+          0.42855233002291826,
+          0.5792349726775956
+        ],
+        "precision": [
+          0.42855233002291826,
+          0.5792349726775956
+        ],
+        "recall": [
+          1.0,
+          1.0
+        ],
+        "f1": [
+          0.5999812734082397,
+          0.7335640138408305
+        ]
+      },
+      "replicates": 2000,
+      "precision_undefined_replicates": 0,
+      "limitation": "Conditional on these OOF predictions; unknown source/scene dependence and training uncertainty excluded."
+    }
+  },
+  "always_normal": {
+    "n": 182,
+    "normal": 90,
+    "shoplifting": 92,
+    "confusion_matrix": [
+      [
+        90,
+        0
+      ],
+      [
+        92,
+        0
+      ]
+    ],
+    "label_order": [
+      "normal",
+      "shoplifting"
+    ],
+    "accuracy": 0.4945054945054945,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "specificity": 1.0,
+    "flagged": 0,
+    "flagged_proportion": 0.0,
+    "precision_wilson95": null,
+    "recall_wilson95": [
+      0.0,
+      0.04008138928562172
+    ],
+    "accuracy_wilson95": [
+      0.42273691072850544,
+      0.5665012279909626
+    ],
+    "precision_defined": false,
+    "both_targets_met": false,
+    "fold_statistics": {
+      "accuracy": {
+        "mean": 0.49459459459459454,
+        "minimum": 0.4864864864864865,
+        "maximum": 0.5
+      },
+      "precision": {
+        "mean": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      "recall": {
+        "mean": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      "f1": {
+        "mean": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      }
+    },
+    "cluster_bootstrap": {
+      "percentile95": {
+        "accuracy": [
+          0.4207650273224044,
+          0.5714476699770816
+        ],
+        "precision": null,
+        "recall": [
+          0.0,
+          0.0
+        ],
+        "f1": [
+          0.0,
+          0.0
+        ]
+      },
+      "replicates": 2000,
+      "precision_undefined_replicates": 2000,
+      "limitation": "Conditional on these OOF predictions; unknown source/scene dependence and training uncertainty excluded."
+    }
+  },
+  "nested_selection": {
+    "n": 182,
+    "normal": 90,
+    "shoplifting": 92,
+    "confusion_matrix": [
+      [
+        56,
+        34
+      ],
+      [
+        17,
+        75
+      ]
+    ],
+    "label_order": [
+      "normal",
+      "shoplifting"
+    ],
+    "accuracy": 0.7197802197802198,
+    "precision": 0.6880733944954128,
+    "recall": 0.8152173913043478,
+    "f1": 0.746268656716418,
+    "specificity": 0.6222222222222222,
+    "flagged": 109,
+    "flagged_proportion": 0.5989010989010989,
+    "precision_wilson95": [
+      0.5959527795002422,
+      0.7673888542263236
+    ],
+    "recall_wilson95": [
+      0.7238594289322428,
+      0.8813066517355174
+    ],
+    "accuracy_wilson95": [
+      0.6505082953949127,
+      0.7799661558263652
+    ],
+    "precision_defined": true,
+    "both_targets_met": false,
+    "fold_statistics": {
+      "accuracy": {
+        "mean": 0.7204204204204204,
+        "minimum": 0.5675675675675675,
+        "maximum": 0.8055555555555556
+      },
+      "precision": {
+        "mean": 0.7122315319089513,
+        "minimum": 0.5483870967741935,
+        "maximum": 0.8666666666666667
+      },
+      "recall": {
+        "mean": 0.8146198830409357,
+        "minimum": 0.7222222222222222,
+        "maximum": 0.8947368421052632
+      },
+      "f1": {
+        "mean": 0.7512680652680652,
+        "minimum": 0.68,
+        "maximum": 0.7878787878787878
+      }
+    },
+    "cluster_bootstrap": {
+      "percentile95": {
+        "accuracy": [
+          0.6574585635359116,
+          0.7845407829858017
+        ],
+        "precision": [
+          0.6037735849056604,
+          0.7757009345794392
+        ],
+        "recall": [
+          0.7362533692722373,
+          0.8913043478260869
+        ],
+        "f1": [
+          0.676923076923077,
+          0.8088992248062015
+        ]
+      },
+      "replicates": 2000,
+      "precision_undefined_replicates": 0,
+      "limitation": "Conditional on these OOF predictions; unknown source/scene dependence and training uncertainty excluded."
+    }
+  }
+}

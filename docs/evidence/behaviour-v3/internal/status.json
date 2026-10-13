@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "results_complete": true,
+  "elapsed_seconds": 105.8090599000061,
+  "completed_fits": 126,
+  "nested_both_targets_met": false,
+  "nested_accuracy": 0.7197802197802198,
+  "nested_precision": 0.6880733944954128,
+  "research_candidate": "logistic_C1",
+  "runtime_model_changed": false,
+  "independent_test_performance": null,
+  "limitation": "Exploratory internal cross-validation on previously inspected staged laboratory recordings; exact duplicates grouped, unknown person/session dependence remains. No independent retail performance or runtime promotion is established."
+}

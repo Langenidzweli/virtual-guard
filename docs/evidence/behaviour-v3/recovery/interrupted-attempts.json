@@ -1,0 +1,35 @@
+[
+  {
+    "attempt": "v3-promotion-20261013/prepared-01",
+    "status": "incomplete",
+    "utc": "2026-10-13T12:14:11.573345+00:00",
+    "completed_preparation_inputs": 791,
+    "total_preparation_inputs": 886,
+    "error_summary": "normal-89.mp4 conversion exceeded 90-second timeout",
+    "candidate_fits_completed": 0
+  },
+  {
+    "attempt": "v3-promotion-20261013/prepared-02",
+    "status": "incomplete",
+    "utc": "2026-10-13T15:50:32.807022+00:00",
+    "completed_preparation_inputs": 791,
+    "total_preparation_inputs": 886,
+    "error_summary": "normal-89.mp4 conversion exceeded 90-second timeout",
+    "candidate_fits_completed": 0
+  },
+  {
+    "attempt": "v3-promotion-20261013/prepared-03",
+    "status": "incomplete",
+    "utc": "2026-10-13T16:22:56.494890+00:00",
+    "completed_preparation_inputs": 880,
+    "total_preparation_inputs": 886,
+    "error_summary": "RuntimeError('Preparation time/disk budget reached')",
+    "candidate_fits_completed": 0
+  },
+  {
+    "attempt": "v3-recovery-20261013/comparison-01",
+    "utc": "2026-10-13T16:53:44.232188+00:00",
+    "error": "ValueError('Out of range float values are not JSON compliant: nan')",
+    "candidate_fits_completed": 0
+  }
+]

@@ -1,0 +1,4 @@
+# Preserve published evidence bytes across Windows/Linux checkouts.
+*.csv -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+*.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+*.jsonl -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

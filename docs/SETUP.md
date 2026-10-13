@@ -1,5 +1,7 @@
 # Setup and operations
 
+[Project overview](../README.md) | [Architecture](ARCHITECTURE.md) | [Model evaluation](MODEL_EVALUATION.md)
+
 ## Preferred path: Docker Compose
 
 Use Docker Compose to run PostgreSQL, Spring Boot, FastAPI and the frontend together. Native Windows commands below are for development. Run commands from the repository root unless a service directory is specified. Commands use PowerShell and contain no workstation-specific paths.
@@ -207,3 +209,17 @@ Use Guards > profile > Reset password as an administrator. Share the configured 
 `.env`, virtual environments, `node_modules`, build outputs, logs and runtime uploads are ignored/excluded. Keep `.env.example` with placeholders. The packaging script selects the three technical documents and curated image assets, source, tests, final models and saved experiment evidence; it excludes intermediate run checkpoints, obsolete experiment prose and model archives. `python scripts/package_submission.py --profile both` creates Full and Portfolio archives under `output/`, each with an internal SHA-256 manifest and an external archive checksum. Full includes all supplied datasets. Portfolio retains the small feature CSVs but omits the large mall and pose image/video datasets. Both support runtime inference. The full AI suite's `test_mall_dataset_validates` and the dataset-backed `verify_running_stack.py` smoke check require the Full datasets; they are not self-contained in Portfolio. For Portfolio-only AI checks, use `python -B -m pytest tests -q -k "not test_mall_dataset_validates" -p no:cacheprovider`. The stored-feature behaviour evaluator remains available in both packages. A Git clone may omit ignored local datasets even though a later package can include supplied data.
 
 Historical experiment metadata retains original machine paths as provenance; do not treat those as runnable setup commands. Review artifact licensing and provenance before distribution. No ZIP is needed to run or review the repository.
+
+## Distribution and preserved deliverables
+
+The preserved local V3 delivery is `output/capstone-v3/VirtualGuard-V3-Lecturer.zip`, with its adjacent `.sha256` file. The report is stored under `output/capstone-v3/report/` as `Langeni_202440122_Capstone_Final_Project103_REVISED_V3.docx` and `.pdf`. `output/capstone-v3/delivery-manifest.json` records the delivered artifact hashes. These are historical snapshots, not automatically updated copies of the current documentation. They are local artifacts and are not guaranteed to exist in a GitHub clone.
+
+The V3 name identifies the research/report delivery; the application still uses the V2 behaviour model. Startup does not train, evaluate or promote a model. The completed recovery experiment and its earlier preparation failures are distinguished in [Model evaluation](MODEL_EVALUATION.md#completed-v3-recovery-and-dataset-provenance).
+
+Keep existing reports, archives, model artifacts and experiment outputs when updating documentation. Packaging commands above describe an optional separate operation; documentation changes do not require rebuilding an archive.
+
+## Behaviour evidence and optional diagnostics
+
+To check the published [V3 evidence](BEHAVIOUR_V3_RESULTS.md) from the repository root, run `python -B docs/evidence/behaviour-v3/verify.py`. This uses only Python's standard library, reads saved records and writes no files. It does not require model artifacts, datasets, Docker or installed machine-learning packages. Passing this consistency check does not establish model performance on independent footage.
+
+The existing behaviour evaluator defaults to the reconstructed 37-record partition. The earlier 28-record diagnostic requires `--legacy-70-15-15` and includes reconstructed original training rows. Neither is an independent retail assessment. See [Model evaluation](MODEL_EVALUATION.md#behaviour-classifier-comparable-results-and-limits) before interpreting any result. Model evaluation and training are separate from application setup.

@@ -1,0 +1,11 @@
+{
+  "status": "complete",
+  "fits": 36,
+  "elapsed_seconds": 44.77544039999975,
+  "primary_development_gate_passed": false,
+  "promotion_supported": false,
+  "reason": "No fresh independent source-level assessment; development evidence only.",
+  "final_holdout_predictions": 0,
+  "application_integrations": 0,
+  "protected_unchanged": true
+}
